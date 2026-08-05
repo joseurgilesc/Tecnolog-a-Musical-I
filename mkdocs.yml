@@ -1,0 +1,113 @@
+site_name: "Tecnología Musical I"
+site_description: "Material de clase — Tecnología Musical I (MuseScore Studio)"
+site_author: "José Urgilés"
+repo_url: https://github.com/joseurgilesc/Tecnolog-a-Musical-I
+repo_name: joseurgilesc/Tecnolog-a-Musical-I
+
+theme:
+  name: material
+  language: es
+  logo: img/logo.svg
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Modo oscuro
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: es
+
+nav:
+  - Inicio: index.md
+  - Objetivos: objetivos.md
+  - Logros de Aprendizaje: logros.md
+  - Bibliografía: bibliografia.md
+  - "Unidad 1: Introducción y organización del trabajo":
+      - "Unidad 1: Introducción y organización del trabajo": unidades/U-1-introduccion-organizacion/index.md
+      - "Sesión 1": unidades/U-1-introduccion-organizacion/sesion-01/index.md
+      - "Sesión 2": unidades/U-1-introduccion-organizacion/sesion-02/index.md
+      - "Sesión 3": unidades/U-1-introduccion-organizacion/sesion-03/index.md
+  - "Unidad 2: Ingreso y edición de notas":
+      - "Unidad 2: Ingreso y edición de notas": unidades/U-2-ingreso-edicion-notas/index.md
+      - "Sesión 4": unidades/U-2-ingreso-edicion-notas/sesion-04/index.md
+      - "Sesión 5": unidades/U-2-ingreso-edicion-notas/sesion-05/index.md
+      - "Sesión 6": unidades/U-2-ingreso-edicion-notas/sesion-06/index.md
+      - "Sesión 7": unidades/U-2-ingreso-edicion-notas/sesion-07/index.md
+      - "Sesión 8": unidades/U-2-ingreso-edicion-notas/sesion-08/index.md
+  - "Unidad 3: Articulación, expresión y reproducción":
+      - "Unidad 3: Articulación, expresión y reproducción": unidades/U-3-articulacion-expresion/index.md
+      - "Sesión 9": unidades/U-3-articulacion-expresion/sesion-09/index.md
+      - "Sesión 10": unidades/U-3-articulacion-expresion/sesion-10/index.md
+      - "Sesión 11": unidades/U-3-articulacion-expresion/sesion-11/index.md
+      - "Sesión 12": unidades/U-3-articulacion-expresion/sesion-12/index.md
+  - "Unidad 4: Estructura, repeticiones y texto":
+      - "Unidad 4: Estructura, repeticiones y texto": unidades/U-4-estructura-repeticiones/index.md
+      - "Sesión 13": unidades/U-4-estructura-repeticiones/sesion-13/index.md
+      - "Sesión 14": unidades/U-4-estructura-repeticiones/sesion-14/index.md
+      - "Sesión 15": unidades/U-4-estructura-repeticiones/sesion-15/index.md
+      - "Sesión 16": unidades/U-4-estructura-repeticiones/sesion-16/index.md
+  - "Unidad 5: Notaciones especializadas":
+      - "Unidad 5: Notaciones especializadas": unidades/U-5-notaciones-especializadas/index.md
+      - "Sesión 17": unidades/U-5-notaciones-especializadas/sesion-17/index.md
+      - "Sesión 18": unidades/U-5-notaciones-especializadas/sesion-18/index.md
+      - "Sesión 19": unidades/U-5-notaciones-especializadas/sesion-19/index.md
+      - "Sesión 20": unidades/U-5-notaciones-especializadas/sesion-20/index.md
+      - "Sesión 21": unidades/U-5-notaciones-especializadas/sesion-21/index.md
+  - "Unidad 6: MIDI, importación y reproducción":
+      - "Unidad 6: MIDI, importación y reproducción": unidades/U-6-midi-importacion/index.md
+      - "Sesión 22": unidades/U-6-midi-importacion/sesion-22/index.md
+      - "Sesión 23": unidades/U-6-midi-importacion/sesion-23/index.md
+      - "Sesión 24": unidades/U-6-midi-importacion/sesion-24/index.md
+      - "Sesión 25": unidades/U-6-midi-importacion/sesion-25/index.md
+  - "Unidad 7: Edición, partes y publicación":
+      - "Unidad 7: Edición, partes y publicación": unidades/U-7-edicion-partes-publicacion/index.md
+      - "Sesión 26": unidades/U-7-edicion-partes-publicacion/sesion-26/index.md
+      - "Sesión 27": unidades/U-7-edicion-partes-publicacion/sesion-27/index.md
+      - "Sesión 28": unidades/U-7-edicion-partes-publicacion/sesion-28/index.md
+      - "Sesión 29": unidades/U-7-edicion-partes-publicacion/sesion-29/index.md
+      - "Sesión 30": unidades/U-7-edicion-partes-publicacion/sesion-30/index.md
+      - "Sesión 31": unidades/U-7-edicion-partes-publicacion/sesion-31/index.md
+  - Exámenes:
+      - "Examen Interciclo (Sesión 16)": examen-interciclo.md
+      - "Examen Final (Sesión 32)": examen-final.md
