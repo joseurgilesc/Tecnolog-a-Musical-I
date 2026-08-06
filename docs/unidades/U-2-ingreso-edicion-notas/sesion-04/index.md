@@ -24,6 +24,8 @@
 
     Todo lo que escribas en MuseScore —una melodía, un acorde, un ritmo de percusión— comienza por activar el **modo de ingreso de notas**. Este modo convierte tu teclado y ratón en herramientas de escritura musical.
 
+    ![Ingreso de notas con teclado](https://handbook.musescore.org/~gitbook/image?url=https%3A%2F%2F3455969201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FP81HaeapLzzJGtG6DSwH%252Fuploads%252Fgit-blob-9d5afedf062319a4212627db63153790aeeda18d%252Fentering-notes.gif%3Falt%3Dmedia&width=768&dpr=3&quality=100&sign=7968d0e&sv=2)
+
     ### Activar y desactivar el modo de ingreso
 
     | Acción | Atajo / Método |
@@ -46,6 +48,8 @@
     |---|---|
     | **Ratón** | Clic en el ícono de la figura en la barra de herramientas de ingreso |
     | **Teclado** | Teclas `1` a `9`: 1 = semifusa, 2 = fusa, 3 = semicorchea, 4 = corchea, 5 = negra, 6 = blanca, 7 = redonda, 8 = longa, 9 = breve |
+
+    ![Cambio de duraciones rítmicas](https://handbook.musescore.org/~gitbook/image?url=https%3A%2F%2F3455969201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FP81HaeapLzzJGtG6DSwH%252Fuploads%252Fgit-blob-4c5bc450dcf699f7f17c0e9116be1486109e207e%252Fchaning-note-durations.gif%3Falt%3Dmedia&width=768&dpr=2&quality=100&sign=ba468662&sv=2)
 
     Las teclas `4`, `5` y `6` (corchea, negra, blanca) están en el centro del teclado numérico y corresponden a los valores más usados. Las figuras más cortas usan números más bajos; las más largas, números más altos.
 
