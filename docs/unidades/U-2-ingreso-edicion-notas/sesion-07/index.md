@@ -25,8 +25,8 @@
 
     | Clave | Línea de referencia | Instrumentos típicos |
     |---|---|---|
-    | Sol (𝄞) | Segunda línea (Sol₄) | Violín, flauta, oboe, clarinete, trompeta, piano (mano derecha), guitarra, voz soprano |
-    | Fa (𝄢) | Cuarta línea (Fa₃) | Contrabajo, violonchelo, fagot, trombón, tuba, piano (mano izquierda), voz bajo |
+    | Sol | Segunda línea (Sol₄) | Violín, flauta, oboe, clarinete, trompeta, piano (mano derecha), guitarra, voz soprano |
+    | Fa | Cuarta línea (Fa₃) | Contrabajo, violonchelo, fagot, trombón, tuba, piano (mano izquierda), voz bajo |
     | Do en tercera (alto) | Tercera línea (Do₄) | Viola, trombón alto |
     | Do en cuarta (tenor) | Cuarta línea (Do₄) | Violonchelo (registro agudo), fagot (registro agudo), trombón tenor |
 
@@ -115,8 +115,8 @@
     | Sostenido | `+` | ♯ | Sube un semitono |
     | Bemol | `-` | ♭ | Baja un semitono |
     | Becuadro | `=` | ♮ | Cancela alteraciones previas |
-    | Doble sostenido | (paleta) | 𝄪 | Sube dos semitonos |
-    | Doble bemol | (paleta) | 𝄫 | Baja dos semitonos |
+    | Doble sostenido | (paleta) | x | Sube dos semitonos |
+    | Doble bemol | (paleta) | bb | Baja dos semitonos |
 
     Las alteraciones se ingresan en modo de ingreso de notas **antes** de la nota. La secuencia es: duración → alteración → altura (`5` → `+` → `F` produce un Fa♯ negra).
 
