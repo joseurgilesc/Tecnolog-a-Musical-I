@@ -1,9 +1,9 @@
 /* Blue identity — #2563EB — Tecnología Musical I */
 
-/* Bravura Text — fuente musical local para glifos Unicode (♩♪𝅝𝅗𝅥𝅘𝅥𝅘𝅥𝅮𝄞𝄢) */
+/* Noto Music — cubre U+1D100-U+1D1FF (glifos musicales Unicode) */
 @font-face {
-  font-family: 'Bravura Text';
-  src: url('../fonts/BravuraText.woff2') format('woff2');
+  font-family: 'Noto Music';
+  src: url('../fonts/NotoMusic-Regular.ttf') format('truetype');
   font-display: swap;
 }
 
