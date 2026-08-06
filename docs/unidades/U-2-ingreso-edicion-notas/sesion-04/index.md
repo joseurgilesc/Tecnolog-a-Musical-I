@@ -121,13 +121,13 @@
 
     | Figura | Nombre | Atajo | ¿Cuántas entran en un 4/4? |
     |---|---|---|---|
-    | 𝅝 | Redonda | `7` | 1 |
-    | 𝅗𝅥 | Blanca | `6` | 2 |
-    | 𝅘𝅥 | Negra | `5` | 4 |
-    | 𝅘𝅥𝅮 | Corchea | `4` | 8 |
-    | 𝅘𝅥𝅯 | Semicorchea | `3` | 16 |
-    | 𝅘𝅥𝅰 | Fusa | `2` | 32 |
-    | 𝅘𝅥𝅱 | Semifusa | `1` | 64 |
+    | &#xE1D0; | Redonda | `7` | 1 |
+    | &#xE1D4; | Blanca | `6` | 2 |
+    | &#xE1D2; | Negra | `5` | 4 |
+    | &#xE1D6; | Corchea | `4` | 8 |
+    | &#xE1D8; | Semicorchea | `3` | 16 |
+    | &#xE1DA; | Fusa | `2` | 32 |
+    | &#xE1DC; | Semifusa | `1` | 64 |
 
     La duración seleccionada permanece activa hasta que elijas otra. Si escribiste una negra y la siguiente nota también es negra, no necesitás volver a presionar `5`: MuseScore mantiene la última duración.
 
