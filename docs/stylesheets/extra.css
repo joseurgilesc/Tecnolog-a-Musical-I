@@ -1,4 +1,17 @@
 /* Blue identity — #2563EB — Tecnología Musical I */
+
+/* Bravura — SMuFL music font for note symbols (𝄞 ♩ ♪ 𝄽 etc.) */
+@font-face {
+  font-family: 'Bravura';
+  src: url('https://cdn.jsdelivr.net/gh/steinbergmedia/bravura@master/redist/woff2/Bravura.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* Apply Bravura as fallback for musical symbols across the site */
+.md-typeset {
+  font-family: var(--md-text-font, system-ui), 'Bravura', sans-serif;
+}
+
 :root {
   --md-primary-fg-color: #2563EB;
   --md-primary-fg-color--light: #60A5FA;
