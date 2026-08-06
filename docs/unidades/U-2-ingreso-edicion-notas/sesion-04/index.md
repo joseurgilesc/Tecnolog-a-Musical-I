@@ -121,13 +121,13 @@
 
     | Figura | Nombre | Atajo | ¿Cuántas entran en un 4/4? |
     |---|---|---|---|
-    | &#xE1D0; | Redonda | `7` | 1 |
-    | &#xE1D4; | Blanca | `6` | 2 |
-    | &#xE1D2; | Negra | `5` | 4 |
-    | &#xE1D6; | Corchea | `4` | 8 |
-    | &#xE1D8; | Semicorchea | `3` | 16 |
-    | &#xE1DA; | Fusa | `2` | 32 |
-    | &#xE1DC; | Semifusa | `1` | 64 |
+    | <img src="../../../img/figuras/redonda.svg" width="28" alt="Redonda"> | Redonda | `7` | 1 |
+    | <img src="../../../img/figuras/blanca.svg" width="16" alt="Blanca"> | Blanca | `6` | 2 |
+    | <img src="../../../img/figuras/negra.svg" width="16" alt="Negra"> | Negra | `5` | 4 |
+    | <img src="../../../img/figuras/corchea.svg" width="16" alt="Corchea"> | Corchea | `4` | 8 |
+    | <img src="../../../img/figuras/semicorchea.svg" width="16" alt="Semicorchea"> | Semicorchea | `3` | 16 |
+    | <img src="../../../img/figuras/fusa.svg" width="25" alt="Fusa"> | Fusa | `2` | 32 |
+    | <img src="../../../img/figuras/semifusa.svg" width="25" alt="Semifusa"> | Semifusa | `1` | 64 |
 
     La duración seleccionada permanece activa hasta que elijas otra. Si escribiste una negra y la siguiente nota también es negra, no necesitás volver a presionar `5`: MuseScore mantiene la última duración.
 

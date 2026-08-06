@@ -1,12 +1,5 @@
 /* Blue identity — #2563EB — Tecnología Musical I */
 
-/* Leland Text — fuente oficial de MuseScore para glifos musicales Unicode */
-@font-face {
-  font-family: 'Leland Text';
-  src: url('../fonts/LelandText.otf') format('opentype');
-  font-display: swap;
-}
-
 :root {
   --md-primary-fg-color: #2563EB;
   --md-primary-fg-color--light: #60A5FA;
