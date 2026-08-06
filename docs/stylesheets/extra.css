@@ -1,15 +1,18 @@
 /* Blue identity — #2563EB — Tecnología Musical I */
 
-/* Bravura — SMuFL music font for note symbols (𝄞 ♩ ♪ 𝄽 etc.) */
+/* Bravura Text — SMuFL font for Unicode musical symbols */
 @font-face {
-  font-family: 'Bravura';
-  src: url('https://cdn.jsdelivr.net/gh/steinbergmedia/bravura@master/redist/woff2/Bravura.woff2') format('woff2');
+  font-family: 'Bravura Text';
+  src: url('https://cdn.jsdelivr.net/gh/steinbergmedia/bravura@master/redist/woff2/BravuraText.woff2') format('woff2');
   font-display: swap;
 }
 
-/* Apply Bravura as fallback for musical symbols across the site */
+/* Noto Music — fallback from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Music&display=swap');
+
+/* Apply music fonts as fallback for musical symbols */
 .md-typeset {
-  font-family: var(--md-text-font, system-ui), 'Bravura', sans-serif;
+  font-family: var(--md-text-font, system-ui), 'Bravura Text', 'Noto Music', sans-serif;
 }
 
 :root {
