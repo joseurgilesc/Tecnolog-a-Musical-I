@@ -100,37 +100,7 @@
 
 ---
 
-## Actividad en Classroom
-
-### Tarea: S02 — Plantilla de ensamble correctamente preparada
-
-1. **Creá dos partituras desde cero** usando el asistente de nueva partitura:
-   - **Partitura A: Cuarteto de cuerdas** (violín I, violín II, viola, violoncello). Usá la plantilla "Cuarteto de cuerdas". Tonalidad: Re mayor. Compás: 4/4. Tempo: ♩ = 100. 32 compases.
-   - **Partitura B: Pequeño ensamble de vientos** (flauta, oboe, clarinete en Si♭, fagot). Elegí los instrumentos manualmente. Tonalidad: Fa mayor. Compás: 3/4. Tempo: ♩ = 80. 24 compases.
-
-2. **Completá los metadatos** de ambas partituras: título, compositor (tu nombre), y subtítulo con el tipo de ensamble.
-
-3. **Verificá** que el orden de los instrumentos sigue la convención de agudos a graves dentro de cada familia.
-
-4. **Revisá** los nombres completos y abreviados de cada instrumento. En la Partitura B, asegurate de que el clarinete aparece como "Clarinete en Si♭" y no solo "Clarinete".
-
-5. **Exportá ambas partituras a PDF** y guardá los archivos .mscz correspondientes.
-
-### Entregables
-
-- [ ] `APELLIDO_Nombre_S02_CuartetoCuerdas_v01.mscz`
-- [ ] `APELLIDO_Nombre_S02_CuartetoCuerdas_v01.pdf`
-- [ ] `APELLIDO_Nombre_S02_EnsambleVientos_v01.mscz`
-- [ ] `APELLIDO_Nombre_S02_EnsambleVientos_v01.pdf`
-
-### Autoevaluación
-
-| Criterio | ✅ Logrado | ⚠️ En proceso | ❌ No logrado |
-|---|---|---|---|
-| Instrumentación correcta | Ambas partituras tienen los instrumentos solicitados en el orden convencional | Una partitura tiene error de orden u omisión | Faltan instrumentos en ambas |
-| Metadatos completos | Título, compositor y subtítulo presentes en ambas | Falta un metadato en una partitura | Sin metadatos |
-| Armadura, compás, tempo | Las tres configuraciones coinciden con lo solicitado en ambas | Un error en una partitura | Varios errores o configuraciones omitidas |
-| Exportación y nombres | 4 archivos entregados con la convención de nombres correcta | Falta un archivo o el nombre no sigue la convención | No se entregaron los archivos |
+Ver el ejercicio en Classroom.
 
 ---
 
