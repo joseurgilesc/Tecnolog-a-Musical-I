@@ -33,7 +33,6 @@ theme:
         name: Modo claro
 
 extra_css:
-  - https://fonts.googleapis.com/css2?family=Noto+Music&display=swap
   - stylesheets/extra.css
 
 extra_javascript:

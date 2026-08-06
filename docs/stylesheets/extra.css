@@ -1,15 +1,12 @@
-/* Noto Music — musical symbols fallback (must be first) */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Music&display=swap');
+/* Blue identity — #2563EB — Tecnología Musical I */
 
-/* Bravura Text — SMuFL font for Unicode musical symbols */
+/* Bravura Text — fuente musical local para glifos Unicode (♩♪𝅝𝅗𝅥𝅘𝅥𝅘𝅥𝅮𝄞𝄢) */
 @font-face {
   font-family: 'Bravura Text';
-  src: url('https://cdn.jsdelivr.net/gh/steinbergmedia/bravura@master/redist/woff2/BravuraText.woff2') format('woff2');
+  src: url('../fonts/BravuraText.woff2') format('woff2');
   font-display: swap;
-  unicode-range: U+1D100-1D1FF, U+2669-266F;
 }
 
-/* Blue identity — #2563EB — Tecnología Musical I */
 :root {
   --md-primary-fg-color: #2563EB;
   --md-primary-fg-color--light: #60A5FA;
