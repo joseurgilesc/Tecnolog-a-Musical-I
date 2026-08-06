@@ -87,7 +87,7 @@
     !!! warning "MIDI no es notación"
         Un archivo MIDI almacena qué nota se toca, cuándo y con qué intensidad, pero **no** contiene información sobre cómo debe verse en el pentagrama: no incluye articulaciones, dinámicas escritas, texto, ni decisiones de enharmonía. Importar un MIDI produce una partitura aproximada que requiere edición manual para ser publicable.
 
-**Nota**: El ejercicio en Classroom sería el que se indica allí.
+Ver el ejercicio en Classroom.
 
 ---
 
