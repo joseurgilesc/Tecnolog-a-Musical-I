@@ -87,63 +87,7 @@
     !!! warning "MIDI no es notación"
         Un archivo MIDI almacena qué nota se toca, cuándo y con qué intensidad, pero **no** contiene información sobre cómo debe verse en el pentagrama: no incluye articulaciones, dinámicas escritas, texto, ni decisiones de enharmonía. Importar un MIDI produce una partitura aproximada que requiere edición manual para ser publicable.
 
-???+ note "Organización de carpetas, nombres de archivo y versiones"
-
-    La organización del espacio de trabajo es una competencia profesional subestimada. Un músico que entrega archivos con nombres como `partitura_final_version_3_corregida_real.mscz` está comunicando desorden. La convención propuesta para este curso es:
-
-    ### Estructura de carpetas
-
-    ```
-    TecnologiaMusicalI/
-    ├── ejercicios/        ← ejercicios de clase, uno por sesión
-    │   ├── S01/
-    │   ├── S02/
-    │   └── ...
-    ├── evaluaciones/      ← exámenes y trabajos calificados
-    ├── recursos/          ← partituras de referencia, PDFs, archivos MIDI fuente
-    ├── exportaciones/     ← PDFs, PNGs, archivos de audio generados
-    └── respaldos/         ← copias de seguridad periódicas
-    ```
-
-    ### Convención de nombres
-
-    ```
-    APELLIDO_Nombre_SesionNN_Descripcion_v01.mscz
-    APELLIDO_Nombre_SesionNN_Descripcion_v01.pdf
-    ```
-
-    **Ejemplo**: `URGILES_Jose_S01_Instalacion_v01.mscz`
-
-    - El número de versión (`v01`, `v02`) avanza con cada corrección significativa.
-    - Nunca uses palabras como "final", "definitivo" o "corregido" en el nombre del archivo: la versión lo dice todo.
-    - Evitá espacios y caracteres especiales en los nombres de archivo.
-
----
-
-## Actividad en Classroom
-
-### Tarea: S01 — Instalación, verificación y organización
-
-1. **Instalá o verificá MuseScore Studio** en tu computador personal. Si usás un equipo del laboratorio, confirmá que la aplicación abre correctamente.
-2. **Configurá el idioma** de la interfaz y comprobá que el audio funciona: abrí una partitura de demo desde la pantalla de Inicio y reproducila.
-3. **Creá la estructura de carpetas** descrita arriba dentro de una carpeta principal llamada `TecnologiaMusicalI`.
-4. **Capturá la pantalla** de MuseScore Studio abierto con una partitura de demo cargada y el panel de reproducción visible.
-5. **Escribí una breve reflexión** (5–8 líneas) sobre dos usos concretos — académicos o profesionales — que le darías a MuseScore en tu carrera.
-
-### Entregables
-
-- [ ] Captura de pantalla de MuseScore Studio funcionando (PNG o JPG)
-- [ ] Reflexión escrita (PDF o texto en el mismo Classroom)
-- [ ] Ambas cosas organizadas con el formato de nombre: `APELLIDO_Nombre_S01_Instalacion_v01`
-
-### Autoevaluación
-
-| Criterio | ✅ Logrado | ⚠️ En proceso | ❌ No logrado |
-|---|---|---|---|
-| Instalación y audio | MuseScore abre y reproduce sonido sin errores | Abre pero no reproduce audio | No abre o no se instaló |
-| Organización de carpetas | Las 5 carpetas existen con los nombres indicados | Faltan 1–2 carpetas | No se creó la estructura |
-| Reflexión | Menciona ≥2 usos concretos con contexto profesional | Menciona 1 uso o ideas vagas | No entrega reflexión |
-| Nombres de archivo | Sigue la convención `APELLIDO_Nombre_S01_*_v01` | Se aproxima pero tiene errores | No sigue la convención |
+**Nota**: El ejercicio en Classroom sería el que se indica allí.
 
 ---
 
