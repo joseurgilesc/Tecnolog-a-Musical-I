@@ -136,47 +136,20 @@
 
 ## Actividad en Classroom
 
-### Tarea: S03 — Navegación, selección y reproducción
+### Tarea: S03 — Ingreso de ritmo con mouse y teclado
 
-> **Material necesario**: el docente proporcionará un archivo `ejercicio_S03_navegacion.mscz` con una partitura de al menos 60 compases y varios instrumentos. Este archivo contiene errores intencionales para las actividades 4 y 5.
+Abrí la partitura de referencia disponible en [Google Drive](https://drive.google.com/file/d/18MJa1_UqFADSpKYLNuMhWd0MFYnHkBj_/view).
 
-1. **Exploración de la partitura.** Abrí el archivo proporcionado por el docente y explorá la partitura usando:
-   - [Vista de página](#vista-pagina) y [vista continua](#vista-continua). Anotá en qué situaciones preferirías cada una.
-   - Tres niveles de [zoom](#zoom) distintos (25 %, 100 %, 200 %). Identificá para qué tarea usarías cada nivel.
-   - [Desplazamiento](#desplazamiento) con rueda del ratón, teclas de dirección y barra de desplazamiento.
-
-2. **Ejercicio de selección.** Realizá las siguientes selecciones en el archivo y capturá la pantalla para cada una:
-   - Una sola nota.
-   - Un rango de 4 compases completos.
-   - Todo el pentagrama de un instrumento (`Ctrl + A` con el pentagrama activo).
-   - Solo las notas de un compás usando `Shift + arrastrar`.
-
-3. **Reproducción desde un punto específico.** Seleccioná el compás 10, activá el [bucle](#bucle) para los compases 10 a 14, activá el [metrónomo](#metronomo) y reproducí. Escuchá con atención: ¿todas las notas suenan en el tiempo esperado?
-
-4. **Detección y corrección de errores.** En el archivo hay al menos 5 errores intencionales (notas fuera de lugar, ritmos incorrectos, compases con demasiadas o pocas figuras). Localizalos mediante reproducción y selección. Corregí cada uno y usá **Deshacer** para revertir los cambios.
-
-5. **Guardado de versiones.** A partir del archivo original, guardá tres versiones con nombres normalizados que reflejen lo que hiciste en cada paso. Ejemplo:
-   - `APELLIDO_Nombre_S03_original_v01.mscz` (archivo sin modificar)
-   - `APELLIDO_Nombre_S03_exploracion_v02.mscz` (después de las selecciones de la actividad 2)
-   - `APELLIDO_Nombre_S03_corregido_v03.mscz` (con los errores corregidos de la actividad 4)
-
-6. **Ficha personal de atajos.** Elaborá una tabla con los **diez atajos de teclado** que consideres más útiles para tu trabajo diario en MuseScore. Incluí: nombre del comando, atajo (Windows y macOS si aplica) y una frase explicando para qué sirve.
+1. **Creá una partitura nueva** con la misma instrumentación, armadura, compás y tempo que la partitura de referencia.
+2. **Ingresá solo el ritmo** de los primeros 2 sistemas usando el **mouse**: colocá las figuras y silencios sin preocuparte por las alturas (usá una misma nota repetida, por ejemplo Do central).
+3. **Repetí el mismo ejercicio** usando solo el **teclado** del computador: ingresá el ritmo de esos mismos 2 sistemas sin tocar el mouse.
+4. Compará ambas experiencias y anotá en cuál fuiste más rápido y en cuál cometiste menos errores.
 
 ### Entregables
 
-- [ ] 3 capturas de pantalla de las selecciones del punto 2
-- [ ] 3 archivos .mscz de las versiones del punto 5
-- [ ] Ficha de atajos (PDF o Google Docs)
-
-### Autoevaluación
-
-| Criterio | ✅ Logrado | ⚠️ En proceso | ❌ No logrado |
-|---|---|---|---|
-| Exploración (zoom, vista, desplazamiento) | Usó ambos modos de vista y al menos 3 niveles de zoom; describe preferencias con criterio | Usó los modos pero no documentó preferencias | No exploró los modos de visualización |
-| Selecciones | Las 4 selecciones solicitadas son correctas y están documentadas con capturas | 2–3 selecciones correctas o capturas incompletas | ≤1 selección correcta |
-| Errores detectados y corregidos | Detectó y corrigió ≥5 errores; usó Deshacer correctamente | Detectó 3–4 errores | ≤2 errores detectados |
-| Versiones guardadas | 3 archivos con nombres normalizados reflejando el flujo de trabajo | Faltan nombres normalizados o una versión | No entregó las versiones |
-| Ficha de atajos | 10 atajos con nombre, combinación de teclas y explicación clara | 6–9 atajos o explicaciones vagas | ≤5 atajos |
+- [ ] `APELLIDO_Nombre_S03_ritmo_mouse_v01.mscz`
+- [ ] `APELLIDO_Nombre_S03_ritmo_teclado_v01.mscz`
+- [ ] Breve reflexión (3–5 líneas) comparando ambos métodos de ingreso
 
 ---
 
