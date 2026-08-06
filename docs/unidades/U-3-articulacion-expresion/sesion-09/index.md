@@ -44,7 +44,6 @@
 
     También hay cuatro articulaciones accesibles desde la barra de herramientas de ingreso de notas (acento, marcato, staccato y tenuto).
 
-    > Insertar captura de la paleta de articulaciones con todos los símbolos visibles y la barra de herramientas de ingreso de notas resaltando los cuatro iconos de articulación.
 
     ### Reproducción automática
 
@@ -63,7 +62,6 @@
 
     El calderón indica una pausa o suspensión del pulso sobre una nota, un silencio o una barra de compás. Se encuentra en la paleta **Articulaciones**. En reproducción, MuseScore alarga automáticamente la duración de la nota (por defecto, al doble con un leve *rallentando*), aunque el valor exacto es configurable en el panel **Propiedades**.
 
-    > Insertar captura de un calderón sobre una nota final de frase, mostrando el panel de Propiedades con la sección de reproducción del calderón visible.
 
     !!! tip "Combinar articulaciones"
         MuseScore permite combinar varias articulaciones sobre una misma nota. Por ejemplo, un tenuto + staccato produce un *portato* (o *louré*): notas separadas pero con peso. Las opciones de alineación (mantener juntas, preferir cercanía a la cabeza) se configuran en **Formato → Estilo → Articulaciones y ornamentos**.
@@ -80,7 +78,6 @@
 
     Para cambiar el intervalo del trino (mayor, menor, aumentado, etc.), seleccionar el trino y usar los selectores de intervalo en el panel **Propiedades**. MuseScore mostrará la alteración correspondiente sobre el trino.
 
-    > Insertar captura de un trino con alteración (trino de tono con sostenido sobre la nota auxiliar) y el panel de Propiedades mostrando el selector de intervalo.
 
     ### Mordente
 
@@ -90,7 +87,6 @@
 
     Se aplican seleccionando la nota y haciendo clic en el mordente correspondiente en la paleta **Ornamentos**. El intervalo (segunda mayor o menor) se configura en el panel **Propiedades**.
 
-    > Insertar captura de un mordente superior y uno inferior lado a lado sobre dos notas consecutivas, con el panel de Propiedades abierto.
 
     ### Grupeto (turn)
 
@@ -144,7 +140,6 @@
     2. Mantener `Ctrl` (`Cmd` en macOS) y seleccionar la nota final.
     3. Presionar `S`. La ligadura cubrirá todas las notas en el rango.
 
-    > Insertar captura de una ligadura de expresión sobre 4 notas de diferente altura, mostrando los tiradores de inicio/fin visibles.
 
     ### Ligaduras entre voces y entre pentagramas
 
@@ -156,7 +151,6 @@
 
     Para notas ya escritas en **modo normal**: seleccionar la primera nota y presionar `+`.
 
-    > Insertar captura de una ligadura de prolongación entre dos blancas en diferente compás, conectando la misma altura.
 
     ### Propiedades compartidas
 

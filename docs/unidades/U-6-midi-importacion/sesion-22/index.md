@@ -91,7 +91,6 @@
     4. Si la nota aparece en el pentagrama y se escucha → el teclado funciona correctamente.
     5. Si no aparece → volver a verificar los pasos anteriores.
 
-    > Insertar captura de la ventana de Preferencias de MuseScore mostrando la sección Audio y MIDI, con un teclado MIDI detectado y habilitado.
 
 ???+ note "Modos de ingreso con teclado MIDI"
 
@@ -166,7 +165,6 @@
 
     **Ventaja**: combinás la velocidad del ingreso rítmico con el control de las duraciones.
 
-    > Insertar captura de la barra de herramientas de MuseScore mostrando los modos de ingreso: step-time, real-time automático, y real-time manual (si están disponibles en la interfaz).
 
     ### Comparación rápida
 
@@ -202,7 +200,6 @@
 
     Esto es útil si tu teclado tiene mejores sonidos de piano, cuerdas, o percusión que el soundfont por defecto de MuseScore.
 
-    > Insertar captura de la ventana de accesos directos MIDI en Preferencias, mostrando algunas asignaciones configuradas.
 
     ### Teclado MIDI virtual: cuando no tenés teclado físico
 

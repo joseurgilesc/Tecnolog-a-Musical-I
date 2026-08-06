@@ -54,7 +54,6 @@
     - **Los cambios de afinación son texto**, no notas: `(C → D)` o `Change D to Eb` como Staff Text sobre el pentagrama.
     - **Glissando de timbal**: si el timbal cambia de afinación DURANTE la ejecución (con el pedal), se puede escribir un glissando entre las dos notas. MuseScore lo reproduce como un barrido de frecuencia.
 
-    > Insertar captura de una partitura con timbales mostrando: ausencia de armadura, alteraciones accidentales, texto de cambio de afinación, y un glissando entre dos notas.
 
 ???+ note "Percusión no afinada: el pentagrama como mapa instrumental"
 
@@ -104,7 +103,6 @@
     - **Voz 2 (plica abajo)**: caja y toms (lo que toca la mano izquierda + rellenos).
     - En algunos casos, **Voz 3** para el bombo (lo que toca el pie derecho), aunque normalmente el bombo comparte voz 1 o voz 2 con plicas hacia abajo.
 
-    > Insertar captura de un pentagrama de batería con un patrón rítmico de 4 compases en estilo rock, mostrando las 3 capas (hi-hat voz 1 plica arriba, caja voz 2 plica abajo, bombo voz 2 plica abajo) con sus cabezas de nota correspondientes.
 
 ???+ note "Cabezas de nota especiales: el alfabeto visual de la percusión"
 
@@ -142,7 +140,6 @@
     - **Banda de concierto / Orquesta**: varios instrumentos de percusión pueden compartir un pentagrama con un mapa específico. Las cabezas ayudan a distinguir instrumentos: cuadradas para madera (woodblock), triangulares para metal (triángulo), X para platillos, circulares normales para tambores.
     - **Marching band (banda de marcha)**: cada tambor (caja, tenores, bombo) tiene su propio pentagrama individual. Las cabezas son todas circulares porque cada pentagrama representa un solo instrumento.
 
-    > Insertar captura de la paleta **Cabezas de nota** en MuseScore mostrando todas las opciones: normal, X, X con círculo, triángulo, diamante, cuadrado, paréntesis, etc.
 
 ???+ note "Líneas y articulaciones para percusión"
 
@@ -174,7 +171,6 @@
     - La palabra *choke* o *ch.* como Staff Text.
     - En MuseScore, se puede simular acortando la duración de la nota del platillo y agregando un silencio inmediatamente después.
 
-    > Insertar captura de un pasaje de percusión con: redoble de caja (doble barra oblicua), acentos en los golpes fuertes, choke en el crash, y un patrón de hi-hat con apertura/cierre.
 
 ---
 

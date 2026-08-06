@@ -110,7 +110,6 @@
     - Configuraciones del mezclador de audio (efectos, balance)
     - Paletas personalizadas
 
-    > Insertar captura del diálogo de exportación de MuseScore con las opciones de MusicXML visibles y la versión 4.0 seleccionada.
 
 ???+ note "Importar MusicXML en MuseScore"
 
@@ -140,7 +139,6 @@
 
     Si estás migrando de MuseScore 3 a MuseScore 4, NO uses MusicXML. MuseScore 4 abre archivos .mscz de MuseScore 3 directamente (y los convierte automáticamente). Usá MusicXML solo para intercambio entre programas de diferentes fabricantes.
 
-    > Insertar captura de un "antes y después": una partitura en Finale/Sibelius y la misma partitura importada en MuseScore vía MusicXML, señalando qué se preservó perfectamente y qué requirió ajuste.
 
 ???+ note "Exportación de audio y PDF: los formatos de entrega"
 

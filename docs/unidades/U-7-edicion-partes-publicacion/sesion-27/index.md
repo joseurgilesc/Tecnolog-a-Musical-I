@@ -53,7 +53,6 @@
     !!! warning "No mezcles fuentes musicales sin criterio"
         Cambiar la fuente musical a MITAD de la partitura es como escribir un párrafo con 3 tipografías distintas: un desastre visual. Elegí UNA fuente musical para toda la partitura. La coherencia tipográfica es un pilar del diseño editorial profesional. Si querés experimentar, hacelo en copias separadas.
 
-    > Insertar captura de la misma partitura en 3 fuentes distintas (Leland, Bravura, Gonville) lado a lado para comparación visual.
 
 ???+ note "Numeración de compases: el GPS del ensayo"
 
@@ -91,7 +90,6 @@
     !!! danger "El número de compás NUNCA debe ser invisible"
         Si los números de compás no se ven, el ensayo se detiene cada 2 minutos para que los músicos pregunten "¿en qué compás estamos?". El tiempo del director es CARO. No le hagas perder el tiempo por no configurar bien los números de compás.
 
-    > Insertar captura del diálogo de configuración de números de compás mostrando las opciones de intervalo, posición y estilo.
 
 ???+ note "Propiedades de la partitura: la identidad de la obra"
 
@@ -151,7 +149,6 @@
     !!! tip "Metadatos en la exportación"
         Cuando exportás un PDF desde MuseScore, los campos de Título, Compositor y Copyright se incrustan en los metadatos del archivo PDF. Esto significa que si alguien busca "Sonata en Sol menor" en su computadora, tu PDF va a aparecer en los resultados. Si dejás los metadatos vacíos, tu PDF es un fantasma digital: existe pero es imposible de encontrar.
 
-    > Insertar captura del diálogo de Propiedades de la partitura con los campos principales completados para una obra de ejemplo.
 
 ???+ note "Perfiles de estilo: tu identidad editorial"
 
@@ -191,7 +188,6 @@
     !!! tip "Creá perfiles para cada tipo de ensamble"
         Un perfil para música de cámara (A4 vertical, fuente Leland, márgenes generosos). Otro para orquesta (A3/Tabloide horizontal, fuente Petaluma, pentagramas compactos). Otro para coro (A5, fuente Gonville, letra más grande). Otro para ejercicios de clase (A4 vertical, números de compás visibles, márgenes amplios para anotaciones del profesor). Cada tipo de partitura tiene necesidades de formato distintas. No uses el mismo perfil para todo.
 
-    > Insertar captura del menú Formato → Guardar estilo y del diálogo para cargar un estilo previamente guardado.
 
 ---
 

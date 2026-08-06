@@ -37,7 +37,6 @@
     1. Seleccioná la **duración** (valor rítmico) que querés escribir.
     2. Indicá la **altura** (nombre de la nota, con o sin alteración).
 
-    > Insertar captura del modo de ingreso activo: barra de herramientas de ingreso con los valores rítmicos visibles y el cursor azul posicionado en el pentagrama.
 
     ### Seleccionar la duración
 
@@ -87,7 +86,6 @@
     | Subir una octava | `Ctrl + ↑` (`Cmd + ↑` en macOS) |
     | Bajar una octava | `Ctrl + ↓` (`Cmd + ↓` en macOS) |
 
-    > Insertar captura del ingreso con teclado: vista del pentagrama con una nota recién ingresada y el cursor avanzando a la siguiente posición, mostrando la barra de ingreso con los valores seleccionados.
 
     ### Ingreso con ratón
 
@@ -102,7 +100,6 @@
 
     **Ventaja**: no necesitás memorizar las letras de las notas ni las teclas de duración. **Limitación**: es más lento que el teclado en pasajes largos y puede ser impreciso en notas muy agudas o graves (MuseScore podría interpretar el clic como dirigido al pentagrama vecino).
 
-    > Insertar captura del ingreso con ratón: puntero sobre el pentagrama mostrando la previsualización de la nota antes del clic.
 
     ### Comparación
 
@@ -152,7 +149,6 @@
 
     También podés hacer clic derecho en el pentagrama (en modo ingreso) o usar el botón de silencio en la barra de herramientas.
 
-    > Insertar captura de la barra de herramientas de ingreso: íconos de valores rítmicos, puntillo, silencio y alteraciones visibles.
 
     !!! info "Los silencios no son opcionales"
         En MuseScore, cada compás debe estar rítmicamente completo. Si dejás pulsos vacíos sin escribir silencios, MuseScore los mostrará automáticamente como silencios grises (no imprimibles) o generará un compás incompleto. Acostumbrate a escribir TODOS los silencios desde el principio.
@@ -203,7 +199,6 @@
 
     MuseScore crea automáticamente la segunda nota con la misma altura y la ligadura entre ambas.
 
-    > Insertar captura de una ligadura de prolongación entre dos notas (ej. Do blanca ligada a Do negra): la línea curva une dos cabezas de nota adyacentes del mismo sonido.
 
     !!! warning "No confundas ligadura de prolongación con ligadura de fraseo"
         - **Ligadura de prolongación** (`T`): une dos notas del mismo sonido. Suma duraciones.

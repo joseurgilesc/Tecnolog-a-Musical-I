@@ -68,7 +68,6 @@
 
     MuseScore dibuja automáticamente una línea horizontal de extensión desde la sílaba "A" hasta la última nota del melisma.
 
-    > Insertar captura de un pentagrama con letra: mostrar sílabas normales, guiones entre sílabas, líneas de melisma, todo en contexto.
 
     ### Navegación rápida al ingresar letra
 
@@ -134,7 +133,6 @@
     !!! tip "Cifrado vs. escritura de acordes"
         El cifrado armónico y los acordes escritos en el pentagrama son dos cosas distintas. El cifrado (`Ctrl + K`) es texto sobre el pentagrama que lee el intérprete. Las notas del acorde son sonidos reales que escribe el compositor. En una *lead sheet* profesional, la melodía está escrita en notas y la armonía está en cifrado sobre el pentagrama. No se duplica la información: no escribas las notas del acorde si ya pusiste el cifrado, a menos que tengas una razón específica.
 
-    > Insertar captura de un pentagrama con melodía en notas y cifrado armónico sobre los tiempos fuertes, mostrando variedad de acordes (mayores, menores, séptimas, bajo alterado).
 
 ???+ note "Texto de pentagrama y texto de sistema"
 
@@ -175,7 +173,6 @@
     - **Posición** (arriba/abajo del pentagrama).
     - **Color** (útil para edición, no se imprime por defecto).
 
-    > Insertar captura de una partitura de cuerdas con *pizz.* (Staff Text en violín I), *arco* (Staff Text en violín I), y *Allegro moderato* (System Text visible en todos los pentagramas).
 
 ???+ note "Marcas de ensayo: navegación para el director"
 
@@ -204,7 +201,6 @@
 
     Las marcas de ensayo NO afectan la reproducción ni los saltos de navegación. Son puramente una ayuda visual para el ensayo. No las confundas con segnos, Codas o repeticiones: las marcas de ensayo no producen saltos en la ejecución.
 
-    > Insertar captura de una partitura orquestal con marcas de ensayo A, B, C, D visibles sobre el primer violín y replicadas automáticamente en todos los pentagramas.
 
     !!! tip "No pongas marcas de ensayo en cada compás"
         Las marcas de ensayo deben colocarse en puntos estructurales: inicio de sección, cambio de tempo, entrada de solista, pasaje difícil. Si ponés una marca cada 2 compases, pierden su utilidad. La frecuencia típica es cada 8–16 compases o en cada cambio de sección.

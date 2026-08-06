@@ -31,7 +31,6 @@
 
     El cambio entre modos se hace desde la barra de herramientas o desde el menú **Ver → Vista de página / Vista continua**.
 
-    > Insertar captura comparativa de la misma partitura en Vista de página (izquierda) y Vista continua (derecha): notar la diferencia en los saltos y el espaciado.
 
     ### Zoom y desplazamiento
 
@@ -67,7 +66,6 @@
     | **Seleccionar todo** | `Ctrl + A` / `Cmd + A` | Toda la partitura |
     | **Voz específica** | Usar los botones de voz (1, 2, 3, 4) en la barra de herramientas | Solo las notas de la voz seleccionada, ignorando las otras |
 
-    > Insertar captura de una selección de rango (varios compases resaltados en azul): mostrar el aspecto visual de una selección activa con la barra de herramientas contextual visible.
 
     !!! warning "Clic en el lugar correcto"
         Si hacés clic sobre una nota, seleccionás **esa nota**. Si hacés clic en el espacio vacío de un compás, seleccionás **todo el compás**. Si hacés clic sobre un pentagrama pero fuera de los compases, no seleccionás nada. La diferencia es sutil pero fundamental.
@@ -121,7 +119,6 @@
     | Ir al inicio de la partitura | `Inicio` |
     | Ir al final de la partitura | `Fin` |
 
-    > Insertar captura de la barra de herramientas de reproducción: botones de transporte (inicio, retroceder, reproducir/pausar, avanzar, fin), metrónomo, bucle, tempo y volumen.
 
     ### Reproducción desde un punto específico
 

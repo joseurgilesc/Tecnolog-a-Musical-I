@@ -34,7 +34,6 @@
 
     La secuencia completa: `N` → `5` → `Ctrl + 3` → ingresar tres notas.
 
-    > Insertar captura de la creación de un tresillo: el cursor azul sobre el pentagrama, el indicador `3` apareciendo sobre el grupo de tres corcheas recién ingresadas.
 
     ### Atajos para valores irregulares
 
@@ -59,7 +58,6 @@
     2. Seleccionar una nota **dentro** del tresillo.
     3. Crear el tresillo interior (ej. `4` → `Ctrl + 3`).
 
-    > Insertar captura de tresillos anidados: un tresillo de corcheas donde una de las corcheas es a su vez otro tresillo de semicorcheas.
 
     ### Crear un valor irregular personalizado
 
@@ -180,7 +178,6 @@
 
     Para indicar accelerando o ritardando gráficamente, MuseScore permite barras que se abren en abanico. Seleccionar la barra y en el panel **Propiedades** elegir **Acelerar** o **Desacelerar**. Nota: esto es solo visual; no afecta la reproducción.
 
-    > Insertar captura comparativa: un mismo pasaje rítmico con barrado convencional (por pulsos) y con barrado personalizado (unión entre pulsos), mostrando el panel de propiedades de barra.
 
 ???+ note "Notas de adorno: apoyaturas y acciaccaturas"
 
@@ -208,7 +205,6 @@
     - Si se muestra la plica y la barra.
     - Su posición (arriba o abajo).
 
-    > Insertar captura de una apoyatura y una acciaccatura antes de una negra, con los dos tipos visibles lado a lado.
 
 ---
 

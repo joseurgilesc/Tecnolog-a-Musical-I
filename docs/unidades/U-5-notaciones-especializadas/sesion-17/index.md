@@ -65,7 +65,6 @@
 
     En el piano, las inversiones se escriben con la nota del bajo en el pentagrama inferior y el resto del acorde en el superior. La nota después de la barra (C/E) indica qué nota debe tocar la mano izquierda.
 
-    > Insertar captura de un pentagrama de piano con un acorde de Do mayor en estado fundamental, primera inversión y segunda inversión. Etiquetar cada inversión con su cifrado americano y mostrar la disposición entre las dos manos.
 
 ???+ note "Cifrado americano avanzado: más allá de la tríada"
 
@@ -110,7 +109,6 @@
     - **Mano izquierda**: fundamental + séptima (o fundamental + quinta).
     - **Mano derecha**: tercera + séptima + tensiones (9, 11, 13) en la octava adecuada.
 
-    > Insertar captura de un cifrado armónico sobre un pentagrama de piano mostrando: Cmaj7 → Am7 → Dm7 → G7 → Cmaj7 (ii-V-I en Do mayor), con los acordes escritos en notación de piano (voicings) debajo.
 
 ???+ note "Bajo cifrado: el lenguaje armónico del Barroco"
 
@@ -137,7 +135,6 @@
     - ♭5 = la quinta sobre el bajo es descendida medio tono.
     - Una alteración SOLA (sin número) se aplica a la tercera.
 
-    > Insertar captura de un pentagrama de bajo con cifrado barroco: notas del bajo con números 6, 6/4, 7, 6/5 debajo. Al lado, mostrar la "realización" del bajo cifrado: cómo se escribirían esas mismas armonías en un pentagrama de piano.
 
     ### ¿Por qué aprender bajo cifrado si no se usa hoy?
 
@@ -167,7 +164,6 @@
 
     **Indicador visual**: las notas en cross-staff mantienen las plicas apuntando hacia el pentagrama de origen. Si una nota de la mano derecha cae en el pentagrama inferior, sus plicas apuntarán hacia arriba (dirección de la mano derecha).
 
-    > Insertar captura de un pasaje pianístico con cross-staff: una escala descendente en la mano derecha que "cruza" al pentagrama inferior en los últimos 4 compases, mostrando plicas hacia arriba en el pentagrama inferior.
 
     ### Voicing pianístico: distribución de notas entre manos
 
@@ -190,7 +186,6 @@
     !!! tip "La regla de las plicas en piano"
         En un pentagrama de piano, la dirección de la plica comunica qué mano toca qué, incluso cuando las notas están en el mismo pentagrama. Si ves plicas arriba y abajo en el pentagrama superior, estás viendo dos capas: la melodía (plica arriba) y las notas de relleno (plica abajo). No son "errores": son voicing intencional.
 
-    > Insertar captura de un pasaje de Chopin o Debussy mostrando múltiples voces, cross-staff y voicing característico, con anotaciones explicativas sobre la distribución entre manos.
 
     ### Silencios en notación de piano
 

@@ -43,7 +43,6 @@
     1. Seleccionar una nota, silencio o compás (excepto el primero).
     2. Hacer clic en la clave deseada en la paleta **Claves**.
 
-    > Insertar captura de un cambio de clave: pasaje en clave de sol que cambia a clave de fa en el mismo pentagrama, mostrando cómo las notas se reposicionan automáticamente.
 
     !!! tip "Un cambio de clave no transpone: reposiciona"
         Al insertar un cambio de clave, MuseScore **no cambia la altura de las notas**. Simplemente las reubica visualmente para que sigan sonando igual. Si un Do₄ estaba en la primera línea adicional inferior en clave de sol, al cambiar a clave de fa aparecerá en el segundo espacio (pero seguirá siendo Do₄).
@@ -88,7 +87,6 @@
     | 5 ♭ | Re♭ mayor | Si♭ menor |
     | 6 ♭ | Sol♭ mayor | Mi♭ menor |
 
-    > Insertar captura de la paleta de armaduras mostrando la progresión completa de sostenidos y bemoles.
 
     ### Eliminar una armadura
 
@@ -167,7 +165,6 @@
     4. Marcar **Transponer armaduras** si la tonalidad también debe cambiar.
     5. Clic en **OK**.
 
-    > Insertar captura del diálogo de transposición con las opciones cromática/diatónica visibles y el selector de intervalo.
 
     ### Instrumentos transpositores
 

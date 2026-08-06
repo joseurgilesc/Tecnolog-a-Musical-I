@@ -38,7 +38,6 @@
     2. Abrir la paleta **Barras de compás** (o **Compases**).
     3. Arrastrar la barra de repetición sobre la barra existente, o hacer clic en la barra nueva.
 
-    > Insertar captura de la paleta de Barras de compás mostrando las opciones: simple, doble, inicio de repetición, fin de repetición, fin-inicio, final.
 
     ### ¿Qué pasa si solo ponés el fin de repetición?
 
@@ -51,7 +50,6 @@
 
     Podés tener repeticiones dentro de repeticiones. Por ejemplo, una sección A que se repite, y dentro de ella una subsección que también se repite. MuseScore maneja esto correctamente en la reproducción siguiendo el orden lógico: repeticiones internas primero, luego las externas.
 
-    > Insertar captura de una partitura con repeticiones anidadas: barra inicio-fin externa (c.1–16) y barra inicio-fin interna (c.5–8).
 
 ???+ note "Voltas: finales alternativos (primera y segunda vez)"
 
@@ -93,7 +91,6 @@
     !!! warning "La volta y la barra de repetición deben coincidir"
         La volta 1 DEBE terminar con una barra de fin de repetición para que MuseScore entienda que ahí se repite. Si ponés la volta sobre una barra normal, MuseScore no repetirá y la volta no tendrá efecto.
 
-    > Insertar captura de una partitura con volta 1 (2 compases, terminando en barra de fin de repetición) y volta 2 (2 compases, terminando en barra doble o simple), con la lista de repetición visible en el panel Propiedades.
 
 ???+ note "Saltos de navegación: D.C., D.S., Fine y Coda"
 
@@ -152,7 +149,6 @@
     2. Observar el cursor de reproducción: debe seguir el camino lógico de los saltos.
     3. Si la pieza se salta la Coda o no vuelve al segno, revisar que todos los elementos (segno, D.S., To Coda, Coda) estén correctamente anclados.
 
-    > Insertar captura de la paleta Repeticiones y saltos mostrando D.C., D.S., Fine, To Coda, Coda, y Segno.
 
     !!! warning "No mezcles D.C. y D.S. sin necesidad"
         Si tenés una estructura D.C. al Fine, no pongas también un segno que no se usa. Cada salto debe tener un propósito claro en el mapa de navegación. Menos es más: una partitura con demasiadas marcas de navegación confunde al intérprete.
@@ -172,7 +168,6 @@
 
     El segno se coloca al inicio del compás (sobre la barra izquierda) donde debe reanudarse la ejecución. La convención es que quede visible sobre el pentagrama, no dentro de él.
 
-    > Insertar captura de un segno colocado sobre la barra de compás, con el resto de la partitura visible para contexto.
 
 ???+ note "Barras de compás especiales: más que simples líneas"
 
@@ -209,7 +204,6 @@
 
     Si ponés una barra final en medio, MuseScore puede interpretar que la pieza terminó ahí y no reproducir lo que sigue. Usá barra doble para cambios de sección internos.
 
-    > Insertar captura de la paleta de Barras de compás con todos los tipos desplegados y etiquetados.
 
 ---
 

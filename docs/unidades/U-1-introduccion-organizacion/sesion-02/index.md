@@ -22,6 +22,8 @@
 
     Toda partitura en MuseScore comienza con el **asistente de nueva partitura**. Accedés a él desde la pantalla de Inicio con el botón **Nueva partitura** o desde el menú **Archivo → Nuevo**.
 
+    ![Asistente de nueva partitura en MuseScore](https://handbook.musescore.org/~gitbook/image?url=https%3A%2F%2F3455969201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FP81HaeapLzzJGtG6DSwH%252Fuploads%252Fgit-blob-09de6ede505764b756e8ebffae21f656283e9741%252Fcreate-new-score-1440x900.gif%3Falt%3Dmedia&width=768&dpr=3&quality=100&sign=47ec765c&sv=2)
+
     El asistente tiene cuatro pasos:
 
     1. **Información general**: título, subtítulo, compositor, letrista, copyright.
@@ -29,7 +31,6 @@
     3. **Armadura de tonalidad**: seleccionar la tonalidad inicial.
     4. **Indicación de compás, tempo y número de compases**: establecer la métrica, la velocidad y la extensión.
 
-    > Insertar captura del asistente de nueva partitura — paso 1 (información general): campos de título, compositor y otros metadatos.
 
     Una vez creada, la partitura se abre en la vista principal y todos estos parámetros pueden modificarse posteriormente desde el menú **Formato → Estilo → Partitura** o haciendo clic derecho sobre los elementos directamente en el score.
 
@@ -42,7 +43,6 @@
     | **Plantilla** | Instrumentos, orden, llaves y corchetes ya configurados. Lista para escribir. | Proyectos que siguen un formato estándar: orquesta, banda sinfónica, cuarteto de cuerdas, coro SATB, piano solo. |
     | **Desde cero** | Control total sobre qué instrumentos incluir, su orden y sus propiedades. | Ensambles no convencionales, combinaciones personalizadas, ejercicios con instrumentación específica. |
 
-    > Insertar captura del selector de plantillas (paso 2 del asistente): lista de familias instrumentales y plantillas predefinidas.
 
     ### Agregar, ordenar y eliminar instrumentos
 
@@ -56,7 +56,6 @@
     !!! info "Orden convencional del score"
         El orden de los instrumentos en una partitura orquestal sigue una convención aceptada internacionalmente: maderas, metales, percusión, arpa/piano/celesta, cuerdas. Dentro de cada familia, del más agudo al más grave (flautín → flauta → oboe → corno inglés, etc.). Respetar este orden comunica profesionalismo y facilita la lectura del director.
 
-    > Insertar captura del panel de selección de instrumentos (paso 2, modo "Elegir instrumentos"): búsqueda, lista de disponibles, lista de seleccionados, botones de agregar/quitar/reordenar.
 
 ???+ note "Datos de la partitura: título, compositor y más"
 
@@ -98,7 +97,6 @@
 
     También podés escribir texto de tempo (ej. "Allegro", "Andante") y MuseScore ajustará la reproducción en consecuencia. El texto de tempo es **independiente** del valor BPM: podés mostrar "Allegro" y configurar internamente ♩ = 132.
 
-    > Insertar captura del paso 3 y 4 del asistente: selector de armadura, selector de compás, campo de tempo y selector de número de compases iniciales.
 
 ---
 

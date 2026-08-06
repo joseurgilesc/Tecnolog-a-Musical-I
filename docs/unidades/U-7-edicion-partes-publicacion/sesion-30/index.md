@@ -130,7 +130,6 @@
     - **Control de versiones**: tenés "MiObra_v2.mscz" y "MiObra_v3.mscz". ¿Qué diferencias hay?
     - **Detección de errores**: comparar tu versión con una versión de referencia para encontrar discrepancias.
 
-    > Insertar captura de MuseScore mostrando el resultado de Score Comparison: una partitura con notas en verde, rojo y azul, y la leyenda de colores visible.
 
 ???+ note "Accesibilidad: diseñar partituras para TODOS los músicos"
 

@@ -43,7 +43,6 @@
     | Varios compases antes | Seleccionar → `Ctrl + Ins` (`Cmd + Ins`) → ingresar cantidad |
     | Menú contextual | Clic derecho en compás → **Insertar compases** → elegir ubicación y cantidad |
 
-    > Insertar captura del proceso: antes/después de insertar 2 compases en medio de una partitura; el contenido original se desplaza visiblemente hacia la derecha.
 
     ### Eliminar compases
 
@@ -125,7 +124,6 @@
     2. Elegir la nueva indicación en la paleta.
     3. Revisar que las barras de compás siguientes no hayan quedado con material desplazado.
 
-    > Insertar captura de una partitura con cambio de compás: 4/4 en los primeros 8 compases y 6/8 a partir del compás 9, mostrando el re-agrupamiento automático.
 
     ### Compases de cortesía (courtesy time signatures)
 
@@ -192,7 +190,6 @@
 
     Esto agrega una barra **visual** después de la nota seleccionada, sin dividir realmente el compás. Para dividir un compás en dos (con barras reales), usar **Herramientas → Compases → Dividir compás antes de la nota/silencio seleccionado**.
 
-    > Insertar captura de la paleta de Líneas divisorias con los tipos visibles: simple, doble, final, repetición inicial, repetición final.
 
 ???+ note "Numeración de compases"
 

@@ -58,7 +58,6 @@
     2. Hacer clic en el número de voz deseado (1, 2, 3 o 4) en la barra de herramientas.
     3. Ingresar las notas normalmente. Todas las notas ingresadas pertenecerán a la voz seleccionada.
 
-    > Insertar captura de la barra de herramientas de ingreso de notas mostrando los botones de selección de voz 1–4 resaltados.
 
     ### Cambiar la voz de notas ya escritas
 
@@ -87,7 +86,6 @@
        - Los silencios se colocan en la parte **baja** del pentagrama.
     4. Donde la Voz 2 tenga silencio pero la Voz 1 tenga nota, MuseScore inserta automáticamente silencios ocultos o visibles según el contexto.
 
-    > Insertar captura de un pentagrama con Voz 1 (azul, plicas arriba) y Voz 2 (verde, plicas abajo) visibles simultáneamente, con algunas notas en una voz y silencios en la otra.
 
     ### Regla de duraciones completas
 
@@ -131,7 +129,6 @@
     2. Presionar `V` (atajo de visibilidad). El silencio se vuelve gris (oculto en la vista final, pero sigue existiendo).
     3. O desde el panel **Propiedades → Visible**, desmarcar la casilla.
 
-    > Insertar captura de un pentagrama con 3 voces activas en un compás denso: Voz 1 (azul), Voz 2 (verde), Voz 3 (naranja), mostrando un silencio oculto en gris.
 
     !!! warning "No abuses de las voces 3 y 4"
         Antes de usar la Voz 3, preguntate: ¿esto se podría resolver con dos voces y mejor distribución de plicas? ¿Sería más legible dividir el contenido en dos pentagramas? En notación profesional, rara vez se usan más de 2 voces en un pentagrama, excepto en contextos muy específicos como percusión o contrapunto denso.
@@ -175,7 +172,6 @@
 
     La funcionalidad exacta puede variar según la versión. En versiones recientes, se encuentra en **Herramientas → Explotar** (*Explode*), que separa el contenido de un pentagrama en varios pentagramas según las voces.
 
-    > Insertar captura del menú Herramientas → Voces mostrando las opciones de intercambio, movimiento y separación.
 
     ### Silencios por voz: visibilidad y ocultamiento
 
@@ -213,7 +209,6 @@
     2. Ir a **Formato → Estilo → Pentagramas** (o **Partes**).
     3. Configurar la agrupación de corchetes y llaves para cada sección de la partitura.
 
-    > Insertar captura del panel de Instrumentos mostrando un ensamble mixto con corchetes para la familia de cuerdas y vientos, y llave para los dos pentagramas del piano.
 
     ### Corchetes y llaves en el contexto de este curso
 

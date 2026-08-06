@@ -61,7 +61,6 @@
     !!! tip "El loop es tu mejor amigo para pasajes difíciles"
         Nunca revises un pasaje complejo escuchándolo UNA SOLA VEZ. Ponelo en loop, reducí el tempo al 60%, cerrá los ojos, y escuchá 4 o 5 veces seguidas. La primera vez notás lo obvio (una nota que suena muy mal). La cuarta vez empezás a notar lo sutil (el balance entre voces, la articulación que no se aplicó, la dinámica que falta).
 
-    > Insertar captura del panel de reproducción de MuseScore con los controles etiquetados y el loop activo sobre un fragmento seleccionado.
 
 ???+ note "El sintetizador y los soundfonts: qué suena y por qué"
 
@@ -119,7 +118,6 @@
     !!! warning "Un soundfont NO es un sintetizador creativo"
         No podés "diseñar sonidos" con un soundfont. No tiene osciladores, filtros ni envolventes editables como un sintetizador (Vital, Serum, Sylenth1). El soundfont es un REPRODUCTOR de sonidos pregrabados. Si necesitás diseño sonoro creativo, exportá el MIDI a un DAW y usá sintetizadores reales.
 
-    > Insertar captura del mezclador con la lista desplegable de soundfonts visibles para una pista, mostrando MS Basic, Muse Sounds y la opción "Cambiar soundfont...".
 
 ???+ note "La reproducción como herramienta de revisión crítica"
 
@@ -170,7 +168,6 @@
     !!! danger "El peligro de confiar solo en Muse Sounds"
         Muse Sounds es hermoso. Pero puede ENMASCARAR errores de orquestación. Un acorde mal espaciado en los metales suena "aceptable" con Muse Sounds pero sería IRREPRODUCIBLE por músicos reales. La reproducción de MuseScore es una aproximación, no una orquesta real. Si tu partitura va a ser tocada por humanos, la revisión auditiva es necesaria pero NO suficiente. Siempre complementá con análisis visual de los rangos instrumentales y las posibilidades técnicas reales.
 
-    > Insertar captura del protocolo de revisión: pantalla dividida mostrando (1) el loop activo sobre un pasaje, (2) el mezclador con un instrumento en Solo, (3) el tempo reducido al 60%.
 
 ???+ note "El mezclador: balance y claridad"
 
@@ -200,7 +197,6 @@
     !!! tip "Un truco de editor profesional"
         Para verificar la independencia de las voces en una textura contrapuntística: silenciá TODOS los instrumentos menos dos. Escuchá la pareja. ¿Tiene sentido musical la conversación entre esos dos? Repetí con cada par posible. Si un instrumento no "dialoga" bien con NINGÚN otro, probablemente sobra.
 
-    > Insertar captura del mezclador mostrando al menos 4 pistas con diferentes configuraciones de volumen, pan y reverb, y una pista en Solo.
 
 ---
 

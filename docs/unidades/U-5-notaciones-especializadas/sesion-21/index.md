@@ -120,7 +120,6 @@
     2. Desmarcar "Barras de compás continuas" o ajustar "Extender barras de compás a través de los grupos de pentagramas".
     3. Esta opción es más común en música coral (SATB) o en ediciones históricas.
 
-    > Insertar captura de MuseScore mostrando la paleta de brackets/llaves y una partitura con los brackets aplicados: maderas agrupadas con `[`, piano con `{`, cuerdas con `[`.
 
 ???+ note "Generación y edición de partes individuales"
 
@@ -164,7 +163,6 @@
     - Umbral mínimo: ¿a partir de cuántos compases se agrupan? (Típicamente 2 o 3).
     - Numeración: sí/no, posición.
 
-    > Insertar captura de una parte de trombón en MuseScore mostrando: pausas multi-compás agrupadas (bloque con número "24"), cues en tamaño pequeño ("Trompeta"), marcas de ensayo (letra "C"), y un salto de página en un silencio de blanca con calderón.
 
 ???+ note "Formato de página para partituras profesionales"
 
@@ -212,7 +210,6 @@
     - **Salto de página** (paleta **Saltos y espaciadores → Salto de página**): fuerza nueva página.
     - **Espaciador** (paleta **Saltos y espaciadores → Espaciador**): NO es un salto. Agrega espacio horizontal o vertical entre pentagramas o notas. Útil para "abrir" visualmente una partitura congestionada.
 
-    > Insertar captura de la misma partitura ANTES y DESPUÉS de aplicar formato profesional: ocultar pentagramas vacíos, ajustar márgenes, saltos de sistema estratégicos.
 
 ???+ note "Trabajar con ensambles grandes: flujo de trabajo en MuseScore"
 

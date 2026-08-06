@@ -38,7 +38,6 @@
     | Extraer la parte de cada músico | Generación automática de particellas |
     | Trabajar con un DAW o instrumento virtual | Exportación e importación [MIDI](#midi) |
 
-    > Insertar captura de la pantalla de inicio de MuseScore Studio 4: vista de Inicio con proyectos recientes, plantillas y opción de nueva partitura.
 
 ???+ note "Instalación y configuración inicial"
 
@@ -46,7 +45,6 @@
 
     MuseScore Studio está disponible para Windows, macOS y Linux. El instalador se descarga desde [musescore.org](https://musescore.org).
 
-    > Insertar captura de la sección "Download and Installation" del Handbook: página de descarga con los botones para cada sistema operativo.
 
     <iframe width="100%" height="400" src="https://www.youtube.com/embed/grKX-cBEEmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 8px; margin: 12px 0;"></iframe>
 

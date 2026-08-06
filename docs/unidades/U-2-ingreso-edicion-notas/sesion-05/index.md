@@ -35,7 +35,6 @@
     | **Seleccionar todo** | `Ctrl + A` (`Cmd + A` en macOS) | Transponer la partitura completa, cambiar el tempo de toda la obra |
     | **Extender con teclado** | `Shift + ←`/`Shift + →` para extender nota por nota; `Shift + Ctrl + ←`/`→` para compás por compás | Extender la selección sin usar el ratón |
 
-    > Insertar captura de una selección de rango: varios compases resaltados con el rectángulo azul característico, mostrando que abarca múltiples pentagramas.
 
     ### Diferencia visual: nota seleccionada vs. compás seleccionado
 
@@ -79,7 +78,6 @@
 
     El contenido pegado **reemplaza** lo que hubiera en el destino. Si pegás 4 compases sobre 2 compases existentes, los últimos 2 se sobrescriben y los primeros 2 se insertan desplazando el resto.
 
-    > Insertar captura del proceso de copiar y pegar: selección de 4 compases (rectángulo azul) en el pentagrama superior, y resultado pegado en el pentagrama inferior.
 
     ### Repetir con `R`
 
@@ -154,7 +152,6 @@
 
     MuseScore alternará entre las escrituras enarmónicas posibles. Si necesitás más control, usá **Herramientas → Reescribir alturas** o el panel de propiedades.
 
-    > Insertar captura del cambio enarmónico: una nota de Fa♯ seleccionada, y al presionar `J` se convierte en Sol♭, mostrando el cambio visual en el pentagrama.
 
 ???+ note "Transposición e inserción/eliminación de compases"
 
@@ -175,7 +172,6 @@
     4. Marcá "Transponer armaduras" si querés que la armadura también cambie.
     5. Clic en **OK**.
 
-    > Insertar captura del diálogo de transposición: ventana de Herramientas → Transponer con las opciones "Cromáticamente" / "Diatónicamente", el selector de intervalo y los checkboxes de "Transponer armaduras" y "Transponer símbolos de acordes".
 
     ### Insertar compases
 

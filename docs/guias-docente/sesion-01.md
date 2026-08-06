@@ -8,7 +8,7 @@
 
 ## Objetivo de la sesión
 
-Que el estudiante instale o verifique MuseScore Studio, reconozca los componentes principales de la interfaz, comprenda los formatos de archivo del ecosistema MuseScore y establezca una estructura de carpetas profesional para el trabajo del semestre.
+Que el estudiante instale o verifique MuseScore Studio, reconozca los componentes principales de la interfaz, comprenda los formatos de archivo del ecosistema MuseScore y se familiarice con el flujo de trabajo en Google Classroom para entregas y organizaciu00f3n de archivos.
 
 ---
 
@@ -84,11 +84,6 @@ Publicar como **Tarea** en Google Classroom:
    - Panel de propiedades
    - Mezclador
    - Barra de herramientas de reproducción
-5. Creá la estructura de carpetas del curso dentro de una carpeta llamada `TecnologiaMusicalI`:
-   - `ejercicios/`, `evaluaciones/`, `recursos/`, `exportaciones/`, `respaldos/`
-6. Hacé una captura de pantalla donde se vea MuseScore abierto con una partitura cargada.
-7. Escribí una reflexión de 5 a 8 líneas: ¿en qué dos situaciones concretas de tu vida académica o profesional usarías MuseScore? ¿Por qué?
-
 ### Rúbrica formativa
 
 | Criterio | ✅ Logrado | ⚠️ En proceso | ❌ No logrado |

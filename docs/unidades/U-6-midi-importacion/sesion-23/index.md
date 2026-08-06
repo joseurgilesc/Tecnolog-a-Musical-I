@@ -85,7 +85,6 @@
     2. **¿La armadura y el compás son correctos?** MuseScore intenta detectarlos, pero puede fallar. Verificá al inicio de la partitura.
     3. **¿Hay pentagramas duplicados o innecesarios?** Archivos Type 1 con muchas pistas MIDI generan muchos pentagramas. "Pista 3", "Pista 7" son nombres genéricos. Eliminá los que no uses.
 
-    > Insertar captura del diálogo de importación MIDI de MuseScore, mostrando las 5 opciones principales con los valores recomendados resaltados.
 
 ???+ note "Limpieza de partitura importada: los 7 problemas clásicos"
 
@@ -159,7 +158,6 @@
     - Reproducir la partitura. Si una dinámica o cambio de tempo ocurre en un momento extraño, seleccionarlo, eliminarlo y reinsertarlo manualmente.
     - Las dinámicas MIDI (CC7 = volumen) suelen ser problemáticas porque representan el volumen ABSOLUTO del canal, no una indicación musical. Generalmente es mejor eliminarlas todas y reescribir las dinámicas manualmente.
 
-    > Insertar captura de un "antes y después": un fragmento MIDI recién importado (ritmos extraños, enarmonías incorrectas, plicas caóticas) y el mismo fragmento después de la limpieza.
 
 ???+ note "Importación avanzada: configuraciones especiales"
 

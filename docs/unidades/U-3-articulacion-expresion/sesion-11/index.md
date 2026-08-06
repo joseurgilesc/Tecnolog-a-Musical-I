@@ -48,7 +48,6 @@
     3. La línea se aplica inicialmente con una longitud predeterminada (generalmente hasta la nota siguiente).
     4. Seleccionar el tirador final y arrastrarlo hasta la nota de destino, o usar `Shift + →` para extenderla.
 
-    > Insertar captura de la paleta de Líneas con todos los tipos visibles: ligaduras, 8vas, glissandi, arpegios, pedal, trinos, *cresc.*, *dim.*, etc.
 
     ### Editar la extensión de una línea
 
@@ -94,7 +93,6 @@
     Para **15ma**:
     - Usar el símbolo **15ma alta** o **15ma bassa** de la misma paleta.
 
-    > Insertar captura de un pasaje de flauta con 8va sobre un grupo de notas agudas, mostrando la línea punteada con el texto `8va` y el tirador visible.
 
     ### Reproducción de las líneas de octava
 
@@ -132,7 +130,6 @@
     - **Longitud**: el arpegio se ajusta automáticamente a la extensión vertical del acorde. Si hay notas en dos pentagramas (piano), usar el **arpegio de gran pentagrama** que cruza ambos.
     - **Extensión manual**: si el arpegio no cubre todo el acorde, arrastrar el tirador del extremo hasta la nota correspondiente.
 
-    > Insertar captura de un acorde de cuatro notas con arpegio (dirección estándar) y un segundo acorde con arpegio hacia abajo, mostrando el panel de Propiedades.
 
     ### Arpegio entre pentagramas (cross-staff arpeggio)
 
@@ -159,7 +156,6 @@
     - **Reproducción**: por defecto, el glissando SÍ tiene efecto sonoro. MuseScore interpola entre las dos alturas generando un barrido cromático. Se puede desactivar en Propiedades → Reproducción si solo se quiere el efecto visual.
     - **Texto**: se puede añadir texto como "gliss." o "port." sobre la línea.
 
-    > Insertar captura de un glissando recto entre un Do4 y un Sol5, y un glissando ondulado entre un Mi4 y un La5, con el panel de Propiedades visible.
 
     ### Diferencia entre glissando, portamento y slide
 
@@ -187,7 +183,6 @@
     - Fin: `*` (levantar pedal) o `❭`.
     - Opcional: línea horizontal entre ambos, o ángulos `❬____❭` que indican el momento de levantar y volver a pisar.
 
-    > Insertar captura de una línea de pedal debajo de un pentagrama de piano, mostrando *Ped.* al inicio, la línea horizontal y el `*` al final.
 
     ### Estilos de notación de pedal
 
@@ -227,7 +222,6 @@
 
     Por defecto, estos símbolos NO afectan la reproducción (son principalmente visuales). Sin embargo, en **Propiedades** se puede activar el efecto de "pausa" ajustando la duración de la interrupción en milisegundos.
 
-    > Insertar captura de una coma de respiración colocada entre dos frases de una melodía de viento, y una cesura entre dos secciones contrastantes.
 
     ### Respiraciones en instrumentos de viento y canto
 

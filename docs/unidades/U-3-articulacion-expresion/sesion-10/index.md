@@ -49,7 +49,6 @@
     2. Presionar `Ctrl + D` (`Cmd + D` en macOS). Aparece un popup con las dinámicas disponibles.
     3. Hacer clic en la deseada o escribir su abreviatura (ej. `pp`, `mf`, `ff`).
 
-    > Insertar captura del popup de dinámicas con las opciones visibles y una dinámica ya colocada en la partitura.
 
     ### Combinar dinámicas con texto
 
@@ -74,7 +73,6 @@
     1. Seleccionar el rango.
     2. Hacer clic en el regulador deseado en la paleta **Dinámicas**.
 
-    > Insertar captura de un regulador de crescendo entre un ***p*** y un ***f***, mostrando cómo el regulador se alinea automáticamente con ambas dinámicas.
 
     ### Reguladores con dinámicas en los extremos
 
@@ -123,7 +121,6 @@
     - Cambiar la figura usando la ventana de **Símbolos especiales** (`Shift + F2`).
     - Ajustar el número de BPM.
 
-    > Insertar captura de una marca de tempo "Allegro ♩ = 120" al inicio de una partitura, con el panel de Propiedades mostrando la sección Tempo.
 
     ### Cambios graduales de tempo
 
@@ -172,7 +169,6 @@
     5. **Volume (Volumen)**: deslizador para ajustar el volumen del canal.
     6. **Mute / Solo**: Mute silencia el canal; Solo silencia todos los demás.
 
-    > Insertar captura del Mixer completo con todos los canales visibles y un canal de instrumento expandido mostrando las secciones Sound, Audio FX, Aux sends, Pan y Volume.
 
     ### Cambio de sonido a mitad de la partitura
 

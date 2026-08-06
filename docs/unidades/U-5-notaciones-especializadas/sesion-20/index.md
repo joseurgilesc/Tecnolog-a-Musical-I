@@ -120,7 +120,6 @@
     !!! tip "Regla de oro"
         Componé SIEMPRE en tono de concierto. Imprimí SIEMPRE en tono escrito. Si componés en tono escrito, vas a escribir acordes que no existen, armonías incorrectas, y notas fuera de rango sin darte cuenta.
 
-    > Insertar captura mostrando la misma partitura en tono de concierto vs. tono escrito, con un círculo destacando la diferencia en el pentagrama del clarinete: en tono de concierto muestra Do, en tono escrito muestra Re.
 
 ???+ note "Los instrumentos transpositores uno por uno"
 
@@ -224,7 +223,6 @@
     - [ ] **Verificá las partes una por una.** Abrí la parte del clarinete en Si♭. Si la obra está en Mi♭ Mayor concierto, la parte del clarinete debe mostrar 1 bemol (Fa Mayor). Si muestra 3 bemoles, algo está MAL configurado.
     - [ ] **Revisá las notas extremas.** En la parte impresa del clarinete, la nota más grave debe ser Mi₃ (escrito). Si ves un Re₃, está fuera de rango.
 
-    > Insertar captura de una partitura general en MuseScore alternando entre tono de concierto y tono escrito, con flechas señalando el cambio de armadura en el pentagrama del clarinete (de 3 ♭ a 1 ♭) y de la trompa (de 3 ♭ a 2 ♭).
 
 ---
 

@@ -133,7 +133,6 @@
     2. Agregar **número de página** visible.
     3. Verificar que los **números de compás** aparezcan al inicio de cada sistema.
 
-    > Insertar captura de MuseScore mostrando una parte de clarinete completa: pentagrama 7.5 mm, salto de página en un silencio, pausa multi-compás "14", cue del oboe en tamaño pequeño, marcas de ensayo visibles, nombre del instrumento en cada página.
 
 ???+ note "Partes combinadas y personalizadas"
 

@@ -64,7 +64,6 @@
     3. Ingresar las notas en el pentagrama estándar normalmente. MuseScore las refleja automáticamente en la tablatura, eligiendo la posición (cuerda/traste) más lógica.
     4. Si MuseScore elige una posición que no es la que querés (ej. tocar un Mi₄ en la 2ª cuerda traste 5 en lugar de 1ª cuerda al aire), seleccioná la nota en la tablatura y movela con `Ctrl + ↑ / ↓` para cambiar de cuerda.
 
-    > Insertar captura de un sistema guitarra + tablatura en MuseScore mostrando el pentagrama estándar arriba y la tablatura abajo, con una melodía simple (escala de Do mayor en primera posición) reflejada en ambos.
 
 ???+ note "Técnicas de guitarra en notación: bends, slides, hammer-ons y más"
 
@@ -112,7 +111,6 @@
     3. Arrastrar el símbolo sobre la nota.
     4. Si el slide es entre dos notas concretas, seleccionar ambas notas y aplicar el glissando entre ellas.
 
-    > Insertar captura de un pasaje de guitarra con: bend de un tono (7b9), slide ascendente (5/7), hammer-on (5h7) y pull-off (7p5), todo en contexto de un lick de blues.
 
     ### Hammer-on y Pull-off (ligados de guitarra)
 
@@ -185,7 +183,6 @@
         - **Tablatura**: para melodías y solos donde la digitación exacta es crítica. Ideal para aprender una canción nota por nota.
         - **Los tres juntos**: la forma más completa de escribir para guitarra en MuseScore: pentagrama estándar + tablatura + cifrado americano + diagramas de trastes. El guitarrista elige qué capa de información usar.
 
-    > Insertar captura de un sistema de guitarra en MuseScore con: pentagrama estándar (melodía con plicas), tablatura (número de trastes), cifrado americano (C, Am, G7), y diagramas de trastes sobre el primer acorde de cada cambio.
 
 ???+ note "Afinaciones alternativas y bajo eléctrico"
 

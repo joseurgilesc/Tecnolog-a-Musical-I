@@ -68,7 +68,6 @@
     !!! warning "No cambies la escala para 'hacer que entre'. Ese es el camino del amateur."
         Si tu partitura no entra en la página, tenés 3 opciones, en este orden: (1) ajustar saltos de sistema para distribuir mejor los compases, (b) reducir la cantidad de compases por sistema, (c) reducir la escala como ÚLTIMO recurso. El amateur reduce la escala a ciegas y termina con una partitura microscópica ilegible. El profesional primero agota las opciones de formato.
 
-    > Insertar captura del diálogo de Configuración de página mostrando las pestañas de Tamaño de papel, Márgenes y las opciones de escala.
 
 ???+ note "Diseño y distribución: cómo respira la partitura"
 
@@ -102,7 +101,6 @@
     3. **¿Cada sistema tiene sentido musical?** Un sistema NO debería empezar o terminar en medio de una ligadura de expresión o un regulador (crescendo/diminuendo). Si pasa, ajustá los saltos.
     4. **¿La página se ve equilibrada?** Los pentagramas no deberían estar todos en la mitad superior de la página con la mitad inferior vacía (ni viceversa). Si pasa, ajustá la distancia entre sistemas o usá espaciadores.
 
-    > Insertar captura de "antes y después": una misma partitura con formato automático de MuseScore (default) y la misma partitura con formato manual profesional (saltos de página, espaciadores, estiramientos ajustados).
 
 ???+ note "Saltos de sistema, página y sección: tomando el control"
 
@@ -155,7 +153,6 @@
 
     **Ejemplo**: tenés una sonata en tres movimientos (I. Allegro, II. Adagio, III. Presto) en UN SOLO archivo .mscz. Insertás un salto de sección al final del primer movimiento. El segundo movimiento empieza en página nueva, con doble barra, y con la numeración de compases reiniciada en 1. El músico lee "compás 1 del Adagio", no "compás 147 de la obra completa".
 
-    > Insertar captura de una partitura con 3 saltos visibles: un salto de sistema (línea punteada sobre el compás), un salto de página (ícono de página), y un salto de sección (doble barra + línea punteada).
 
 ???+ note "Espaciadores: la herramienta de precisión"
 
@@ -180,7 +177,6 @@
     2. **No abuses del espaciador hacia arriba.** Acercar demasiado dos pentagramas puede hacer que las notas de uno invadan el espacio del otro. Especialmente peligroso con pentagramas que tienen notas muy agudas (líneas adicionales superiores) y el pentagrama de arriba que tiene notas muy graves (líneas adicionales inferiores).
     3. **El espaciador de pentagrama se aplica al compás seleccionado y a todos los siguientes hasta el próximo espaciador.** Es "pegajoso". Si querés que el efecto se aplique a un solo sistema, insertá otro espaciador al inicio del siguiente sistema con el valor por defecto (0).
 
-    > Insertar captura de la paleta "Saltos y espaciadores" con los distintos tipos de espaciadores visibles y un ejemplo de uso: un sistema con espaciador de pentagrama aplicado entre dos instrumentos.
 
 ---
 
