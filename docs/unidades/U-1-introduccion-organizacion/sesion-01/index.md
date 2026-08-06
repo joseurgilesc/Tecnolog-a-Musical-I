@@ -48,6 +48,8 @@
 
     > Insertar captura de la sección "Download and Installation" del Handbook: página de descarga con los botones para cada sistema operativo.
 
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/grKX-cBEEmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 8px; margin: 12px 0;"></iframe>
+
     Durante la instalación, el programa ofrece crear una cuenta opcional en MuseScore.com. Esta cuenta permite sincronizar partituras en la nube y publicar en la comunidad, pero **no es necesaria** para trabajar localmente. El curso se enfoca en el trabajo con archivos locales.
 
     ### Configuración de idioma
