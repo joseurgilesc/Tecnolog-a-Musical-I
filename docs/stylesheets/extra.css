@@ -1,9 +1,9 @@
 /* Blue identity — #2563EB — Tecnología Musical I */
 
-/* Noto Music — cubre U+1D100-U+1D1FF (glifos musicales Unicode) */
+/* Leland Text — fuente oficial de MuseScore para glifos musicales Unicode */
 @font-face {
-  font-family: 'Noto Music';
-  src: url('../fonts/NotoMusic-Regular.ttf') format('truetype');
+  font-family: 'Leland Text';
+  src: url('../fonts/LelandText.otf') format('opentype');
   font-display: swap;
 }
 
