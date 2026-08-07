@@ -5,7 +5,7 @@
 ---
 
 ??? info "Glosario de términos"
-    Consultá esta tabla cuando encuentres un término que no conozcas.
+    Consulta esta tabla cuando encuentres un término que no conozcas.
 
     | Término | Definición |
     |---|---|
@@ -36,8 +36,8 @@
 
     Una vez activado, **el orden de operaciones es siempre el mismo**:
 
-    1. Seleccioná la **duración** (valor rítmico) que querés escribir.
-    2. Indicá la **altura** (nombre de la nota, con o sin alteración).
+    1. Selecciona la **duración** (valor rítmico) que quieres escribir.
+    2. Indica la **altura** (nombre de la nota, con o sin alteración).
 
 
     ### Seleccionar la duración
@@ -53,8 +53,8 @@
 
     Las teclas `4`, `5` y `6` (corchea, negra, blanca) están en el centro del teclado numérico y corresponden a los valores más usados. Las figuras más cortas usan números más bajos; las más largas, números más altos.
 
-    !!! tip "Pensá la duración primero, la altura después"
-        El error más frecuente al empezar es querer escribir la nota directamente. En MuseScore **primero se elige cuánto dura** y después **qué nota es**. Si invertís el orden, el programa no va a interpretar lo que esperás.
+    !!! tip "Piensa la duración primero, la altura después"
+        El error más frecuente al empezar es querer escribir la nota directamente. En MuseScore **primero se elige cuánto dura** y después **qué nota es**. Si inviertes el orden, el programa no va a interpretar lo que esperas.
 
     ### Salir del modo de ingreso
 
@@ -76,14 +76,14 @@
 
     | Paso | Acción |
     |---|---|
-    | 1 | Activá el modo de ingreso (`N`) |
-    | 2 | Seleccioná la duración (`1`–`9`) |
-    | 3 | Presioná la letra de la nota (`A`–`G`) |
-    | 4 | Opcional: aplicá alteración antes (`+`, `-`, `=`) |
+    | 1 | Activa el modo de ingreso (`N`) |
+    | 2 | Selecciona la duración (`1`–`9`) |
+    | 3 | Presiona la letra de la nota (`A`–`G`) |
+    | 4 | Opcional: aplica alteración antes (`+`, `-`, `=`) |
 
     **Ejemplo**: para escribir un Fa♯ negra, la secuencia es: `N` → `5` → `+` → `F`.
 
-    MuseScore elige automáticamente la octava más cercana a la nota anterior. Si necesitás cambiar la octava:
+    MuseScore elige automáticamente la octava más cercana a la nota anterior. Si necesitas cambiar la octava:
 
     | Acción | Atajo |
     |---|---|
@@ -97,12 +97,12 @@
 
     | Paso | Acción |
     |---|---|
-    | 1 | Activá el modo de ingreso (`N`) |
-    | 2 | Seleccioná la duración en la barra de herramientas |
-    | 3 | Posicioná el cursor sobre la línea o espacio deseado (aparece una previsualización de la nota) |
-    | 4 | Hacé clic para insertar la nota |
+    | 1 | Activa el modo de ingreso (`N`) |
+    | 2 | Selecciona la duración en la barra de herramientas |
+    | 3 | Posiciona el cursor sobre la línea o espacio deseado (aparece una previsualización de la nota) |
+    | 4 | Haz clic para insertar la nota |
 
-    **Ventaja**: no necesitás memorizar las letras de las notas ni las teclas de duración. **Limitación**: es más lento que el teclado en pasajes largos y puede ser impreciso en notas muy agudas o graves (MuseScore podría interpretar el clic como dirigido al pentagrama vecino).
+    **Ventaja**: no necesitas memorizar las letras de las notas ni las teclas de duración. **Limitación**: es más lento que el teclado en pasajes largos y puede ser impreciso en notas muy agudas o graves (MuseScore podría interpretar el clic como dirigido al pentagrama vecino).
 
 
     ### Comparación
@@ -113,7 +113,7 @@
     | Acordes complejos con alteraciones | **Teclado**: `Shift` + letras es más preciso |
     | Primeros ejercicios, estás aprendiendo | **Ratón**: la previsualización ayuda a entender dónde cae cada nota |
     | Notas muy agudas o graves fuera del pentagrama | **Teclado** + ajuste de octava |
-    | Editar una nota suelta ya escrita | **Ratón**: clic directo sobre lo que querés cambiar |
+    | Editar una nota suelta ya escrita | **Ratón**: clic directo sobre lo que quieres cambiar |
 
 ???+ note "Valores rítmicos, puntillos y silencios"
 
@@ -129,7 +129,7 @@
     | <img src="../../../img/figuras/fusa.svg" width="25" alt="Fusa"> | Fusa | `2` | 32 |
     | <img src="../../../img/figuras/semifusa.svg" width="25" alt="Semifusa"> | Semifusa | `1` | 64 |
 
-    La duración seleccionada permanece activa hasta que elijas otra. Si escribiste una negra y la siguiente nota también es negra, no necesitás volver a presionar `5`: MuseScore mantiene la última duración.
+    La duración seleccionada permanece activa hasta que elijas otra. Si escribiste una negra y la siguiente nota también es negra, no necesitas volver a presionar `5`: MuseScore mantiene la última duración.
 
     ### Puntillo
 
@@ -137,7 +137,7 @@
     - Negra con puntillo = negra + corchea (1.5 tiempos en 4/4)
     - Blanca con puntillo = blanca + negra (3 tiempos en 4/4)
 
-    Para ingresarlo: presioná `.` **después** de seleccionar la duración y **antes** de ingresar la nota. Ejemplo: `N` → `5` → `.` → `C` produce un Do negra con puntillo.
+    Para ingresarlo: presiona `.` **después** de seleccionar la duración y **antes** de ingresar la nota. Ejemplo: `N` → `5` → `.` → `C` produce un Do negra con puntillo.
 
     El puntillo se puede aplicar a silencios de la misma manera.
 
@@ -151,11 +151,11 @@
     | `N` → `4` → `0` | Silencio de corchea |
     | `N` → `4` → `.` → `0` | Silencio de corchea con puntillo |
 
-    También podés hacer clic derecho en el pentagrama (en modo ingreso) o usar el botón de silencio en la barra de herramientas.
+    También puedes hacer clic derecho en el pentagrama (en modo ingreso) o usar el botón de silencio en la barra de herramientas.
 
 
     !!! info "Los silencios no son opcionales"
-        En MuseScore, cada compás debe estar rítmicamente completo. Si dejás pulsos vacíos sin escribir silencios, MuseScore los mostrará automáticamente como silencios grises (no imprimibles) o generará un compás incompleto. Acostumbrate a escribir TODOS los silencios desde el principio.
+        En MuseScore, cada compás debe estar rítmicamente completo. Si dejas pulsos vacíos sin escribir silencios, MuseScore los mostrará automáticamente como silencios grises (no imprimibles) o generará un compás incompleto. Acostúmbrate a escribir TODOS los silencios desde el principio.
 
 ???+ note "Alteraciones, acordes y ligaduras de prolongación"
 
@@ -169,11 +169,11 @@
     | Bemol | `-` | ♭ |
     | Becuadro | `=` | ♮ |
 
-    También podés usar los botones de la barra de herramientas de ingreso.
+    También puedes usar los botones de la barra de herramientas de ingreso.
 
-    **Regla importante**: si escribís un Fa♯ en un compás, todos los Fa siguientes dentro del MISMO compás serán Fa♯ aunque no lleven el signo escrito. MuseScore aplica esta convención de notación automáticamente. Al cambiar de compás, la alteración se cancela (salvo que la armadura la incluya).
+    **Regla importante**: si escribes un Fa♯ en un compás, todos los Fa siguientes dentro del MISMO compás serán Fa♯ aunque no lleven el signo escrito. MuseScore aplica esta convención de notación automáticamente. Al cambiar de compás, la alteración se cancela (salvo que la armadura la incluya).
 
-    Para cambiar una alteración después de ingresada: seleccioná la nota y usá `↑` (sube un semitono, escribe con sostenidos) o `↓` (baja un semitono, escribe con bemoles).
+    Para cambiar una alteración después de ingresada: selecciona la nota y usa `↑` (sube un semitono, escribe con sostenidos) o `↓` (baja un semitono, escribe con bemoles).
 
     ### Acordes
 
@@ -186,10 +186,10 @@
     | 3 | `Shift + G` (añade Sol sobre el Mi) |
     | Resultado | Acorde de Do mayor en negra |
 
-    !!! tip "Construí los acordes desde abajo hacia arriba"
-        MuseScore añade las notas hacia arriba desde la nota base. Por eso conviene ingresar primero la nota más grave del acorde y luego ir agregando las más agudas con `Shift`. Si empezás por la nota aguda, tendrías que usar `Ctrl + ↓` para bajar las siguientes.
+    !!! tip "Construye los acordes desde abajo hacia arriba"
+        MuseScore añade las notas hacia arriba desde la nota base. Por eso conviene ingresar primero la nota más grave del acorde y luego ir agregando las más agudas con `Shift`. Si empiezas por la nota aguda, tendrías que usar `Ctrl + ↓` para bajar las siguientes.
 
-    También podés ingresar acordes con el ratón (clic en las posiciones deseadas) o con teclado MIDI (presionando varias teclas simultáneamente).
+    También puedes ingresar acordes con el ratón (clic en las posiciones deseadas) o con teclado MIDI (presionando varias teclas simultáneamente).
 
     ### Ligaduras de prolongación
 
@@ -197,9 +197,9 @@
 
     Para ingresar una ligadura de prolongación:
 
-    1. Ingresá la primera nota normalmente.
-    2. Seleccioná la **duración** de la segunda nota.
-    3. Presioná `T` (de *tie*).
+    1. Ingresa la primera nota normalmente.
+    2. Selecciona la **duración** de la segunda nota.
+    3. Presiona `T` (de *tie*).
 
     MuseScore crea automáticamente la segunda nota con la misma altura y la ligadura entre ambas.
 
@@ -207,54 +207,11 @@
     !!! warning "No confundas ligadura de prolongación con ligadura de fraseo"
         - **Ligadura de prolongación** (`T`): une dos notas del mismo sonido. Suma duraciones.
         - **Ligadura de fraseo** (paleta "Líneas" o atajo `S`): curva sobre varias notas de diferente altura. Indica articulación legato.
-        Si usás una cuando corresponde la otra, la reproducción y la lectura serán incorrectas.
+        Si usas una cuando corresponde la otra, la reproducción y la lectura serán incorrectas.
 
 ---
 
-## Actividad en Classroom
-
-### Tarea: S04 — Transcripción con ingreso de notas
-
-> **Material necesario**: el docente proporcionará un PDF con una melodía de 16 compases para transcribir. La melodía incluye redondas, blancas, negras, corcheas, semicorcheas, puntillos, alteraciones, ligaduras de prolongación y silencios en compás de 4/4.
-
-1. **Creá una partitura nueva** para el instrumento que indique el docente (flauta, violín u oboe). Configurá la armadura, el compás y el tempo que aparecen en el PDF. La partitura debe tener 16 compases exactos.
-
-2. **Transcribí la melodía** usando **teclado de computador** (letras `A`–`G`). Ingresá:
-    - Todas las notas con sus duraciones correctas (redondas, blancas, negras, corcheas, semicorcheas).
-    - Todos los silencios donde corresponda (tecla `0`).
-    - Todos los puntillos donde aparezcan (tecla `.`).
-    - Todas las alteraciones accidentales (teclas `+`, `-`, `=`).
-    - Todas las ligaduras de prolongación (tecla `T`).
-
-3. **Construí al menos dos acordes** (de 3 notas cada uno) en los lugares indicados en el PDF, usando `Shift + letra` para añadir notas a la nota base.
-
-4. **Verificá la completitud de los compases**: seleccioná cada compás y revisá que las duraciones sumen exactamente lo que indica la métrica (en 4/4, cada compás debe sumar 4 tiempos).
-
-5. **Reproducí la melodía** y comparala con la referencia del docente. Corregí cualquier nota, ritmo o silencio que no coincida.
-
-6. **Repetí el ejercicio** (en una segunda partitura o en compases adicionales) usando únicamente el **ratón** para ingresar las notas. No uses el teclado para las alturas.
-
-7. **Compará tu experiencia**: escribí un párrafo breve (5–8 líneas) comparando el ingreso con teclado y con ratón. ¿Cuál te resultó más rápido? ¿Más preciso? ¿En qué situaciones usarías cada uno?
-
-### Entregables
-
-- [ ] `APELLIDO_Nombre_S04_Teclado_v01.mscz` (melodía ingresada con teclado)
-- [ ] `APELLIDO_Nombre_S04_Teclado_v01.pdf`
-- [ ] `APELLIDO_Nombre_S04_Raton_v01.mscz` (melodía ingresada con ratón)
-- [ ] `APELLIDO_Nombre_S04_Raton_v01.pdf`
-- [ ] Captura de pantalla mostrando el modo de ingreso activo (con el cursor azul visible)
-- [ ] Párrafo de comparación teclado vs. ratón
-
-### Autoevaluación
-
-| Criterio | ✅ Logrado | ⚠️ En proceso | ❌ No logrado |
-|---|---|---|---|
-| Alturas | Todas las notas coinciden con el PDF fuente; no hay notas omitidas ni desplazadas | 1–3 errores de altura | ≥4 errores de altura |
-| Ritmo y duraciones | Todas las figuras, puntillos y silencios son correctos; cada compás suma lo indicado por la métrica | 1–2 compases con errores rítmicos o incompletos | ≥3 compases con errores de ritmo |
-| Alteraciones y ligaduras | Todas las alteraciones accidentales y ligaduras de prolongación están presentes y son correctas | Falta 1 alteración o 1 ligadura | Faltan ≥2 alteraciones o ligaduras |
-| Acordes | Los acordes solicitados tienen las 3 notas correctas y se construyeron con el método indicado | Un acorde incompleto o con error | Acordes no realizados |
-| Método de ingreso | Ambos archivos reflejan métodos de ingreso distintos (teclado y ratón); la captura muestra el modo de ingreso activo | No es evidente qué método se usó en cada archivo o falta la captura | Solo entregó un archivo o no diferenció los métodos |
-| Comparación escrita | El párrafo identifica ventajas y limitaciones concretas de cada método con ejemplos de la experiencia | Comparación vaga sin ejemplos concretos | No entregó la comparación |
+Ver el ejercicio en Classroom.
 
 ---
 
