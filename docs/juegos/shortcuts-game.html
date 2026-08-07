@@ -26,6 +26,14 @@
   #fullscreen-overlay .sub { color:var(--text-dim); font-size:14px; }
   #fs-btn { margin-top:24px; padding:14px 40px; background:var(--primary); color:white; border:none; border-radius:10px; font-size:18px; cursor:pointer; }
   #fs-btn:hover { background:#7986cb; transform:scale(1.03); }
+  #close-fs {
+    display: none; position: fixed; top: 16px; right: 20px; z-index: 1000;
+    width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.3);
+    background: rgba(0,0,0,0.5); color: white; font-size: 20px; cursor: pointer;
+    align-items: center; justify-content: center; transition: all 0.2s;
+  }
+  #close-fs.show { display: flex; }
+  #close-fs:hover { background: var(--error); border-color: var(--error); }
 </style>
 </head>
 <body>
@@ -43,6 +51,7 @@
   <p class="sub">o haz clic aquí</p>
   <button id="fs-btn">🎮  JUGAR</button>
 </div>
+<button id="close-fs" title="Salir de pantalla completa">✕</button>
 
 <script>
 const params = new URLSearchParams(window.location.search);
@@ -123,6 +132,8 @@ let flashWrong = 0, flashCorrect = 0;
 let pressedMods = new Set(), pressedKey = null;
 let pendingEval = false;
 let errors = [];
+let correctSet = new Set(); // unique shortcuts answered correctly
+let won = false, elapsedTime = 0;
 
 function setPlatform(p) {
   platform = p;
@@ -207,11 +218,19 @@ function evaluateAnswer() {
   const isCorrect = matchesShortcut(expected);
 
   if (isCorrect) {
-    score++; streak++; if(streak>bestStreak)bestStreak=streak;
+    score++; totalCorrect++; streak++; if(streak>bestStreak)bestStreak=streak;
+    correctSet.add(`${platform}:${currentShortcut.fn}`);
     feedback='✓ ¡Correcto!'; feedbackTimer=35; flashCorrect=8;
+    // Victory check: all shortcuts answered correctly
+    if (correctSet.size >= shortcuts.length) {
+      won = true; elapsedTime = 60 - timeLeft;
+      gameActive = false; gameOver = true; showSummary = true;
+      pressedMods.clear(); pressedKey = null;
+      return;
+    }
     setTimeout(()=>{if(gameActive&&!gameOver)nextQuestion();},500);
   } else {
-    score--; streak=0;
+    score--; totalWrong++; streak=0;
     errors.push({fn:currentShortcut.fn, expected:codeToDisplay(expected.key,expected.mods), typed:getCurrentCombo()});
     feedback=`✗ Era: ${codeToDisplay(expected.key,expected.mods)}`; feedbackTimer=80; flashWrong=12;
     setTimeout(()=>{if(gameActive&&!gameOver)nextQuestion();},1200);
@@ -294,15 +313,25 @@ document.addEventListener('keyup', e => {
 
 // ── Fullscreen ──
 const fsOverlay = document.getElementById('fullscreen-overlay');
+const closeFsBtn = document.getElementById('close-fs');
 document.getElementById('fs-btn').addEventListener('click', () => {
   document.documentElement.requestFullscreen().catch(() => {
     fsOverlay.classList.remove('show');
     if (!gameActive && !gameOver) startGame();
   });
 });
+closeFsBtn.addEventListener('click', () => {
+  if (document.fullscreenElement) document.exitFullscreen();
+});
 document.addEventListener('fullscreenchange', () => {
-  if (document.fullscreenElement) { fsOverlay.classList.remove('show'); if(!gameActive&&!gameOver) startGame(); }
-  else if (gameActive && !gameOver) fsOverlay.classList.add('show');
+  if (document.fullscreenElement) {
+    fsOverlay.classList.remove('show');
+    closeFsBtn.classList.add('show');
+    if(!gameActive&&!gameOver) startGame();
+  } else {
+    closeFsBtn.classList.remove('show');
+    if (gameActive && !gameOver) fsOverlay.classList.add('show');
+  }
 });
 
 document.getElementById('btn-pc').addEventListener('click',()=>setPlatform('pc'));
@@ -353,7 +382,37 @@ new p5(p => {
     }
 
     else if (gameOver) {
-      if (showSummary && errors.length>0) {
+      if (won) {
+        // Victory screen
+        p.fill(SUCCESS); p.textSize(24); p.textAlign(p.CENTER); p.textStyle(p.BOLD);
+        p.text('🏆  ¡Todos completados!',340,130); p.textStyle(p.NORMAL);
+        p.textSize(14); p.fill(TEXT);
+        p.text(`Puntaje: ${score}  •  Tiempo: ${elapsedTime.toFixed(1)}s`,340,170);
+        p.textSize(12); p.fill(TEXT_DIM);
+        p.text(`Racha máxima: ${bestStreak}  •  ${totalCorrect} aciertos / ${totalWrong} fallos`,340,195);
+
+        if (errors.length > 0) {
+          p.fill(255); p.textSize(16); p.textStyle(p.BOLD);
+          p.text('Errores para repasar:',340,240); p.textStyle(p.NORMAL);
+          let y=260;
+          p.textSize(11); p.textAlign(p.LEFT);
+          const startIdx = Math.max(0, errors.length-4);
+          for(let i=startIdx;i<errors.length;i++){
+            p.fill(ERROR); p.text('✗',52,y);
+            p.fill(TEXT); p.text(errors[i].fn,72,y);
+            p.fill(TEXT_DIM); p.text(`→ ${errors[i].expected}`,420,y);
+            y+=22; if(y>340)break;
+          }
+        }
+
+        p.fill(SURFACE); p.stroke(PRIMARY); p.strokeWeight(1.5);
+        p.rect(100,370,480,44,8); p.noStroke();
+        p.fill(TEXT); p.textSize(13); p.textAlign(p.CENTER);
+        p.text('💡 Abre MuseScore y practica los que fallaste.',340,398);
+
+        p.fill(PRIMARY); p.rect(230,430,220,44,10);
+        p.fill(255); p.textSize(16); p.text('↻  OTRA VEZ',340,458);
+      } else if (showSummary && errors.length>0) {
         p.fill(255); p.textSize(20); p.textAlign(p.CENTER); p.textStyle(p.BOLD);
         p.text('📋  Resumen de errores',340,105); p.textStyle(p.NORMAL);
         p.textSize(12); p.fill(TEXT_DIM);
@@ -415,14 +474,16 @@ new p5(p => {
     }
 
     p.fill('#555'); p.textSize(9); p.textAlign(p.CENTER);
-    p.text(`${shortcuts.length} shortcuts • F11 = pantalla completa • Esc = salir`,340,548);
+    p.text(`${shortcuts.length} shortcuts • F11 = pantalla completa • ✕ = salir`,340,548);
   };
 
   function resetGame() {
-    score=0;streak=0;bestStreak=0;timeLeft=60;gameActive=false;gameOver=false;showSummary=false;
+    score=0;streak=0;bestStreak=0;totalCorrect=0;totalWrong=0;
+    timeLeft=60;gameActive=false;gameOver=false;showSummary=false;
     feedback='';feedbackTimer=0;flashWrong=0;flashCorrect=0;errors=[];
     shuffled=shuffle(shortcuts);questionIndex=0;currentShortcut=null;
     pressedMods.clear();pressedKey=null;pendingEval=false;
+    correctSet.clear();won=false;elapsedTime=0;
   }
 
   function startGame() {
@@ -432,6 +493,7 @@ new p5(p => {
     feedback='';feedbackTimer=0;flashWrong=0;flashCorrect=0;
     shuffled=shuffle(shortcuts);questionIndex=0;
     pressedMods.clear();pressedKey=null;pendingEval=false;
+    correctSet.clear();won=false;elapsedTime=0;
     nextQuestion();
   }
 
