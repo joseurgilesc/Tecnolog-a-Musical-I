@@ -5,7 +5,7 @@
 ---
 
 ??? info "Glosario de términos"
-    Consultá esta tabla cuando encuentres un término que no conozcas.
+    Consulta esta tabla cuando encuentres un término que no conozcas.
 
     | Término | Definición |
     |---|---|
@@ -49,7 +49,7 @@
 
     ### Búsqueda de compases
 
-    Para ir rápidamente a un compás específico, usá **Editar → Ir a compás** o el atajo `Ctrl + G` (`Cmd + G`). Ingresá el número de compás y MuseScore te llevará directamente a ese punto.
+    Para ir rápidamente a un compás específico, usa **Editar → Ir a compás** o el atajo `Ctrl + G` (`Cmd + G`). Ingresa el número de compás y MuseScore te llevará directamente a ese punto.
 
 ???+ note "Técnicas de selección"
 
@@ -68,7 +68,7 @@
 
 
     !!! warning "Clic en el lugar correcto"
-        Si hacés clic sobre una nota, seleccionás **esa nota**. Si hacés clic en el espacio vacío de un compás, seleccionás **todo el compás**. Si hacés clic sobre un pentagrama pero fuera de los compases, no seleccionás nada. La diferencia es sutil pero fundamental.
+        Si haces clic sobre una nota, seleccionas **esa nota**. Si haces clic en el espacio vacío de un compás, seleccionas **todo el compás**. Si haces clic sobre un pentagrama pero fuera de los compases, no seleccionas nada. La diferencia es sutil pero fundamental.
 
     ### Selección con el teclado
 
@@ -83,7 +83,7 @@
 
     ### Deshacer y rehacer
 
-    MuseScore registra cada acción que realizás durante una sesión de trabajo. El historial de [deshacer](#deshacer) es **ilimitado mientras el archivo está abierto**: podés volver atrás hasta el momento en que abriste la partitura.
+    MuseScore registra cada acción que realizas durante una sesión de trabajo. El historial de [deshacer](#deshacer) es **ilimitado mientras el archivo está abierto**: puedes volver atrás hasta el momento en que abriste la partitura.
 
     | Acción | Atajo Windows/Linux | Atajo macOS |
     |---|---|---|
@@ -103,7 +103,7 @@
     | **Guardar como** | `Ctrl + Shift + S` / `Cmd + Shift + S` | Crea un archivo nuevo con los cambios, conservando el anterior. Ideal para versiones. |
 
     !!! tip "Estrategia de versiones"
-        Antes de una edición grande (transponer, cambiar instrumentos, reorganizar compases), hacé **Guardar como** con el siguiente número de versión. Si algo sale mal, cerrás la versión nueva y volvés a abrir la anterior. Es más seguro que depender solo del historial de deshacer.
+        Antes de una edición grande (transponer, cambiar instrumentos, reorganizar compases), haz **Guardar como** con el siguiente número de versión. Si algo sale mal, cierras la versión nueva y vuelves a abrir la anterior. Es más seguro que depender solo del historial de deshacer.
 
 ???+ note "Reproducción y controles de transporte"
 
@@ -122,34 +122,19 @@
 
     ### Reproducción desde un punto específico
 
-    Hacé clic sobre la nota o compás desde donde querés empezar y presioná `Espacio`. MuseScore reproducirá desde ese punto hasta el final, a menos que lo detengas.
+    Haz clic sobre la nota o compás desde donde quieres empezar y presiona `Espacio`. MuseScore reproducirá desde ese punto hasta el final, a menos que lo detengas.
 
     ### Metrónomo y bucle
 
-    - **Metrónomo**: activalo con el botón del metrónomo en la barra de reproducción. La claqueta sonora te ayudará a verificar que tus ritmos encajan en la métrica del compás.
-    - **Bucle**: seleccioná un rango de compases, activá el botón de bucle (⟳) y presioná `Espacio`. El fragmento se repetirá continuamente. Reducí la velocidad con el control de tempo para escuchar pasajes difíciles con más detalle.
+    - **Metrónomo**: actívalo con el botón del metrónomo en la barra de reproducción. La claqueta sonora te ayudará a verificar que tus ritmos encajan en la métrica del compás.
+    - **Bucle**: selecciona un rango de compases, activa el botón de bucle (⟳) y presiona `Espacio`. El fragmento se repetirá continuamente. Reduce la velocidad con el control de tempo para escuchar pasajes difíciles con más detalle.
 
     !!! warning "La reproducción no reemplaza la lectura"
         MuseScore reproduce lo que escribiste, no lo que "quisiste escribir". Si ingresaste una nota equivocada, la reproducción la tocará equivocada. La escucha debe complementar la lectura visual, no sustituirla.
 
 ---
 
-## Actividad en Classroom
-
-### Tarea: S03 — Ingreso de ritmo con mouse y teclado
-
-Abrí la partitura de referencia disponible en [Google Drive](https://drive.google.com/file/d/18MJa1_UqFADSpKYLNuMhWd0MFYnHkBj_/view).
-
-1. **Creá una partitura nueva** con la misma instrumentación, armadura, compás y tempo que la partitura de referencia.
-2. **Ingresá solo el ritmo** de los primeros 2 sistemas usando el **mouse**: colocá las figuras y silencios sin preocuparte por las alturas (usá una misma nota repetida, por ejemplo Do central).
-3. **Repetí el mismo ejercicio** usando solo el **teclado** del computador: ingresá el ritmo de esos mismos 2 sistemas sin tocar el mouse.
-4. Compará ambas experiencias y anotá en cuál fuiste más rápido y en cuál cometiste menos errores.
-
-### Entregables
-
-- [ ] `APELLIDO_Nombre_S03_ritmo_mouse_v01.mscz`
-- [ ] `APELLIDO_Nombre_S03_ritmo_teclado_v01.mscz`
-- [ ] Breve reflexión (3–5 líneas) comparando ambos métodos de ingreso
+Ver el ejercicio en Classroom.
 
 ---
 
