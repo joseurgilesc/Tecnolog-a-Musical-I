@@ -5,7 +5,7 @@
 ---
 
 ??? info "Glosario de términos"
-    Consultá esta tabla cuando encuentres un término que no conozcas.
+    Consulta esta tabla cuando encuentres un término que no conozcas.
 
     | Término | Definición |
     |---|---|
@@ -36,7 +36,7 @@
     1. Seleccionar la clave inicial o el primer compás.
     2. Elegir la clave deseada en la paleta **Claves**.
 
-    También podés arrastrar la clave desde la paleta hasta el primer compás.
+    También puedes arrastrar la clave desde la paleta hasta el primer compás.
 
     ### Insertar un cambio de clave a mitad de la partitura
 
@@ -90,7 +90,7 @@
 
     ### Eliminar una armadura
 
-    Seleccionar la armadura y presionar `Supr`. No se puede eliminar la armadura del primer compás del score: MuseScore interpreta eso como "no sé si querés Do mayor o atonal". Si querés Do mayor, simplemente seleccioná la armadura de Do mayor desde la paleta.
+    Seleccionar la armadura y presionar `Supr`. No se puede eliminar la armadura del primer compás del score: MuseScore interpreta eso como "no sé si quieres Do mayor o atonal". Si quieres Do mayor, simplemente selecciona la armadura de Do mayor desde la paleta.
 
     ### Armaduras de cortesía
 
@@ -124,14 +124,14 @@
 
     1. **Alteración propia**: la armadura define qué notas son alteradas por defecto en toda la partitura. Si la armadura tiene Fa♯, todos los Fa (en cualquier octava) son Fa♯ sin necesidad de escribirlo.
 
-    2. **Alteración accidental**: una alteración escrita delante de una nota **anula** la alteración propia para esa nota y todas las del mismo nombre y altura dentro del mismo compás. Ejemplo: en Sol mayor (Fa♯ en la armadura), si escribís un Fa♮, todos los Fa siguientes en ese compás también serán Fa♮.
+    2. **Alteración accidental**: una alteración escrita delante de una nota **anula** la alteración propia para esa nota y todas las del mismo nombre y altura dentro del mismo compás. Ejemplo: en Sol mayor (Fa♯ en la armadura), si escribes un Fa♮, todos los Fa siguientes en ese compás también serán Fa♮.
 
     3. **Cambio de compás**: al cruzar la barra divisoria, TODAS las alteraciones accidentales se cancelan automáticamente. En el compás siguiente, la armadura vuelve a regir.
 
     4. **Alteración de precaución**: MuseScore añade automáticamente alteraciones entre paréntesis cuando una nota alterada en un compás aparece sin alteración en el compás siguiente, para evitar confusiones.
 
     !!! tip "Las alteraciones de precaución son automáticas"
-        No necesitás ingresarlas manualmente. MuseScore las coloca automáticamente según las reglas de cortesía. Si querés ocultar una alteración de precaución específica, seleccionala y en el panel **Propiedades** desmarcá su visibilidad o presioná `V`.
+        No necesitas ingresarlas manualmente. MuseScore las coloca automáticamente según las reglas de cortesía. Si quieres ocultar una alteración de precaución específica, selecciónala y en el panel **Propiedades** desmarca su visibilidad o presiona `V`.
 
     ### Cambiar la altura de una nota ya escrita
 
@@ -146,7 +146,7 @@
 
     ### Escritura enarmónica
 
-    Dos notas que suenan igual pero se escriben diferente (ej. Fa♯ y Sol♭) son **enarmónicas**. Para cambiar la escritura enarmónica de una nota: seleccionala y presioná `J`. MuseScore alternará entre las representaciones disponibles.
+    Dos notas que suenan igual pero se escriben diferente (ej. Fa♯ y Sol♭) son **enarmónicas**. Para cambiar la escritura enarmónica de una nota: selecciónala y presiona `J`. MuseScore alternará entre las representaciones disponibles.
 
 ???+ note "Transposición e instrumentos transpositores"
 
@@ -188,10 +188,20 @@
 
     ### Configurar la transposición de un pentagrama manualmente
 
-    Si por algún motivo necesitás ajustar la transposición de un instrumento:
+    Si por algún motivo necesitas ajustar la transposición de un instrumento:
     1. Clic derecho en el pentagrama → **Propiedades de pentagrama/parte**.
     2. En **Transposición**, seleccionar el intervalo que el instrumento transpone **hacia abajo** desde la afinación de concierto.
     3. Para clarinete en Si♭: "Seconda mayor descendente" (suena un tono abajo de lo escrito).
+
+---
+
+## 🎹 Desafío de Shortcuts
+
+¿Cuántos atajos de teclado recuerdas de lo visto hasta ahora? Pon a prueba tu memoria con este juego. Selecciona tu plataforma, escribe el shortcut correcto y acumula puntos antes de que se acabe el tiempo.
+
+[:fontawesome-solid-gamepad: Abrir juego a pantalla completa](shortcuts-game.html){ .md-button .md-button--primary }
+
+<iframe src="shortcuts-game.html" width="100%" height="540" style="border:none; border-radius:12px; margin-top:12px;" title="Desafío de Shortcuts"></iframe>
 
 ---
 

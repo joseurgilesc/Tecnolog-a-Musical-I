@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafío de Shortcuts — MuseScore</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #1a1a2e;
+    display: flex; justify-content: center; align-items: center;
+    min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  #container {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 12px;
+  }
+  #platform-select {
+    display: flex; gap: 8px; margin-bottom: 4px;
+  }
+  #platform-select button {
+    padding: 10px 28px; border: 2px solid #4a4a6a; border-radius: 8px;
+    background: #16213e; color: #8899aa; font-size: 15px; font-weight: 600;
+    cursor: pointer; transition: all 0.2s;
+  }
+  #platform-select button.active {
+    background: #0f3460; color: #e94560; border-color: #e94560;
+    box-shadow: 0 0 12px rgba(233,69,96,0.3);
+  }
+  #platform-select button:hover { border-color: #e94560; }
+  #canvas-wrapper {
+    border-radius: 16px; overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  }
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="platform-select">
+    <button id="btn-pc" class="active" onclick="setPlatform('pc')">🖥️ Windows / Linux</button>
+    <button id="btn-mac" onclick="setPlatform('mac')">🍎 macOS</button>
+  </div>
+  <div id="canvas-wrapper"></div>
+</div>
+
+<script>
+// ── Shortcut database ──
+const shortcuts = [
+  { fn:"Activar/desactivar modo de ingreso", pc:"N", mac:"N", cat:"Ingreso" },
+  { fn:"Salir del modo de ingreso", pc:"Esc", mac:"Esc", cat:"Ingreso" },
+  { fn:"Duración: semifusa", pc:"1", mac:"1", cat:"Ingreso" },
+  { fn:"Duración: fusa", pc:"2", mac:"2", cat:"Ingreso" },
+  { fn:"Duración: semicorchea", pc:"3", mac:"3", cat:"Ingreso" },
+  { fn:"Duración: corchea", pc:"4", mac:"4", cat:"Ingreso" },
+  { fn:"Duración: negra", pc:"5", mac:"5", cat:"Ingreso" },
+  { fn:"Duración: blanca", pc:"6", mac:"6", cat:"Ingreso" },
+  { fn:"Duración: redonda", pc:"7", mac:"7", cat:"Ingreso" },
+  { fn:"Ingresar nota (La a Sol)", pc:"A – G", mac:"A – G", cat:"Ingreso" },
+  { fn:"Sostenido (♯)", pc:"+", mac:"+", cat:"Ingreso" },
+  { fn:"Bemol (♭)", pc:"-", mac:"-", cat:"Ingreso" },
+  { fn:"Becuadro (♮)", pc:"=", mac:"=", cat:"Ingreso" },
+  { fn:"Puntillo", pc:".", mac:".", cat:"Ingreso" },
+  { fn:"Silencio", pc:"0", mac:"0", cat:"Ingreso" },
+  { fn:"Añadir nota al acorde", pc:"Shift + letra", mac:"Shift + letra", cat:"Ingreso" },
+  { fn:"Ligadura de prolongación", pc:"T", mac:"T", cat:"Ingreso" },
+  { fn:"Ligadura de fraseo", pc:"S", mac:"S", cat:"Ingreso" },
+  { fn:"Subir un semitono", pc:"↑", mac:"↑", cat:"Edición" },
+  { fn:"Bajar un semitono", pc:"↓", mac:"↓", cat:"Edición" },
+  { fn:"Subir una octava", pc:"Ctrl + ↑", mac:"Cmd + ↑", cat:"Edición" },
+  { fn:"Bajar una octava", pc:"Ctrl + ↓", mac:"Cmd + ↓", cat:"Edición" },
+  { fn:"Aumentar duración", pc:"Shift + W", mac:"Shift + W", cat:"Edición" },
+  { fn:"Reducir duración", pc:"Shift + Q", mac:"Shift + Q", cat:"Edición" },
+  { fn:"Duplicar duración", pc:"W", mac:"W", cat:"Edición" },
+  { fn:"Reducir duración a la mitad", pc:"Q", mac:"Q", cat:"Edición" },
+  { fn:"Cambiar enarmonía", pc:"J", mac:"J", cat:"Edición" },
+  { fn:"Modo Re-pitch", pc:"Ctrl + Shift + I", mac:"Cmd + Shift + I", cat:"Edición" },
+  { fn:"Acercar zoom", pc:"Ctrl + +", mac:"Cmd + +", cat:"Navegación" },
+  { fn:"Alejar zoom", pc:"Ctrl + -", mac:"Cmd + -", cat:"Navegación" },
+  { fn:"Ir a compás", pc:"Ctrl + G", mac:"Cmd + G", cat:"Navegación" },
+  { fn:"Seleccionar todo", pc:"Ctrl + A", mac:"Cmd + A", cat:"Selección" },
+  { fn:"Copiar", pc:"Ctrl + C", mac:"Cmd + C", cat:"Portapapeles" },
+  { fn:"Cortar", pc:"Ctrl + X", mac:"Cmd + X", cat:"Portapapeles" },
+  { fn:"Pegar", pc:"Ctrl + V", mac:"Cmd + V", cat:"Portapapeles" },
+  { fn:"Repetir selección", pc:"R", mac:"R", cat:"Portapapeles" },
+  { fn:"Deshacer", pc:"Ctrl + Z", mac:"Cmd + Z", cat:"Archivo" },
+  { fn:"Rehacer", pc:"Ctrl + Shift + Z", mac:"Cmd + Shift + Z", cat:"Archivo" },
+  { fn:"Guardar", pc:"Ctrl + S", mac:"Cmd + S", cat:"Archivo" },
+  { fn:"Guardar como", pc:"Ctrl + Shift + S", mac:"Cmd + Shift + S", cat:"Archivo" },
+  { fn:"Insertar un compás", pc:"Ins", mac:"Ins", cat:"Compases" },
+  { fn:"Añadir compás al final", pc:"Ctrl + B", mac:"Cmd + B", cat:"Compases" },
+  { fn:"Eliminar compás", pc:"Ctrl + Supr", mac:"Cmd + Supr", cat:"Compases" },
+  { fn:"Reproducir / Pausar", pc:"Espacio", mac:"Espacio", cat:"Reproducción" },
+];
+
+// ── Game state ──
+let platform = 'pc';
+let currentShortcut = null;
+let inputEl;
+let score = 0, streak = 0, bestStreak = 0, totalCorrect = 0, totalWrong = 0;
+let timeLeft = 60, gameActive = false, gameOver = false;
+let feedback = '', feedbackTimer = 0;
+let questionIndex = 0;
+let shuffled = [];
+
+function setPlatform(p) {
+  platform = p;
+  document.getElementById('btn-pc').className = p === 'pc' ? 'active' : '';
+  document.getElementById('btn-mac').className = p === 'mac' ? 'active' : '';
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function nextQuestion() {
+  if (questionIndex >= shuffled.length) {
+    shuffled = shuffle(shortcuts);
+    questionIndex = 0;
+  }
+  currentShortcut = shuffled[questionIndex++];
+  inputEl.value = '';
+  inputEl.focus();
+}
+
+function checkAnswer() {
+  if (!gameActive || gameOver) return;
+  const answer = inputEl.value.trim();
+  if (!answer) return;
+
+  const correct = platform === 'pc' ? currentShortcut.pc : currentShortcut.mac;
+
+  // Normalize comparison (case-insensitive, trim spaces around +)
+  const normalize = s => s.replace(/\s+/g, '').toLowerCase();
+  const isCorrect = normalize(answer) === normalize(correct);
+
+  if (isCorrect) {
+    score++;
+    totalCorrect++;
+    streak++;
+    if (streak > bestStreak) bestStreak = streak;
+    feedback = '¡Correcto! ✅';
+  } else {
+    score--;
+    totalWrong++;
+    streak = 0;
+    feedback = `Incorrecto ❌  Era: ${correct}`;
+  }
+  feedbackTimer = 90;
+  nextQuestion();
+}
+
+// ── p5 sketch ──
+new p5(p => {
+  p.setup = function() {
+    const c = p.createCanvas(640, 500);
+    c.parent('canvas-wrapper');
+    p.textFont('monospace');
+
+    // Create hidden input for shortcut entry
+    inputEl = p.createInput('');
+    inputEl.position(-9999, -9999);
+    inputEl.attribute('placeholder', 'Escribe el shortcut...');
+    inputEl.attribute('autocomplete', 'off');
+    inputEl.attribute('spellcheck', 'false');
+    inputEl.style('font-size', '18px');
+    inputEl.style('padding', '10px 16px');
+    inputEl.style('border-radius', '8px');
+    inputEl.style('border', 'none');
+    inputEl.style('outline', 'none');
+    inputEl.style('width', '300px');
+
+    inputEl.elt.addEventListener('keydown', e => {
+      if (e.key === 'Enter') checkAnswer();
+      if (e.key === 'Escape') inputEl.value = '';
+    });
+
+    resetGame();
+  };
+
+  function resetGame() {
+    score = 0; streak = 0; bestStreak = 0;
+    totalCorrect = 0; totalWrong = 0;
+    timeLeft = 60; gameActive = false; gameOver = false;
+    feedback = ''; feedbackTimer = 0;
+    shuffled = shuffle(shortcuts);
+    questionIndex = 0;
+    currentShortcut = null;
+    inputEl.value('');
+  }
+
+  p.draw = function() {
+    p.background(26, 26, 46);
+
+    // ── Title bar ──
+    p.fill(233, 69, 96);
+    p.noStroke();
+    p.rect(0, 0, 640, 56);
+    p.fill(255);
+    p.textSize(22);
+    p.textAlign(p.CENTER, p.CENTER);
+    p.textStyle(p.BOLD);
+    p.text('🎹  Desafío de Shortcuts  🎹', 320, 28);
+
+    // ── Score & Timer ──
+    p.textSize(14);
+    p.textStyle(p.NORMAL);
+    p.textAlign(p.LEFT);
+    p.fill(200);
+    p.text(`Puntaje: ${score}`, 24, 78);
+    p.textAlign(p.RIGHT);
+    p.text(`Racha: ${streak}`, 616, 78);
+
+    // Timer bar
+    const barW = 592;
+    const barX = 24;
+    const barY = 88;
+    p.fill(40, 40, 70);
+    p.rect(barX, barY, barW, 16, 8);
+    if (timeLeft > 0) {
+      const frac = timeLeft / 60;
+      const color = frac > 0.3 ? p.color(233, 69, 96) : p.color(255, 180, 50);
+      p.fill(color);
+      p.rect(barX, barY, barW * frac, 16, 8);
+    }
+    p.fill(255);
+    p.textSize(12);
+    p.textAlign(p.CENTER);
+    p.text(`${Math.ceil(timeLeft)}s`, 320, 100);
+
+    // ── Game area ──
+    if (!gameActive && !gameOver) {
+      // Start screen
+      p.fill(255);
+      p.textSize(28);
+      p.textAlign(p.CENTER);
+      p.text('¿Listo para el desafío?', 320, 200);
+      p.textSize(15);
+      p.fill(180);
+      p.text('Escribe el shortcut correcto para cada función', 320, 240);
+      p.text('antes de que se acabe el tiempo.', 320, 262);
+      p.fill(233, 69, 96);
+      p.rect(250, 300, 140, 44, 10);
+      p.fill(255);
+      p.textSize(18);
+      p.textStyle(p.BOLD);
+      p.text('▶  JUGAR', 320, 328);
+      p.textStyle(p.NORMAL);
+    } else if (gameOver) {
+      // Game over screen
+      const accuracy = totalCorrect + totalWrong > 0
+        ? Math.round((totalCorrect / (totalCorrect + totalWrong)) * 100) : 0;
+      p.fill(255);
+      p.textSize(26);
+      p.textAlign(p.CENTER);
+      p.textStyle(p.BOLD);
+      p.text('⏰  ¡Tiempo!', 320, 180);
+      p.textStyle(p.NORMAL);
+      p.textSize(16);
+      p.fill(200);
+      p.text(`Puntaje final: ${score}`, 320, 230);
+      p.text(`Precisión: ${accuracy}%  (${totalCorrect} ✓ / ${totalWrong} ✗)`, 320, 256);
+      p.text(`Mejor racha: ${bestStreak}`, 320, 280);
+      p.fill(233, 69, 96);
+      p.rect(250, 320, 140, 44, 10);
+      p.fill(255);
+      p.textSize(18);
+      p.text('↻  JUGAR OTRA VEZ', 320, 348);
+    } else if (currentShortcut) {
+      // Active game
+      p.fill(255);
+      p.textSize(20);
+      p.textAlign(p.CENTER);
+      p.text(`« ${currentShortcut.fn} »`, 320, 170);
+      p.textSize(12);
+      p.fill(150);
+      p.text(currentShortcut.cat, 320, 195);
+
+      // Input hint
+      p.fill(200);
+      p.textSize(14);
+      p.text('Escribe el shortcut y presiona Enter:', 320, 240);
+
+      // Draw fake input box
+      const ix = 170, iy = 260, iw = 300, ih = 44;
+      p.stroke(233, 69, 96);
+      p.strokeWeight(2);
+      p.fill(22, 33, 62);
+      p.rect(ix, iy, iw, ih, 8);
+      p.noStroke();
+      p.fill(200);
+      p.textSize(18);
+      p.textAlign(p.CENTER, p.CENTER);
+      const val = inputEl.value();
+      p.text(val || '...', ix + iw/2, iy + ih/2 + 1);
+
+      // Position real input over the canvas
+      const canvasRect = document.querySelector('#canvas-wrapper canvas').getBoundingClientRect();
+      inputEl.position(canvasRect.left + ix + 12, canvasRect.top + iy + 8);
+      inputEl.style('width', (iw - 24) + 'px');
+      inputEl.style('height', (ih - 16) + 'px');
+
+      // Feedback
+      if (feedbackTimer > 0) {
+        feedbackTimer--;
+        const alpha = feedbackTimer / 90;
+        p.fill(feedback.startsWith('¡Correcto') ? [80, 220, 100] : [255, 100, 100]);
+        p._renderer.drawingContext.globalAlpha = alpha;
+        p.textSize(16);
+        p.textAlign(p.CENTER);
+        p.text(feedback, 320, 330);
+        p._renderer.drawingContext.globalAlpha = 1;
+      }
+    }
+
+    // ── Footer ──
+    p.fill(100);
+    p.textSize(11);
+    p.textAlign(p.CENTER);
+    p.text('Escribe "Ctrl+N" o "Cmd+N" según tu plataforma • Responde rápido', 320, 485);
+  };
+
+  p.mousePressed = function() {
+    // Start button
+    if (!gameActive && !gameOver) {
+      if (p.mouseX > 250 && p.mouseX < 390 && p.mouseY > 300 && p.mouseY < 344) {
+        startGame();
+      }
+    }
+    // Restart button
+    if (gameOver) {
+      if (p.mouseX > 250 && p.mouseX < 390 && p.mouseY > 320 && p.mouseY < 364) {
+        resetGame();
+      }
+    }
+    // Click anywhere to focus input during game
+    if (gameActive && !gameOver) {
+      inputEl.elt.focus();
+    }
+  };
+
+  function startGame() {
+    gameActive = true;
+    gameOver = false;
+    score = 0; streak = 0; bestStreak = 0;
+    totalCorrect = 0; totalWrong = 0;
+    timeLeft = 60;
+    feedback = ''; feedbackTimer = 0;
+    shuffled = shuffle(shortcuts);
+    questionIndex = 0;
+    nextQuestion();
+  }
+
+  // Timer
+  setInterval(() => {
+    if (gameActive && !gameOver && timeLeft > 0) {
+      timeLeft -= 0.05;
+      if (timeLeft <= 0) {
+        timeLeft = 0;
+        gameActive = false;
+        gameOver = true;
+        inputEl.value('');
+      }
+    }
+  }, 50);
+
+  p.windowResized = function() {
+    p.resizeCanvas(640, 500);
+  };
+
+  // Expose for window resize
+  window._p5sketch = p;
+});
+</script>
+</body>
+</html>
