@@ -197,7 +197,7 @@
 
 ## 🎹 Desafío de Shortcuts
 
-¿Cuántos atajos de teclado recuerdas de lo visto hasta ahora? Pon a prueba tu memoria con este juego. Selecciona tu plataforma, escribe el shortcut correcto y acumula puntos antes de que se acabe el tiempo.
+¿Cuántos atajos de teclado recuerdas de lo visto hasta ahora? Escribe el shortcut correcto para cada función. La validación es **en tiempo real**: si lo escribes mal, se marca al instante. Presiona **F11** para pantalla completa y bloquear los atajos del navegador.
 
 [:fontawesome-solid-gamepad: Abrir juego a pantalla completa](shortcuts-game.html){ .md-button .md-button--primary }
 
