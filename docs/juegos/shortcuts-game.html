@@ -152,27 +152,30 @@ function nextQuestion() {
 // code → display
 function codeToDisplay(code, mods) {
   const m = [];
-  // Hide Shift for Equal key when it's the only mod (it's implied by +)
   const showShift = !(code==='Equal' && mods==='S');
   if (mods.includes('C')) m.push(platform==='mac'?'Cmd':'Ctrl');
   if (mods.includes('S') && showShift) m.push('Shift');
   if (mods.includes('A')) m.push('Alt');
-  let k = code;
-  if (code.startsWith('Key')) k = code.slice(3);
-  else if (code.startsWith('Digit')) k = code.slice(5);
-  else if (code==='Equal') k = mods.includes('S') ? '+' : '=';
-  else if (code==='Minus') k = '-';
-  else if (code==='Period') k = '.';
-  else if (code==='Space') k = 'Espacio';
-  else if (code==='Escape') k = 'Esc';
-  else if (code==='Delete') k = 'Supr';
-  else if (code==='Insert') k = 'Ins';
-  else if (code==='ArrowUp') k = '↑';
-  else if (code==='ArrowDown') k = '↓';
-  else if (code==='ArrowLeft') k = '←';
-  else if (code==='ArrowRight') k = '→';
-  else if (code==='*') k = 'letra';
+  let k = code==='*' ? 'letra' : friendlyKey(code);
+  if (code==='Equal') k = mods.includes('S') ? '+' : '=';
   return [...m, k].join(' + ');
+}
+
+function friendlyKey(code) {
+  if (code.startsWith('Key')) return code.slice(3);
+  if (code.startsWith('Digit')) return code.slice(5);
+  if (code==='Equal') return '=';
+  if (code==='Minus') return '-';
+  if (code==='Period') return '.';
+  if (code==='Space') return 'Espacio';
+  if (code==='Escape') return 'Esc';
+  if (code==='Delete') return 'Supr';
+  if (code==='Insert') return 'Ins';
+  if (code==='ArrowUp') return '↑';
+  if (code==='ArrowDown') return '↓';
+  if (code==='ArrowLeft') return '←';
+  if (code==='ArrowRight') return '→';
+  return code;
 }
 
 function getCurrentCombo() {
@@ -183,7 +186,7 @@ function getCurrentCombo() {
     else if (mod==='Shift') m.push('Shift');
     else if (mod==='Alt') m.push('Alt');
   }
-  let k = pressedKey || '...';
+  let k = pressedKey ? friendlyKey(pressedKey) : '...';
   return [...m, k].join(' + ');
 }
 
@@ -206,7 +209,10 @@ function matchesShortcut(expected) {
   // Key match
   if (!pressedKey) return false;
   const ek = expected.key;
-  if (ek === '*') return /^[A-Ga-g]$/.test(pressedKey);
+  if (ek === '*') {
+    // Wildcard: any letter key A-G
+    return pressedKey.startsWith('Key') && /^[A-G]$/.test(pressedKey.slice(3));
+  }
   return pressedKey === ek;
 }
 
