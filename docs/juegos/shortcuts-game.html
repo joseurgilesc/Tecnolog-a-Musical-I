@@ -130,7 +130,6 @@ let feedback = '', feedbackTimer = 0;
 let questionIndex = 0, shuffled = [];
 let flashWrong = 0, flashCorrect = 0;
 let pressedMods = new Set(), pressedKey = null;
-let pendingEval = false;
 let errors = [];
 let correctSet = new Set(); // unique shortcuts answered correctly
 let won = false, elapsedTime = 0;
@@ -146,7 +145,7 @@ function shuffle(arr) { const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=
 function nextQuestion() {
   if (questionIndex >= shuffled.length) { shuffled=shuffle(shortcuts); questionIndex=0; }
   currentShortcut = shuffled[questionIndex++];
-  pressedMods.clear(); pressedKey=null; pendingEval=false;
+  pressedMods.clear(); pressedKey=null;
 }
 
 // code → display
@@ -241,9 +240,8 @@ function evaluateAnswer() {
     feedback=`✗ Era: ${codeToDisplay(expected.key,expected.mods)}`; feedbackTimer=80; flashWrong=12;
     setTimeout(()=>{if(gameActive&&!gameOver)nextQuestion();},1200);
   }
-  pendingEval=false;
+  
 }
-
 // ── Keyboard ──
 const ALLOWED_KEYS = ['Control','Meta','Shift','Alt','ArrowUp','ArrowDown','ArrowLeft','ArrowRight',
   'Delete','Insert','Escape','Space','Tab',
@@ -272,7 +270,7 @@ document.addEventListener('keydown', e => {
         pressedMods.clear(); pressedKey='Escape'; evaluateAnswer(); return;
       }
     }
-    pressedMods.clear(); pressedKey=null; pendingEval=false;
+    pressedMods.clear(); pressedKey=null;
     if (document.fullscreenElement) document.exitFullscreen();
     return;
   }
@@ -287,18 +285,10 @@ document.addEventListener('keydown', e => {
 
   // Track key (use code for physical key matching)
   if (!['Control','Meta','Shift','Alt'].includes(e.key)) {
-    // Normalize: use code for physical key identity
-    let keyCode = code;
-    // For single letters/digits, just use the code directly
-    pressedKey = keyCode;
+    pressedKey = code;
   }
 
-  // Evaluate: trigger when we have a key pressed
-  if (pressedKey && pressedMods.size >= 0) {
-    if (!pendingEval) { pendingEval=true; setTimeout(()=>evaluateAnswer(),80); }
-  }
-
-  // Immediate eval for simple single-key shortcuts
+  // Immediate eval for single-key shortcuts (no modifiers)
   const exp = platform==='pc'?currentShortcut.pc:currentShortcut.mac;
   if (exp.mods==='' && exp.key!=='*' && pressedKey && pressedMods.size===0) {
     evaluateAnswer();
@@ -306,14 +296,19 @@ document.addEventListener('keydown', e => {
 });
 
 document.addEventListener('keyup', e => {
+  const isMod = ['Control','Meta','Shift','Alt'].includes(e.key);
   if (e.key === 'Control') pressedMods.delete('Control');
   if (e.key === 'Meta') pressedMods.delete('Meta');
   if (e.key === 'Shift') pressedMods.delete('Shift');
   if (e.key === 'Alt') pressedMods.delete('Alt');
-  // Clear key on any non-modifier keyup
-  if (!['Control','Meta','Shift','Alt'].includes(e.key)) {
+  // For combo shortcuts (with modifiers), evaluate on keyup of the non-modifier key
+  if (!isMod && pressedKey && pressedMods.size > 0) {
+    const exp = platform==='pc'?currentShortcut.pc:currentShortcut.mac;
+    if (exp.mods !== '') evaluateAnswer();
+  }
+  // Always clear on keyup of non-modifier
+  if (!isMod) {
     pressedKey = null;
-    pendingEval = false;
   }
 });
 
@@ -488,7 +483,7 @@ new p5(p => {
     timeLeft=60;gameActive=false;gameOver=false;showSummary=false;
     feedback='';feedbackTimer=0;flashWrong=0;flashCorrect=0;errors=[];
     shuffled=shuffle(shortcuts);questionIndex=0;currentShortcut=null;
-    pressedMods.clear();pressedKey=null;pendingEval=false;
+    pressedMods.clear();pressedKey=null;
     correctSet.clear();won=false;elapsedTime=0;
   }
 
@@ -498,7 +493,7 @@ new p5(p => {
     score=0;streak=0;bestStreak=0;timeLeft=60;errors=[];
     feedback='';feedbackTimer=0;flashWrong=0;flashCorrect=0;
     shuffled=shuffle(shortcuts);questionIndex=0;
-    pressedMods.clear();pressedKey=null;pendingEval=false;
+    pressedMods.clear();pressedKey=null;
     correctSet.clear();won=false;elapsedTime=0;
     nextQuestion();
   }
