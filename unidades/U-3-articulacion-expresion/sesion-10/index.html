@@ -1,0 +1,3100 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de clase — Tecnología Musical I (MuseScore Studio)">
+      
+      
+        <meta name="author" content="José Urgilés">
+      
+      
+      
+        <link rel="prev" href="../sesion-09/">
+      
+      
+        <link rel="next" href="../sesion-11/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Sesión 10 - Tecnología Musical I</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sesion-10-dinamicas-tempo-y-reproduccion" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Tecnología Musical I" class="md-header__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tecnología Musical I
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sesión 10
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Tecnología Musical I" class="md-nav__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../../img/logo.svg" alt="logo">
+
+    </a>
+    Tecnología Musical I
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../objetivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Objetivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../logros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logros de Aprendizaje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-1-introduccion-organizacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-2-ingreso-edicion-notas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 10
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dinamicas-basicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dinámicas básicas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agregar-una-dinamica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agregar una dinámica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combinar-dinamicas-con-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combinar dinámicas con texto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agregar-un-regulador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agregar un regulador
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reguladores-con-dinamicas-en-los-extremos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reguladores con dinámicas en los extremos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#altura-y-angulo-del-regulador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Altura y ángulo del regulador
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opciones-avanzadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opciones avanzadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-marcas-de-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de marcas de tempo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agregar-una-marca-de-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agregar una marca de tempo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editar-una-marca-de-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editar una marca de tempo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cambios-graduales-de-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cambios graduales de tempo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velocidad-de-reproduccion-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Velocidad de reproducción general
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abrir-el-mixer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abrir el Mixer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#canales-del-mixer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Canales del Mixer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controles-por-canal-de-arriba-hacia-abajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controles por canal (de arriba hacia abajo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cambio-de-sonido-a-mitad-de-la-partitura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cambio de sonido a mitad de la partitura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#barra-de-reproduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Barra de reproducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajustes-de-reproduccion-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ajustes de reproducción útiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividad en Classroom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarea-s10-dinamicas-tempo-y-reproduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tarea: S10 — Dinámicas, tempo y reproducción
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entregables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-4-estructura-repeticiones/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-5-notaciones-especializadas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 5: Notaciones especializadas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 5: Notaciones especializadas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-6-midi-importacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-7-edicion-partes-publicacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 31
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exámenes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exámenes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examen-interciclo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Interciclo (Sesión 16)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examen-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Final (Sesión 32)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dinamicas-basicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dinámicas básicas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agregar-una-dinamica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agregar una dinámica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combinar-dinamicas-con-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combinar dinámicas con texto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agregar-un-regulador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agregar un regulador
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reguladores-con-dinamicas-en-los-extremos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reguladores con dinámicas en los extremos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#altura-y-angulo-del-regulador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Altura y ángulo del regulador
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opciones-avanzadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opciones avanzadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-marcas-de-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de marcas de tempo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agregar-una-marca-de-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agregar una marca de tempo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editar-una-marca-de-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editar una marca de tempo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cambios-graduales-de-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cambios graduales de tempo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velocidad-de-reproduccion-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Velocidad de reproducción general
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abrir-el-mixer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abrir el Mixer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#canales-del-mixer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Canales del Mixer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controles-por-canal-de-arriba-hacia-abajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controles por canal (de arriba hacia abajo)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cambio-de-sonido-a-mitad-de-la-partitura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cambio de sonido a mitad de la partitura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#barra-de-reproduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Barra de reproducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajustes-de-reproduccion-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ajustes de reproducción útiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividad en Classroom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarea-s10-dinamicas-tempo-y-reproduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tarea: S10 — Dinámicas, tempo y reproducción
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entregables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Unidad 3: Articulación, expresión y reproducción
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="sesion-10-dinamicas-tempo-y-reproduccion">Sesión 10: Dinámicas, tempo y reproducción<a class="headerlink" href="#sesion-10-dinamicas-tempo-y-reproduccion" title="Permanent link">&para;</a></h1>
+<p>📚 Handbook → Notation: Expressive markings — Dynamics and hairpins; Text — Tempo markings; Sound and Playback — Mixer, Playback controls | Herramientas: MuseScore Studio 4, Google Classroom</p>
+<hr />
+<details class="info">
+<summary>Glosario de términos</summary>
+<p>Consultá esta tabla cuando encuentres un término que no conozcas.</p>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="dinamica"></a> <strong>Dinámica (dynamic)</strong></td>
+<td>Indicación de la intensidad o volumen con que debe ejecutarse un pasaje musical. Se escribe con abreviaturas italianas: <strong><em>pp</em></strong> (pianissimo, muy suave), <strong><em>p</em></strong> (piano, suave), <strong><em>mp</em></strong> (mezzo-piano, medio suave), <strong><em>mf</em></strong> (mezzo-forte, medio fuerte), <strong><em>f</em></strong> (forte, fuerte), <strong><em>ff</em></strong> (fortissimo, muy fuerte).</td>
+</tr>
+<tr>
+<td><a id="regulador"></a> <strong>Regulador (hairpin)</strong></td>
+<td>Símbolo gráfico en forma de ángulo que se abre <code>\&lt;</code> (crescendo) o se cierra <code>\&gt;</code> (diminuendo/decrescendo) para indicar un cambio gradual de intensidad. Atajo: <code>&lt;</code> para crescendo, <code>&gt;</code> para diminuendo.</td>
+</tr>
+<tr>
+<td><a id="crescendo"></a> <strong>Crescendo (cresc.)</strong></td>
+<td>Aumento gradual de la intensidad. Puede indicarse con un regulador que se abre o con la abreviatura <em>cresc.</em> seguida de una línea punteada.</td>
+</tr>
+<tr>
+<td><a id="diminuendo"></a> <strong>Diminuendo / Decrescendo (dim. / decresc.)</strong></td>
+<td>Disminución gradual de la intensidad. Se indica con un regulador que se cierra o con la abreviatura <em>dim.</em> seguida de una línea punteada.</td>
+</tr>
+<tr>
+<td><a id="marca-tempo"></a> <strong>Marca de tempo</strong></td>
+<td>Indicación que establece la velocidad de la música. Puede ser una <strong>marca metronómica</strong> (♩ = 120), una <strong>indicación verbal</strong> (Allegro, Andante, Adagio) o una <strong>modulación métrica</strong> (♩ = ♩.).</td>
+</tr>
+<tr>
+<td><a id="metronomo"></a> <strong>Metrónomo (metronome)</strong></td>
+<td>Herramienta que produce un pulso regular (clic) para mantener el tempo durante la práctica o la reproducción. En MuseScore, se activa con el botón del metrónomo en la barra de reproducción.</td>
+</tr>
+<tr>
+<td><a id="cambio-tempo"></a> <strong>Línea de cambio de tempo</strong></td>
+<td>Línea con texto como <em>accel.</em> (accelerando), <em>rit.</em> (ritardando) o <em>rall.</em> (rallentando) que indica un cambio gradual de velocidad a lo largo de varios compases. En MuseScore, se encuentran en la paleta <strong>Tempo</strong>.</td>
+</tr>
+<tr>
+<td><a id="mixer"></a> <strong>Mixer / Mezclador</strong></td>
+<td>Panel de MuseScore (<code>F10</code>) que permite ajustar el volumen, el paneo estéreo, el sonido (instrumento virtual), los efectos de audio y la reverberación de cada instrumento de la partitura de forma independiente.</td>
+</tr>
+<tr>
+<td><a id="panel-reproduccion"></a> <strong>Panel de reproducción (Playback toolbar)</strong></td>
+<td>Barra de herramientas en la parte superior derecha de MuseScore que contiene los controles de reproducción: Play, Stop, Loop, Metrónomo, velocidad de reproducción y contadores de posición (tiempo / compases).</td>
+</tr>
+<tr>
+<td><a id="cambio-sonido"></a> <strong>Cambio de sonido a mitad de pentagrama (mid-score instrument change)</strong></td>
+<td>Funcionalidad que permite cambiar el sonido de un instrumento en un punto específico de la partitura sin modificar la notación del pentagrama. Se usa para que un mismo pentagrama suene con diferentes instrumentos en secciones distintas.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="note" open="open">
+<summary>Dinámicas: de pianissimo a fortissimo</summary>
+<p>Las dinámicas indican la <strong>intensidad</strong> con que se ejecuta un pasaje. Son uno de los recursos expresivos más poderosos en MuseScore porque el programa las reproduce automáticamente.</p>
+<h3 id="dinamicas-basicas">Dinámicas básicas<a class="headerlink" href="#dinamicas-basicas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Abreviatura</th>
+<th>Significado</th>
+<th>Intensidad relativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><em>ppp</em></strong></td>
+<td>Pianissimo possibile</td>
+<td>Lo más suave posible</td>
+</tr>
+<tr>
+<td><strong><em>pp</em></strong></td>
+<td>Pianissimo</td>
+<td>Muy suave</td>
+</tr>
+<tr>
+<td><strong><em>p</em></strong></td>
+<td>Piano</td>
+<td>Suave</td>
+</tr>
+<tr>
+<td><strong><em>mp</em></strong></td>
+<td>Mezzo-piano</td>
+<td>Medio suave</td>
+</tr>
+<tr>
+<td><strong><em>mf</em></strong></td>
+<td>Mezzo-forte</td>
+<td>Medio fuerte</td>
+</tr>
+<tr>
+<td><strong><em>f</em></strong></td>
+<td>Forte</td>
+<td>Fuerte</td>
+</tr>
+<tr>
+<td><strong><em>ff</em></strong></td>
+<td>Fortissimo</td>
+<td>Muy fuerte</td>
+</tr>
+<tr>
+<td><strong><em>fff</em></strong></td>
+<td>Fortissimo possibile</td>
+<td>Lo más fuerte posible</td>
+</tr>
+</tbody>
+</table>
+<h3 id="agregar-una-dinamica">Agregar una dinámica<a class="headerlink" href="#agregar-una-dinamica" title="Permanent link">&para;</a></h3>
+<p><strong>Desde la paleta Dinámicas:</strong>
+1. Seleccionar una o varias notas.
+2. Hacer clic en la dinámica deseada en la paleta <strong>Dinámicas</strong>.
+3. La dinámica se coloca automáticamente debajo del pentagrama asociada a esa nota.</p>
+<p><strong>Desde el popup de dinámicas:</strong>
+1. Seleccionar una nota.
+2. Presionar <code>Ctrl + D</code> (<code>Cmd + D</code> en macOS). Aparece un popup con las dinámicas disponibles.
+3. Hacer clic en la deseada o escribir su abreviatura (ej. <code>pp</code>, <code>mf</code>, <code>ff</code>).</p>
+<h3 id="combinar-dinamicas-con-texto">Combinar dinámicas con texto<a class="headerlink" href="#combinar-dinamicas-con-texto" title="Permanent link">&para;</a></h3>
+<p>MuseScore permite dos formas de combinar texto con dinámicas:
+- <strong>Texto de expresión separado</strong>: agregar la dinámica, luego agregar un texto de expresión desde la paleta <strong>Texto</strong> (ej. <em>dolce</em>, <em>espress.</em>). Ambos se alinean automáticamente.
+- <strong>Texto dentro de la dinámica</strong>: hacer doble clic en la dinámica y escribir el texto directamente (ej. <em>più </em><em>p</em><strong>, </strong><em>f</em><em> sub.</em>). El texto se trata como parte del mismo elemento.</p>
+<div class="admonition tip">
+<p class="admonition-title">Las dinámicas se heredan hasta la siguiente</p>
+<p>En reproducción, una dinámica afecta a su voz asignada desde el punto donde aparece <strong>hasta que otra dinámica la reemplace</strong>. Si escribís <strong><em>f</em></strong> en el compás 1 y no ponés nada más, todo el resto de la partitura sonará fuerte. Siempre cerrá tus frases con una dinámica apropiada.</p>
+</div>
+</details>
+<details class="note" open="open">
+<summary>Reguladores: crescendo y diminuendo</summary>
+<p>Los reguladores indican un <strong>cambio gradual</strong> de intensidad, a diferencia de las dinámicas que marcan un nivel fijo.</p>
+<h3 id="agregar-un-regulador">Agregar un regulador<a class="headerlink" href="#agregar-un-regulador" title="Permanent link">&para;</a></h3>
+<p><strong>Con atajo de teclado (recomendado):</strong>
+1. Seleccionar un rango de notas o compases.
+2. Presionar <code>&lt;</code> para un crescendo (se abre) o <code>&gt;</code> para un diminuendo (se cierra).</p>
+<p><strong>Desde la paleta:</strong>
+1. Seleccionar el rango.
+2. Hacer clic en el regulador deseado en la paleta <strong>Dinámicas</strong>.</p>
+<h3 id="reguladores-con-dinamicas-en-los-extremos">Reguladores con dinámicas en los extremos<a class="headerlink" href="#reguladores-con-dinamicas-en-los-extremos" title="Permanent link">&para;</a></h3>
+<p>La forma más común y correcta de usar reguladores es acompañarlos con dinámicas:
+- Escribir <strong><em>p</em></strong> en la nota donde comienza el crescendo.
+- Seleccionar desde esa nota hasta la nota donde termina.
+- Presionar <code>&lt;</code>.
+- Escribir <strong><em>f</em></strong> en la nota final del regulador.</p>
+<p>MuseScore alinea automáticamente el regulador con las dinámicas de los extremos si comparten la misma asignación de voz y posición.</p>
+<h3 id="altura-y-angulo-del-regulador">Altura y ángulo del regulador<a class="headerlink" href="#altura-y-angulo-del-regulador" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Altura</strong>: seleccionar el regulador, luego arrastrar el tirador inferior de la apertura hacia arriba o abajo, o usar las teclas <code>↑</code> / <code>↓</code>.</li>
+<li><strong>Ángulo</strong>: en el panel <strong>Propiedades</strong>, activar <strong>Permitir diagonal</strong>. Luego se pueden mover independientemente los extremos del regulador en el plano vertical.</li>
+</ul>
+<h3 id="opciones-avanzadas">Opciones avanzadas<a class="headerlink" href="#opciones-avanzadas" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Círculo de <em>niente</em></strong>: en el panel Propiedades, activar "Niente circle" para dibujar un pequeño círculo en la punta del regulador, indicando que el sonido viene de la nada o se desvanece a la nada.</li>
+<li><strong><em>Cresc. / dim.</em> con línea de texto</strong>: para pasajes largos donde un regulador tradicional sería demasiado extenso, usar las líneas <em>cresc.</em> o <em>dim.</em> de la paleta <strong>Dinámicas</strong>. Funcionan igual que los reguladores pero se dibujan como texto seguido de una línea punteada.</li>
+</ul>
+</details>
+<details class="note" open="open">
+<summary>Tempo: marcas metronómicas, palabras y cambios graduales</summary>
+<p>El tempo controla la <strong>velocidad</strong> de la música. MuseScore reproduce automáticamente las marcas de tempo que coloques en la partitura.</p>
+<h3 id="tipos-de-marcas-de-tempo">Tipos de marcas de tempo<a class="headerlink" href="#tipos-de-marcas-de-tempo" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Ejemplo</th>
+<th>Cómo se ve</th>
+<th>Cómo se usa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Marca metronómica</td>
+<td>♩ = 120</td>
+<td>Figura + número</td>
+<td>Tempo exacto en pulsos por minuto</td>
+</tr>
+<tr>
+<td>Indicación verbal</td>
+<td>Allegro, Andante</td>
+<td>Palabra en italiano</td>
+<td>Tempo aproximado, interpretativo</td>
+</tr>
+<tr>
+<td>Combinada</td>
+<td>Allegro ♩ = 132</td>
+<td>Palabra + marca</td>
+<td>Lo más común en partituras modernas</td>
+</tr>
+<tr>
+<td>Modulación métrica</td>
+<td>♩ = ♩.</td>
+<td>Dos figuras conectadas</td>
+<td>Indica equivalencia entre pulsos al cambiar de compás</td>
+</tr>
+</tbody>
+</table>
+<h3 id="agregar-una-marca-de-tempo">Agregar una marca de tempo<a class="headerlink" href="#agregar-una-marca-de-tempo" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Seleccionar una nota o compás donde debe comenzar el tempo.</li>
+<li>Ir a la paleta <strong>Tempo</strong>.</li>
+<li>Hacer clic en la marca deseada (ej. "Allegro ♩ = 120").</li>
+<li>Para crear una marca metronómica rápida basada en el compás actual: <code>Alt + Shift + T</code>.</li>
+</ol>
+<h3 id="editar-una-marca-de-tempo">Editar una marca de tempo<a class="headerlink" href="#editar-una-marca-de-tempo" title="Permanent link">&para;</a></h3>
+<p>Hacer doble clic en la marca para entrar en modo de edición. Se puede:
+- Cambiar el texto (ej. de "Allegro" a "Moderato").
+- Cambiar la figura usando la ventana de <strong>Símbolos especiales</strong> (<code>Shift + F2</code>).
+- Ajustar el número de BPM.</p>
+<h3 id="cambios-graduales-de-tempo">Cambios graduales de tempo<a class="headerlink" href="#cambios-graduales-de-tempo" title="Permanent link">&para;</a></h3>
+<p>La paleta <strong>Tempo</strong> incluye líneas de cambio gradual:
+- <strong>accel.</strong>: accelerando (aumenta velocidad progresivamente). Por defecto, acelera hasta el 133% del tempo original.
+- <strong>rit.</strong>: ritardando (disminuye velocidad). Por defecto, desacelera hasta el 75% del tempo original.
+- <strong>rall.</strong>: rallentando (similar a ritardando, mismo comportamiento por defecto).</p>
+<p>Para aplicarlas: seleccionar el rango de compases sobre el cual debe ocurrir el cambio y hacer clic en la línea deseada.</p>
+<p>En el panel <strong>Propiedades → Reproducción</strong>, se puede ajustar:
+- <strong>Cantidad</strong>: porcentaje del tempo original al llegar al final de la línea.
+- <strong>Método de transición</strong>: Normal (lineal), Ease in (lento al inicio, rápido al final), Ease out (rápido al inicio, lento al final).</p>
+<h3 id="velocidad-de-reproduccion-general">Velocidad de reproducción general<a class="headerlink" href="#velocidad-de-reproduccion-general" title="Permanent link">&para;</a></h3>
+<p>El botón de <strong>Velocidad de reproducción</strong> en la barra de reproducción permite cambiar temporalmente la velocidad de TODA la partitura sin modificar las marcas de tempo escritas. Es un porcentaje del tempo escrito: útil para practicar pasajes difíciles más lento sin cambiar la partitura.</p>
+</details>
+<details class="note" open="open">
+<summary>Mixer y controles de reproducción</summary>
+<p>MuseScore incluye un mezclador completo y una barra de reproducción que permiten controlar cómo suena cada aspecto de la partitura.</p>
+<h3 id="abrir-el-mixer">Abrir el Mixer<a class="headerlink" href="#abrir-el-mixer" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Clic en el botón <strong>Mixer</strong> de la barra de herramientas de ingreso de notas.</li>
+<li>Menú <strong>Ver → Mixer</strong>.</li>
+<li>Atajo: <code>F10</code>.</li>
+</ul>
+<h3 id="canales-del-mixer">Canales del Mixer<a class="headerlink" href="#canales-del-mixer" title="Permanent link">&para;</a></h3>
+<p>El mixer se organiza en tiras de canal codificadas por color:</p>
+<table>
+<thead>
+<tr>
+<th>Color</th>
+<th>Canal</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Azul</td>
+<td><strong>Instrumento</strong></td>
+<td>Un canal por cada instrumento del score. Controla el sonido, efectos, paneo y volumen de ese instrumento.</td>
+</tr>
+<tr>
+<td>Azul</td>
+<td><strong>Metrónomo</strong></td>
+<td>Silenciar/activar el metrónomo y cambiar su sonido y volumen.</td>
+</tr>
+<tr>
+<td>Verde</td>
+<td><strong>Aux 1 / Aux 2</strong></td>
+<td>Canales auxiliares para efectos compartidos. Aux 1 contiene Muse Reverb por defecto.</td>
+</tr>
+<tr>
+<td>Rosa</td>
+<td><strong>Master</strong></td>
+<td>Controla el volumen general de toda la partitura.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="controles-por-canal-de-arriba-hacia-abajo">Controles por canal (de arriba hacia abajo)<a class="headerlink" href="#controles-por-canal-de-arriba-hacia-abajo" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Sound (Sonido)</strong>: el instrumento virtual asignado. Se puede cambiar sin afectar la notación del pentagrama: pasar el ratón sobre el nombre → clic en el desplegable → elegir otro sonido.</li>
+<li><strong>Audio FX</strong>: efectos VST o Muse Reverb. Clic en una ranura vacía → elegir efecto. Se procesan de arriba hacia abajo.</li>
+<li><strong>Aux sends</strong>: cuánto del efecto del canal auxiliar se aplica a este instrumento. La primera fila (Reverb) controla la reverberación.</li>
+<li><strong>Pan</strong>: control giratorio para mover el sonido a la izquierda o derecha en el campo estéreo.</li>
+<li><strong>Volume (Volumen)</strong>: deslizador para ajustar el volumen del canal.</li>
+<li><strong>Mute / Solo</strong>: Mute silencia el canal; Solo silencia todos los demás.</li>
+</ol>
+<h3 id="cambio-de-sonido-a-mitad-de-la-partitura">Cambio de sonido a mitad de la partitura<a class="headerlink" href="#cambio-de-sonido-a-mitad-de-la-partitura" title="Permanent link">&para;</a></h3>
+<p>Para que un mismo pentagrama suene con diferentes instrumentos en distintas secciones:
+1. Seleccionar la nota o compás donde debe cambiar el sonido.
+2. Ir a <strong>Añadir → Texto → Cambio de instrumento</strong> (o desde la paleta <strong>Texto</strong>).
+3. Elegir el nuevo instrumento.
+4. El pentagrama mantiene su notación original pero el Mixer crea un nuevo canal para el sonido cambiado.</p>
+<p>Esto es especialmente útil en partituras de teatro musical o arreglos donde un instrumentista toca múltiples instrumentos (ej. flauta y flautín, clarinete y clarinete bajo).</p>
+<h3 id="barra-de-reproduccion">Barra de reproducción<a class="headerlink" href="#barra-de-reproduccion" title="Permanent link">&para;</a></h3>
+<p>Los controles básicos, de izquierda a derecha:</p>
+<table>
+<thead>
+<tr>
+<th>Botón</th>
+<th>Función</th>
+<th>Atajo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rewind</strong></td>
+<td>Ir al inicio del score (o del loop)</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Play / Pause</strong></td>
+<td>Iniciar o pausar la reproducción</td>
+<td><code>Espacio</code></td>
+</tr>
+<tr>
+<td><strong>Toggle loop</strong></td>
+<td>Activar repetición en bucle de una selección</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Metrónomo</strong></td>
+<td>Activar/desactivar clic del metrónomo</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Playback settings</strong></td>
+<td>Opciones avanzadas: entrada MIDI, repetir compases, acordes, etc.</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Contadores</strong></td>
+<td>Muestra posición en tiempo (mm:ss) y en compases:pulsos</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Velocidad</strong></td>
+<td>Control deslizante para cambiar velocidad de reproducción</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ajustes-de-reproduccion-utiles">Ajustes de reproducción útiles<a class="headerlink" href="#ajustes-de-reproduccion-utiles" title="Permanent link">&para;</a></h3>
+<p>Desde <strong>Playback settings</strong> (rueda dentada):
+- <strong>Play repeats</strong>: reproduce repeticiones (saltos, casillas). Desactivar para escuchar la estructura sin repeticiones.
+- <strong>Play chord symbols</strong>: reproduce los símbolos de acorde como armonía de acompañamiento.
+- <strong>Pan score automatically</strong>: desplaza la vista de la partitura automáticamente durante la reproducción.
+- <strong>Hear playback when editing</strong>: previsualiza el sonido de cada nota al seleccionarla o editarla.</p>
+<div class="admonition tip">
+<p class="admonition-title">El Mixer no modifica la partitura, solo el audio</p>
+<p>Cambiar un sonido en el Mixer no altera la notación del pentagrama ni la transposición. Si querés que el pentagrama refleje el cambio (clave, armadura, transposición), usá <strong>Cambio de instrumento</strong> desde la paleta Texto. Si solo querés escuchar otro timbre sin tocar la notación, usá el Mixer.</p>
+</div>
+</details>
+<hr />
+<h2 id="actividad-en-classroom">Actividad en Classroom<a class="headerlink" href="#actividad-en-classroom" title="Permanent link">&para;</a></h2>
+<h3 id="tarea-s10-dinamicas-tempo-y-reproduccion">Tarea: S10 — Dinámicas, tempo y reproducción<a class="headerlink" href="#tarea-s10-dinamicas-tempo-y-reproduccion" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Material necesario</strong>: el docente proporcionará dos archivos: (a) <code>ejercicio_S10_dinamicas.mscz</code>, una partitura para cuarteto de cuerdas (violín I, violín II, viola, violonchelo) en Do mayor, 4/4, 32 compases con una pieza breve sin dinámicas ni marcas de tempo; (b) <code>ejercicio_S10_mixer.mscz</code>, una partitura para instrumento solista (flauta) con cambios de sonido sugeridos.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Agregar dinámicas a cada instrumento.</strong> Abrí <code>ejercicio_S10_dinamicas.mscz</code>:</p>
+<ul>
+<li>En cada pentagrama, agregá al menos 4 dinámicas diferentes distribuidas a lo largo de los 32 compases. Usá la paleta <strong>Dinámicas</strong> o el popup (<code>Ctrl + D</code>).</li>
+<li>Asegurate de que las dinámicas tengan sentido musical: una frase que comienza suave puede crecer hacia un clímax y luego disminuir.</li>
+<li>Experimentá con dinámicas extremas (<strong><em>pp</em></strong> y <strong><em>ff</em></strong>) para notar el contraste.</li>
+</ul>
+</li>
+<li>
+<p><strong>Insertar reguladores.</strong> En los mismos pentagramas:</p>
+<ul>
+<li>Colocá al menos 3 reguladores: 2 de crescendo (<code>&lt;</code>) y 1 de diminuendo (<code>&gt;</code>).</li>
+<li>Cada regulador debe estar acompañado de una dinámica en su inicio y otra en su final (ej. <strong><em>p</em></strong> <code>&lt;</code> <strong><em>f</em></strong>).</li>
+<li>Ajustá la altura de al menos un regulador arrastrando su tirador.</li>
+<li>Probá un regulador con círculo de <em>niente</em> (desde el panel Propiedades) en el violonchelo: que comience desde el silencio.</li>
+</ul>
+</li>
+<li>
+<p><strong>Marcas de tempo.</strong> Sobre el pentagrama del violín I:</p>
+<ul>
+<li>Insertá una marca de tempo al inicio: "Allegro ♩ = 120".</li>
+<li>En el compás 17, insertá un cambio de tempo: "Adagio ♩ = 60".</li>
+<li>Entre los compases 24 y 28, insertá una línea de <strong>ritardando</strong> (rit.) desde la paleta <strong>Tempo</strong>.</li>
+<li>En el compás 29, insertá "a tempo" para recuperar la velocidad original.</li>
+<li>Reproducí y escuchá los cambios de velocidad.</li>
+</ul>
+</li>
+<li>
+<p><strong>Exploración del Mixer.</strong> Abrí <code>ejercicio_S10_mixer.mscz</code>. El archivo contiene una melodía para flauta en Do mayor, 4/4, 16 compases. Abrí el Mixer (<code>F10</code>) y realizá lo siguiente:</p>
+<ul>
+<li>Cambiá el sonido de la flauta por un oboe en los compases 1–8 (sin modificar la notación).</li>
+<li>Cambiá el sonido a un clarinete en los compases 9–16 usando <strong>Añadir → Texto → Cambio de instrumento</strong>. Observá cómo se crea un nuevo canal en el Mixer.</li>
+<li>Ajustá el paneo del oboe ligeramente a la izquierda y el del clarinete ligeramente a la derecha.</li>
+<li>Activá el metrónomo durante la reproducción y escuchá la pieza con los cambios.</li>
+<li>Experimentá con el control de velocidad de reproducción: escuchá la pieza al 50%, al 100% y al 150%.</li>
+</ul>
+</li>
+<li>
+<p><strong>Documentación de la experiencia.</strong> Elaborá un breve informe (media página) donde expliques:</p>
+<ul>
+<li>¿Cómo afectaron las dinámicas y los reguladores a la expresión de la pieza del cuarteto?</li>
+<li>¿Qué diferencias notaste entre cambiar el sonido desde el Mixer y cambiarlo con "Cambio de instrumento"?</li>
+<li>¿Para qué situaciones usarías cada método de cambio de sonido?</li>
+</ul>
+</li>
+</ol>
+<h3 id="entregables">Entregables<a class="headerlink" href="#entregables" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] <code>APELLIDO_Nombre_S10_dinamicas_v01.mscz</code> (cuarteto con dinámicas, reguladores y marcas de tempo)</li>
+<li>[ ] <code>APELLIDO_Nombre_S10_dinamicas_v01.pdf</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S10_mixer_v01.mscz</code> (flauta con cambios de sonido)</li>
+<li>[ ] <code>APELLIDO_Nombre_S10_mixer_v01.pdf</code></li>
+<li>[ ] Captura del Mixer mostrando los canales con los cambios aplicados</li>
+<li>[ ] Informe de la experiencia (media página, PDF o Google Docs)</li>
+</ul>
+<h3 id="autoevaluacion">Autoevaluación<a class="headerlink" href="#autoevaluacion" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>✅ Logrado</th>
+<th>⚠️ En proceso</th>
+<th>❌ No logrado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dinámicas</td>
+<td>≥4 dinámicas diferentes por pentagrama; distribución coherente con la frase musical</td>
+<td>2–3 dinámicas por pentagrama o distribución poco musical</td>
+<td>Sin dinámicas o mal distribuidas</td>
+</tr>
+<tr>
+<td>Reguladores</td>
+<td>≥2 crescendo y ≥1 diminuendo; cada uno acompañado de dinámicas en los extremos</td>
+<td>Reguladores presentes pero sin dinámicas de referencia</td>
+<td>Sin reguladores</td>
+</tr>
+<tr>
+<td>Marcas de tempo</td>
+<td>Tempo inicial, cambio en c.17, ritardando y "a tempo" correctamente insertados y audibles</td>
+<td>2–3 marcas presentes</td>
+<td>≤1 marca de tempo</td>
+</tr>
+<tr>
+<td>Mixer</td>
+<td>Sonidos cambiados con ambos métodos; paneo ajustado; metrónomo usado</td>
+<td>Solo un método de cambio usado</td>
+<td>Sin cambios en el Mixer</td>
+</tr>
+<tr>
+<td>Informe</td>
+<td>Explica los 3 puntos con claridad; usa ejemplos del ejercicio</td>
+<td>Explica 2 de 3 puntos</td>
+<td>No entregó el informe</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Basado en: MuseScore Studio 4 Handbook — Dynamics and hairpins, Tempo markings, Mixer, Playback controls | https://handbook.musescore.org</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.path", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

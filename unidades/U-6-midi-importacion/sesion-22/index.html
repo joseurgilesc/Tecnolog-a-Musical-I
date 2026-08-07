@@ -1,0 +1,2977 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de clase — Tecnología Musical I (MuseScore Studio)">
+      
+      
+        <meta name="author" content="José Urgilés">
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../sesion-23/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Sesión 22 - Tecnología Musical I</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sesion-22-configuracion-y-uso-de-teclado-midi" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Tecnología Musical I" class="md-header__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tecnología Musical I
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sesión 22
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Tecnología Musical I" class="md-nav__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../../img/logo.svg" alt="logo">
+
+    </a>
+    Tecnología Musical I
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../objetivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Objetivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../logros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logros de Aprendizaje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-1-introduccion-organizacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-2-ingreso-edicion-notas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-3-articulacion-expresion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-4-estructura-repeticiones/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-5-notaciones-especializadas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 5: Notaciones especializadas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 5: Notaciones especializadas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 22
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#midi-no-es-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MIDI NO es audio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-revolucion-silenciosa-de-1983" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La revolución silenciosa de 1983
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-1-conexion-fisica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 1: Conexión física
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-2-configuracion-en-musescore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 2: Configuración en MuseScore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-3-prueba-de-funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 3: Prueba de funcionamiento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modo-1-ingreso-por-paso-step-time-el-mas-usado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modo 1: Ingreso por paso (Step-time) — El más usado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modo-2-ingreso-en-tiempo-real-automatico-para-los-que-tocan-piano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modo 2: Ingreso en tiempo real automático — Para los que tocan piano
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modo-3-ingreso-en-tiempo-real-manual-hibrido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modo 3: Ingreso en tiempo real manual — Híbrido
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparacion-rapida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparación rápida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atajos-midi-controla-musescore-desde-el-teclado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atajos MIDI: controlá MuseScore desde el teclado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reproduccion-con-teclado-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reproducción con teclado MIDI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teclado-midi-virtual-cuando-no-tenes-teclado-fisico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teclado MIDI virtual: cuando no tenés teclado físico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividad en Classroom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarea-s22-configuracion-y-uso-de-teclado-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tarea: S22 — Configuración y uso de teclado MIDI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entregables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-7-edicion-partes-publicacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 31
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exámenes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exámenes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examen-interciclo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Interciclo (Sesión 16)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examen-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Final (Sesión 32)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#midi-no-es-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MIDI NO es audio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-revolucion-silenciosa-de-1983" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La revolución silenciosa de 1983
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-1-conexion-fisica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 1: Conexión física
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-2-configuracion-en-musescore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 2: Configuración en MuseScore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-3-prueba-de-funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Paso 3: Prueba de funcionamiento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modo-1-ingreso-por-paso-step-time-el-mas-usado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modo 1: Ingreso por paso (Step-time) — El más usado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modo-2-ingreso-en-tiempo-real-automatico-para-los-que-tocan-piano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modo 2: Ingreso en tiempo real automático — Para los que tocan piano
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modo-3-ingreso-en-tiempo-real-manual-hibrido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modo 3: Ingreso en tiempo real manual — Híbrido
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparacion-rapida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparación rápida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atajos-midi-controla-musescore-desde-el-teclado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atajos MIDI: controlá MuseScore desde el teclado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reproduccion-con-teclado-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reproducción con teclado MIDI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teclado-midi-virtual-cuando-no-tenes-teclado-fisico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teclado MIDI virtual: cuando no tenés teclado físico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividad en Classroom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarea-s22-configuracion-y-uso-de-teclado-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tarea: S22 — Configuración y uso de teclado MIDI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entregables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Unidad 6: MIDI, importación y reproducción
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="sesion-22-configuracion-y-uso-de-teclado-midi">Sesión 22: Configuración y uso de teclado MIDI<a class="headerlink" href="#sesion-22-configuracion-y-uso-de-teclado-midi" title="Permanent link">&para;</a></h1>
+<p>📚 Handbook → Basics: Note input modes (MIDI keyboard), Preferences | Herramientas: MuseScore Studio 4, teclado MIDI (físico o virtual), Google Classroom</p>
+<hr />
+<details class="info">
+<summary>Glosario de términos</summary>
+<p>Consultá esta tabla cuando encuentres un término que no conozcas.</p>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="midi"></a> <strong>MIDI (Musical Instrument Digital Interface)</strong></td>
+<td>Protocolo estándar de comunicación entre instrumentos musicales electrónicos, computadoras y software. No transmite audio (sonido), sino INSTRUCCIONES: qué nota se tocó, con qué velocidad, cuándo se soltó, qué pedal se pisó. Es el "lenguaje universal" de la música digital desde 1983. Un archivo MIDI pesa kilobytes; un archivo de audio (WAV, MP3) pesa megabytes.</td>
+</tr>
+<tr>
+<td><a id="midi-keyboard"></a> <strong>Teclado MIDI / controlador MIDI</strong></td>
+<td>Dispositivo con teclas estilo piano que envía mensajes MIDI al software. NO produce sonido por sí mismo (no tiene parlantes ni generador de audio): necesita que el software (MuseScore, un DAW, un sintetizador virtual) interprete los mensajes y genere el audio. Puede tener 25, 49, 61 u 88 teclas y puede incluir ruedas de pitch bend, modulación, pads y sliders.</td>
+</tr>
+<tr>
+<td><a id="velocity"></a> <strong>Velocity (velocidad)</strong></td>
+<td>Valor MIDI (0–127) que indica con qué fuerza se golpeó la tecla. 0 = silencio, 127 = máxima fuerza. En MuseScore, la velocity se traduce en dinámica (una nota con velocity alta suena más fuerte). Es uno de los parámetros más importantes para que una interpretación MIDI suene "humana" y no robótica.</td>
+</tr>
+<tr>
+<td><a id="step-time"></a> <strong>Ingreso por paso (step-time input)</strong></td>
+<td>Método de ingreso de notas donde primero se selecciona la DURACIÓN (negra, corchea, etc.) y luego se indica la ALTURA (con el mouse, teclado de computadora o teclado MIDI). No importa el ritmo con que toques: MuseScore coloca la nota en la posición del cursor y avanza automáticamente. Es el método por defecto en MuseScore.</td>
+</tr>
+<tr>
+<td><a id="real-time"></a> <strong>Ingreso en tiempo real (real-time input)</strong></td>
+<td>Método donde tocás las notas en el teclado MIDI al ritmo de la música y MuseScore las transcribe automáticamente. Requiere tocar con precisión rítmica (como si grabaras). Existen dos modos: automático (MuseScore decide las duraciones) y manual (vos indicás la duración mientras tocás).</td>
+</tr>
+<tr>
+<td><a id="midi-channel"></a> <strong>Canal MIDI</strong></td>
+<td>"Carril" de comunicación independiente dentro de una conexión MIDI. El estándar MIDI permite 16 canales simultáneos. En MuseScore, cada instrumento del ensamble puede asignarse a un canal diferente para que los mensajes de un pentagrama no interfieran con los de otro.</td>
+</tr>
+<tr>
+<td><a id="latency"></a> <strong>Latencia (latency)</strong></td>
+<td>Retraso entre el momento en que presionás una tecla y el momento en que escuchás el sonido. En sistemas MIDI, una latencia alta (&gt; 20 ms) hace que tocar sea incómodo porque el sonido "llega tarde". Se reduce usando drivers ASIO (Windows), CoreAudio (Mac, nativo y sin configuración), o ajustando el tamaño del buffer de audio.</td>
+</tr>
+<tr>
+<td><a id="pitch-bend"></a> <strong>Pitch bend</strong></td>
+<td>Mensaje MIDI que modifica la afinación de una nota hacia arriba o abajo de forma continua. Se controla con una rueda física en el teclado MIDI. En MuseScore, NO se usa el pitch bend durante el ingreso de notas: el programa espera alturas exactas del pentagrama. El pitch bend se usa en DAWs (Ableton, Logic, etc.) para efectos expresivos.</td>
+</tr>
+<tr>
+<td><a id="quantization"></a> <strong>Cuantización (quantization)</strong></td>
+<td>Proceso de ajustar automáticamente la posición rítmica de las notas tocadas en tiempo real para que coincidan con la grilla métrica. Si tocaste una corchea "un poco adelantada", la cuantización la mueve a la posición exacta de la corchea. Es fundamental en el ingreso en tiempo real, pero un exceso de cuantización produce un resultado robótico y sin expresividad.</td>
+</tr>
+<tr>
+<td><a id="cc-midi"></a> <strong>Control Change (CC)</strong></td>
+<td>Mensajes MIDI que transmiten cambios en parámetros del sonido: CC7 = volumen, CC10 = panorama (izquierda/derecha), CC64 = pedal de sustain, CC1 = modulación. En MuseScore, muchas marcas de expresión (dinámicas, reguladores, texto de staff) se traducen internamente en mensajes CC para la reproducción.</td>
+</tr>
+<tr>
+<td><a id="buffer"></a> <strong>Buffer de audio</strong></td>
+<td>Memoria temporal donde el software acumula muestras de audio antes de enviarlas a la placa de sonido. Un buffer pequeño (64–128 samples) = baja latencia pero riesgo de cortes. Un buffer grande (512–1024 samples) = estable pero alta latencia. La configuración del buffer se hace en las preferencias de audio de MuseScore.</td>
+</tr>
+<tr>
+<td><a id="midi-mapping"></a> <strong>Mapeo MIDI (MIDI mapping)</strong></td>
+<td>Asignación que define qué tecla del teclado MIDI corresponde a qué acción en MuseScore. Por defecto, las teclas blancas y negras corresponden a las notas musicales estándar. Pero MuseScore también permite mapear teclas a funciones: iniciar/detener reproducción, cambiar de compás, insertar silencios, etc. Se configura desde <strong>Editar → Preferencias → MIDI → Accesos directos MIDI</strong>.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="note" open="open">
+<summary>¿Qué es MIDI y por qué importa?</summary>
+<p>MIDI es el sistema nervioso de la música digital. Sin MIDI, cada programa musical hablaría su propio idioma y sería imposible conectar un teclado Yamaha con una computadora Dell corriendo MuseScore.</p>
+<h3 id="midi-no-es-audio">MIDI NO es audio<a class="headerlink" href="#midi-no-es-audio" title="Permanent link">&para;</a></h3>
+<p>Este es el error conceptual más común y más grave. Repetilo hasta que te quede grabado:</p>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>MIDI</th>
+<th>Audio (WAV, MP3)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>¿Qué transmite?</td>
+<td>Instrucciones: "tocá Do₄ con velocity 100 durante 0.5 segundos"</td>
+<td>Forma de onda: presión del aire 44,100 veces por segundo</td>
+</tr>
+<tr>
+<td>Tamaño de archivo</td>
+<td>Kilobytes (una sinfonía MIDI completa &lt; 100 KB)</td>
+<td>Megabytes (una canción en MP3 ~ 5 MB)</td>
+</tr>
+<tr>
+<td>¿Se puede editar nota por nota?</td>
+<td>Sí, cada nota es un evento independiente</td>
+<td>No (sin herramientas especializadas como Melodyne)</td>
+</tr>
+<tr>
+<td>¿Suena igual en todas las computadoras?</td>
+<td>NO: depende del sintetizador que lo reproduzca</td>
+<td>Sí (aproximadamente): la forma de onda es siempre igual</td>
+</tr>
+<tr>
+<td>¿Puedo cambiar el tempo sin cambiar la afinación?</td>
+<td>Sí: el tempo es independiente de las notas</td>
+<td>NO: acelerar el audio cambia la afinación (efecto "chipmunk")</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Analogía</strong>: MIDI es una PARTITURA digital. El audio es una GRABACIÓN. La partitura te dice qué tocar; la grabación es el sonido resultante. Podés cambiar la instrumentación de una partitura (de violín a flauta) sin reescribir nada. No podés hacer eso con una grabación.</p>
+<h3 id="la-revolucion-silenciosa-de-1983">La revolución silenciosa de 1983<a class="headerlink" href="#la-revolucion-silenciosa-de-1983" title="Permanent link">&para;</a></h3>
+<p>Antes de MIDI, cada fabricante (Roland, Yamaha, Korg, Moog) usaba su propio protocolo. Un sintetizador Roland no se podía conectar con uno Yamaha. En 1983, los ingenieros de Sequential Circuits, Roland, Yamaha y Korg se reunieron y definieron un estándar común: MIDI 1.0. Ese estándar, con modificaciones menores, sigue vigente HOY. Es uno de los estándares más longevos y exitosos de la historia de la tecnología.</p>
+<div class="admonition tip">
+<p class="admonition-title">El cable MIDI físico</p>
+<p>El conector MIDI tradicional es un DIN de 5 pines (circular, grande). Hoy en día, la mayoría de teclados MIDI se conectan por USB. El protocolo MIDI puede viajar por cable MIDI tradicional, por USB, por Bluetooth (MIDI over BLE), o por red (MIDI over Ethernet / RTP-MIDI). Lo importante es el PROTOCOLO, no el cable.</p>
+</div>
+</details>
+<details class="note" open="open">
+<summary>Configuración del teclado MIDI en MuseScore</summary>
+<p>Conectar un teclado MIDI a MuseScore requiere DOS pasos: conexión física y configuración en el software. Si falla uno, el teclado no funciona.</p>
+<h3 id="paso-1-conexion-fisica">Paso 1: Conexión física<a class="headerlink" href="#paso-1-conexion-fisica" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tipo de conexión</th>
+<th>Cable necesario</th>
+<th>Ventaja</th>
+<th>Desventaja</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>USB</strong> (la más común)</td>
+<td>Cable USB-A a USB-B (el cuadrado que viene con impresoras y teclados MIDI)</td>
+<td>Plug and play, alimenta el teclado</td>
+<td>Latencia variable, ocupa un puerto USB</td>
+</tr>
+<tr>
+<td><strong>MIDI DIN (5 pines)</strong></td>
+<td>Cable MIDI + interfaz MIDI-USB</td>
+<td>Conexión profesional, menor latencia</td>
+<td>Necesita interfaz externa</td>
+</tr>
+<tr>
+<td><strong>Bluetooth MIDI</strong></td>
+<td>No necesita cable</td>
+<td>Sin cables, libertad de movimiento</td>
+<td>Latencia impredecible, no recomendado para ingreso en tiempo real</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Procedimiento para USB</strong>:
+1. Conectar el cable USB al teclado y a la computadora.
+2. Encender el teclado (si tiene switch de encendido).
+3. Esperar a que el sistema operativo lo reconozca (5–10 segundos).</p>
+<p>En Mac: el teclado aparece automáticamente en <strong>Configuración de Audio MIDI</strong> (<code>/Aplicaciones/Utilidades/Configuración de Audio MIDI.app</code>). En Windows: aparece en el Administrador de dispositivos como "Dispositivo de audio USB" o con el nombre del fabricante.</p>
+<h3 id="paso-2-configuracion-en-musescore">Paso 2: Configuración en MuseScore<a class="headerlink" href="#paso-2-configuracion-en-musescore" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Abrir MuseScore Studio 4.</li>
+<li>Ir a <strong>Editar → Preferencias</strong> (Mac: <code>Cmd + ,</code> / Windows: <code>Ctrl + ,</code>).</li>
+<li>Seleccionar la pestaña <strong>Audio y MIDI</strong>.</li>
+<li>En la sección <strong>Dispositivos MIDI</strong>, buscar el teclado en la lista <strong>Entrada MIDI</strong>.</li>
+<li>Si el teclado aparece, seleccionarlo como <strong>dispositivo activo</strong>.</li>
+<li>El teclado debería aparecer como <strong>"Habilitado"</strong> (indicador verde en versiones recientes).</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">¿Mi teclado no aparece en la lista?</p>
+<p>Causas comunes:
+- El teclado no está encendido (verificá el switch de power).
+- El cable USB está dañado o no hace buen contacto (probá otro cable).
+- El teclado necesita drivers (algunos modelos Roland/Korg requieren instalación de driver en Windows; en Mac generalmente no).
+- MuseScore se abrió ANTES de conectar el teclado. Solución: cerrar MuseScore, conectar el teclado, reabrir MuseScore.
+- El puerto USB no entrega suficiente energía. Probar en otro puerto o con un hub USB alimentado.</p>
+</div>
+<h3 id="paso-3-prueba-de-funcionamiento">Paso 3: Prueba de funcionamiento<a class="headerlink" href="#paso-3-prueba-de-funcionamiento" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Crear una partitura nueva (cualquier plantilla).</li>
+<li>Activar el modo de ingreso de notas (<code>N</code>).</li>
+<li>Tocar una tecla en el teclado MIDI.</li>
+<li>Si la nota aparece en el pentagrama y se escucha → el teclado funciona correctamente.</li>
+<li>Si no aparece → volver a verificar los pasos anteriores.</li>
+</ol>
+</details>
+<details class="note" open="open">
+<summary>Modos de ingreso con teclado MIDI</summary>
+<p>Una vez conectado el teclado, tenés TRES formas principales de ingresar notas. Cada una sirve para situaciones diferentes.</p>
+<h3 id="modo-1-ingreso-por-paso-step-time-el-mas-usado">Modo 1: Ingreso por paso (Step-time) — El más usado<a class="headerlink" href="#modo-1-ingreso-por-paso-step-time-el-mas-usado" title="Permanent link">&para;</a></h3>
+<p><strong>Cómo funciona</strong>: primero elegís la duración, luego tocás la nota.</p>
+<ol>
+<li>Activar ingreso de notas: <code>N</code>.</li>
+<li>Seleccionar duración: clic en el ícono de negra (o atajo numérico: <code>5</code> = negra, <code>4</code> = corchea, <code>6</code> = blanca, <code>7</code> = redonda).</li>
+<li>Tocar la nota deseada en el teclado MIDI.</li>
+<li>La nota aparece en el pentagrama en la posición del cursor. El cursor avanza al siguiente pulso automáticamente.</li>
+<li>Para acordes: mantener presionadas las teclas simultáneamente. MuseScore apilará las notas en el mismo tiempo.</li>
+</ol>
+<p><strong>Ventajas</strong>:
+- Precisión absoluta: cada nota va exactamente donde querés.
+- Ideal para música compleja rítmicamente (tresillos, síncopas, notas con puntillo).
+- No necesitás tocar al tempo correcto; podés tomarte tu tiempo entre nota y nota.
+- Funciona incluso si no sabés tocar piano "de verdad" (solo necesitás saber qué tecla corresponde a cada nota).</p>
+<p><strong>Desventaja</strong>: más lento que el ingreso en tiempo real para música simple y repetitiva.</p>
+<p><strong>Atajos clave para productividad</strong>:
+- <code>R</code>: repetir la última nota/cifra ingresada.
+- <code>Q</code>: reducir a la mitad la duración seleccionada (negra → corchea).
+- <code>W</code>: duplicar la duración (negra → blanca).
+- <code>Shift + W</code>: agregar puntillo a la duración actual.
+- <code>.</code> (punto): convertir en nota con puntillo después de ingresarla.
+- <code>T</code>: agregar ligadura de prolongación a la nota recién ingresada.</p>
+<div class="admonition tip">
+<p class="admonition-title">Ingreso de acordes por paso</p>
+<p>Para ingresar un acorde de 3 notas con teclado MIDI en step-time:
+1. Seleccionar la duración (ej. <code>5</code> para negra).
+2. Tocar simultáneamente Do + Mi + Sol en el teclado.
+3. MuseScore coloca las tres notas apiladas en el mismo pulso.
+Si querés agregar notas una por una al acorde: mantené <code>Shift</code> mientras tocás cada nota adicional.</p>
+</div>
+<h3 id="modo-2-ingreso-en-tiempo-real-automatico-para-los-que-tocan-piano">Modo 2: Ingreso en tiempo real automático — Para los que tocan piano<a class="headerlink" href="#modo-2-ingreso-en-tiempo-real-automatico-para-los-que-tocan-piano" title="Permanent link">&para;</a></h3>
+<p><strong>Cómo funciona</strong>: tocás al ritmo de un metrónomo y MuseScore transcribe.</p>
+<ol>
+<li>Colocar el cursor en el compás donde querés empezar.</li>
+<li>Activar <strong>Editar → Preferencias → MIDI → Modo de entrada en tiempo real</strong> o usar el ícono de la barra de herramientas de reproducción (el botón de "grabar" rojo en la barra de transporte en algunas versiones).</li>
+<li>Configurar el tempo (con el control deslizante de tempo en la barra de transporte).</li>
+<li>MuseScore hace una cuenta regresiva (1 compás de clics de metrónomo) y empieza a grabar.</li>
+<li>Tocá junto con el metrónomo. MuseScore transcribe las notas y duraciones automáticamente.</li>
+<li>Presionar <code>Espacio</code> para detener la grabación.</li>
+</ol>
+<p><strong>Parámetros importantes</strong>:
+- <strong>Cuantización</strong>: define la duración mínima que MuseScore va a reconocer. Si configurás "corchea", las notas más rápidas que una corchea no se transcribirán correctamente.
+- <strong>Velocidad de entrada</strong>: el tempo del metrónomo en BPM (pulsos por minuto).</p>
+<p><strong>Ventajas</strong>:
+- Rapidísimo para música que podés tocar fluidamente.
+- Captura la expresividad (velocity) de tu interpretación.
+- Ideal para melodías simples, escalas, arpegios.</p>
+<p><strong>Desventajas</strong>:
+- Requiere tocar con precisión rítmica. Si tocás "fuera de tiempo", MuseScore produce un desastre.
+- La cuantización puede malinterpretar ritmos complejos (síncopas, tresillos).
+- No funciona bien si no tenés práctica de tocar con metrónomo.</p>
+<h3 id="modo-3-ingreso-en-tiempo-real-manual-hibrido">Modo 3: Ingreso en tiempo real manual — Híbrido<a class="headerlink" href="#modo-3-ingreso-en-tiempo-real-manual-hibrido" title="Permanent link">&para;</a></h3>
+<p><strong>Cómo funciona</strong>: tocás las notas al tempo pero VOS decidís las duraciones.</p>
+<ol>
+<li>Activar el modo de ingreso (<code>N</code>).</li>
+<li>Seleccionar la duración deseada (<code>5</code> para negra, <code>4</code> para corchea).</li>
+<li>Tocar una tecla en el teclado MIDI en el momento rítmico correcto (MuseScore está reproduciendo el metrónomo).</li>
+<li>La nota se inserta con la duración que elegiste, no la que tocaste.</li>
+</ol>
+<p><strong>Ventaja</strong>: combinás la velocidad del ingreso rítmico con el control de las duraciones.</p>
+<h3 id="comparacion-rapida">Comparación rápida<a class="headerlink" href="#comparacion-rapida" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Modo</th>
+<th>¿Necesito tocar al tempo?</th>
+<th>Precisión rítmica</th>
+<th>Velocidad</th>
+<th>Ideal para...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Step-time</strong></td>
+<td>No</td>
+<td>Perfecta</td>
+<td>Media</td>
+<td>Música compleja, edición de detalles</td>
+</tr>
+<tr>
+<td><strong>Real-time automático</strong></td>
+<td>Sí</td>
+<td>Depende de tu precisión tocando</td>
+<td>Alta</td>
+<td>Melodías simples, transcripción rápida</td>
+</tr>
+<tr>
+<td><strong>Real-time manual</strong></td>
+<td>Sí</td>
+<td>Alta (vos elegís la duración)</td>
+<td>Media-alta</td>
+<td>Música con ritmo variado</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="note" open="open">
+<summary>Más allá del ingreso: el teclado MIDI como herramienta</summary>
+<p>El teclado MIDI no solo sirve para ingresar notas. Con los atajos MIDI, se convierte en un centro de control para MuseScore que acelera drásticamente el flujo de trabajo.</p>
+<h3 id="atajos-midi-controla-musescore-desde-el-teclado">Atajos MIDI: controlá MuseScore desde el teclado<a class="headerlink" href="#atajos-midi-controla-musescore-desde-el-teclado" title="Permanent link">&para;</a></h3>
+<p>MuseScore permite asignar teclas del teclado MIDI a funciones del programa:</p>
+<table>
+<thead>
+<tr>
+<th>Función</th>
+<th>Atajo sugerido (tecla MIDI)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Iniciar / Detener reproducción</strong></td>
+<td>La nota más grave del teclado (normalmente no usada para ingreso)</td>
+</tr>
+<tr>
+<td><strong>Ir al compás anterior / siguiente</strong></td>
+<td>Dos teclas adyacentes en el extremo grave</td>
+</tr>
+<tr>
+<td><strong>Activar / Desactivar ingreso de notas</strong></td>
+<td>Un botón de transporte si el teclado tiene</td>
+</tr>
+<tr>
+<td><strong>Insertar silencio</strong></td>
+<td>Una tecla negra específica fuera del ámbito normal</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cómo configurar</strong>: <strong>Editar → Preferencias → MIDI → Accesos directos MIDI</strong>. Cada atajo se configura presionando la tecla MIDI deseada mientras el campo de asignación está activo.</p>
+<h3 id="reproduccion-con-teclado-midi">Reproducción con teclado MIDI<a class="headerlink" href="#reproduccion-con-teclado-midi" title="Permanent link">&para;</a></h3>
+<p>Si tu teclado MIDI tiene GENERADOR DE SONIDO interno (sintetizador, no solo controlador), podés usarlo para reproducir la partitura en lugar de los sonidos por defecto de MuseScore:
+1. Ir a <strong>Editar → Preferencias → Audio y MIDI → Salida MIDI</strong>.
+2. Seleccionar el teclado como dispositivo de salida.
+3. Ahora la reproducción de MuseScore enviará mensajes MIDI al teclado, que generará el audio con sus propios sonidos.</p>
+<p>Esto es útil si tu teclado tiene mejores sonidos de piano, cuerdas, o percusión que el soundfont por defecto de MuseScore.</p>
+<h3 id="teclado-midi-virtual-cuando-no-tenes-teclado-fisico">Teclado MIDI virtual: cuando no tenés teclado físico<a class="headerlink" href="#teclado-midi-virtual-cuando-no-tenes-teclado-fisico" title="Permanent link">&para;</a></h3>
+<p>Si no tenés teclado MIDI, MuseScore incluye un <strong>teclado de piano virtual</strong>:
+1. <strong>Ver → Piano virtual</strong> (o <code>P</code> en la barra de herramientas).
+2. Aparece un teclado de piano en pantalla.
+3. Hacé clic en las teclas con el mouse para ingresar notas.</p>
+<p>No reemplaza un teclado físico (es más lento y no detecta velocity), pero es una alternativa viable para practicar el ingreso por paso cuando no tenés hardware.</p>
+</details>
+<hr />
+<h2 id="actividad-en-classroom">Actividad en Classroom<a class="headerlink" href="#actividad-en-classroom" title="Permanent link">&para;</a></h2>
+<h3 id="tarea-s22-configuracion-y-uso-de-teclado-midi">Tarea: S22 — Configuración y uso de teclado MIDI<a class="headerlink" href="#tarea-s22-configuracion-y-uso-de-teclado-midi" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Material necesario</strong>: el docente proporcionará tres archivos: (a) <code>ejercicio_S22_melodia.mscz</code>, una partitura de piano en Do mayor, 4/4, 24 compases, completamente VACÍA (solo compases de silencio), lista para recibir una melodía mediante ingreso MIDI; (b) <code>ejercicio_S22_acordes.mscz</code>, una partitura de piano en Sol mayor, 3/4, 16 compases con cifrado armónico ya ingresado (G, C, D, Em, Am, Bm) y una línea de bajo escrita, pero SIN los acordes en el pentagrama superior; (c) <code>ejercicio_S22_partitura.mscz</code>, una partitura para flauta sola en Fa mayor, 4/4, 32 compases con una melodía rítmicamente variada (corcheas, síncopas, tresillos, puntillos, notas largas) que el estudiante deberá transcribir usando el teclado MIDI.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Conexión y verificación del teclado MIDI.</strong> Conectá tu teclado MIDI a la computadora siguiendo los pasos de la guía (conexión física → encendido → verificación en Preferencias → prueba de funcionamiento). Documentá el modelo de tu teclado, el tipo de conexión usada (USB, MIDI DIN, Bluetooth) y si requirió instalación de drivers. Si no tenés teclado MIDI físico, activá el Piano Virtual de MuseScore (<code>P</code>) y documentá que usarás esta alternativa.</p>
+</li>
+<li>
+<p><strong>Ingreso por paso: melodía desde cero.</strong> Abrí <code>ejercicio_S22_melodia.mscz</code>:</p>
+<ul>
+<li>Activá el modo de ingreso por paso (<code>N</code>).</li>
+<li>Vas a ingresar la siguiente melodía en el pentagrama superior exclusivamente con teclado MIDI (físico o virtual). NO uses el mouse para colocar notas ni las letras A–G:<ul>
+<li>c.1–4: escala ascendente de Do mayor (Do–Re–Mi–Fa–Sol–La–Si–Do) en negras.</li>
+<li>c.5–8: escala descendente (Do–Si–La–Sol–Fa–Mi–Re–Do) pero en corcheas.</li>
+<li>c.9–12: arpegio de Do mayor extendido (Do–Mi–Sol–Do₅–Sol–Mi–Do–Mi–Sol) alternando negras y corcheas.</li>
+<li>c.13–16: una melodía libre de tu invención en Do mayor usando solo negras, corcheas y al menos una blanca.</li>
+<li>c.17–24: repetí los compases 1–8 pero con la indicación "8va" (tocá todo una octava arriba). Para esto, ingresá las notas normalmente y luego agregá la línea de octava desde la paleta <strong>Líneas → 8va</strong>.</li>
+</ul>
+</li>
+<li>Cada nota debe ser ingresada con el teclado MIDI en step-time. Cronometrate: ¿cuánto tiempo te tomó completar los 24 compases?</li>
+</ul>
+</li>
+<li>
+<p><strong>Ingreso de acordes con teclado MIDI.</strong> Abrí <code>ejercicio_S22_acordes.mscz</code>:</p>
+<ul>
+<li>Observá el cifrado armónico existente (G, C, D, Em, Am, Bm) y el bajo escrito en el pentagrama inferior.</li>
+<li>En el pentagrama superior, construí los acordes completos sobre cada cambio de armonía usando el teclado MIDI:<ul>
+<li>Tocá simultáneamente las notas de cada acorde (tríada) en el teclado.</li>
+<li>Asegurate de que las notas del acorde estén dentro del ámbito del pentagrama superior (Do₄–Sol₅) y no choquen con el bajo.</li>
+</ul>
+</li>
+<li>Ingresá al menos 5 acordes usando ingreso simultáneo (todas las notas del acorde a la vez) y al menos 5 usando ingreso nota por nota (<code>Shift</code> mientras tocás cada nota adicional).</li>
+<li>Verificá que cada acorde corresponda al cifrado armónico indicado.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ingreso en tiempo real: transcripción rítmica.</strong> Abrí <code>ejercicio_S22_partitura.mscz</code>:</p>
+<ul>
+<li>La partitura contiene una melodía para flauta rítmicamente variada que DEBÉS transcribir usando ingreso en tiempo real automático.</li>
+<li>Configurá el metrónomo a un tempo que puedas manejar (sugerencia: empezar en 60 BPM).</li>
+<li>Activá el modo de ingreso en tiempo real y tocá la melodía con el teclado MIDI siguiendo el metrónomo.</li>
+<li>Al terminar, revisá el resultado: ¿MuseScore transcribió correctamente los ritmos? ¿Los tresillos se interpretaron bien? ¿Las síncopas?</li>
+<li>Si el resultado tiene errores, ajustá la cuantización (probar con "semicorchea" en lugar de "corchea") y repetí la grabación.</li>
+<li>Documentá cuántos intentos necesitaste para obtener una transcripción aceptable.</li>
+</ul>
+</li>
+<li>
+<p><strong>Integración: método mixto.</strong> Creá una NUEVA partitura desde cero: <code>APELLIDO_Nombre_S22_mixto.mscz</code>.</p>
+<ul>
+<li>Plantilla: Piano. Tonalidad: Re mayor (2 sostenidos). Compás: 4/4. 20 compases.</li>
+<li><strong>Compases 1–8 (ingreso por paso con MIDI)</strong>: escribí una melodía en la mano derecha usando exclusivamente ingreso por paso. La melodía debe incluir al menos: 4 corcheas consecutivas, 1 tresillo de corcheas, 2 notas con puntillo, y 1 síncopa (nota ligada a través de la línea divisoria del compás).</li>
+<li><strong>Compases 9–16 (ingreso en tiempo real con MIDI)</strong>: continuación de la melodía anterior, pero ingresada en tiempo real automático. La melodía debe ser más fluida y cantabile (apta para tocar de corrido). Grabala con el metrónomo a un tempo cómodo.</li>
+<li><strong>Compases 17–20 (acordes con MIDI)</strong>: agregá acordes en la mano izquierda (redondas) usando ingreso simultáneo de acordes con el teclado MIDI. Progresión: I (Re) → V (La) → vi (Sim) → IV (Sol) → I (Re). Ingresá también el cifrado armónico (<code>Ctrl + K</code>) sobre cada acorde.</li>
+<li>Exportá como PDF.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reflexión sobre ingreso MIDI.</strong> En Classroom, respondé:</p>
+<ul>
+<li>¿Qué modo de ingreso (step-time, real-time automático, real-time manual) te resultó más eficiente y por qué? Si no tenés teclado MIDI físico y usaste el piano virtual, ¿cómo afectó eso tu experiencia?</li>
+<li>¿Qué ventajas tiene ingresar acordes con teclado MIDI en comparación con hacerlo con el mouse y el teclado de la computadora?</li>
+<li>Si tuvieras que transcribir una partitura de 100 compases para orquesta completa, ¿usarías ingreso por paso o en tiempo real? Justificá tu elección considerando precisión, velocidad y esfuerzo.</li>
+</ul>
+</li>
+</ol>
+<h3 id="entregables">Entregables<a class="headerlink" href="#entregables" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] <code>APELLIDO_Nombre_S22_melodia_v01.mscz</code> (melodía ingresada con teclado MIDI)</li>
+<li>[ ] <code>APELLIDO_Nombre_S22_melodia_v01.pdf</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S22_acordes_v01.mscz</code> (acordes con ingreso MIDI)</li>
+<li>[ ] <code>APELLIDO_Nombre_S22_acordes_v01.pdf</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S22_partitura_v01.mscz</code> (transcripción en tiempo real)</li>
+<li>[ ] <code>APELLIDO_Nombre_S22_partitura_v01.pdf</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S22_mixto_v01.mscz</code> (método mixto)</li>
+<li>[ ] <code>APELLIDO_Nombre_S22_mixto_v01.pdf</code></li>
+<li>[ ] Comentario en Classroom con: (a) respuestas a las 3 preguntas de reflexión, (b) modelo de tu teclado MIDI y tipo de conexión usada (o "Piano Virtual" si no tenés teclado), (c) tiempos: cuánto tardaste en los 24 compases de step-time (Parte 2) y cuántos intentos necesitaste para la transcripción en tiempo real (Parte 4)</li>
+</ul>
+<h3 id="autoevaluacion">Autoevaluación<a class="headerlink" href="#autoevaluacion" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>✅ Logrado</th>
+<th>⚠️ En proceso</th>
+<th>❌ No logrado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conexión y verificación MIDI</td>
+<td>Teclado detectado, configurado y funcionando; modelo y tipo de conexión documentados</td>
+<td>Teclado configurado pero con problemas de latencia o sin documentar</td>
+<td>Teclado no configurado ni documentado</td>
+</tr>
+<tr>
+<td>Ingreso por paso</td>
+<td>24 compases completos; cada nota ingresada con MIDI; uso correcto de duraciones; melodía correcta</td>
+<td>16–23 compases o uso parcial del teclado</td>
+<td>&lt;16 compases o ingreso sin teclado MIDI</td>
+</tr>
+<tr>
+<td>Ingreso de acordes</td>
+<td>≥10 acordes con ingreso MIDI; al menos 5 simultáneos y 5 nota por nota; correspondencia con el cifrado</td>
+<td>7–9 acordes o solo un método de ingreso</td>
+<td>≤6 acordes o sin correspondencia con cifrado</td>
+</tr>
+<tr>
+<td>Ingreso en tiempo real</td>
+<td>Transcripción completada; ritmos mayormente correctos (≥80%); documentación de intentos</td>
+<td>Transcripción con &gt;20% de errores rítmicos</td>
+<td>Transcripción fallida o sin intentos documentados</td>
+</tr>
+<tr>
+<td>Método mixto</td>
+<td>20 compases completos; secciones claramente diferenciadas por modo de ingreso; tresillo, síncopa y acordes presentes</td>
+<td>15–19 compases o falta algún elemento requerido</td>
+<td>&lt;15 compases o sin diferenciación de modos</td>
+</tr>
+<tr>
+<td>Reflexión</td>
+<td>Responde las 3 preguntas con argumentos técnicos; demuestra entender ventajas/desventajas de cada modo</td>
+<td>Responde 2 de 3 correctamente</td>
+<td>≤1 respuesta o superficial</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Basado en: MuseScore Studio 4 Handbook — Note input modes (MIDI keyboard), Preferences | https://handbook.musescore.org</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.path", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

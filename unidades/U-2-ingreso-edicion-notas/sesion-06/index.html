@@ -1,0 +1,3065 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de clase — Tecnología Musical I (MuseScore Studio)">
+      
+      
+        <meta name="author" content="José Urgilés">
+      
+      
+      
+        <link rel="prev" href="../sesion-05/">
+      
+      
+        <link rel="next" href="../sesion-07/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Sesión 6 - Tecnología Musical I</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sesion-6-compases-metrica-y-operaciones-de-compas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Tecnología Musical I" class="md-header__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tecnología Musical I
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sesión 6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Tecnología Musical I" class="md-nav__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../../img/logo.svg" alt="logo">
+
+    </a>
+    Tecnología Musical I
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../objetivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Objetivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../logros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logros de Aprendizaje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-1-introduccion-organizacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 6
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#anadir-compases-al-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Añadir compases al final
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insertar-compases-en-el-medio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Insertar compases en el medio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eliminar-compases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eliminar compases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duplicar-compases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duplicar compases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insertar-vs-anadir-resumen-visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Insertar vs. Añadir: resumen visual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agregar-o-cambiar-una-indicacion-de-compas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agregar o cambiar una indicación de compás
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compases-simples-mas-usados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compases simples más usados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compases-compuestos-mas-usados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compases compuestos más usados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-una-indicacion-de-compas-personalizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una indicación de compás personalizada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cambios-de-compas-dentro-de-una-obra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cambios de compás dentro de una obra
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compases-de-cortesia-courtesy-time-signatures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compases de cortesía (courtesy time signatures)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-una-anacrusa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es una anacrusa?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-una-anacrusa-al-iniciar-la-partitura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una anacrusa al iniciar la partitura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convertir-un-compas-existente-en-anacrusa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convertir un compás existente en anacrusa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compases-con-duracion-irregular" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compases con duración irregular
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-barras-y-cuando-usarlas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de barras y cuándo usarlas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cambiar-el-tipo-de-barra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cambiar el tipo de barra
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insertar-una-barra-a-mitad-del-compas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Insertar una barra a mitad del compás
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-la-numeracion-para-todo-el-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurar la numeración para todo el score
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#excluir-un-compas-del-conteo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Excluir un compás del conteo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modificar-el-numero-de-un-compas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modificar el número de un compás
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reiniciar-numeracion-con-saltos-de-seccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reiniciar numeración con saltos de sección
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desafio-de-shortcuts-sesion-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎹 Desafío de Shortcuts — Sesión 6
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-3-articulacion-expresion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-4-estructura-repeticiones/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-5-notaciones-especializadas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 5: Notaciones especializadas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 5: Notaciones especializadas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-6-midi-importacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-7-edicion-partes-publicacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 31
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exámenes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exámenes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examen-interciclo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Interciclo (Sesión 16)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examen-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Final (Sesión 32)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#anadir-compases-al-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Añadir compases al final
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insertar-compases-en-el-medio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Insertar compases en el medio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eliminar-compases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eliminar compases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duplicar-compases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duplicar compases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insertar-vs-anadir-resumen-visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Insertar vs. Añadir: resumen visual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agregar-o-cambiar-una-indicacion-de-compas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agregar o cambiar una indicación de compás
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compases-simples-mas-usados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compases simples más usados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compases-compuestos-mas-usados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compases compuestos más usados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-una-indicacion-de-compas-personalizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una indicación de compás personalizada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cambios-de-compas-dentro-de-una-obra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cambios de compás dentro de una obra
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compases-de-cortesia-courtesy-time-signatures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compases de cortesía (courtesy time signatures)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-una-anacrusa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es una anacrusa?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-una-anacrusa-al-iniciar-la-partitura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear una anacrusa al iniciar la partitura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convertir-un-compas-existente-en-anacrusa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convertir un compás existente en anacrusa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compases-con-duracion-irregular" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compases con duración irregular
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-barras-y-cuando-usarlas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de barras y cuándo usarlas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cambiar-el-tipo-de-barra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cambiar el tipo de barra
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insertar-una-barra-a-mitad-del-compas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Insertar una barra a mitad del compás
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-la-numeracion-para-todo-el-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurar la numeración para todo el score
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#excluir-un-compas-del-conteo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Excluir un compás del conteo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modificar-el-numero-de-un-compas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modificar el número de un compás
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reiniciar-numeracion-con-saltos-de-seccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reiniciar numeración con saltos de sección
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desafio-de-shortcuts-sesion-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎹 Desafío de Shortcuts — Sesión 6
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Unidad 2: Ingreso y edición de notas
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="sesion-6-compases-metrica-y-operaciones-de-compas">Sesión 6: Compases, métrica y operaciones de compás<a class="headerlink" href="#sesion-6-compases-metrica-y-operaciones-de-compas" title="Permanent link">&para;</a></h1>
+<p>📚 Handbook → Notation: Rhytm, meter &amp; measures — Time signatures, Measure operations, Barlines, Measure numbering, Pickup &amp; non-metered measures | Herramientas: MuseScore Studio 4, Google Classroom</p>
+<hr />
+<details class="info">
+<summary>Glosario de términos</summary>
+<p>Consulta esta tabla cuando encuentres un término que no conozcas.</p>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="compas"></a> <strong>Compás (measure)</strong></td>
+<td>Unidad métrica que agrupa pulsos según la indicación de compás. Se delimita visualmente por líneas divisorias y su contenido rítmico debe sumar exactamente lo que indica la fracción de compás.</td>
+</tr>
+<tr>
+<td><a id="indicacion-compas"></a> <strong>Indicación de compás (time signature)</strong></td>
+<td>Fracción escrita al inicio de la partitura (y en cada cambio métrico) donde el numerador indica cuántos pulsos entran en el compás y el denominador qué figura equivale a un pulso. Ejemplo: 4/4 = cuatro pulsos de negra.</td>
+</tr>
+<tr>
+<td><a id="compas-simple"></a> <strong>Compás simple</strong></td>
+<td>Compás cuyo pulso se divide naturalmente en mitades. Los más comunes: 2/4 (binario), 3/4 (ternario) y 4/4 (cuaternario).</td>
+</tr>
+<tr>
+<td><a id="compas-compuesto"></a> <strong>Compás compuesto</strong></td>
+<td>Compás cuyo pulso se divide naturalmente en tercios. Se reconoce porque el numerador es múltiplo de 3: 6/8, 9/8, 12/8. En 6/8 hay dos pulsos, cada uno dividido en tres corcheas.</td>
+</tr>
+<tr>
+<td><a id="anacrusa"></a> <strong>Anacrusa / Compás de pickup</strong></td>
+<td>Compás inicial incompleto que comienza en un pulso débil. Su duración se descuenta del último compás de la pieza (o de la sección). La numeración de compases arranca en el primer compás completo.</td>
+</tr>
+<tr>
+<td><a id="barra-divisoria"></a> <strong>Barra divisoria / Línea divisoria (barline)</strong></td>
+<td>Línea vertical que separa compases. Las variantes más usadas son: barra simple (separación normal), barra doble (cambio de sección métrica o armadura) y barra final (doble con una línea gruesa).</td>
+</tr>
+<tr>
+<td><a id="insertar-compas"></a> <strong>Insertar compás</strong></td>
+<td>Agregar uno o más compases vacíos en una posición específica, desplazando el contenido posterior hacia adelante. Atajo: <code>Ins</code> para uno, <code>Ctrl + Ins</code> para varios.</td>
+</tr>
+<tr>
+<td><a id="eliminar-compas"></a> <strong>Eliminar compás</strong></td>
+<td>Suprimir compases completos con todo su contenido. Atajo: <code>Ctrl + Supr</code> (<code>Cmd + Supr</code> en macOS). No debe confundirse con <code>Supr</code>, que borra las notas pero conserva el compás lleno de silencios.</td>
+</tr>
+<tr>
+<td><a id="numeracion-compases"></a> <strong>Numeración de compases</strong></td>
+<td>Números que identifican cada compás. MuseScore los genera automáticamente. Pueden ocultarse, mostrarse en cada sistema, excluir compases del conteo y reiniciar la numeración después de un salto de sección.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="note" open="open">
+<summary>Operaciones de compás: añadir, insertar, eliminar, duplicar</summary>
+<p>Dominar las operaciones de compás es esencial para estructurar tu partitura. Cada operación tiene un efecto distinto y usarlas correctamente evita tener que reescribir secciones enteras.</p>
+<h3 id="anadir-compases-al-final">Añadir compases al final<a class="headerlink" href="#anadir-compases-al-final" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Un compás al final</td>
+<td><code>Ctrl + B</code> (<code>Cmd + B</code> en macOS)</td>
+</tr>
+<tr>
+<td>Varios compases al final</td>
+<td><code>Alt + Shift + B</code> → ingresar cantidad</td>
+</tr>
+<tr>
+<td>Menú</td>
+<td><strong>Añadir → Compases → Al final de la partitura</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Los compases se añaden justo después del último compás existente, con el mismo tipo de barra divisoria.</p>
+<h3 id="insertar-compases-en-el-medio">Insertar compases en el medio<a class="headerlink" href="#insertar-compases-en-el-medio" title="Permanent link">&para;</a></h3>
+<p>Insertar desplaza todo el contenido desde ese punto hacia adelante, abriendo espacio donde lo necesitas.</p>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Un compás antes de la selección</td>
+<td>Seleccionar un compás → <code>Ins</code></td>
+</tr>
+<tr>
+<td>Varios compases antes</td>
+<td>Seleccionar → <code>Ctrl + Ins</code> (<code>Cmd + Ins</code>) → ingresar cantidad</td>
+</tr>
+<tr>
+<td>Menú contextual</td>
+<td>Clic derecho en compás → <strong>Insertar compases</strong> → elegir ubicación y cantidad</td>
+</tr>
+</tbody>
+</table>
+<h3 id="eliminar-compases">Eliminar compases<a class="headerlink" href="#eliminar-compases" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Operación</th>
+<th>Atajo</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Eliminar compás</strong> completo</td>
+<td><code>Ctrl + Supr</code> (<code>Cmd + Supr</code>)</td>
+<td>El compás desaparece; los siguientes se desplazan hacia atrás</td>
+</tr>
+<tr>
+<td><strong>Borrar contenido</strong> (vaciar compás)</td>
+<td><code>Supr</code></td>
+<td>Las notas se borran pero el compás permanece lleno de silencios</td>
+</tr>
+<tr>
+<td><strong>Eliminar rango seleccionado</strong></td>
+<td><strong>Herramientas → Eliminar rango seleccionado</strong></td>
+<td>Elimina los compases del rango</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">La diferencia entre <code>Supr</code> y <code>Ctrl + Supr</code></p>
+<p>Este es uno de los errores más frecuentes al empezar. <code>Supr</code> limpia el interior del compás pero el compás sigue ahí. <code>Ctrl + Supr</code> lo elimina por completo. Si tu partitura tiene un compás de más que interrumpe la estructura, usa <code>Ctrl + Supr</code>, no <code>Supr</code>.</p>
+</div>
+<h3 id="duplicar-compases">Duplicar compases<a class="headerlink" href="#duplicar-compases" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copiar y pegar</td>
+<td>Seleccionar compás → <code>Ctrl + C</code> → seleccionar destino → <code>Ctrl + V</code></td>
+</tr>
+<tr>
+<td>Repetir (<code>R</code>)</td>
+<td>Seleccionar compás(es) → <code>R</code> (pega justo después)</td>
+</tr>
+</tbody>
+</table>
+<p>La tecla <code>R</code> es particularmente útil para secciones con patrones repetitivos. Si seleccionas 2 compases y presionas <code>R</code>, los duplica inmediatamente a continuación.</p>
+<h3 id="insertar-vs-anadir-resumen-visual">Insertar vs. Añadir: resumen visual<a class="headerlink" href="#insertar-vs-anadir-resumen-visual" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Operación</th>
+<th>¿Dónde?</th>
+<th>¿Desplaza el contenido existente?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl + B</code></td>
+<td>Al final</td>
+<td>No (no hay nada después)</td>
+</tr>
+<tr>
+<td><code>Ins</code></td>
+<td>En el medio</td>
+<td>Sí, todo se mueve a la derecha</td>
+</tr>
+<tr>
+<td><code>Ctrl + Ins</code></td>
+<td>En el medio (varios)</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td><code>Ctrl + Supr</code></td>
+<td>Cualquiera</td>
+<td>Los compases siguientes se mueven a la izquierda</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="note" open="open">
+<summary>Indicaciones de compás: simples y compuestos</summary>
+<p>La indicación de compás define la estructura métrica de la partitura. MuseScore la aplica desde la paleta <strong>Indicaciones de compás</strong> (Time signatures).</p>
+<h3 id="agregar-o-cambiar-una-indicacion-de-compas">Agregar o cambiar una indicación de compás<a class="headerlink" href="#agregar-o-cambiar-una-indicacion-de-compas" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Seleccionar un compás, nota o silencio donde quieres que comience el cambio.</li>
+<li>Hacer clic en la indicación deseada de la paleta <strong>Indicaciones de compás</strong>.</li>
+</ol>
+<p>Alternativamente, arrastrar la indicación desde la paleta hasta el compás.</p>
+<div class="admonition important">
+<p class="admonition-title">El cambio de compás ocurre al inicio del compás</p>
+<p>Actualmente, los cambios de compás solo pueden ocurrir al principio de un compás. Al cambiar la métrica, MuseScore re-agrupa automáticamente los compases siguientes, por lo que conviene revisar que ningún material musical se haya perdido en el proceso.</p>
+</div>
+<h3 id="compases-simples-mas-usados">Compases simples más usados<a class="headerlink" href="#compases-simples-mas-usados" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Compás</th>
+<th>Tipo</th>
+<th>Pulsos</th>
+<th>Subdivisión del pulso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2/4</td>
+<td>Binario simple</td>
+<td>2 negras</td>
+<td>4 corcheas (2+2)</td>
+</tr>
+<tr>
+<td>3/4</td>
+<td>Ternario simple</td>
+<td>3 negras</td>
+<td>6 corcheas (2+2+2)</td>
+</tr>
+<tr>
+<td>4/4</td>
+<td>Cuaternario simple</td>
+<td>4 negras</td>
+<td>8 corcheas (2+2+2+2)</td>
+</tr>
+<tr>
+<td>2/2 (₵)</td>
+<td>Binario simple (alla breve)</td>
+<td>2 blancas</td>
+<td>4 negras (2+2)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compases-compuestos-mas-usados">Compases compuestos más usados<a class="headerlink" href="#compases-compuestos-mas-usados" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Compás</th>
+<th>Tipo</th>
+<th>Pulsos</th>
+<th>Subdivisión del pulso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6/8</td>
+<td>Binario compuesto</td>
+<td>2 negras con puntillo</td>
+<td>6 corcheas (3+3)</td>
+</tr>
+<tr>
+<td>9/8</td>
+<td>Ternario compuesto</td>
+<td>3 negras con puntillo</td>
+<td>9 corcheas (3+3+3)</td>
+</tr>
+<tr>
+<td>12/8</td>
+<td>Cuaternario compuesto</td>
+<td>4 negras con puntillo</td>
+<td>12 corcheas (3+3+3+3)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Cómo distinguir simple de compuesto</p>
+<p>En un compás simple, el numerador suele ser 2, 3 o 4. En un compás compuesto, el numerador es múltiplo de 3 (6, 9, 12) y el denominador suele ser 8. La diferencia práctica: en 6/8 sientes <strong>dos</strong> pulsos (no seis) y cada pulso se subdivide en tres.</p>
+</div>
+<h3 id="crear-una-indicacion-de-compas-personalizada">Crear una indicación de compás personalizada<a class="headerlink" href="#crear-una-indicacion-de-compas-personalizada" title="Permanent link">&para;</a></h3>
+<p>Si necesitas un compás que no está en la paleta (ej. 5/4, 7/8):</p>
+<ol>
+<li>En la paleta <strong>Indicaciones de compás</strong>, hacer clic en <strong>Más</strong>.</li>
+<li>Clic en <strong>Crear indicación de compás</strong>.</li>
+<li>Ingresar numerador y denominador en <strong>Valor</strong>.</li>
+<li>Si quieres que se vea distinto (ej. "3+2/4"), escríbelo en <strong>Texto</strong>.</li>
+<li>Clic en <strong>Añadir</strong> para guardarlo en la paleta.</li>
+</ol>
+<h3 id="cambios-de-compas-dentro-de-una-obra">Cambios de compás dentro de una obra<a class="headerlink" href="#cambios-de-compas-dentro-de-una-obra" title="Permanent link">&para;</a></h3>
+<p>MuseScore permite cambiar la métrica en cualquier punto de la partitura. Para hacerlo:
+1. Seleccionar el compás donde debe comenzar el nuevo compás.
+2. Elegir la nueva indicación en la paleta.
+3. Revisar que las barras de compás siguientes no hayan quedado con material desplazado.</p>
+<h3 id="compases-de-cortesia-courtesy-time-signatures">Compases de cortesía (courtesy time signatures)<a class="headerlink" href="#compases-de-cortesia-courtesy-time-signatures" title="Permanent link">&para;</a></h3>
+<p>Cuando un cambio de compás coincide con el inicio de un sistema, MuseScore muestra automáticamente una indicación de cortesía al final del sistema anterior (entre paréntesis). Esto se puede desactivar desde <strong>Formato → Estilo → Claves, armaduras e indicaciones de compás</strong>.</p>
+</details>
+<details class="note" open="open">
+<summary>Anacrusa y compases incompletos</summary>
+<h3 id="que-es-una-anacrusa">¿Qué es una anacrusa?<a class="headerlink" href="#que-es-una-anacrusa" title="Permanent link">&para;</a></h3>
+<p>Una anacrusa (pickup measure) es un compás inicial que no está completo: empieza en un pulso débil. La duración que falta se descuenta del último compás de la pieza o sección. Por convención, la numeración de compases comienza en el primer compás <strong>completo</strong> (el compás 1 nunca es la anacrusa).</p>
+<h3 id="crear-una-anacrusa-al-iniciar-la-partitura">Crear una anacrusa al iniciar la partitura<a class="headerlink" href="#crear-una-anacrusa-al-iniciar-la-partitura" title="Permanent link">&para;</a></h3>
+<p>Al crear una partitura nueva, en la segunda página del asistente:
+1. Clic en <strong>Compases</strong>.
+2. Marcar <strong>Crear anacrusa</strong>.
+3. Elegir la duración del pickup (ej. una corchea en 4/4).</p>
+<h3 id="convertir-un-compas-existente-en-anacrusa">Convertir un compás existente en anacrusa<a class="headerlink" href="#convertir-un-compas-existente-en-anacrusa" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Clic derecho en el compás → <strong>Propiedades del compás</strong>.</li>
+<li>En <strong>Duración del compás</strong>, junto a <strong>Real</strong>, ajustar el numerador y denominador.</li>
+<li>Clic en <strong>Aceptar</strong>. El compás se acorta.</li>
+</ol>
+<h3 id="compases-con-duracion-irregular">Compases con duración irregular<a class="headerlink" href="#compases-con-duracion-irregular" title="Permanent link">&para;</a></h3>
+<p>Para crear compases que duran más o menos que la indicación de compás (ej. un compás de 5/4 en una partitura en 4/4):
+1. Clic derecho en el compás → <strong>Propiedades del compás</strong>.
+2. Modificar los valores de <strong>Real</strong>.
+3. Se mostrará un pequeño <code>+</code> o <code>−</code> sobre el compás como advertencia visual.</p>
+<div class="admonition info">
+<p class="admonition-title">¿Para qué sirve un compás irregular?</p>
+<p>Casos típicos: compases de cadenza, compases finales que completan la anacrusa inicial, o pasajes con métrica libre donde no conviene cambiar la indicación de compás para un solo compás.</p>
+</div>
+</details>
+<details class="note" open="open">
+<summary>Líneas divisorias: simples, dobles, finales</summary>
+<p>Las barras de compás se aplican desde la paleta <strong>Líneas divisorias</strong> (Barlines).</p>
+<h3 id="tipos-de-barras-y-cuando-usarlas">Tipos de barras y cuándo usarlas<a class="headerlink" href="#tipos-de-barras-y-cuando-usarlas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Barra</th>
+<th>Uso musical</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Simple</strong></td>
+<td>Separación normal entre compases. Es la que usa MuseScore por defecto.</td>
+</tr>
+<tr>
+<td><strong>Doble</strong></td>
+<td>Cambio de sección, cambio de armadura, cambio de compás, o antes de un cambio de tempo importante.</td>
+</tr>
+<tr>
+<td><strong>Final</strong></td>
+<td>Fin de la partitura o de un movimiento. Tiene una línea fina seguida de una gruesa.</td>
+</tr>
+<tr>
+<td><strong>Repetición inicial</strong></td>
+<td>Indica dónde comienza una sección que se repite (dos puntos mirando hacia la derecha).</td>
+</tr>
+<tr>
+<td><strong>Repetición final</strong></td>
+<td>Indica dónde termina una sección que se repite (dos puntos mirando hacia la izquierda).</td>
+</tr>
+<tr>
+<td><strong>Punteada</strong></td>
+<td>Uso editorial: divide compases muy largos o indica sub-agrupaciones métricas.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cambiar-el-tipo-de-barra">Cambiar el tipo de barra<a class="headerlink" href="#cambiar-el-tipo-de-barra" title="Permanent link">&para;</a></h3>
+<p><strong>Para toda la partitura</strong> (todas las voces):
+1. Seleccionar una o más barras en cualquier pentagrama.
+2. Hacer clic en la barra deseada en la paleta.</p>
+<p><strong>Para un solo pentagrama</strong> (barra local):
+1. Seleccionar la barra.
+2. Mantener <code>Ctrl</code> (<code>Cmd</code> en macOS) y hacer clic en la barra deseada de la paleta.</p>
+<h3 id="insertar-una-barra-a-mitad-del-compas">Insertar una barra a mitad del compás<a class="headerlink" href="#insertar-una-barra-a-mitad-del-compas" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Seleccionar una nota o silencio.</li>
+<li>Hacer clic en una barra de la paleta.</li>
+</ol>
+<p>Esto agrega una barra <strong>visual</strong> después de la nota seleccionada, sin dividir realmente el compás. Para dividir un compás en dos (con barras reales), usar <strong>Herramientas → Compases → Dividir compás antes de la nota/silencio seleccionado</strong>.</p>
+</details>
+<details class="note" open="open">
+<summary>Numeración de compases</summary>
+<p>MuseScore numera los compases automáticamente. Por defecto, muestra el número al inicio de cada sistema (excepto el primero).</p>
+<h3 id="configurar-la-numeracion-para-todo-el-score">Configurar la numeración para todo el score<a class="headerlink" href="#configurar-la-numeracion-para-todo-el-score" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Ir a <strong>Formato → Estilo → Numeración de compases</strong>.</li>
+<li>Activar <strong>Mostrar numeración de compases</strong>.</li>
+<li>Elegir la frecuencia: al inicio de cada sistema, cada X compases, o cada compás.</li>
+</ol>
+<h3 id="excluir-un-compas-del-conteo">Excluir un compás del conteo<a class="headerlink" href="#excluir-un-compas-del-conteo" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Clic derecho en el compás → <strong>Propiedades del compás</strong>.</li>
+<li>Marcar <strong>Excluir del conteo de compases</strong>.</li>
+</ol>
+<p>Esto se aplica automáticamente a las anacrusas creadas con el asistente.</p>
+<h3 id="modificar-el-numero-de-un-compas">Modificar el número de un compás<a class="headerlink" href="#modificar-el-numero-de-un-compas" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Clic derecho en el compás → <strong>Propiedades del compás</strong>.</li>
+<li>En <strong>Agregar al número de compás</strong>, ingresar un valor positivo o negativo.</li>
+</ol>
+<p>Útil cuando un score tiene varios movimientos: si el primer movimiento ocupa 80 compases, configurar <code>−80</code> en el primer compás del segundo movimiento lo hará comenzar en 1.</p>
+<h3 id="reiniciar-numeracion-con-saltos-de-seccion">Reiniciar numeración con saltos de sección<a class="headerlink" href="#reiniciar-numeracion-con-saltos-de-seccion" title="Permanent link">&para;</a></h3>
+<p>Por defecto, un <strong>salto de sección</strong> reinicia la numeración. Para desactivarlo:
+1. Seleccionar el salto de sección.
+2. En el panel <strong>Propiedades</strong>, desmarcar <strong>Reiniciar numeración de compases en nueva sección</strong>.</p>
+</details>
+<hr />
+<h2 id="desafio-de-shortcuts-sesion-6">🎹 Desafío de Shortcuts — Sesión 6<a class="headerlink" href="#desafio-de-shortcuts-sesion-6" title="Permanent link">&para;</a></h2>
+<p>Practica los atajos de métrica y operaciones de compás. Al final verás tus errores para repasarlos en MuseScore.</p>
+<p><a class="md-button md-button--primary" href="../../../juegos/shortcuts-game.html?sesion=6">🎮 Jugar Desafío S6</a></p>
+<hr />
+<p>Ver el ejercicio en Classroom.</p>
+<hr />
+<p><em>Basado en: MuseScore Studio 4 Handbook — Time signatures, Barlines, Measure properties, Measure numbering, Pickup and non-metered measures; MuseScore 3 Handbook — Notation: Time signatures, Measure operations, Barlines, Measure rests, Measure numbering | https://handbook.musescore.org</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.path", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

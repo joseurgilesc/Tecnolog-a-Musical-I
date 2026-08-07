@@ -1,0 +1,2557 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de clase — Tecnología Musical I (MuseScore Studio)">
+      
+      
+        <meta name="author" content="José Urgilés">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Guía Docente — Sesión 23: Importación y limpieza de archivos MIDI - Tecnología Musical I</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-docente-sesion-23-importacion-y-limpieza-de-archivos-midi" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Tecnología Musical I" class="md-header__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tecnología Musical I
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guía Docente — Sesión 23: Importación y limpieza de archivos MIDI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tecnología Musical I" class="md-nav__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../img/logo.svg" alt="logo">
+
+    </a>
+    Tecnología Musical I
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objetivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Objetivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logros de Aprendizaje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-1-introduccion-organizacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-1-introduccion-organizacion/sesion-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-1-introduccion-organizacion/sesion-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-1-introduccion-organizacion/sesion-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-2-ingreso-edicion-notas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-3-articulacion-expresion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-3-articulacion-expresion/sesion-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-3-articulacion-expresion/sesion-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-3-articulacion-expresion/sesion-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-3-articulacion-expresion/sesion-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-4-estructura-repeticiones/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-4-estructura-repeticiones/sesion-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-4-estructura-repeticiones/sesion-14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-4-estructura-repeticiones/sesion-15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-4-estructura-repeticiones/sesion-16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-5-notaciones-especializadas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 5: Notaciones especializadas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 5: Notaciones especializadas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-6-midi-importacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-6-midi-importacion/sesion-22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-6-midi-importacion/sesion-23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-6-midi-importacion/sesion-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-6-midi-importacion/sesion-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-7-edicion-partes-publicacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 31
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exámenes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exámenes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examen-interciclo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Interciclo (Sesión 16)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examen-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Final (Sesión 32)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo-de-la-sesion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo de la sesión
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esquema-de-la-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Esquema de la clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-apertura-magia-o-herramienta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Apertura — ¿Magia o herramienta?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Apertura — ¿Magia o herramienta?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#materiales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materiales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dinamica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dinámica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-desarrollo-del-caos-a-la-partitura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Desarrollo — Del caos a la partitura
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Desarrollo — Del caos a la partitura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#secuencia-sugerida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secuencia sugerida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-practica-el-laboratorio-de-limpieza-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Práctica — El laboratorio de limpieza MIDI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Práctica — El laboratorio de limpieza MIDI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-formativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica formativa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-cierre-importar-es-el-10-limpiar-es-el-90" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Cierre — Importar es el 10%, limpiar es el 90%
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Cierre — Importar es el 10%, limpiar es el 90%">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#revision-por-parejas-8-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revisión por parejas (8 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puesta-en-comun-7-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Puesta en común (7 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumen-del-docente-5-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen del docente (5 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posibles-dificultades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Posibles dificultades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-adicionales-para-el-docente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursos adicionales para el docente
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="guia-docente-sesion-23-importacion-y-limpieza-de-archivos-midi">Guía Docente — Sesión 23: Importación y limpieza de archivos MIDI<a class="headerlink" href="#guia-docente-sesion-23-importacion-y-limpieza-de-archivos-midi" title="Permanent link">&para;</a></h1>
+<p><strong>Duración estimada:</strong> 1 sesión presencial (≈ 2 horas)<br />
+<strong>Herramientas:</strong> MuseScore Studio 4, Google Classroom, proyector, archivos <code>ejercicio_S23_melodia.mid</code>, <code>ejercicio_S23_desastre.mid</code> y <code>ejercicio_S23_karaoke.kar</code> preparados por el docente<br />
+<strong>Referencia:</strong> MuseScore Studio Handbook — MIDI import</p>
+<hr />
+<h2 id="objetivo-de-la-sesion">Objetivo de la sesión<a class="headerlink" href="#objetivo-de-la-sesion" title="Permanent link">&para;</a></h2>
+<p>Que el estudiante domine el diálogo de importación MIDI comprendiendo el efecto de cada parámetro en el resultado final, diagnostique y resuelva los 7 problemas clásicos de las partituras importadas (ritmos extraños, notas superpuestas, enarmonías incorrectas, pentagramas genéricos, plicas inconsistentes, armaduras erróneas y dinámicas mal ubicadas), y desarrolle criterio para decidir cuándo conviene importar y limpiar un archivo MIDI versus cuándo es más eficiente escribir la partitura desde cero.</p>
+<hr />
+<h2 id="esquema-de-la-clase">Esquema de la clase<a class="headerlink" href="#esquema-de-la-clase" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Momento</th>
+<th>Duración</th>
+<th>Actividad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Apertura</strong></td>
+<td>10 min</td>
+<td>Revisión de S22 + pregunta disparadora: ¿importar MIDI es magia o herramienta?</td>
+</tr>
+<tr>
+<td><strong>Desarrollo</strong></td>
+<td>35 min</td>
+<td>Demostración: importación limpia → archivo problemático y los 7 problemas → karaoke</td>
+</tr>
+<tr>
+<td><strong>Práctica</strong></td>
+<td>60 min</td>
+<td>Importación limpia → limpieza del desastre → karaoke → integración con MIDI propio</td>
+</tr>
+<tr>
+<td><strong>Cierre</strong></td>
+<td>15 min</td>
+<td>Comparación de estrategias, puesta en común, entrega</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-apertura-magia-o-herramienta">1. Apertura — ¿Magia o herramienta?<a class="headerlink" href="#1-apertura-magia-o-herramienta" title="Permanent link">&para;</a></h2>
+<h3 id="materiales">Materiales<a class="headerlink" href="#materiales" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Proyector con MuseScore Studio abierto.</li>
+<li>Los archivos <code>ejercicio_S23_melodia.mid</code>, <code>ejercicio_S23_desastre.mid</code> y <code>ejercicio_S23_karaoke.kar</code> publicados en Classroom <strong>antes de la clase</strong>.</li>
+<li>Parlantes funcionales para reproducir los MIDI.</li>
+</ul>
+<h3 id="dinamica">Dinámica<a class="headerlink" href="#dinamica" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Revisión de S22</strong> (5 min):</li>
+<li>¿Alguien logró conectar su teclado MIDI esta semana? ¿Step-time o real-time?</li>
+<li>
+<p>Rápidamente: ¿MIDI es audio? (No.) ¿Qué es? (Instrucciones.) Bien, hoy usamos archivos MIDI, no teclados.</p>
+</li>
+<li>
+<p><strong>Preguntas disparadoras</strong> (5 min):</p>
+</li>
+<li>Proyectar una partitura de 4 páginas completamente escrita. "¿Cuánto tiempo creen que me llevó escribir esto?" (Esperar respuestas: 2 horas, 3 horas.)</li>
+<li>"La escribí en 30 segundos. La importé desde un archivo MIDI." (Pausa para efecto.)</li>
+<li>"Ahora... ¿está bien escrita? Miremos más de cerca." (Hacer zoom en pasajes con errores típicos deliberados: ritmos raros, enarmonías mal, notas superpuestas.)</li>
+<li>"La importación MIDI es el equivalente a un borrador generado por IA: te ahorra el 80% del trabajo, pero el 20% que queda ES TU RESPONSABILIDAD. Si no lo limpiás, tu partitura es un desastre. Si lo limpiás bien, nadie sabrá que no la escribiste nota por nota."</li>
+<li>"¿Alguna vez descargaron un MIDI de internet y lo abrieron en MuseScore? ¿Se veía bien o era un desastre?" (La mayoría dirá que era un desastre. Validar la experiencia y anticipar que hoy aprenderán a DOMINAR ese desastre.)</li>
+</ol>
+<hr />
+<h2 id="2-desarrollo-del-caos-a-la-partitura">2. Desarrollo — Del caos a la partitura<a class="headerlink" href="#2-desarrollo-del-caos-a-la-partitura" title="Permanent link">&para;</a></h2>
+<h3 id="secuencia-sugerida">Secuencia sugerida<a class="headerlink" href="#secuencia-sugerida" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Importación limpia: el caso ideal</strong> (8 min). Con <code>ejercicio_S23_melodia.mid</code>:</li>
+<li>"Este archivo MIDI fue exportado desde otro editor de partituras. Vean qué pasa."</li>
+<li>Abrir <strong>Archivo → Abrir</strong> → seleccionar el MIDI.</li>
+<li>Mostrar el diálogo de importación. Explicar CADA opción:<ul>
+<li><strong>Cuantización más corta</strong>: "Define la figura más pequeña que MuseScore 'escucha'. Semicorchea = atrapa semicorcheas y todo lo más lento. Fusa = captura notas muy rápidas pero genera más ruido."</li>
+<li><strong>Número máximo de voces</strong>: "Para piano pueden ser 2 (melodía + acompañamiento en una mano). Para orquesta, 1. Si hay muchas notas superpuestas, subir a 3."</li>
+<li><strong>Simplificar duraciones</strong>: "Limpia silencios y ligaduras innecesarias. Activado para la mayoría de casos."</li>
+<li><strong>Líneas de pedal</strong>: "Para piano SÍ. Para flauta NO."</li>
+<li><strong>Enarmonías</strong>: "Activado = Do♯ se convierte en Re♭ si la armadura lo pide."</li>
+</ul>
+</li>
+<li>"Vean el resultado: flauta en un pentagrama, piano en su gran pentagrama. Armadura correcta. Compás 4/4. Ritmos limpios."</li>
+<li>
+<p><strong>Lección</strong>: "Cuando el MIDI viene de una PARTITURA, la importación es casi automática. El problema es cuando el MIDI viene de una GRABACIÓN."</p>
+</li>
+<li>
+<p><strong>Los 7 problemas clásicos</strong> (18 min). Con <code>ejercicio_S23_desastre.mid</code>:</p>
+</li>
+<li>Importar con parámetros por defecto y mostrar el resultado en pantalla. Se va a ver HORRIBLE. Ritmos extraños por todos lados.</li>
+<li>"Este archivo simula lo que pasa cuando importás una grabación en vivo SIN cuantizar. Vean el caos."</li>
+<li>
+<p>Recorrer los 7 problemas uno por uno, en vivo, mostrando el "antes" horrible y el "después" limpio:</p>
+<p><strong>(1) Ritmos extraños</strong> (3 min):
+ - Seleccionar 4 compases llenos de tresillos falsos y puntillos extraños.
+ - <strong>Herramientas → Cuantizar → corchea</strong>. ¡Puf! La mayoría de los ritmos se normalizan.
+ - "La cuantización es como un filtro que redondea los ritmos a la figura más cercana. Probá con corchea primero. Si falta detalle, bajá a semicorchea."</p>
+<p><strong>(2) Notas superpuestas</strong> (3 min):
+ - Señalar notas que se solapan (misma altura, empiezan en tiempos ligeramente distintos).
+ - "Esto pasa cuando el pianista no soltó el pedal a tiempo. Son 'fantasmas'."
+ - Mostrar cómo eliminarlas manualmente y con selección masiva.</p>
+<p><strong>(3) Armadura incorrecta</strong> (2 min):
+ - "El MIDI no trae armadura. MuseScore asume Do mayor."
+ - Escuchar la pieza. Identificar que está en Re mayor. Arrastrar la armadura de 2 sostenidos.
+ - "Vean cómo todas las alteraciones accidentales DESAPARECEN. MuseScore ajustó todo automáticamente."</p>
+<p><strong>(4) Enarmonías</strong> (2 min):
+ - Señalar un Sol♯ que debería ser La♭. "Misma tecla en el piano, diferente significado musical."
+ - Seleccionar → <code>J</code>. "Un atajo. Una tecla. Resuelto."
+ - "Regla: si la tonalidad tiene sostenidos, usá sostenidos. Si tiene bemoles, usá bemoles."</p>
+<p><strong>(5) Pentagramas genéricos</strong> (2 min):
+ - "Pista 1", "Pista 3", "Pista 7"... "¿Esto es una orquesta o un estacionamiento?"
+ - Clic derecho → Propiedades del pentagrama → Cambiar instrumento.
+ - Eliminar pentagramas duplicados o vacíos con <strong>Editar → Instrumentos</strong>.</p>
+<p><strong>(6) Plicas inconsistentes</strong> (3 min):
+ - Mostrar un pasaje donde algunas plicas van para arriba y otras para abajo sin sentido musical.
+ - Seleccionar todo → Propiedades → Plica → Dirección → Automático.
+ - "MuseScore vuelve a calcular la dirección según las reglas de notación estándar."</p>
+<p><strong>(7) Dinámicas fantasma</strong> (3 min):
+ - "Los mensajes CC del MIDI se convierten en dinámicas que quedan pegadas a notas aleatorias."
+ - Seleccionar todas las marcas de dinámica incorrectas → <code>Supr</code>.
+ - "Generalmente es mejor BORRAR todas las dinámicas automáticas y reescribirlas manualmente. Las que importa MuseScore desde MIDI casi nunca son musicalmente correctas."</p>
+</li>
+<li>
+<p>Mostrar el resultado final: "Miren el antes y el después. De un desastre ilegible a una partitura profesional. En 15 minutos de limpieza."</p>
+</li>
+<li>
+<p><strong>Karaoke MIDI</strong> (5 min). Con <code>ejercicio_S23_karaoke.kar</code>:</p>
+</li>
+<li>"Los archivos .KAR son MIDI con letra. MuseScore los importa y extrae la letra automáticamente."</li>
+<li>Abrir el archivo. Mostrar cómo la letra aparece debajo de las notas del pentagrama melódico.</li>
+<li>Señalar problemas típicos: sincronización (letra corrida respecto a las notas), caracteres extraños ("/", "_", códigos de karaoke).</li>
+<li>Corregir en vivo: mover sílabas con <code>Ctrl + →</code>, borrar caracteres extraños.</li>
+<li>
+<p>"Si alguna vez necesitaron la letra de una canción sincronizada con la partitura, el formato .KAR es su mejor amigo."</p>
+</li>
+<li>
+<p><strong>Decisión crítica: ¿importar o escribir?</strong> (4 min). </p>
+</li>
+<li>"Después de esta demostración, la pregunta obvia es: ¿vale la pena? ¿No es más rápido escribir todo desde cero?"</li>
+<li>Poner en el pizarrón:<ul>
+<li>MIDI de partitura → importar (5% de limpieza) &gt;&gt;&gt; escribir desde cero.</li>
+<li>MIDI de grabación cuantizada → importar (30% de limpieza) ≈ escribir desde cero (depende de la complejidad).</li>
+<li>MIDI de grabación SIN cuantizar → escribir desde cero ES MÁS RÁPIDO.</li>
+</ul>
+</li>
+<li>"No hay una respuesta universal. Hay criterio. Y el criterio se desarrolla con experiencia. Hoy están adquiriendo esa experiencia."</li>
+</ol>
+<hr />
+<h2 id="3-practica-el-laboratorio-de-limpieza-midi">3. Práctica — El laboratorio de limpieza MIDI<a class="headerlink" href="#3-practica-el-laboratorio-de-limpieza-midi" title="Permanent link">&para;</a></h2>
+<h3 id="actividad-en-classroom">Actividad en Classroom<a class="headerlink" href="#actividad-en-classroom" title="Permanent link">&para;</a></h3>
+<p>Publicar como <strong>Tarea</strong> en Google Classroom:</p>
+<p><strong>Título:</strong> S23 — Importación y limpieza de archivos MIDI</p>
+<p><strong>Material</strong>: el docente proporciona tres archivos:</p>
+<ol>
+<li>
+<p><strong><code>ejercicio_S23_melodia.mid</code></strong>: Archivo MIDI Type 1 exportado desde otro editor de partituras. Contiene 2 pistas: (a) Flauta — melodía en Sol mayor, 4/4, 32 compases, ámbito Sol₄–Mi₆, con ritmos de negra y corchea, perfectamente cuantizada. (b) Piano — acompañamiento en el gran pentagrama con acordes en redondas y blancas en la mano izquierda y arpegios simples en la mano derecha. El archivo DEBE incluir mensajes de Program Change correctos (Flute = program 73 o 74, Acoustic Grand Piano = program 1) y estar en formato Type 1 con las pistas separadas. NO debe tener errores de cuantización, notas superpuestas ni enarmonías extrañas. Es el "caso fácil".</p>
+</li>
+<li>
+<p><strong><code>ejercicio_S23_desastre.mid</code></strong>: Archivo MIDI Type 1 deliberadamente problemático. Debe contener: (a) microdesplazamientos rítmicos (notas grabadas en vivo sin cuantizar), (b) notas superpuestas en varios pasajes (simular pedal de piano mal utilizado), (c) armadura incorrecta o ausente (el MIDI no especifica tonalidad, la música está en Mi bemol mayor pero no hay mensaje de key signature), (d) enarmonías forzadas (varios Do♯ que deberían ser Re♭ en el contexto de Mi bemol mayor), (e) 3 pentagramas con nombres genéricos "Pista 1", "Pista 2", "Pista 3" siendo que los instrumentos reales son: violín, viola y violonchelo, (f) plicas inconsistentes en varios pasajes, (g) mensajes CC7 (volumen) que se convertirán en marcas de dinámica mal ubicadas. Duración: 24–32 compases. Debe ser reconocible como una pieza musical (no ruido aleatorio) para que los estudiantes puedan evaluar si la limpieza fue exitosa escuchando el resultado.</p>
+</li>
+<li>
+<p><strong><code>ejercicio_S23_karaoke.kar</code></strong>: Archivo .KAR con una canción popular en español (sugerencia: una balada o canción infantil con melodía clara y letra simple). Debe contener: pista de melodía (voz principal), pista de acompañamiento (piano o guitarra), y letra incrustada como eventos de letra MIDI. Incluir deliberadamente algunos caracteres de karaoke (/, -, _) que los estudiantes deban limpiar.</p>
+</li>
+</ol>
+<p><strong>Instrucciones:</strong> según el detalle en el <code>index.md</code> del estudiante. En resumen:
+1. Importar y diagnosticar el archivo limpio.
+2. Limpiar el archivo problemático resolviendo ≥5 problemas.
+3. Importar .KAR y corregir letra + agregar cifrado.
+4. Buscar, importar y limpiar un archivo MIDI propio (Type 1, ≥4 instrumentos).
+5. Reflexionar sobre cuándo importar vs. escribir desde cero.</p>
+<h3 id="rubrica-formativa">Rúbrica formativa<a class="headerlink" href="#rubrica-formativa" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>✅ Logrado</th>
+<th>⚠️ En proceso</th>
+<th>❌ No logrado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Importación limpia</td>
+<td>Parámetros justificados; diagnóstico completo de pentagramas, instrumentos, armadura</td>
+<td>Diagnóstico parcial o sin justificación</td>
+<td>Sin diagnóstico</td>
+</tr>
+<tr>
+<td>Limpieza del desastre</td>
+<td>≥5 problemas identificados y resueltos; cuantización aplicada; enarmonías corregidas; resultado legible</td>
+<td>3–4 problemas resueltos</td>
+<td>≤2 problemas</td>
+</tr>
+<tr>
+<td>Karaoke .KAR</td>
+<td>Letra sincronizada y limpia; pentagramas nombrados; cifrado armónico</td>
+<td>Letra importada con errores</td>
+<td>Sin procesar</td>
+</tr>
+<tr>
+<td>MIDI propio</td>
+<td>Type 1, ≥4 instrumentos; limpieza documentada; mejoras agregadas (metadatos, dinámicas)</td>
+<td>Importado pero limpieza parcial</td>
+<td>No importado o tipo incorrecto</td>
+</tr>
+<tr>
+<td>Reflexión</td>
+<td>3 respuestas con criterio técnico; comparación importar vs. escribir</td>
+<td>2 respuestas correctas</td>
+<td>≤1 respuesta</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-cierre-importar-es-el-10-limpiar-es-el-90">4. Cierre — Importar es el 10%, limpiar es el 90%<a class="headerlink" href="#4-cierre-importar-es-el-10-limpiar-es-el-90" title="Permanent link">&para;</a></h2>
+<h3 id="revision-por-parejas-8-min">Revisión por parejas (8 min)<a class="headerlink" href="#revision-por-parejas-8-min" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Intercambiar el archivo <code>ejercicio_S23_desastre</code> limpio: "Reproducí la versión limpia del compañero. ¿Suena igual que el MIDI original? ¿La partitura es legible?"</li>
+<li>"¿Cuántos problemas encontró cada uno? ¿Coinciden? ¿Alguno encontró un problema que el otro no vio?" (Fomenta el aprendizaje de diagnóstico.)</li>
+</ul>
+<h3 id="puesta-en-comun-7-min">Puesta en común (7 min)<a class="headerlink" href="#puesta-en-comun-7-min" title="Permanent link">&para;</a></h3>
+<ul>
+<li>"Levanten la mano los que encontraron que limpiar el desastre les llevó MÁS tiempo del que habrían tardado en escribirlo desde cero." (Estadística. Probablemente la mayoría.)</li>
+<li>"¿En qué momento decidirían 'esto no vale la pena, mejor lo escribo de nuevo'?" (Discusión sobre punto de quiebre: ¿40% de limpieza? ¿50%?)</li>
+<li>"¿Qué tipo de archivos MIDI les gustaría encontrar en internet para sus proyectos? ¿Cuáles evitarían?" (Discusión: preferir Type 1 sobre Type 0, MIDI de editores de partituras sobre grabaciones en vivo, archivos con nombres de pista descriptivos.)</li>
+</ul>
+<h3 id="resumen-del-docente-5-min">Resumen del docente (5 min)<a class="headerlink" href="#resumen-del-docente-5-min" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>La importación MIDI es un borrador, no un producto final.</strong> Lo que sale de la importación es el 10% del trabajo. El 90% es limpieza. Quien espera que "funcione solo" se va a decepcionar. Quien entiende que es un punto de partida, gana horas de trabajo.</li>
+<li><strong>Los 7 problemas son predecibles.</strong> Ritmos extraños, notas superpuestas, armaduras, enarmonías, pentagramas, plicas, dinámicas. No son "errores de MuseScore". Son consecuencias inevitables de traducir un protocolo de interpretación (MIDI) a un sistema de notación (partitura). Aprendan a diagnosticarlos rápido.</li>
+<li><strong>MIDI de partitura = excelente. MIDI de grabación = problema.</strong> La diferencia no está en MuseScore, está en el archivo fuente. Antes de importar, pregúntense: "¿este MIDI fue generado desde una partitura o desde una interpretación humana?" La respuesta define tu estrategia.</li>
+<li><strong>La cuantización es tu bisturí, no tu martillo.</strong> Usala con criterio. Demasiada = música robótica. Muy poca = caos. El punto justo depende del estilo y del tempo.</li>
+<li><strong>A veces es más rápido escribir desde cero.</strong> Un MIDI malo puede llevarte 45 minutos de limpieza. La misma partitura desde cero te lleva 30. Saber reconocer cuándo ABANDONAR un MIDI es tan importante como saber limpiarlo.</li>
+</ol>
+<hr />
+<h2 id="posibles-dificultades">Posibles dificultades<a class="headerlink" href="#posibles-dificultades" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Problema</th>
+<th>Solución</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>El archivo MIDI no se abre o da error</td>
+<td>Verificar que el archivo no esté corrupto. Probar abrirlo con otro programa (VLC, Windows Media Player, cualquier reproductor MIDI). Si otro programa lo abre, puede ser un problema de permisos de archivo o de ruta (evitar caracteres especiales o rutas muy largas). Si ningún programa lo abre, el archivo está dañado.</td>
+</tr>
+<tr>
+<td>La importación genera 47 pentagramas para un archivo que debería tener 3</td>
+<td>El archivo probablemente es Type 0 (todas las pistas combinadas). Solución: buscar en internet "MIDI Type 0 to Type 1 converter" y convertir antes de importar. O aceptar la realidad y eliminar manualmente los pentagramas sobrantes.</td>
+</tr>
+<tr>
+<td>Después de cuantizar, algunas notas desaparecen o se fusionan con silencios</td>
+<td>La cuantización fue demasiado agresiva (ej. cuantizar a negra cuando hay corcheas). Deshacer (<code>Ctrl + Z</code>) y probar con una figura más pequeña (corchea → semicorchea). Si las notas cortas son esenciales, no cuantizar ese pasaje y corregir manualmente.</td>
+</tr>
+<tr>
+<td>El estudiante no encuentra la opción de cuantización</td>
+<td>Depende de la versión de MuseScore. En 4.x: está en <strong>Herramientas → Cuantizar</strong> o <strong>Editar → Cuantización</strong>. Si no aparece, buscar "quantize" en el manual. Si la versión no tiene cuantización nativa, el flujo alternativo es: exportar como MIDI desde MuseScore, abrir en un DAW, cuantizar allí, y reimportar.</td>
+</tr>
+<tr>
+<td>Las enarmonías no cambian con <code>J</code></td>
+<td><code>J</code> solo funciona en notas sueltas. Para cambios masivos: seleccionar todas las notas de un pasaje → clic derecho → <strong>Propiedades de la nota → Alteración</strong>. O usar <strong>Herramientas → Respelling</strong> (reescritura enarmónica automática).</td>
+</tr>
+<tr>
+<td>La letra del .KAR está completamente desincronizada (3 sílabas de retraso)</td>
+<td>Seleccionar toda la letra → <code>Ctrl + X</code> (cortar) → seleccionar la primera nota de la melodía → <code>Ctrl + V</code> (pegar). La letra se realinea desde el principio. Si la desincronización es variable (a veces adelantada, a veces atrasada), es problema del archivo .KAR original; corregir manualmente sílaba por sílaba.</td>
+</tr>
+<tr>
+<td>El archivo MIDI suena bien pero la partitura se ve horrible (todo correcto auditivamente, visualmente un caos)</td>
+<td>Este es el problema CONCEPTUAL más difícil de aceptar: MIDI y partitura tienen requisitos DIFERENTES. Un ritmo "correcto" en MIDI (una nota desplazada 30 ms) es ilegible en partitura. La limpieza NO preserva la fidelidad al MIDI original: preserva la LEGIBILIDAD. A veces hay que "mentir" en la partitura para que sea tocable por un humano.</td>
+</tr>
+<tr>
+<td>El estudiante quiere importar un archivo MP3 o WAV (audio) como si fuera MIDI</td>
+<td>DETENER inmediatamente. Explicar enfáticamente: "MIDI y audio son formatos INCOMPATIBLES. No podés 'importar' un MP3 como partitura. Es como querer convertir una foto de un perro en el perro real. Existen herramientas de audio-a-MIDI (como Melodyne, AnthemScore, o Basic Pitch de Spotify) pero son aproximaciones, no conversiones exactas."</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="recursos-adicionales-para-el-docente">Recursos adicionales para el docente<a class="headerlink" href="#recursos-adicionales-para-el-docente" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://handbook.musescore.org/advanced-topics/midi-import.md">MuseScore Studio Handbook — MIDI import</a></li>
+<li><a href="https://handbook.musescore.org/basics/file-formats.md">MuseScore Studio Handbook — File formats</a></li>
+<li><strong>Preparación del archivo <code>ejercicio_S23_melodia.mid</code></strong>: la forma más rápida es crear la partitura directamente en MuseScore (Flauta + Piano en Sol mayor, 4/4, 32 compases) y luego exportar como MIDI (Archivo → Exportar → MIDI). Esto garantiza cuantización perfecta, asignación correcta de instrumentos y formato Type 1. Alternativamente, usar cualquier editor de partituras (Finale, Sibelius, Dorico) para generar el MIDI. NO usar grabaciones en vivo ni secuenciadores.</li>
+<li><strong>Preparación del archivo <code>ejercicio_S23_desastre.mid</code></strong>: la mejor estrategia es grabar una interpretación en vivo con un teclado MIDI (o pedir a un colega pianista que lo haga) y NO cuantizar. Tocar con pedal excesivo, con pequeñas imprecisiones rítmicas (rubato leve), en una tonalidad con bemoles (Mi bemol mayor) pero sin configurar la armadura en el secuenciador. Asignar instrumentos genéricos (pistas con nombres por defecto). Luego guardar como Type 1. El objetivo es que sea un archivo REALISTA, no una caricatura. Si no hay acceso a un teclado MIDI, se puede editar manualmente un archivo MIDI con un editor hexadecimal o un secuenciador para introducir los problemas deliberadamente.</li>
+<li><strong>Preparación del archivo <code>ejercicio_S23_karaoke.kar</code></strong>: descargar archivos .KAR desde repositorios de karaoke MIDI (sitios como midikar.com, vanBasco, etc.) o crear uno propio: escribir una melodía con letra en MuseScore (usando Lyrics <code>Ctrl + L</code>), exportar como MIDI Type 1 con letra, y renombrar la extensión a .KAR. MuseScore exporta la letra como metadatos MIDI que son reconocibles al reimportar. Verificar que la letra tenga algunos caracteres de karaoke (/, -, _) insertados manualmente para que los estudiantes practiquen la limpieza.</li>
+<li>Dato curioso: el formato MIDI fue diseñado en 1982–1983 por un comité de ingenieros de Sequential Circuits, Roland, Yamaha, Korg y Kawai. La primera canción en usar MIDI para sincronizar instrumentos fue el álbum <em>Thriller</em> de Michael Jackson (1982), donde usaron un precursor del MIDI para sincronizar sintetizadores. Para 1985, prácticamente todos los sintetizadores del mercado tenían puerto MIDI.</li>
+<li>Dato curioso: la razón por la que los archivos .KAR existen como formato separado es histórica. En los años 90, los fabricantes de máquinas de karaoke (principalmente japoneses) necesitaban una forma de incluir letra sincronizada en archivos MIDI sin romper el estándar. Extendieron el formato MIDI agregando eventos de texto con un esquema propietario. La extensión .KAR le dice al software "este archivo tiene letra, tratalo como karaoke". Técnicamente, un .KAR es un .MID con metadatos adicionales.</li>
+<li>Dato curioso: la limpieza de partituras MIDI es una habilidad profesional real. Los copistas y transcriptores musicales que trabajan para editoriales (Hal Leonard, Alfred Music, Boosey &amp; Hawkes) frecuentemente reciben archivos MIDI de compositores o arregladores y deben convertirlos en partituras publicables. No es raro que un transcriptor profesional pase 4–6 horas limpiando un archivo MIDI de 10 minutos de música orquestal. Es un trabajo especializado que requiere conocimiento de notación, instrumentación y convenciones editoriales.</li>
+<li>Ejercicio opcional de ampliación (para estudiantes avanzados): entregar una carpeta con 10 archivos MIDI variados (Type 0, Type 1, .KAR, grabaciones en vivo, grabaciones cuantizadas, archivos de internet). Pedir a los estudiantes que CATEGORICEN cada archivo como "importable con poca limpieza", "importable con mucha limpieza", o "no importable (mejor escribir desde cero)", justificando cada categorización. Es un ejercicio de desarrollo de criterio profesional.</li>
+</ul>
+<hr />
+<p><em>Guía docente — Tecnología Musical I | Sesión 23</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.path", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

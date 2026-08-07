@@ -1,0 +1,2603 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de clase — Tecnología Musical I (MuseScore Studio)">
+      
+      
+        <meta name="author" content="José Urgilés">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Guía Docente — Sesión 5: Edición, selección y operaciones de compás - Tecnología Musical I</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-docente-sesion-5-edicion-seleccion-y-operaciones-de-compas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Tecnología Musical I" class="md-header__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tecnología Musical I
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guía Docente — Sesión 5: Edición, selección y operaciones de compás
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tecnología Musical I" class="md-nav__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../img/logo.svg" alt="logo">
+
+    </a>
+    Tecnología Musical I
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objetivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Objetivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logros de Aprendizaje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-1-introduccion-organizacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-1-introduccion-organizacion/sesion-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-1-introduccion-organizacion/sesion-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-1-introduccion-organizacion/sesion-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-2-ingreso-edicion-notas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-3-articulacion-expresion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-3-articulacion-expresion/sesion-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-3-articulacion-expresion/sesion-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-3-articulacion-expresion/sesion-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-3-articulacion-expresion/sesion-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-4-estructura-repeticiones/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-4-estructura-repeticiones/sesion-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-4-estructura-repeticiones/sesion-14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-4-estructura-repeticiones/sesion-15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-4-estructura-repeticiones/sesion-16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-5-notaciones-especializadas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 5: Notaciones especializadas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 5: Notaciones especializadas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-6-midi-importacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-6-midi-importacion/sesion-22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-6-midi-importacion/sesion-23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-6-midi-importacion/sesion-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-6-midi-importacion/sesion-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-7-edicion-partes-publicacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 31
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exámenes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exámenes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examen-interciclo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Interciclo (Sesión 16)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examen-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Final (Sesión 32)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo-de-la-sesion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo de la sesión
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esquema-de-la-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Esquema de la clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-apertura-revision-y-activacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Apertura — Revisión y activación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Apertura — Revisión y activación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#materiales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materiales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dinamica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dinámica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-desarrollo-teoria-guiada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Desarrollo — Teoría guiada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Desarrollo — Teoría guiada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#secuencia-sugerida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secuencia sugerida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-practica-correccion-y-edicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Práctica — Corrección y edición
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Práctica — Corrección y edición">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-formativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica formativa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-cierre-estrategias-de-edicion-y-discusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Cierre — Estrategias de edición y discusión
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Cierre — Estrategias de edición y discusión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#revision-por-parejas-8-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revisión por parejas (8 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puesta-en-comun-7-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Puesta en común (7 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumen-del-docente-5-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen del docente (5 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posibles-dificultades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Posibles dificultades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-adicionales-para-el-docente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursos adicionales para el docente
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="guia-docente-sesion-5-edicion-seleccion-y-operaciones-de-compas">Guía Docente — Sesión 5: Edición, selección y operaciones de compás<a class="headerlink" href="#guia-docente-sesion-5-edicion-seleccion-y-operaciones-de-compas" title="Permanent link">&para;</a></h1>
+<p><strong>Duración estimada:</strong> 1 sesión presencial (≈ 2 horas)<br />
+<strong>Herramientas:</strong> MuseScore Studio 4, Google Classroom, proyector, archivo <code>.mscz</code> con errores preparado por el docente<br />
+<strong>Referencia:</strong> MuseScore 3 Handbook — Basics: Selecting elements, Copy and paste, Undo and redo; Notation → Transposition; Basics → Adding and removing measures</p>
+<hr />
+<h2 id="objetivo-de-la-sesion">Objetivo de la sesión<a class="headerlink" href="#objetivo-de-la-sesion" title="Permanent link">&para;</a></h2>
+<p>Que el estudiante realice selecciones precisas de elementos únicos y rangos continuos, copie, corte y pegue pasajes entre instrumentos usando el filtro de selección cuando corresponda, edite alturas y duraciones sin reescribir desde cero, utilice el modo Re-pitch para cambiar melodías conservando el ritmo, aplique reescritura enarmónica con criterio musical, transponga secciones por intervalo y por tonalidad, e inserte y elimine compases comprendiendo la diferencia entre borrar contenido y eliminar estructura.</p>
+<hr />
+<h2 id="esquema-de-la-clase">Esquema de la clase<a class="headerlink" href="#esquema-de-la-clase" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Momento</th>
+<th>Duración</th>
+<th>Actividad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Apertura</strong></td>
+<td>10 min</td>
+<td>Revisión de S04 + activación con archivo de errores</td>
+</tr>
+<tr>
+<td><strong>Desarrollo</strong></td>
+<td>25 min</td>
+<td>Demostración: selección, copiar/pegar, re-pitch, enarmonía, transposición, compases</td>
+</tr>
+<tr>
+<td><strong>Práctica</strong></td>
+<td>70 min</td>
+<td>Corrección de errores + re-pitch + copia entre instrumentos + transposición</td>
+</tr>
+<tr>
+<td><strong>Cierre</strong></td>
+<td>15 min</td>
+<td>Revisión por parejas, puesta en común de estrategias, entrega</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-apertura-revision-y-activacion">1. Apertura — Revisión y activación<a class="headerlink" href="#1-apertura-revision-y-activacion" title="Permanent link">&para;</a></h2>
+<h3 id="materiales">Materiales<a class="headerlink" href="#materiales" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Proyector con MuseScore Studio abierto y el archivo <code>ejercicio_S05_correccion.mscz</code> cargado.</li>
+<li>El mismo archivo publicado en Classroom <strong>antes de la clase</strong>.</li>
+</ul>
+<h3 id="dinamica">Dinámica<a class="headerlink" href="#dinamica" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Revisión rápida de S04</strong> (5 min):</li>
+<li>¿Cuántos terminaron la transcripción de 16 compases en ambas versiones (teclado y ratón)?</li>
+<li>¿Qué método les resultó más natural? ¿Cambió su preferencia después de practicar?</li>
+<li>
+<p>¿Alguien tuvo problemas con los puntillos o las ligaduras de prolongación?</p>
+</li>
+<li>
+<p><strong>Preguntas disparadoras</strong> (5 min):</p>
+</li>
+<li>Proyectar el archivo <code>ejercicio_S05_correccion.mscz</code> sin reproducirlo todavía. Preguntar: "Sin escuchar, solo mirando: ¿ven algo raro en esta partitura? ¿Hay compases que no cuadran?"</li>
+<li>Reproducir los primeros 8 compases. Preguntar: "¿Sonaron todas las notas donde esperaban? ¿Hay alguna que desafine?"</li>
+<li>"Imaginen que escribieron 24 compases perfectos y el director les pide que suban toda la pieza un tono. ¿Borrarían todo y empezarían de nuevo?"</li>
+</ol>
+<hr />
+<h2 id="2-desarrollo-teoria-guiada">2. Desarrollo — Teoría guiada<a class="headerlink" href="#2-desarrollo-teoria-guiada" title="Permanent link">&para;</a></h2>
+<h3 id="secuencia-sugerida">Secuencia sugerida<a class="headerlink" href="#secuencia-sugerida" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Selección: tipos y filtros</strong> (6 min). Sobre el archivo de ejercicio proyectado:</li>
+<li>Demostrar los 4 tipos principales de selección:<ul>
+<li><strong>Un elemento</strong>: clic en una nota equivocada. Mostrar que solo esa cabeza se vuelve azul.</li>
+<li><strong>Rango</strong>: clic en c.3 → <code>Shift + clic</code> en c.6. Mostrar el rectángulo azul.</li>
+<li><strong>Lista</strong>: <code>Ctrl + clic</code> en tres notas no contiguas. Señalar que todas se ven azules pero no hay rectángulo.</li>
+<li><strong>Todo</strong>: <code>Ctrl + A</code>. Mostrar que abarca toda la partitura.</li>
+</ul>
+</li>
+<li>Hacer un <strong>error deliberado</strong>: hacer clic en el espacio vacío de un compás vs. hacer clic en una nota. Preguntar: "¿Cuál es la diferencia visual?"</li>
+<li>
+<p>Abrir el <strong>filtro de selección</strong> (<code>Ver → Filtro de selección</code>). Desmarcar "Voz 1". Mostrar cómo la selección de rango ahora ignora la voz 1 y solo afecta a las otras voces.</p>
+</li>
+<li>
+<p><strong>Copiar, cortar, pegar, repetir</strong> (6 min). Sobre la misma partitura:</p>
+</li>
+<li>Seleccionar c.1–4 de la flauta → <code>Ctrl + C</code> → seleccionar c.9 → <code>Ctrl + V</code>. Mostrar el pegado.</li>
+<li>Seleccionar c.5–8 → <code>R</code> para repetir. Señalar que se duplica inmediatamente después.</li>
+<li>Seleccionar c.13–16 → <code>Ctrl + X</code> → ir al final → <code>Ctrl + V</code>. Mostrar que el pasaje se MOVIÓ, no se copió.</li>
+<li>
+<p>Demostrar el intercambio: seleccionar c.1–4 → <code>Ctrl + X</code> → seleccionar c.17–20 → <code>Ctrl + Shift + X</code>. Mostrar cómo los contenidos se intercambian.</p>
+</li>
+<li>
+<p><strong>Re-pitch y escritura enarmónica</strong> (5 min). Sobre 4 compases de ejemplo:</p>
+</li>
+<li>Seleccionar c.9–12. Activar Re-pitch (<code>Ctrl + Shift + I</code>). Tocar nuevas alturas con el teclado. Mostrar que las duraciones no cambian.</li>
+<li>Preguntar: "¿En qué situación real usarían esto?" (Respuestas esperadas: transcribir una segunda voz con el mismo ritmo, corregir una melodía mal dictada, armonizar una línea.)</li>
+<li>
+<p>Seleccionar una nota con alteración extraña (ej. Mi♯). Presionar <code>J</code>. Mostrar que cambia a Fa. Preguntar: "¿Qué criterio musical justifica elegir una escritura sobre otra?"</p>
+</li>
+<li>
+<p><strong>Transposición</strong> (4 min). Sobre la partitura de ejercicio:</p>
+</li>
+<li><code>Ctrl + A</code> para seleccionar todo.</li>
+<li><strong>Herramientas → Transponer</strong>.</li>
+<li>"Por intervalo": segunda mayor ascendente. Aceptar. Mostrar el resultado: todo subió un tono.</li>
+<li>Deshacer con <code>Ctrl + Z</code>. Repetir con "A tonalidad": de Do mayor a Mi♭ mayor. Señalar la diferencia entre transposición cromática y diatónica.</li>
+<li>
+<p>Importante: marcar la casilla "Transponer armaduras" para que el cambio sea completo.</p>
+</li>
+<li>
+<p><strong>Insertar y eliminar compases</strong> (4 min). Sobre un pasaje específico:</p>
+</li>
+<li>Seleccionar c.5 → <code>Ins</code>. Mostrar que se inserta un compás vacío antes del 5, y todo el contenido desde el 5 en adelante se desplaza a la derecha.</li>
+<li><code>Ctrl + Z</code> para deshacer.</li>
+<li>Seleccionar c.8 → <code>Ctrl + Supr</code>. Mostrar que el compás DESAPARECE (no queda vacío, desaparece), y los compases siguientes se desplazan hacia atrás.</li>
+<li>Comparar con <code>Supr</code> (sin <code>Ctrl</code>): borra el contenido y deja el compás lleno de silencios. Preguntar: "¿Cuál es la diferencia entre borrar el contenido de un compás y eliminar el compás?"</li>
+</ol>
+<hr />
+<h2 id="3-practica-correccion-y-edicion">3. Práctica — Corrección y edición<a class="headerlink" href="#3-practica-correccion-y-edicion" title="Permanent link">&para;</a></h2>
+<h3 id="actividad-en-classroom">Actividad en Classroom<a class="headerlink" href="#actividad-en-classroom" title="Permanent link">&para;</a></h3>
+<p>Publicar como <strong>Tarea</strong> en Google Classroom:</p>
+<p><strong>Título:</strong> S05 — Edición, corrección y transposición</p>
+<p><strong>Material</strong>: el docente proporciona el archivo <code>ejercicio_S05_correccion.mscz</code>, una partitura de 24 compases para flauta en Do mayor, 4/4, con exactamente <strong>diez errores</strong> intencionales distribuidos así:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo de error</th>
+<th>Cantidad</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Altura incorrecta</td>
+<td>3</td>
+<td>Notas desplazadas un grado o un semitono con respecto a la melodía correcta</td>
+</tr>
+<tr>
+<td>Duración incorrecta</td>
+<td>2</td>
+<td>Negra por corchea, blanca por negra con puntillo</td>
+</tr>
+<tr>
+<td>Alteración faltante o sobrante</td>
+<td>2</td>
+<td>Un sostenido que debería estar y no está; un bemol que sobra</td>
+</tr>
+<tr>
+<td>Compás incompleto</td>
+<td>2</td>
+<td>Compases que no suman 4 tiempos (sobra 1/2 tiempo o falta 1 tiempo)</td>
+</tr>
+<tr>
+<td>Silencio mal ubicado</td>
+<td>1</td>
+<td>Un silencio de negra donde debería haber un silencio de corchea</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Preparación del archivo</strong>: la melodía debe ser diatónica, cantable y reconocible, para que los estudiantes puedan detectar los errores con relativa facilidad al escuchar. Los errores de altura deben ser sutiles (un grado de diferencia, no una octava). Los compases incompletos deben ser detectables contando.</p>
+<p><strong>Instrucciones:</strong></p>
+<ol>
+<li>
+<p><strong>Detección de errores.</strong> Reproducí el archivo completo una vez. Luego, compás por compás, identificá los diez errores. Marcá en una hoja o documento el número de compás y el tipo de error que encontraste.</p>
+</li>
+<li>
+<p><strong>Corrección de errores.</strong> Corregí cada error usando el método más adecuado. No borres y reescribas desde cero: usá las herramientas de edición aprendidas hoy (cambio de altura con flechas, cambio de duración con <code>Shift + W</code>/<code>Shift + Q</code>, inserción/eliminación de silencios).</p>
+</li>
+<li>
+<p><strong>Corrección estructural.</strong> Para los compases que están rítmicamente incompletos: insertá o eliminá tiempos según corresponda para que cada compás sume exactamente 4 tiempos. Si necesitás insertar o eliminar compases completos, hacelo con <code>Ins</code> o <code>Ctrl + Supr</code>.</p>
+</li>
+<li>
+<p><strong>Reescritura enarmónica.</strong> Buscá al menos dos notas en la partitura corregida donde la escritura enarmónica actual sea inusual (por ejemplo, un Mi♯ donde sería más natural un Fa). Seleccionalas y presioná <code>J</code>. Documentá los cambios en tu informe.</p>
+</li>
+<li>
+<p><strong>Nueva melodía con Re-pitch.</strong> Seleccioná los compases 9 a 16. Activá el modo Re-pitch y escribí una melodía completamente nueva, inventada por vos, <strong>sin alterar ninguna duración</strong>. La nueva melodía debe estar en Do mayor y tener sentido melódico.</p>
+</li>
+<li>
+<p><strong>Copia a otro instrumento.</strong> Creá una nueva partitura para clarinete en Si♭ con 24 compases en Re mayor (recordá: el clarinete en Si♭ escrito en Re mayor suena en Do mayor). Copiá los compases 1 a 8 de la flauta y pegalos en el clarinete. Observá la diferencia de armadura y verificación de que las alturas suenen correctamente.</p>
+</li>
+<li>
+<p><strong>Transposición.</strong> Seleccioná toda la partitura original corregida y transponela una segunda mayor ascendente (2 semitonos arriba) usando el diálogo de transposición. Guardala como archivo independiente.</p>
+</li>
+<li>
+<p><strong>Informe de modificaciones.</strong> Elaborá una tabla con el siguiente formato:</p>
+<table>
+<thead>
+<tr>
+<th>Compás</th>
+<th>Tipo de error</th>
+<th>Qué había</th>
+<th>Qué corregiste</th>
+<th>Método usado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>Altura</td>
+<td>Do en lugar de Re</td>
+<td>Cambié Do por Re</td>
+<td><code>↑</code> dos veces</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Duración</td>
+<td>Negra en lugar de corchea</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h3 id="rubrica-formativa">Rúbrica formativa<a class="headerlink" href="#rubrica-formativa" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>✅ Logrado</th>
+<th>⚠️ En proceso</th>
+<th>❌ No logrado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Detección de errores</td>
+<td>Detectó y corrigió ≥8 de los 10 errores; las correcciones son precisas y usan métodos adecuados</td>
+<td>Detectó 5–7 errores o algunas correcciones son imprecisas</td>
+<td>≤4 errores detectados</td>
+</tr>
+<tr>
+<td>Reescritura enarmónica</td>
+<td>Cambió correctamente ≥2 notas con <code>J</code>; los cambios están documentados y son musicalmente justificables</td>
+<td>Cambió 1 nota o la documentación es insuficiente</td>
+<td>No realizó cambios enarmónicos</td>
+</tr>
+<tr>
+<td>Re-pitch (melodía nueva)</td>
+<td>La nueva melodía de c.9-16 tiene sentido musical; las duraciones son idénticas a las originales</td>
+<td>La melodía es aleatoria o alguna duración se modificó</td>
+<td>No usó Re-pitch o las duraciones cambiaron completamente</td>
+</tr>
+<tr>
+<td>Copia a clarinete</td>
+<td>La copia se realizó correctamente; las alturas suenan igual que en la flauta original (el clarinete está escrito un tono arriba)</td>
+<td>La copia se hizo pero hay discrepancias de altura</td>
+<td>No realizó la copia o el resultado es incoherente</td>
+</tr>
+<tr>
+<td>Transposición</td>
+<td>La partitura transpuesta está exactamente una segunda mayor arriba; armaduras y alteraciones son correctas</td>
+<td>La transposición se aplicó pero con errores en alteraciones resultantes</td>
+<td>No realizó la transposición o es incorrecta</td>
+</tr>
+<tr>
+<td>Informe de modificaciones</td>
+<td>Tabla completa con compás, tipo de error, estado original, corrección y método para todas las modificaciones</td>
+<td>Tabla incompleta (faltan columnas o filas)</td>
+<td>No entregó el informe</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-cierre-estrategias-de-edicion-y-discusion">4. Cierre — Estrategias de edición y discusión<a class="headerlink" href="#4-cierre-estrategias-de-edicion-y-discusion" title="Permanent link">&para;</a></h2>
+<h3 id="revision-por-parejas-8-min">Revisión por parejas (8 min)<a class="headerlink" href="#revision-por-parejas-8-min" title="Permanent link">&para;</a></h3>
+<p>Cada estudiante intercambia su archivo corregido con un compañero:
+- El compañero reproduce la partitura y verifica que ya no haya errores audibles.
+- El compañero revisa al menos 3 correcciones de la tabla y comprueba que la solución aplicada es correcta.
+- Si encuentra un error que el autor no detectó, lo anota y lo discuten.</p>
+<h3 id="puesta-en-comun-7-min">Puesta en común (7 min)<a class="headerlink" href="#puesta-en-comun-7-min" title="Permanent link">&para;</a></h3>
+<p>Preguntas para guiar la discusión:
+- ¿Cuál de los diez errores fue el más difícil de encontrar? ¿Por qué? (Esperado: los compases incompletos y los silencios mal ubicados suelen ser los más difíciles porque no "suenan mal", simplemente desbalancean la métrica.)
+- ¿Qué diferencia notaron entre transponer cromáticamente y diatónicamente?
+- ¿Alguien usó el filtro de selección? ¿Para qué les sirvió?
+- De las herramientas de edición que vimos hoy, ¿cuál creen que van a usar más seguido en su trabajo diario?
+- ¿Qué pasa si eliminan un compás con <code>Ctrl + Supr</code> en lugar de <code>Supr</code>? ¿Cuándo usarían cada uno?</p>
+<h3 id="resumen-del-docente-5-min">Resumen del docente (5 min)<a class="headerlink" href="#resumen-del-docente-5-min" title="Permanent link">&para;</a></h3>
+<ol>
+<li>La edición eficiente no consiste en borrar y reescribir, sino en <strong>modificar lo que ya existe</strong> con las herramientas adecuadas: flechas para altura, <code>Shift + W</code>/<code>Q</code> para duración, <code>J</code> para enarmonía.</li>
+<li>Copiar y pegar (<code>Ctrl + C</code>/<code>V</code>) es ubicuo, pero el <strong>filtro de selección</strong> es lo que separa a un usuario básico de uno avanzado: te permite copiar solo lo que necesitás, sin arrastrar elementos no deseados.</li>
+<li><strong>Re-pitch</strong> (<code>Ctrl + Shift + I</code>) es una de las herramientas más subestimadas de MuseScore. Cuando tenés patrones rítmicos repetidos, te ahorra horas de trabajo.</li>
+<li>Insertar (<code>Ins</code>) vs. añadir (<code>Ctrl + B</code>) y eliminar compás (<code>Ctrl + Supr</code>) vs. borrar contenido (<code>Supr</code>): son operaciones distintas que producen resultados diferentes. Usá la correcta para cada situación.</li>
+</ol>
+<hr />
+<h2 id="posibles-dificultades">Posibles dificultades<a class="headerlink" href="#posibles-dificultades" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Problema</th>
+<th>Solución</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>El estudiante no encuentra los errores escuchando</td>
+<td>Sugerir que cuente en voz alta mientras reproduce: "1, 2, 3, 4" en cada compás. Si un compás no completa el conteo, sobra o falta algo. Para errores de altura, comparar con un teclado virtual o una app de piano.</td>
+</tr>
+<tr>
+<td>El modo Re-pitch no se activa o el estudiante no entiende su funcionamiento</td>
+<td>Verificar que el atajo <code>Ctrl + Shift + I</code> está correctamente asignado (en algunos sistemas puede variar). Si no funciona, acceder desde el menú de modos de ingreso (clic prolongado en el botón de ingreso de notas → Re-pitch). Enfatizar que en este modo SOLO se ingresan alturas; las duraciones se ignoran.</td>
+</tr>
+<tr>
+<td>Al copiar al clarinete, las notas suenan diferentes</td>
+<td>Esto es correcto y esperado: el clarinete en Si♭ es un instrumento transpositor. Si la flauta está en Do mayor, el clarinete DEBE escribirse en Re mayor para que suene igual. Es una oportunidad para introducir el concepto de transposición instrumental (que se profundiza en la sesión 7).</td>
+</tr>
+<tr>
+<td>El estudiante usa <code>Supr</code> para eliminar un compás y se sorprende de que el compás sigue ahí (solo se vació)</td>
+<td>Mostrar la diferencia en tiempo real: <code>Supr</code> vacía el contenido; <code>Ctrl + Supr</code> elimina el compás. Hacer que practiquen ambas operaciones en un compás de prueba.</td>
+</tr>
+<tr>
+<td>El estudiante transpone pero no marca "Transponer armaduras" y la partitura queda inconsistente</td>
+<td>Al revisar, verificar que la armadura de la versión transpuesta coincide con la nueva tonalidad. Si no es así, mostrar cómo marcar esa casilla en el diálogo de transposición.</td>
+</tr>
+<tr>
+<td>El filtro de selección excluye tantos elementos que luego no se puede pegar nada</td>
+<td>Si al desmarcar "Voz 1" el estudiante intenta seleccionar un compás que solo tiene contenido en voz 1, la selección estará vacía. Enseñar a verificar que quede al menos una categoría de elementos marcada.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="recursos-adicionales-para-el-docente">Recursos adicionales para el docente<a class="headerlink" href="#recursos-adicionales-para-el-docente" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://musescore.org/en/handbook/3/selecting-elements">MuseScore 3 Handbook — Selecting elements</a></li>
+<li><a href="https://musescore.org/en/handbook/3/copy-and-paste">MuseScore 3 Handbook — Copy and paste</a></li>
+<li><a href="https://musescore.org/en/handbook/3/undo-and-redo">MuseScore 3 Handbook — Undo and redo</a></li>
+<li><a href="https://musescore.org/en/handbook/3/transposition">MuseScore 3 Handbook — Transposition</a></li>
+<li><a href="https://handbook.musescore.org/basics/editing-notes-and-rests.md">MuseScore Studio Handbook — Editing notes and rests</a></li>
+<li><a href="https://handbook.musescore.org/basics/adding-and-removing-measures.md">MuseScore Studio Handbook — Adding and removing measures</a></li>
+<li><strong>Preparación del archivo de ejercicio</strong> (<code>ejercicio_S05_correccion.mscz</code>): crear una partitura para flauta en Do mayor, 4/4, 24 compases, con una melodía diatónica simple y reconocible. Sembrar exactamente 10 errores:</li>
+<li>3 errores de altura (nota movida un grado hacia arriba o abajo).</li>
+<li>2 errores de duración (negra en lugar de corchea; blanca en lugar de negra con puntillo).</li>
+<li>2 errores de alteración (un Fa♮ donde debería ser Fa♯; un Si♭ que sobra).</li>
+<li>2 compases rítmicamente incompletos (uno con 3.5 tiempos, otro con 4.5 tiempos).</li>
+<li>1 silencio mal ubicado (silencio de negra donde debería ser silencio de corchea, generando un desplazamiento rítmico sutil).</li>
+<li>Incluir al menos 2 notas con escritura enarmónica "extraña" (ej. Mi♯, Do♭) para el ejercicio de reescritura.</li>
+<li>Dato curioso para compartir: el atajo <code>R</code> para repetir selección es uno de los favoritos de los usuarios avanzados de MuseScore. Si tenés un ostinato rítmico de 2 compases, <code>R</code> lo duplica al instante sin pasar por el portapapeles.</li>
+</ul>
+<hr />
+<p><em>Guía docente — Tecnología Musical I | Sesión 5</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.path", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

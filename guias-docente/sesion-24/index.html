@@ -1,0 +1,2579 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de clase — Tecnología Musical I (MuseScore Studio)">
+      
+      
+        <meta name="author" content="José Urgilés">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Guía Docente — Sesión 24: Importación y exportación MusicXML - Tecnología Musical I</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-docente-sesion-24-importacion-y-exportacion-musicxml" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Tecnología Musical I" class="md-header__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tecnología Musical I
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guía Docente — Sesión 24: Importación y exportación MusicXML
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tecnología Musical I" class="md-nav__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../img/logo.svg" alt="logo">
+
+    </a>
+    Tecnología Musical I
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../objetivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Objetivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logros de Aprendizaje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-1-introduccion-organizacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-1-introduccion-organizacion/sesion-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-1-introduccion-organizacion/sesion-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-1-introduccion-organizacion/sesion-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-2-ingreso-edicion-notas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-2-ingreso-edicion-notas/sesion-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-3-articulacion-expresion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-3-articulacion-expresion/sesion-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-3-articulacion-expresion/sesion-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-3-articulacion-expresion/sesion-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-3-articulacion-expresion/sesion-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-4-estructura-repeticiones/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-4-estructura-repeticiones/sesion-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-4-estructura-repeticiones/sesion-14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-4-estructura-repeticiones/sesion-15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-4-estructura-repeticiones/sesion-16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-5-notaciones-especializadas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 5: Notaciones especializadas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 5: Notaciones especializadas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-5-notaciones-especializadas/sesion-21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-6-midi-importacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-6-midi-importacion/sesion-22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-6-midi-importacion/sesion-23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-6-midi-importacion/sesion-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-6-midi-importacion/sesion-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../unidades/U-7-edicion-partes-publicacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidades/U-7-edicion-partes-publicacion/sesion-31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 31
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exámenes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exámenes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examen-interciclo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Interciclo (Sesión 16)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examen-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Final (Sesión 32)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo-de-la-sesion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo de la sesión
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esquema-de-la-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Esquema de la clase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-apertura-la-torre-de-babel-de-las-partituras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Apertura — La torre de Babel de las partituras
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Apertura — La torre de Babel de las partituras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#materiales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materiales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dinamica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dinámica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-desarrollo-el-puente-entre-editores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Desarrollo — El puente entre editores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Desarrollo — El puente entre editores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#secuencia-sugerida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secuencia sugerida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-practica-el-laboratorio-de-formatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Práctica — El laboratorio de formatos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Práctica — El laboratorio de formatos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-formativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica formativa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-cierre-cada-formato-tiene-su-proposito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Cierre — Cada formato tiene su propósito
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Cierre — Cada formato tiene su propósito">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#revision-por-parejas-8-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revisión por parejas (8 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puesta-en-comun-7-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Puesta en común (7 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumen-del-docente-5-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen del docente (5 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posibles-dificultades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Posibles dificultades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-adicionales-para-el-docente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursos adicionales para el docente
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="guia-docente-sesion-24-importacion-y-exportacion-musicxml">Guía Docente — Sesión 24: Importación y exportación MusicXML<a class="headerlink" href="#guia-docente-sesion-24-importacion-y-exportacion-musicxml" title="Permanent link">&para;</a></h1>
+<p><strong>Duración estimada:</strong> 1 sesión presencial (≈ 2 horas)<br />
+<strong>Herramientas:</strong> MuseScore Studio 4, Google Classroom, proyector, archivos <code>ejercicio_S24_finale.musicxml</code>, <code>ejercicio_S24_desordenado.mscz</code> y <code>ejercicio_S24_partitura.mscz</code> preparados por el docente<br />
+<strong>Referencia:</strong> MuseScore Studio Handbook — File formats (MusicXML), Save/Export/Print</p>
+<hr />
+<h2 id="objetivo-de-la-sesion">Objetivo de la sesión<a class="headerlink" href="#objetivo-de-la-sesion" title="Permanent link">&para;</a></h2>
+<p>Que el estudiante comprenda la diferencia fundamental entre formatos de intercambio (MusicXML, MIDI) y formatos de entrega (PDF, MP3), importe partituras desde otros editores vía MusicXML diagnosticando y corrigiendo las pérdidas típicas de formato, ejecute un flujo completo de exportación multiformato (.mscz, .musicxml, .mxl, .mid, .pdf, .mp3) entendiendo el propósito específico de cada uno, y genere particellas profesionales formateadas para entrega a músicos.</p>
+<hr />
+<h2 id="esquema-de-la-clase">Esquema de la clase<a class="headerlink" href="#esquema-de-la-clase" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Momento</th>
+<th>Duración</th>
+<th>Actividad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Apertura</strong></td>
+<td>10 min</td>
+<td>Revisión de S23 + pregunta disparadora: ¿cómo comparto mi partitura con alguien que usa Finale?</td>
+</tr>
+<tr>
+<td><strong>Desarrollo</strong></td>
+<td>30 min</td>
+<td>Demostración: importación MusicXML → exportación multiformato → roundtrip → particellas</td>
+</tr>
+<tr>
+<td><strong>Práctica</strong></td>
+<td>65 min</td>
+<td>Importar de Finale → exportar en 6 formatos → roundtrip → particellas → flujo inter-editor</td>
+</tr>
+<tr>
+<td><strong>Cierre</strong></td>
+<td>15 min</td>
+<td>Tabla de formatos, puesta en común, entrega</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-apertura-la-torre-de-babel-de-las-partituras">1. Apertura — La torre de Babel de las partituras<a class="headerlink" href="#1-apertura-la-torre-de-babel-de-las-partituras" title="Permanent link">&para;</a></h2>
+<h3 id="materiales">Materiales<a class="headerlink" href="#materiales" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Proyector con MuseScore Studio abierto.</li>
+<li>Los archivos <code>ejercicio_S24_finale.musicxml</code>, <code>ejercicio_S24_desordenado.mscz</code> y <code>ejercicio_S24_partitura.mscz</code> publicados en Classroom <strong>antes de la clase</strong>.</li>
+<li>Opcional: tener instalado Finale Notepad (gratuito) o acceso a un editor online (Flat.io, Noteflight) para mostrar el flujo inter-editor en vivo.</li>
+</ul>
+<h3 id="dinamica">Dinámica<a class="headerlink" href="#dinamica" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Revisión de S23</strong> (5 min):</li>
+<li>¿Alguien logró importar un MIDI propio y limpiarlo? ¿Cuánto tiempo les llevó?</li>
+<li>¿Cuál es la diferencia entre Type 0 y Type 1? ¿Cuál es mejor para importar?</li>
+<li>
+<p>Rápidamente: ¿MIDI transmite nombre de notas o números de nota? (Números.) Bien. Hoy vemos un formato que SÍ transmite nombres de nota.</p>
+</li>
+<li>
+<p><strong>Preguntas disparadoras</strong> (5 min):</p>
+</li>
+<li>"Imaginen esta situación real: ustedes escribieron una partitura hermosa en MuseScore. Su profesor de composición usa Finale. Les pide que le manden la partitura para corregirla. ¿Qué le mandan?"</li>
+<li>Opciones que suelen aparecer: PDF (no se puede editar), MIDI (se pierde todo el formato), .mscz (Finale no lo abre). "Ninguna de esas sirve."</li>
+<li>"Existe un formato que es como el esperanto de las partituras: MusicXML. Todos los editores de partituras lo entienden. MuseScore lo entiende. Finale lo entiende. Sibelius lo entiende. Dorico lo entiende. Flat.io lo entiende."</li>
+<li>Proyectar la frase: <strong>MIDI es para máquinas. MusicXML es para músicos.</strong></li>
+<li>"¿Alguna vez necesitaron mandar una partitura a alguien que usa otro programa? ¿Qué hicieron?" (Escuchar experiencias. Generalmente frustración.)</li>
+</ol>
+<hr />
+<h2 id="2-desarrollo-el-puente-entre-editores">2. Desarrollo — El puente entre editores<a class="headerlink" href="#2-desarrollo-el-puente-entre-editores" title="Permanent link">&para;</a></h2>
+<h3 id="secuencia-sugerida">Secuencia sugerida<a class="headerlink" href="#secuencia-sugerida" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>MusicXML vs. MIDI: el contraste definitivo</strong> (6 min). Sin abrir archivos aún:</li>
+<li>Dibujar en el pizarrón dos columnas: MIDI | MusicXML.</li>
+<li>"MIDI dice: 'en el tiempo 1.5, nota número 60 con velocity 100, canal 1'. MusicXML dice: 'compás 1, tiempo 2, negra, Do₄, con staccato y dinámica <em>mf</em>'."</li>
+<li>Mostrar el mismo compás en ambos formatos (proyectar un fragmento de XML): "¿Ven la diferencia? MIDI es un cronómetro. MusicXML es una partitura."</li>
+<li><strong>Analogía</strong>: "MIDI es las instrucciones de montaje de un mueble IKEA (atornillar A-7 en B-3, girar 90°). MusicXML es la FOTO del mueble armado. Con las instrucciones podés reconstruir el mueble pero no sabés cómo se ve. Con la foto sabés cómo se ve pero no podés reconstruirlo exactamente."</li>
+<li>
+<p>"¿Cuál es mejor? Depende. ¿Querés que un robot toque tu música? MIDI. ¿Querés que un humano lea tu partitura en otro programa? MusicXML."</p>
+</li>
+<li>
+<p><strong>Importación desde Finale/Sibelius</strong> (9 min). Con <code>ejercicio_S24_finale.musicxml</code>:</p>
+</li>
+<li>"Este archivo fue creado en Finale y exportado como MusicXML. Vean qué pasa cuando lo abro en MuseScore."</li>
+<li>Abrir el archivo. La partitura aparece instantáneamente.</li>
+<li>"Vean: las notas están. Las claves están. La armadura está. Las dinámicas están. Las ligaduras están. ¡Esto es INCREÍBLE comparado con importar MIDI!"</li>
+<li>"Pero... ¿está perfecto?" Hacer zoom. Señalar problemas típicos:<ul>
+<li><strong>Formato de página</strong>: "Finale usa márgenes diferentes. Los saltos de sistema no coinciden. Los compases quedan apiñados o muy espaciados."</li>
+<li><strong>Fuentes</strong>: "Finale usaba Times New Roman para el título. MuseScore usa su propia fuente. El texto se preserva pero se VE diferente."</li>
+<li><strong>Posición de dinámicas</strong>: "En Finale, el <em>mf</em> estaba más cerca del pentagrama. En MuseScore quedó más lejos."</li>
+</ul>
+</li>
+<li>"Esto NO es un error de MuseScore. Es una consecuencia del formato MusicXML: prioriza el CONTENIDO (qué dice) sobre la PRESENTACIÓN (cómo se ve)."</li>
+<li>Corregir en vivo: reacomodar saltos de página, ajustar márgenes, reposicionar marcas.</li>
+<li>
+<p><strong>Lección clave</strong>: "Importar desde MusicXML es un 90% más rápido que escribir desde cero, pero NUNCA es 100% automático. El 10% de ajuste de formato es inevitable."</p>
+</li>
+<li>
+<p><strong>Exportación multiformato: un archivo, 7 formatos</strong> (7 min). Con <code>ejercicio_S24_desordenado.mscz</code>:</p>
+</li>
+<li>"Esta partitura tiene errores de formato a propósito. Antes de compartir algo, SIEMPRE verificamos."</li>
+<li>Señalar los errores: salto de página que corta una frase, metadatos incompletos, dinámica encimada.</li>
+<li>"La parte técnica de exportación es trivial: Archivo → Exportar → elegir formato. Lo DIFÍCIL es saber QUÉ formato usar PARA QUÉ."</li>
+<li>
+<p>Explicar cada formato con el contexto de uso:</p>
+<table>
+<thead>
+<tr>
+<th>Formato</th>
+<th>¿Para quién?</th>
+<th>¿Para qué?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>.mscz</strong></td>
+<td>Para VOS</td>
+<td>Tu archivo de trabajo. NUNCA lo mandes por correo si la otra persona no usa MuseScore.</td>
+</tr>
+<tr>
+<td><strong>.musicxml / .mxl</strong></td>
+<td>Para otro MÚSICO con otro editor</td>
+<td>"Tomá, abrilo en tu programa y editalo."</td>
+</tr>
+<tr>
+<td><strong>.mid</strong></td>
+<td>Para un PRODUCTOR o DAW</td>
+<td>"Tomá, cargalo en tu secuenciador y ponele buenos sonidos."</td>
+</tr>
+<tr>
+<td><strong>.pdf</strong></td>
+<td>Para el DIRECTOR o los MÚSICOS</td>
+<td>"Esta es la partitura final para leer en el atril."</td>
+</tr>
+<tr>
+<td><strong>.mp3</strong></td>
+<td>Para CUALQUIERA</td>
+<td>"Escuchá cómo suena sin necesidad de instalar nada."</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>Demostración del roundtrip</strong> (3 min adicionales):</p>
+<ul>
+<li>Exportar la partitura corregida como .musicxml.</li>
+<li>Reabrir ese .musicxml en MuseScore.</li>
+<li>"Vean: la música está igual. Pero las fuentes cambiaron. Y los saltos de página también."</li>
+<li>"Esto se llama roundtrip: exportar y reimportar. Idealmente debería ser perfecto. En la práctica, algo se pierde. Saber QUÉ se pierde es parte del oficio."</li>
+</ul>
+</li>
+<li>
+<p><strong>Particellas: de la partitura completa a las partes individuales</strong> (8 min). Con <code>ejercicio_S24_partitura.mscz</code>:</p>
+</li>
+<li>"Una partitura de orquesta o ensamble tiene dos versiones: la PARTITURA COMPLETA (el director ve todos los instrumentos) y las PARTICELLAS (cada músico ve SOLO su parte)."</li>
+<li>Proyectar la partitura completa: "Esto lo lee el director. Tiene 18 pentagramas en cada página."</li>
+<li>"Pero el flautista NO necesita ver lo que hace el violonchelo. Solo necesita su línea. Eso es una particella."</li>
+<li>Mostrar cómo generar partes: <strong>Archivo → Partes → Generar todas las partes</strong>.</li>
+<li>Abrir una parte (ej. Violín I). "Vean: solo la línea de Violín I. Sin distracciones. Con silencios de espera donde no toca."</li>
+<li><strong>Formatear la parte</strong> (esto es lo que toma tiempo):<ul>
+<li>Ajustar saltos de página: "El violinista NO quiere pasar la página en medio de una escala rápida. Los saltos de página deben ser en SILENCIOS."</li>
+<li>Números de compás: "Deben coincidir con la partitura completa. El director dice 'compás 47' y todos encuentran el compás 47 en su parte."</li>
+<li>Silencios multicompás: "Si el instrumento no toca durante 20 compases, NO escribimos 20 compases de silencio. Escribimos UN bloque que dice '20' y listo."</li>
+</ul>
+</li>
+<li>"Generar particellas es fácil. FORMATEAR particellas es un arte. Una particella mal formateada hace que el músico se pierda en el ensayo. Y un músico perdido te va a mirar con odio."</li>
+</ol>
+<hr />
+<h2 id="3-practica-el-laboratorio-de-formatos">3. Práctica — El laboratorio de formatos<a class="headerlink" href="#3-practica-el-laboratorio-de-formatos" title="Permanent link">&para;</a></h2>
+<h3 id="actividad-en-classroom">Actividad en Classroom<a class="headerlink" href="#actividad-en-classroom" title="Permanent link">&para;</a></h3>
+<p>Publicar como <strong>Tarea</strong> en Google Classroom:</p>
+<p><strong>Título:</strong> S24 — Importación y exportación MusicXML</p>
+<p><strong>Material</strong>: el docente proporciona tres archivos:</p>
+<ol>
+<li>
+<p><strong><code>ejercicio_S24_finale.musicxml</code></strong>: Partitura de cuarteto de cuerdas (Violín I, Violín II, Viola, Violonchelo) de 24 compases en Re mayor (2 sostenidos), 4/4, exportada desde Finale (o Finale Notepad, o Sibelius First, o cualquier editor que no sea MuseScore). La partitura debe ser musicalmente correcta (notas, ritmos, dinámicas, articulaciones) pero con formato propio del editor original (márgenes, fuentes, espaciado, saltos de sistema propios de Finale/Sibelius). Incluir título y compositor. NO debe ser un archivo generado desde MuseScore y renombrado.</p>
+</li>
+<li>
+<p><strong><code>ejercicio_S24_desordenado.mscz</code></strong>: Partitura de MuseScore para piano en Fa mayor (1 bemol), 3/4, 20 compases. Debe tener errores deliberados: (a) 2–3 saltos de página mal puestos (cortan frases musicales), (b) metadatos incompletos (sin compositor, sin título), (c) al menos 2 dinámicas superpuestas con otros elementos, (d) una ligadura rota en un salto de sistema, (e) una alteración enarmónica incorrecta (Sol♯ que debería ser La♭ en el contexto de la pieza). La partitura debe ser MUSICALMENTE correcta (si se reproduce suena bien) pero EDITORIALMENTE descuidada.</p>
+</li>
+<li>
+<p><strong><code>ejercicio_S24_partitura.mscz</code></strong>: Partitura para Piano solo en Mi menor (1 sostenido), 4/4, 32 compases. Contenido: una pieza original con mano derecha melódica (negra y corchea, ámbito Si₃–Mi₅) y mano izquierda con acompañamiento de acordes quebrados (corcheas, ámbito Mi₂–Si₃). La pieza debe ser lo suficientemente independiente melódicamente como para que la mano derecha funcione como una línea de flauta separada.</p>
+</li>
+</ol>
+<p><strong>Instrucciones:</strong> según el detalle en el <code>index.md</code> del estudiante. En resumen:
+1. Importar MusicXML desde Finale y corregir formato.
+2. Corregir partitura desordenada y exportar en 6 formatos incluyendo prueba de roundtrip.
+3. Generar particellas (flauta + piano) desde la partitura de piano solo.
+4. Flujo inter-editor con tabla comparativa de preservación.
+5. Reflexión sobre el propósito de cada formato.</p>
+<h3 id="rubrica-formativa">Rúbrica formativa<a class="headerlink" href="#rubrica-formativa" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>✅ Logrado</th>
+<th>⚠️ En proceso</th>
+<th>❌ No logrado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Importación MusicXML</td>
+<td>≥5 diferencias identificadas y corregidas; formato profesional</td>
+<td>3–4 diferencias corregidas</td>
+<td>≤2 o sin corrección</td>
+</tr>
+<tr>
+<td>Exportación multiformato</td>
+<td>6 formatos exportados correctamente; partitura corregida; roundtrip documentado</td>
+<td>4–5 formatos o sin documentar roundtrip</td>
+<td>≤3 formatos</td>
+</tr>
+<tr>
+<td>Particellas</td>
+<td>Partes generadas, formateadas y exportadas como PDF; números de compás y silencios correctos</td>
+<td>Partes generadas con errores de formato</td>
+<td>Sin particellas</td>
+</tr>
+<tr>
+<td>Flujo inter-editor</td>
+<td>Editor externo usado; MusicXML importado; tabla comparativa completa; diferencias documentadas</td>
+<td>Proceso completo pero tabla incompleta</td>
+<td>Sin flujo inter-editor</td>
+</tr>
+<tr>
+<td>Reflexión</td>
+<td>3 respuestas con comprensión de formatos, pérdida y propósito</td>
+<td>2 respuestas correctas</td>
+<td>≤1 respuesta</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-cierre-cada-formato-tiene-su-proposito">4. Cierre — Cada formato tiene su propósito<a class="headerlink" href="#4-cierre-cada-formato-tiene-su-proposito" title="Permanent link">&para;</a></h2>
+<h3 id="revision-por-parejas-8-min">Revisión por parejas (8 min)<a class="headerlink" href="#revision-por-parejas-8-min" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Intercambiar el PDF de las particellas: "¿Podrías leer esta parte en un atril? ¿Los saltos de página son lógicos? ¿Los silencios multicompás son claros?"</li>
+<li>Intercambiar la tabla comparativa del flujo inter-editor: "¿Ambos usaron el mismo editor externo? ¿Encontraron las mismas pérdidas?"</li>
+</ul>
+<h3 id="puesta-en-comun-7-min">Puesta en común (7 min)<a class="headerlink" href="#puesta-en-comun-7-min" title="Permanent link">&para;</a></h3>
+<ul>
+<li>"Levanten la mano los que encontraron que el roundtrip (exportar y reimportar MusicXML) perdió ALGO. ¿Qué fue lo que más se perdió?" (Estadística. Generalmente formato de página y fuentes.)</li>
+<li>"Si tuvieran que mandarle una partitura a alguien que NO saben qué programa usa, ¿qué formato le mandan: PDF, MusicXML, MIDI, MP3?" (Discusión: la respuesta madura es MusicXML PORQUE es editable, pero si solo necesita leer → PDF, si solo necesita escuchar → MP3. Depende del contexto.)</li>
+<li>"¿Qué fue más sorprendente: lo bien que funciona MusicXML o lo MAL que funciona en algunas cosas?" (Discusión abierta.)</li>
+</ul>
+<h3 id="resumen-del-docente-5-min">Resumen del docente (5 min)<a class="headerlink" href="#resumen-del-docente-5-min" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>MusicXML es el puente entre islas.</strong> Cada editor de partituras es una isla. MusicXML es el único barco que navega entre todas. Sin MusicXML, tus partituras son prisioneras del programa que las creó.</li>
+<li><strong>MIDI y MusicXML NO compiten. Se complementan.</strong> MIDI es para la interpretación (cómo suena). MusicXML es para la notación (cómo se lee). Si los confundís, perdés información. Si los usás correctamente, tu flujo de trabajo es imbatible.</li>
+<li><strong>Exportar es fácil. Formatear es el trabajo real.</strong> En 5 segundos exportás a PDF. Pero el PDF solo vale la pena si la partitura está bien formateada. El 80% del trabajo de un editor de partituras NO es escribir notas: es AJUSTAR el formato para que sea legible, profesional y publicable.</li>
+<li><strong>Las particellas NO son la partitura completa recortada.</strong> Tienen sus propias reglas: silencios multicompás, saltos de página en silencios, números de compás sincronizados, nombre del instrumento visible. Una particella mal hecha arruina un ensayo. Una particella bien hecha pasa desapercibida (y eso es exactamente lo que querés).</li>
+<li><strong>Cada formato tiene un propósito. Usá el correcto para cada situación.</strong> .mscz para trabajar. .mxl para compartir con otros editores. .mid para DAWs. .pdf para entregar. .mp3 para escuchar. No hay UN formato perfecto. Hay EL formato correcto para CADA necesidad.</li>
+</ol>
+<hr />
+<h2 id="posibles-dificultades">Posibles dificultades<a class="headerlink" href="#posibles-dificultades" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Problema</th>
+<th>Solución</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>El MusicXML de Finale se ve HORRIBLE en MuseScore (formatos completamente rotos)</td>
+<td>Revisar la versión de MusicXML exportada desde Finale. Finale antiguo (versiones previas a 2014) exporta MusicXML 2.0 que MuseScore 4 interpreta con limitaciones. Solución: actualizar Finale a una versión reciente, o usar un conversor intermedio. Si no es posible, aceptar que el formateo será manual.</td>
+</tr>
+<tr>
+<td>El estudiante no tiene acceso a otro editor de partituras (Parte 4 del ejercicio)</td>
+<td>Alternativas gratuitas online: Flat.io (plan gratuito permite crear y exportar MusicXML), Noteflight (plan básico gratuito), MuseScore.com (el editor online). También Finale Notepad es gratuito para descarga. Si ninguna opción es viable, el docente puede proporcionar un MusicXML generado desde Finale/Sibelius para que el estudiante haga el proceso inverso (en lugar de crear desde cero en el editor externo).</td>
+</tr>
+<tr>
+<td>La exportación a MP3 no produce audio o suena a silencio</td>
+<td>Verificar que el sintetizador de MuseScore esté funcionando (reproducir la partitura dentro del programa). Si suena dentro de MuseScore pero no en el MP3, revisar la configuración de audio en Preferencias. En Windows, verificar que el mezclador de sonido no tenga muteado a MuseScore. En Mac, verificar los permisos del micrófono (MuseScore no necesita micrófono, pero el sistema a veces lo bloquea).</td>
+</tr>
+<tr>
+<td>Las particellas muestran compases de silencio en lugar de silencios multicompás</td>
+<td>MuseScore inserta silencios multicompás automáticamente cuando detecta bloques largos de silencio. Si no lo hace: seleccionar los compases de silencio → clic derecho → <strong>Propiedades del compás → Silencio multicompás → Activado</strong>. También verificar en <strong>Formato → Estilo → Silencios multicompás</strong> que el número mínimo de compases para agrupar esté configurado correctamente (por defecto 2).</td>
+</tr>
+<tr>
+<td>Las partes generadas no tienen título ni nombre de instrumento</td>
+<td>Las partes heredan el título y subtítulo de la partitura completa. Para el nombre del instrumento: este se genera automáticamente a partir del nombre del pentagrama. Si el pentagrama se llama "Pista 1" en lugar de "Violín I", renombrarlo en <strong>Propiedades del pentagrama</strong>. Para agregar el nombre del instrumento en cada página de la parte: <strong>Estilo → Cabecera y pie de página → nombre del instrumento</strong>.</td>
+</tr>
+<tr>
+<td>Los números de compás de las particellas no coinciden con la partitura completa</td>
+<td>Si hay compases excluidos de la parte (ej. la flauta no toca en los compases 5–12), MuseScore los reemplaza con silencios pero mantiene la numeración. Verificar que no haya compases "ocultos" accidentalmente. Si un compás se eliminó por error de la parte: <strong>Editar → Instrumentos → seleccionar la parte → asegurarse de que esté completa</strong>.</td>
+</tr>
+<tr>
+<td>La exportación como MusicXML genera un archivo enorme (varios MB) para una partitura simple</td>
+<td>Probablemente se está exportando como .musicxml sin comprimir en lugar de .mxl. El .musicxml es texto XML plano (legible pero grande). El .mxl es ZIP comprimido (20× más pequeño). Para compartir, usar SIEMPRE .mxl. Para inspección o procesamiento automatizado, usar .musicxml.</td>
+</tr>
+<tr>
+<td>Al reimportar el MusicXML en MuseScore, los instrumentos cambiaron (Violín se convirtió en Piano)</td>
+<td>El MusicXML incluye el nombre del instrumento, pero si el editor original usó un nombre no estándar ("Violin" sin tilde, "Vln I", etc.), MuseScore puede no reconocerlo. Solución: después de importar, verificar y corregir manualmente la asignación de instrumentos en cada pentagrama.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="recursos-adicionales-para-el-docente">Recursos adicionales para el docente<a class="headerlink" href="#recursos-adicionales-para-el-docente" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://handbook.musescore.org/basics/file-formats.md">MuseScore Studio Handbook — File formats</a></li>
+<li><a href="https://handbook.musescore.org/advanced-topics/parts.md">MuseScore Studio Handbook — Parts</a></li>
+<li><a href="https://handbook.musescore.org/basics/save-export-print.md">MuseScore Studio Handbook — Save/Export/Print</a></li>
+<li><a href="https://www.musicxml.com/">MusicXML official website</a></li>
+<li><strong>Preparación del archivo <code>ejercicio_S24_finale.musicxml</code></strong>: si el docente tiene acceso a Finale (o Finale Notepad gratuito), crear un cuarteto de cuerdas de 24 compases en Re mayor. Completar con melodías independientes en cada voz, dinámicas, articulaciones y texto (título, compositor). Exportar como MusicXML 4.0 sin comprimir. Si no hay acceso a Finale, usar Sibelius First (gratuito), Dorico SE (gratuito), Flat.io (online, exporta MusicXML), Noteflight (online), o MuseScore 3 (exporta MusicXML 3.1 que MuseScore 4 abre, y tendrá diferencias sutiles con la versión nativa de MuseScore 4). El objetivo es que el archivo PROVENGA de otro editor, cualquiera que sea.</li>
+<li><strong>Preparación del archivo <code>ejercicio_S24_desordenado.mscz</code></strong>: crear una partitura para piano en Fa mayor, 3/4, 20 compases. Escribir una pieza corta musicalmente correcta. Luego introducir los errores deliberadamente: insertar saltos de página en lugares incómodos (<code>Ctrl + Enter</code>), borrar el campo de compositor y poner un título genérico, mover dinámicas para que se superpongan con las notas (arrastrar con el mouse), romper una ligadura seleccionándola y moviendo su punto de anclaje, y escribir un Sol♯ que en el contexto de Fa mayor (1 bemol) debería ser La♭.</li>
+<li><strong>Preparación del archivo <code>ejercicio_S24_partitura.mscz</code></strong>: crear partitura para Piano en Mi menor, 4/4, 32 compases. Componer una pieza con melodía en la mano derecha que sea lo suficientemente independiente como para funcionar como línea de flauta. La mano izquierda debe ser un acompañamiento de acordes quebrados. NO incluir otros instrumentos: la partitura es solo para piano. El ejercicio de las particellas requiere que los estudiantes CREEN el pentagrama de flauta y muevan la melodía.</li>
+<li>Dato curioso: MusicXML fue creado por Michael Good, un programador y músico que hizo su tesis doctoral en Stanford sobre representación digital de partituras en los años 90. Fundó la empresa Recordare (del latín "recordar") en 2000. En 2017, MakeMusic (los creadores de Finale) compraron Recordare y MusicXML. Irónicamente, la empresa que creó uno de los formatos propietarios más cerrados (.mus de Finale) terminó siendo dueña del estándar ABIERTO de intercambio.</li>
+<li>Dato curioso: el nombre "MusicXML" es un juego de palabras. XML = eXtensible Markup Language. Pero "MusicXML" también suena como "musical" en inglés. Michael Good eligió el nombre para que fuera fácil de recordar y tuviera una connotación positiva. Funcionó: MusicXML es hoy el formato de intercambio más usado en notación musical digital.</li>
+<li>Dato curioso: la exportación de particellas era una tarea TITÁNICA antes de los editores digitales. En la era pre-computadora (hasta ~1990), un copista profesional escribía la partitura completa y luego copiaba MANUALMENTE cada parte individual. Para una sinfonía de 40 minutos con 30 instrumentos, extraer las partes tomaba SEMANAS de trabajo. Hoy, MuseScore genera las 30 partes en menos de 5 segundos. El formateo sigue llevando horas, pero la extracción es instantánea. Los copistas del siglo XIX nos mirarían con envidia (y un poco de rencor).</li>
+<li>Ejercicio opcional de ampliación (para estudiantes avanzados o con interés editorial): crear una partitura de 4 páginas en MuseScore y luego exportarla como MusicXML. Abrir el archivo .musicxml con un editor de texto (VS Code, Sublime Text, o incluso Bloc de Notas). Buscar etiquetas como <code>&lt;note&gt;</code>, <code>&lt;dynamics&gt;</code>, <code>&lt;slur&gt;</code> y modificarlas manualmente (cambiar un <code>mf</code> por <code>ff</code>, cambiar una negra por una corchea). Reimportar el archivo modificado en MuseScore y ver el resultado. Es un ejercicio de "cirugía XML" que revela cómo está construido internamente el formato.</li>
+</ul>
+<hr />
+<p><em>Guía docente — Tecnología Musical I | Sesión 24</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.path", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2999 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de clase — Tecnología Musical I (MuseScore Studio)">
+      
+      
+        <meta name="author" content="José Urgilés">
+      
+      
+      
+        <link rel="prev" href="../sesion-22/">
+      
+      
+        <link rel="next" href="../sesion-24/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Sesión 23 - Tecnología Musical I</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sesion-23-importacion-y-limpieza-de-archivos-midi" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Tecnología Musical I" class="md-header__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tecnología Musical I
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sesión 23
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Tecnología Musical I" class="md-nav__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../../img/logo.svg" alt="logo">
+
+    </a>
+    Tecnología Musical I
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../objetivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Objetivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../logros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logros de Aprendizaje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-1-introduccion-organizacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-2-ingreso-edicion-notas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-3-articulacion-expresion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-4-estructura-repeticiones/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-5-notaciones-especializadas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 5: Notaciones especializadas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 5: Notaciones especializadas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 23
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cuando-si-importar-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuándo SÍ importar MIDI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuando-no-importar-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuándo NO importar MIDI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-flujo-de-trabajo-tipico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El flujo de trabajo típico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abrir-un-archivo-midi-en-musescore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abrir un archivo MIDI en MuseScore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametros-del-dialogo-de-importacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parámetros del diálogo de importación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#despues-de-la-importacion-el-diagnostico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Después de la importación: el diagnóstico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-1-ritmos-extranos-tresillos-falsos-puntillos-innecesarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 1: Ritmos extraños (tresillos falsos, puntillos innecesarios)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-2-notas-superpuestas-y-ligaduras-falsas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 2: Notas superpuestas y ligaduras falsas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-3-armadura-incorrecta-o-ausente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 3: Armadura incorrecta o ausente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-4-enarmonias-incorrectas-do-en-lugar-de-re" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 4: Enarmonías incorrectas (Do♯ en lugar de Re♭)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-5-pentagramas-con-nombres-genericos-y-instrumentos-mal-asignados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 5: Pentagramas con nombres genéricos y instrumentos mal asignados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-6-plicas-inconsistentes-y-direccion-erronea" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 6: Plicas inconsistentes y dirección errónea
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-7-dinamicas-y-cambios-de-tempo-pegados-a-notas-incorrectas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 7: Dinámicas y cambios de tempo pegados a notas incorrectas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importar-bateria-y-percusion-desde-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importar batería y percusión desde MIDI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importar-midi-con-pista-de-letra-karaoke-kar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importar MIDI con pista de letra (karaoke .KAR)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importacion-por-arrastre-drag-and-drop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importación por arrastre (drag and drop)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividad en Classroom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarea-s23-importacion-y-limpieza-de-archivos-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tarea: S23 — Importación y limpieza de archivos MIDI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entregables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-7-edicion-partes-publicacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 31
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exámenes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exámenes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examen-interciclo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Interciclo (Sesión 16)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examen-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Final (Sesión 32)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cuando-si-importar-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuándo SÍ importar MIDI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuando-no-importar-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cuándo NO importar MIDI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-flujo-de-trabajo-tipico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El flujo de trabajo típico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abrir-un-archivo-midi-en-musescore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abrir un archivo MIDI en MuseScore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametros-del-dialogo-de-importacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parámetros del diálogo de importación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#despues-de-la-importacion-el-diagnostico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Después de la importación: el diagnóstico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-1-ritmos-extranos-tresillos-falsos-puntillos-innecesarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 1: Ritmos extraños (tresillos falsos, puntillos innecesarios)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-2-notas-superpuestas-y-ligaduras-falsas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 2: Notas superpuestas y ligaduras falsas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-3-armadura-incorrecta-o-ausente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 3: Armadura incorrecta o ausente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-4-enarmonias-incorrectas-do-en-lugar-de-re" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 4: Enarmonías incorrectas (Do♯ en lugar de Re♭)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-5-pentagramas-con-nombres-genericos-y-instrumentos-mal-asignados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 5: Pentagramas con nombres genéricos y instrumentos mal asignados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-6-plicas-inconsistentes-y-direccion-erronea" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 6: Plicas inconsistentes y dirección errónea
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-7-dinamicas-y-cambios-de-tempo-pegados-a-notas-incorrectas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 7: Dinámicas y cambios de tempo pegados a notas incorrectas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importar-bateria-y-percusion-desde-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importar batería y percusión desde MIDI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importar-midi-con-pista-de-letra-karaoke-kar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importar MIDI con pista de letra (karaoke .KAR)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importacion-por-arrastre-drag-and-drop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importación por arrastre (drag and drop)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividad en Classroom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarea-s23-importacion-y-limpieza-de-archivos-midi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tarea: S23 — Importación y limpieza de archivos MIDI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entregables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Unidad 6: MIDI, importación y reproducción
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="sesion-23-importacion-y-limpieza-de-archivos-midi">Sesión 23: Importación y limpieza de archivos MIDI<a class="headerlink" href="#sesion-23-importacion-y-limpieza-de-archivos-midi" title="Permanent link">&para;</a></h1>
+<p>📚 Handbook → Advanced topics: MIDI import | Herramientas: MuseScore Studio 4, Google Classroom, archivos MIDI de referencia</p>
+<hr />
+<details class="info">
+<summary>Glosario de términos</summary>
+<p>Consultá esta tabla cuando encuentres un término que no conozcas.</p>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="importacion-midi"></a> <strong>Importación MIDI</strong></td>
+<td>Proceso de abrir un archivo MIDI (.mid, .midi, .kar) en MuseScore y convertirlo automáticamente en una partitura con notas, pentagramas, claves e indicaciones de compás. MuseScore "traduce" el archivo MIDI (instrucciones) a notación musical (pentagrama). La calidad del resultado depende de la calidad del archivo MIDI original.</td>
+</tr>
+<tr>
+<td><a id="cuantizacion-import"></a> <strong>Cuantización en importación</strong></td>
+<td>Parámetro que controla cómo MuseScore simplifica los ritmos del MIDI durante la importación. Valores más altos (negra, blanca) simplifican más (ignoran subdivisiones rápidas). Valores más bajos (fusa, semifusa) preservan los detalles rítmicos pero pueden generar notación excesivamente compleja y difícil de leer.</td>
+</tr>
+<tr>
+<td><a id="midi-type"></a> <strong>Tipos de archivo MIDI (Type 0 vs Type 1)</strong></td>
+<td>Type 0: todas las pistas MIDI combinadas en UNA sola pista (monolítico). Type 1: múltiples pistas separadas (multipista). MuseScore maneja ambos tipos, pero los archivos Type 1 producen mejores resultados porque cada pista puede mapearse a un pentagrama independiente. Los archivos .KAR (karaoke) son Type 0 con letra embebida.</td>
+</tr>
+<tr>
+<td><a id="canal-midi-import"></a> <strong>Canal MIDI en importación</strong></td>
+<td>Cada pista de un archivo MIDI está asignada a un canal (1–16). Durante la importación, MuseScore intenta detectar qué canal corresponde a qué instrumento (canal 10 = percusión por convención, canales 1–9 y 11–16 = instrumentos melódicos). Si el archivo MIDI tiene una asignación extraña, los instrumentos pueden quedar mal mapeados.</td>
+</tr>
+<tr>
+<td><a id="mapeo-instrumentos"></a> <strong>Mapeo de instrumentos MIDI</strong></td>
+<td>Proceso de convertir los mensajes "Program Change" del archivo MIDI (que indican "sonido de piano", "sonido de violín", etc.) en instrumentos de MuseScore. El estándar General MIDI (GM) define 128 sonidos numerados: 1 = Acoustic Grand Piano, 41 = Violin, 57 = Trumpet. Si el archivo MIDI sigue el estándar GM, la importación asigna los instrumentos automáticamente.</td>
+</tr>
+<tr>
+<td><a id="overlapping-notes"></a> <strong>Notas superpuestas (overlapping notes)</strong></td>
+<td>Problema común en archivos MIDI importados donde dos notas del MISMO instrumento y misma altura se solapan en el tiempo (una empieza antes de que la anterior termine). MuseScore las interpreta como voces separadas o como ligaduras incorrectas. Pueden generar pentagramas con aspecto "sucio" y difícil de leer.</td>
+</tr>
+<tr>
+<td><a id="pedal-midi"></a> <strong>Pedal de sustain (CC64) en MIDI</strong></td>
+<td>Mensaje MIDI que indica cuándo se pisa y se suelta el pedal de sustain del piano. En la importación, MuseScore puede ignorarlo, representarlo como líneas de pedal en la partitura, o interpretarlo como notas prolongadas (ligaduras). El comportamiento depende de la configuración de importación.</td>
+</tr>
+<tr>
+<td><a id="microdesplazamiento"></a> <strong>Microdesplazamiento rítmico</strong></td>
+<td>Pequeñas imprecisiones temporales en un archivo MIDI (porque el intérprete original tocó "adelantado" o "atrasado" respecto al metrónomo). Durante la importación, estos microdesplazamientos pueden generar figuras rítmicas extrañas: una corchea "casi a tiempo" puede importarse como una nota con puntillo, una semicorchea con silencio previo, o valores irregulares.</td>
+</tr>
+<tr>
+<td><a id="limpieza-midi"></a> <strong>Limpieza de partitura MIDI</strong></td>
+<td>Proceso posterior a la importación que incluye: eliminar pentagramas innecesarios, fusionar voces duplicadas, corregir alteraciones enarmónicas (Do♯ convertido en Re♭ sin razón), normalizar las direcciones de plica, eliminar silencios excesivos, ajustar la cuantización y verificar la asignación de instrumentos. Es la parte que consume más tiempo en el flujo MIDI → partitura.</td>
+</tr>
+<tr>
+<td><a id="general-midi"></a> <strong>General MIDI (GM)</strong></td>
+<td>Estándar de la industria que define un conjunto de 128 sonidos numerados (piano, guitarra, cuerdas, etc.) y su asignación a canales (canal 10 = percusión). Adoptado en 1991, GM garantiza que un archivo MIDI suene "parecido" en cualquier dispositivo compatible. MuseScore usa GM como referencia para el mapeo de instrumentos durante la importación.</td>
+</tr>
+<tr>
+<td><a id="midi-karaoke"></a> <strong>MIDI Karaoke (.KAR)</strong></td>
+<td>Formato de archivo MIDI que incluye letras de canciones incrustadas como metadatos (eventos de texto y letra). MuseScore puede importar archivos .KAR y extraer automáticamente la letra como Lyrics en el pentagrama correspondiente. Es el formato típico de archivos MIDI "con pista de voz" que se usan en karaoke.</td>
+</tr>
+<tr>
+<td><a id="program-change"></a> <strong>Program Change</strong></td>
+<td>Mensaje MIDI que ordena a un dispositivo cambiar el sonido que está usando. "Program 1" = Acoustic Grand Piano, "Program 41" = Violin. En un archivo MIDI, cada pista tiene un Program Change al inicio que indica qué instrumento debe sonar. Durante la importación, MuseScore usa estos mensajes para asignar instrumentos a los pentagramas.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="note" open="open">
+<summary>¿Para qué importar archivos MIDI?</summary>
+<p>La importación MIDI es uno de los flujos de trabajo más potentes de MuseScore, pero también uno de los más incomprendidos. No es "magia negra que convierte cualquier cosa en partitura". Es una HERRAMIENTA que funciona bien con ciertos tipos de archivos y mal con otros.</p>
+<h3 id="cuando-si-importar-midi">Cuándo SÍ importar MIDI<a class="headerlink" href="#cuando-si-importar-midi" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Situación</th>
+<th>¿Por qué funciona?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Archivo MIDI exportado desde otro editor de partituras</strong> (Finale, Sibelius, Dorico, el mismo MuseScore)</td>
+<td>El MIDI fue GENERADO desde una partitura. La cuantización es perfecta. Los ritmos son exactos. La importación es casi perfecta.</td>
+</tr>
+<tr>
+<td><strong>Archivo MIDI de un secuenciador por pasos</strong> (patrones de batería, líneas de bajo programadas en un DAW)</td>
+<td>Las notas fueron "dibujadas" en una grilla, no tocadas. Alta precisión rítmica.</td>
+</tr>
+<tr>
+<td><strong>Archivo MIDI de una interpretación cuantizada</strong> (el pianista tocó y luego aplicó cuantización en el DAW)</td>
+<td>Si la cuantización es fuerte (&gt; 80%), los ritmos son aceptables. Algo de limpieza necesaria.</td>
+</tr>
+<tr>
+<td><strong>Archivo .KAR de karaoke</strong></td>
+<td>Suele tener melodía bien definida y letra incrustada. La importación extrae ambos.</td>
+</tr>
+<tr>
+<td><strong>MIDI Type 1 multipista</strong> (cada instrumento en su propia pista)</td>
+<td>MuseScore puede separar las pistas en pentagramas independientes automáticamente.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cuando-no-importar-midi">Cuándo NO importar MIDI<a class="headerlink" href="#cuando-no-importar-midi" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Situación</th>
+<th>¿Por qué NO funciona bien?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Grabación en vivo sin cuantizar</strong> (un pianista tocando libremente)</td>
+<td>Lleno de microdesplazamientos, notas superpuestas, pedales interpretados como notas largas. El resultado será una partitura ILEGIBLE.</td>
+</tr>
+<tr>
+<td><strong>Archivo MIDI de una orquesta completa en Type 0</strong></td>
+<td>Todas las pistas combinadas en una sola. MuseScore no puede separar instrumentos. Aparecerán decenas de pentagramas con nombres genéricos "Pista 1", "Pista 2".</td>
+</tr>
+<tr>
+<td><strong>Improvisación libre de jazz</strong></td>
+<td>Ritmos irregulares, swing, rubato. La notación resultante será una pesadilla de tresillos, quintillos y valores irregulares.</td>
+</tr>
+<tr>
+<td><strong>Música microtonal o con bending</strong></td>
+<td>MIDI permite pitch bend, pero la notación estándar NO. Las notas "desafinadas" del MIDI se redondean al semitono más cercano.</td>
+</tr>
+<tr>
+<td><strong>Archivo MIDI corrupto o mal formado</strong></td>
+<td>Notas faltantes, duraciones negativas, canales mal asignados. La importación falla parcial o totalmente.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Regla de oro de la importación MIDI</p>
+<p><strong>Cuanto más "mecánico" y "programado" sea el archivo MIDI, mejor será la importación. Cuanto más "humano" y "expresivo", peor.</strong> El MIDI generado desde una partitura se importa casi perfecto. El MIDI grabado desde un teclado en vivo requiere trabajo de limpieza. Aceptá esta realidad y planificá tu tiempo en consecuencia.</p>
+</div>
+<h3 id="el-flujo-de-trabajo-tipico">El flujo de trabajo típico<a class="headerlink" href="#el-flujo-de-trabajo-tipico" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Importar</strong> el MIDI con parámetros conservadores.</li>
+<li><strong>Evaluar</strong> el resultado: ¿es usable? ¿O es un desastre?</li>
+<li>Si es un desastre → OPCIONES: (a) buscar otra fuente MIDI, (b) cuantizar el archivo original en un DAW y reimportar, (c) transcribir manualmente desde cero (a veces es más rápido).</li>
+<li>Si es usable → <strong>Limpiar</strong>: pentagramas, enarmonías, plicas, silencios, voicing.</li>
+<li><strong>Verificar</strong>: ¿lo que está escrito suena como el MIDI original?</li>
+</ol>
+</details>
+<details class="note" open="open">
+<summary>Importación paso a paso</summary>
+<h3 id="abrir-un-archivo-midi-en-musescore">Abrir un archivo MIDI en MuseScore<a class="headerlink" href="#abrir-un-archivo-midi-en-musescore" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Archivo → Abrir</strong> (o <code>Ctrl / Cmd + O</code>).</li>
+<li>Navegar hasta el archivo MIDI (.mid, .midi, .kar).</li>
+<li>Seleccionarlo y hacer clic en <strong>Abrir</strong>.</li>
+</ol>
+<p>MuseScore NO abre el MIDI directamente. En su lugar, muestra un <strong>diálogo de importación</strong> con opciones que afectan drásticamente el resultado.</p>
+<h3 id="parametros-del-dialogo-de-importacion">Parámetros del diálogo de importación<a class="headerlink" href="#parametros-del-dialogo-de-importacion" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Qué hace</th>
+<th>Recomendación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cuantización más corta</strong></td>
+<td>Define la figura rítmica más pequeña que MuseScore intentará detectar. "Semicorchea" es buena para la mayoría de casos. "Fusa" captura más detalle pero produce partituras sobrecargadas.</td>
+<td>Empezar con <strong>semicorchea</strong>. Si la partitura resultante es demasiado simple (faltan notas rápidas), bajar a fusa. Si es demasiado compleja, subir a corchea.</td>
+</tr>
+<tr>
+<td><strong>Número máximo de voces por pentagrama</strong></td>
+<td>Define cuántas voces independientes detectará MuseScore. Para piano: 2 voces (melodía + acompañamiento en una misma mano). Para música orquestal: 1 voz por pentagrama.</td>
+<td>Piano: 2 voces. Ensamble: 1–2 voces. Si hay notas superpuestas, aumentar.</td>
+</tr>
+<tr>
+<td><strong>Simplificar duraciones</strong></td>
+<td>Fusiona silencios pequeños y notas ligadas para limpiar la notación. Activado = partitura más legible pero menos fiel al original.</td>
+<td><strong>Activado</strong> generalmente. Desactivar solo si necesitás precisión absoluta (ej. transcripción musicológica).</td>
+</tr>
+<tr>
+<td><strong>Mostrar líneas de pedal</strong></td>
+<td>Convierte los mensajes CC64 (pedal de sustain) en líneas de pedal visibles en la partitura.</td>
+<td><strong>Activado</strong> para música de piano. Desactivado para otros instrumentos.</td>
+</tr>
+<tr>
+<td><strong>Usar alteraciones enarmónicas</strong></td>
+<td>Convierte Do♯ en Re♭ automáticamente según la armadura.</td>
+<td><strong>Activado</strong>. Reduce el trabajo de limpieza posterior.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="despues-de-la-importacion-el-diagnostico">Después de la importación: el diagnóstico<a class="headerlink" href="#despues-de-la-importacion-el-diagnostico" title="Permanent link">&para;</a></h3>
+<p>Apenas se abre el MIDI, hacé estas 3 verificaciones:</p>
+<ol>
+<li><strong>¿Los instrumentos son correctos?</strong> Verificá que cada pentagrama tenga asignado el instrumento adecuado. Si el MIDI tenía "Piano" pero MuseScore lo abrió como "Violín", cambiá el instrumento en <strong>Propiedades del pentagrama</strong>.</li>
+<li><strong>¿La armadura y el compás son correctos?</strong> MuseScore intenta detectarlos, pero puede fallar. Verificá al inicio de la partitura.</li>
+<li><strong>¿Hay pentagramas duplicados o innecesarios?</strong> Archivos Type 1 con muchas pistas MIDI generan muchos pentagramas. "Pista 3", "Pista 7" son nombres genéricos. Eliminá los que no uses.</li>
+</ol>
+</details>
+<details class="note" open="open">
+<summary>Limpieza de partitura importada: los 7 problemas clásicos</summary>
+<p>La importación MIDI casi nunca es perfecta. Estos son los 7 problemas más frecuentes y cómo resolverlos. Aprendelos: te ahorrarán horas de frustración.</p>
+<h3 id="problema-1-ritmos-extranos-tresillos-falsos-puntillos-innecesarios">Problema 1: Ritmos extraños (tresillos falsos, puntillos innecesarios)<a class="headerlink" href="#problema-1-ritmos-extranos-tresillos-falsos-puntillos-innecesarios" title="Permanent link">&para;</a></h3>
+<p><strong>Causa</strong>: el intérprete original tocó con pequeñas imprecisiones rítmicas.</p>
+<p><strong>Solución</strong>:
+- Seleccionar el pasaje problemático.
+- <strong>Herramientas → Cuantizar...</strong> o <strong>Editar → Cuantización</strong> (en algunas versiones: <strong>Formato → Cuantizar</strong>).
+- Elegir la figura de cuantización (negra, corchea, semicorchea).
+- Aplicar y verificar: ¿los ritmos ahora tienen sentido musical?</p>
+<p><strong>Ejemplo</strong>: un pasaje que debería ser "corchea-corchea-negra" pero el MIDI lo muestra como "corchea con puntillo-semicorchea-negra con puntillo" → cuantizar a corchea lo corrige.</p>
+<h3 id="problema-2-notas-superpuestas-y-ligaduras-falsas">Problema 2: Notas superpuestas y ligaduras falsas<a class="headerlink" href="#problema-2-notas-superpuestas-y-ligaduras-falsas" title="Permanent link">&para;</a></h3>
+<p><strong>Causa</strong>: el intérprete no soltó una nota antes de tocar la siguiente (legato exagerado, pedal sostenido).</p>
+<p><strong>Solución</strong>:
+- Identificar las notas superpuestas: se ven como dos notas iguales que empiezan en tiempos ligeramente distintos y se ligan entre sí.
+- Seleccionar la nota que sobra y eliminarla (<code>Supr</code>).
+- Si hay muchas: <strong>Editar → Seleccionar → Más...</strong> → seleccionar "Nota" con duración mínima (ej. todas las notas más cortas que una semicorchea) → eliminar.</p>
+<h3 id="problema-3-armadura-incorrecta-o-ausente">Problema 3: Armadura incorrecta o ausente<a class="headerlink" href="#problema-3-armadura-incorrecta-o-ausente" title="Permanent link">&para;</a></h3>
+<p><strong>Causa</strong>: el archivo MIDI no contiene información de armadura. MuseScore asume Do mayor / La menor por defecto.</p>
+<p><strong>Solución</strong>:
+- Escuchar la partitura. Identificar la tonalidad de oído.
+- Arrastrar la armadura correcta desde la paleta <strong>Armaduras</strong> al primer compás.
+- MuseScore ajustará automáticamente las alteraciones accidentales (convierte sostenidos/bemoles según la nueva armadura).
+- Verificar compás por compás que las alteraciones sean correctas.</p>
+<h3 id="problema-4-enarmonias-incorrectas-do-en-lugar-de-re">Problema 4: Enarmonías incorrectas (Do♯ en lugar de Re♭)<a class="headerlink" href="#problema-4-enarmonias-incorrectas-do-en-lugar-de-re" title="Permanent link">&para;</a></h3>
+<p><strong>Causa</strong>: el MIDI solo transmite el número de nota (altura en semitonos sobre Do₀). No distingue entre Do♯ y Re♭ porque son la MISMA altura MIDI. MuseScore tiene que "adivinar" cuál escribir.</p>
+<p><strong>Solución</strong>:
+- Seleccionar la nota con la enarmonía incorrecta.
+- Presionar <code>J</code> (cambia entre las representaciones enarmónicas disponibles).
+- O hacer clic derecho → <strong>Propiedades de la nota → Alteración → elegir la correcta</strong>.
+- Regla general: en tonalidades con sostenidos, preferir Do♯ sobre Re♭. En tonalidades con bemoles, preferir Re♭ sobre Do♯. La nota DEBE ser fácil de leer en el contexto de la armadura.</p>
+<h3 id="problema-5-pentagramas-con-nombres-genericos-y-instrumentos-mal-asignados">Problema 5: Pentagramas con nombres genéricos y instrumentos mal asignados<a class="headerlink" href="#problema-5-pentagramas-con-nombres-genericos-y-instrumentos-mal-asignados" title="Permanent link">&para;</a></h3>
+<p><strong>Causa</strong>: el archivo MIDI usa nombres de pista no estándar o carece de mensajes Program Change.</p>
+<p><strong>Solución</strong>:
+- Clic derecho en el nombre del pentagrama → <strong>Propiedades del pentagrama</strong>.
+- <strong>Cambiar instrumento</strong> → buscar el instrumento correcto.
+- Renombrar la pista con un nombre descriptivo ("Violín I" en lugar de "Pista 3").
+- Si hay instrumentos que no aparecen en la partitura (percusión que se asignó a un pentagrama melódico), verificar el canal MIDI: canal 10 debe ser percusión.</p>
+<h3 id="problema-6-plicas-inconsistentes-y-direccion-erronea">Problema 6: Plicas inconsistentes y dirección errónea<a class="headerlink" href="#problema-6-plicas-inconsistentes-y-direccion-erronea" title="Permanent link">&para;</a></h3>
+<p><strong>Causa</strong>: MuseScore asigna dirección de plica automáticamente, pero en música importada las decisiones automáticas pueden ser incorrectas.</p>
+<p><strong>Solución</strong>:
+- Seleccionar las notas afectadas.
+- <strong>Propiedades → Plica → Dirección</strong>: elegir "Arriba", "Abajo" o "Automático" según corresponda.
+- Para pasajes con voces mezcladas, verificar que la voz 1 (plica arriba) y voz 2 (plica abajo) sean consistentes.</p>
+<h3 id="problema-7-dinamicas-y-cambios-de-tempo-pegados-a-notas-incorrectas">Problema 7: Dinámicas y cambios de tempo pegados a notas incorrectas<a class="headerlink" href="#problema-7-dinamicas-y-cambios-de-tempo-pegados-a-notas-incorrectas" title="Permanent link">&para;</a></h3>
+<p><strong>Causa</strong>: los mensajes CC (control change) de volumen y los mensajes de tempo del MIDI se convierten en marcas de dinámica y tempo de MuseScore, pero pueden quedar "anclados" a notas incorrectas.</p>
+<p><strong>Solución</strong>:
+- Reproducir la partitura. Si una dinámica o cambio de tempo ocurre en un momento extraño, seleccionarlo, eliminarlo y reinsertarlo manualmente.
+- Las dinámicas MIDI (CC7 = volumen) suelen ser problemáticas porque representan el volumen ABSOLUTO del canal, no una indicación musical. Generalmente es mejor eliminarlas todas y reescribir las dinámicas manualmente.</p>
+</details>
+<details class="note" open="open">
+<summary>Importación avanzada: configuraciones especiales</summary>
+<h3 id="importar-bateria-y-percusion-desde-midi">Importar batería y percusión desde MIDI<a class="headerlink" href="#importar-bateria-y-percusion-desde-midi" title="Permanent link">&para;</a></h3>
+<p>Los archivos MIDI de batería pueden importarse correctamente SI el archivo sigue el estándar General MIDI para percusión (canal 10 con el mapa estándar de notas de percusión):</p>
+<ol>
+<li>Importar el archivo normalmente (o arrastrarlo a MuseScore).</li>
+<li>En el diálogo de importación, asegurarse de que el canal 10 esté asignado al pentagrama de Drumset.</li>
+<li>Si MuseScore no detecta la percusión automáticamente: después de la importación, clic derecho en el pentagrama → <strong>Cambiar instrumento → Percusión no afinada → Drumset</strong>.</li>
+<li>Las cabezas de nota deberían cambiar automáticamente (X para platillos, circular para tambores). Si no lo hacen, verificar el mapa de percusión del pentagrama.</li>
+</ol>
+<h3 id="importar-midi-con-pista-de-letra-karaoke-kar">Importar MIDI con pista de letra (karaoke .KAR)<a class="headerlink" href="#importar-midi-con-pista-de-letra-karaoke-kar" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Abrir el archivo .KAR con <strong>Archivo → Abrir</strong>.</li>
+<li>MuseScore detecta la pista de letra y la coloca como <strong>Lyrics</strong> debajo del pentagrama correspondiente.</li>
+<li>Verificar la sincronización: la letra debe estar alineada con las notas correctas. Si no lo está, ajustar manualmente moviendo las sílabas con <code>Ctrl + → / ←</code>.</li>
+<li>La letra importada puede contener caracteres no deseados (códigos de sincronización, marcas de karaoke como "/" para separación de sílabas). Limpiarlos manualmente.</li>
+</ol>
+<h3 id="importacion-por-arrastre-drag-and-drop">Importación por arrastre (drag and drop)<a class="headerlink" href="#importacion-por-arrastre-drag-and-drop" title="Permanent link">&para;</a></h3>
+<p>Alternativa rápida: arrastrar el archivo MIDI directamente desde el Explorador de archivos (Windows) o Finder (Mac) a la ventana de MuseScore. El diálogo de importación aparece igual y el proceso es idéntico.</p>
+</details>
+<hr />
+<h2 id="actividad-en-classroom">Actividad en Classroom<a class="headerlink" href="#actividad-en-classroom" title="Permanent link">&para;</a></h2>
+<h3 id="tarea-s23-importacion-y-limpieza-de-archivos-midi">Tarea: S23 — Importación y limpieza de archivos MIDI<a class="headerlink" href="#tarea-s23-importacion-y-limpieza-de-archivos-midi" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Material necesario</strong>: el docente proporcionará tres archivos: (a) <code>ejercicio_S23_melodia.mid</code>, un archivo MIDI Type 1 de una melodía para flauta y acompañamiento de piano, bien cuantizado y con asignación correcta de instrumentos, listo para importar con pocos problemas; (b) <code>ejercicio_S23_desastre.mid</code>, un archivo MIDI Type 1 deliberadamente "problemático" con microdesplazamientos, enarmonías incorrectas, 3 pentagramas con nombres genéricos, y notas superpuestas, simulando una grabación en vivo sin cuantizar; (c) <code>ejercicio_S23_karaoke.kar</code>, un archivo .KAR con una canción popular en español que incluya melodía, acompañamiento y letra.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Importación limpia: diagnóstico.</strong> Abrí <code>ejercicio_S23_melodia.mid</code> en MuseScore con los parámetros recomendados (cuantización: semicorchea, voces: 1 por pentagrama, simplificar duraciones: activado, líneas de pedal: activado, enarmonías: activado):</p>
+<ul>
+<li>Describí el resultado: ¿cuántos pentagramas se generaron? ¿Los instrumentos son correctos? ¿La armadura y el compás coinciden con lo que escuchás?</li>
+<li>Verificá que la melodía de flauta y el acompañamiento de piano estén en pentagramas separados y correctamente nombrados.</li>
+<li>Reproducí la partitura. ¿Suena igual que el MIDI original? Si no, ¿dónde están las diferencias?</li>
+<li>Este es el "caso ideal": un MIDI bien hecho. Documentá qué parámetros de importación usaste y si hubo que hacer algún ajuste.</li>
+</ul>
+</li>
+<li>
+<p><strong>Limpieza de archivo problemático.</strong> Abrí <code>ejercicio_S23_desastre.mid</code> en MuseScore:</p>
+<ul>
+<li><strong>Diagnóstico</strong>: observá la partitura resultante. Identificá al menos CINCO problemas de los 7 tipos estudiados (ritmos extraños, notas superpuestas, armadura incorrecta, enarmonías, pentagramas genéricos, plicas inconsistentes, dinámicas mal ubicadas). Anotalos.</li>
+<li><strong>Cuantización</strong>: seleccioná toda la partitura y aplicá cuantización a corchea. ¿Mejoró? Probá con semicorchea. ¿Cuál da mejor resultado? Documentá.</li>
+<li><strong>Pentagramas</strong>: renombrá los pentagramas con nombres de instrumentos reales. Asigná el instrumento correcto si MuseScore no lo detectó. Eliminá pentagramas innecesarios.</li>
+<li><strong>Enarmonías</strong>: corregí al menos 10 notas con enarmonías incorrectas usando <code>J</code> o las propiedades de la nota.</li>
+<li><strong>Notas superpuestas</strong>: encontrá al menos 5 pares de notas superpuestas y eliminalas.</li>
+<li><strong>Plicas</strong>: normalizá la dirección de plicas en al menos 2 pasajes donde sean inconsistentes.</li>
+<li><strong>Dinámicas</strong>: eliminá las marcas de dinámica automáticas que quedaron mal ubicadas. Agregá manualmente al menos 4 marcas de dinámica (<code>p</code>, <code>mf</code>, <code>f</code>, <code>ff</code>) y un regulador (crescendo/diminuendo).</li>
+<li><strong>Resultado final</strong>: exportá la partitura limpia como PDF y MSCZ. La partitura debe ser legible, con los instrumentos correctos, ritmos musicalmente coherentes y una presentación profesional.</li>
+</ul>
+</li>
+<li>
+<p><strong>Karaoke MIDI: letra y melodía.</strong> Abrí <code>ejercicio_S23_karaoke.kar</code> en MuseScore:</p>
+<ul>
+<li>Verificá que la letra se haya importado como <strong>Lyrics</strong> debajo de las notas correctas.</li>
+<li>Si hay errores de sincronización (letra en notas incorrectas), corregilos moviendo las sílabas con <code>Ctrl + → / ←</code> o reescribiendo la letra manualmente.</li>
+<li>Limpiá caracteres extraños típicos de archivos .KAR (códigos de sincronización, barras "/", guiones dobles).</li>
+<li>Identificá la melodía principal y las pistas de acompañamiento. Nombrá cada pentagrama correctamente.</li>
+<li>Agregá el cifrado armónico (<code>Ctrl + K</code>) sobre la melodía si la canción tiene una progresión de acordes reconocible (escuchá el acompañamiento).</li>
+<li>Exportá como PDF.</li>
+</ul>
+</li>
+<li>
+<p><strong>Integración: partitura desde MIDI.</strong> Buscá en internet o en tu biblioteca personal UN archivo MIDI de tu elección que cumpla con estos requisitos:</p>
+<ul>
+<li>Debe ser Type 1 (multipista), NO Type 0.</li>
+<li>Debe tener al menos 4 instrumentos diferentes (ej. piano, bajo, batería, melodía).</li>
+<li>Debe ser música que reconozcas y te guste (para que puedas evaluar si la importación "suena bien").</li>
+<li>No uses archivos de karaoke (.KAR) para este ejercicio.</li>
+</ul>
+<p>Creá una carpeta y guardá el archivo como <code>APELLIDO_Nombre_S23_midi_original.mid</code>. Luego:
+- <strong>Importá</strong> el MIDI en MuseScore con los parámetros que consideres adecuados. Documentá qué parámetros usaste y por qué.
+- <strong>Limpiá</strong> la partitura siguiendo el flujo de los 7 problemas. Documentá en un comentario de Classroom los problemas que encontraste y cómo los resolviste.
+- <strong>Mejorá</strong> la partitura: agregá nombre de compositor, título de la obra, indicaciones de tempo, dinámicas razonables, y cualquier marca de expresión que consideres necesaria.
+- Guardá como <code>APELLIDO_Nombre_S23_midi_importado.mscz</code>.
+- Exportá como PDF y como audio (MP3 o WAV) para comparar con el MIDI original.</p>
+</li>
+<li>
+<p><strong>Reflexión sobre importación MIDI.</strong> En Classroom, respondé:</p>
+<ul>
+<li>¿Qué tipo de archivos MIDI se importan mejor y por qué? Describí las características del archivo que produjo la mejor importación en tu experiencia (propia o de los ejercicios).</li>
+<li>¿Cuál de los 7 problemas de limpieza te resultó más difícil de resolver? ¿Qué estrategia usaste para resolverlo?</li>
+<li>Compará el tiempo que te llevó limpiar <code>ejercicio_S23_desastre.mid</code> con el tiempo estimado que te habría llevado escribir esa misma partitura desde cero. ¿Cuándo conviene importar y limpiar vs. empezar desde cero?</li>
+</ul>
+</li>
+</ol>
+<h3 id="entregables">Entregables<a class="headerlink" href="#entregables" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] <code>APELLIDO_Nombre_S23_melodia_v01.mscz</code> (importación limpia, pocos ajustes)</li>
+<li>[ ] <code>APELLIDO_Nombre_S23_melodia_v01.pdf</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S23_desastre_v01.mscz</code> (archivo problemático completamente limpiado)</li>
+<li>[ ] <code>APELLIDO_Nombre_S23_desastre_v01.pdf</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S23_karaoke_v01.mscz</code> (karaoke con letra corregida y cifrado)</li>
+<li>[ ] <code>APELLIDO_Nombre_S23_karaoke_v01.pdf</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S23_midi_original.mid</code> (el archivo MIDI que elegiste)</li>
+<li>[ ] <code>APELLIDO_Nombre_S23_midi_importado_v01.mscz</code> (tu partitura importada y mejorada)</li>
+<li>[ ] <code>APELLIDO_Nombre_S23_midi_importado_v01.pdf</code></li>
+<li>[ ] Comentario en Classroom con: (a) respuestas a las 3 preguntas de reflexión, (b) lista de los 5+ problemas identificados en <code>ejercicio_S23_desastre.mid</code> y cómo los resolviste, (c) enlace o nombre del archivo MIDI que elegiste en la Parte 4 y por qué lo elegiste</li>
+</ul>
+<h3 id="autoevaluacion">Autoevaluación<a class="headerlink" href="#autoevaluacion" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>✅ Logrado</th>
+<th>⚠️ En proceso</th>
+<th>❌ No logrado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Importación limpia</td>
+<td>Parámetros correctos; instrumentos y armadura verificados; sin errores de importación</td>
+<td>Importación correcta pero sin verificación de instrumentos o armadura</td>
+<td>Importación no realizada o con parámetros incorrectos</td>
+</tr>
+<tr>
+<td>Limpieza de archivo problemático</td>
+<td>≥5 problemas identificados y resueltos; cuantización probada; enarmonías corregidas; pentagramas renombrados; resultado legible y profesional</td>
+<td>3–4 problemas resueltos o limpieza incompleta</td>
+<td>≤2 problemas resueltos</td>
+</tr>
+<tr>
+<td>Karaoke MIDI</td>
+<td>Letra importada y sincronizada; caracteres extraños limpiados; pentagramas nombrados; cifrado armónico agregado</td>
+<td>Letra importada pero con errores de sincronización o sin limpiar</td>
+<td>Karaoke no procesado</td>
+</tr>
+<tr>
+<td>Integración (MIDI propio)</td>
+<td>Archivo Type 1 con ≥4 instrumentos; importación documentada; limpieza completa; partitura mejorada con metadatos y dinámicas</td>
+<td>Archivo importado pero con limpieza parcial o &lt;4 instrumentos</td>
+<td>Archivo no importado o tipo incorrecto</td>
+</tr>
+<tr>
+<td>Reflexión</td>
+<td>3 respuestas con análisis técnico; comparación importar vs. escribir desde cero; mención de tipos de archivo y problemas</td>
+<td>2 respuestas correctas</td>
+<td>≤1 respuesta o superficial</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Basado en: MuseScore Studio 4 Handbook — MIDI import | https://handbook.musescore.org</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.path", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

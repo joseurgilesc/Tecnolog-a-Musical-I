@@ -1,0 +1,3019 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de clase — Tecnología Musical I (MuseScore Studio)">
+      
+      
+        <meta name="author" content="José Urgilés">
+      
+      
+      
+        <link rel="prev" href="../sesion-26/">
+      
+      
+        <link rel="next" href="../sesion-28/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Sesión 27 - Tecnología Musical I</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sesion-27-estilos-fuentes-y-numeracion-de-compases" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Tecnología Musical I" class="md-header__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tecnología Musical I
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sesión 27
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Tecnología Musical I" class="md-nav__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../../img/logo.svg" alt="logo">
+
+    </a>
+    Tecnología Musical I
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../objetivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Objetivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../logros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logros de Aprendizaje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-1-introduccion-organizacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-2-ingreso-edicion-notas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-3-articulacion-expresion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-4-estructura-repeticiones/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-4-estructura-repeticiones/sesion-16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-5-notaciones-especializadas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 5: Notaciones especializadas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 5: Notaciones especializadas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-6-midi-importacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 27
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-duo-leland-edwin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El dúo Leland + Edwin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otras-fuentes-musicales-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Otras fuentes musicales disponibles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-cambiar-las-fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo cambiar las fuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuración básica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numeracion-en-particellas-vs-partitura-completa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numeración en particellas vs. partitura completa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numeracion-especial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numeración especial
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadatos-esenciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metadatos esenciales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-triangulo-de-la-primera-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El triángulo de la primera página
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cabecera-y-pie-de-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cabecera y pie de página
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-usar-perfiles-de-estilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Por qué usar perfiles de estilo?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-crear-y-cargar-un-perfil-de-estilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo crear y cargar un perfil de estilo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-incluye-un-perfil-de-estilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué incluye un perfil de estilo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividad en Classroom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarea-s27-estilos-fuentes-y-numeracion-de-compases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tarea: S27 — Estilos, fuentes y numeración de compases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entregables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 31
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exámenes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exámenes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examen-interciclo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Interciclo (Sesión 16)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examen-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Final (Sesión 32)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-duo-leland-edwin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El dúo Leland + Edwin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otras-fuentes-musicales-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Otras fuentes musicales disponibles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-cambiar-las-fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo cambiar las fuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuración básica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numeracion-en-particellas-vs-partitura-completa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numeración en particellas vs. partitura completa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numeracion-especial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Numeración especial
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadatos-esenciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metadatos esenciales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-triangulo-de-la-primera-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El triángulo de la primera página
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cabecera-y-pie-de-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cabecera y pie de página
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-usar-perfiles-de-estilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Por qué usar perfiles de estilo?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-crear-y-cargar-un-perfil-de-estilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo crear y cargar un perfil de estilo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-incluye-un-perfil-de-estilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué incluye un perfil de estilo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividad en Classroom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarea-s27-estilos-fuentes-y-numeracion-de-compases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tarea: S27 — Estilos, fuentes y numeración de compases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entregables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Unidad 7: Edición, partes y publicación
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="sesion-27-estilos-fuentes-y-numeracion-de-compases">Sesión 27: Estilos, fuentes y numeración de compases<a class="headerlink" href="#sesion-27-estilos-fuentes-y-numeracion-de-compases" title="Permanent link">&para;</a></h1>
+<p>📚 Handbook → Formatting: Fonts, Measure numbers, Score properties | Herramientas: MuseScore Studio 4, Google Classroom</p>
+<hr />
+<details class="info">
+<summary>Glosario de términos</summary>
+<p>Consultá esta tabla cuando encuentres un término que no conozcas.</p>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="estilo-texto"></a> <strong>Estilo de texto (Text style)</strong></td>
+<td>Conjunto de propiedades tipográficas (fuente, tamaño, negrita, cursiva, alineación, color) que se aplican a un TIPO específico de texto en la partitura. MuseScore tiene estilos predefinidos para: título, subtítulo, compositor, letrista, número de compás, indicación de tempo, matiz, texto de pentagrama, y muchos más. Cambiar un estilo afecta a TODAS las instancias de ese tipo en la partitura.</td>
+</tr>
+<tr>
+<td><a id="fuente-musical"></a> <strong>Fuente musical (Music font)</strong></td>
+<td>Tipo de letra especializado que contiene SÍMBOLOS MUSICALES en lugar de caracteres alfabéticos: cabezas de nota, claves, silencios, alteraciones, matices, articulaciones. MuseScore 4 usa <strong>Leland</strong> como fuente musical por defecto (creada por Muse Group, inspirada en las ediciones de Breitkopf &amp; Härtel del siglo XIX). Otras fuentes incluyen Bravura (estilo más moderno), Gonville (estilo más redondeado), y Petaluma (estilo de música de cámara).</td>
+</tr>
+<tr>
+<td><a id="fuente-texto"></a> <strong>Fuente de texto (Text font)</strong></td>
+<td>Tipo de letra estándar (alfabética) para los textos de la partitura: títulos, indicaciones de tempo, letra, matices en texto, números de compás. MuseScore 4 usa <strong>Edwin</strong> como fuente de texto por defecto (diseñada para complementar a Leland). Se puede cambiar a cualquier fuente instalada en el sistema (Times New Roman, Arial, etc.).</td>
+</tr>
+<tr>
+<td><a id="leland"></a> <strong>Leland (fuente musical)</strong></td>
+<td>La fuente musical oficial de MuseScore 4. Su nombre es un homenaje a Leland Smith, pionero de la notación musical por computadora en Stanford. Sus glifos están dibujados para ser claros, elegantes y con un peso visual balanceado. A diferencia de fuentes musicales antiguas (que eran digitalizaciones de grabados metálicos), Leland fue DISEÑADA para pantalla.</td>
+</tr>
+<tr>
+<td><a id="edwin"></a> <strong>Edwin (fuente de texto)</strong></td>
+<td>La fuente de texto oficial de MuseScore 4. Incluye todos los caracteres necesarios para partituras: letras estándar, caracteres con diacríticos (ü, ñ, ç, é), símbolos musicales, y números con alineación especial para compases. Está pensada para ser legible en tamaños pequeños (números de compás en particellas de orquesta).</td>
+</tr>
+<tr>
+<td><a id="measure-number"></a> <strong>Número de compás (Measure number)</strong></td>
+<td>Numeración automática que MuseScore coloca al inicio de cada compás (o cada N compases, según la configuración). Es EL sistema de referencia universal en ensayos: "vamos del compás 47" significa que todos los músicos encuentran el compás marcado como 47 en su parte. Sin números de compás, un ensayo de orquesta es un caos logístico.</td>
+</tr>
+<tr>
+<td><a id="intervalo-medida"></a> <strong>Intervalo de numeración</strong></td>
+<td>Frecuencia con la que aparece el número de compás. Por defecto, MuseScore muestra el número en el PRIMER compás de cada sistema. En particellas de orquesta, típicamente se numera cada 1, 5 o 10 compases para que el músico pueda ubicarse rápidamente. Se configura en <strong>Formato → Estilo → Números de compás</strong>.</td>
+</tr>
+<tr>
+<td><a id="score-properties"></a> <strong>Propiedades de la partitura (Score properties)</strong></td>
+<td>Metadatos de la obra: título, subtítulo, compositor, letrista, copyright, año de creación, número de catálogo, editor, dedicatoria. Estos datos NO solo son informativos: se usan para generar automáticamente la cabecera de la primera página, las páginas de título, y los metadatos de exportación (PDF, MusicXML, MP3). Se editan en <strong>Archivo → Propiedades de la partitura</strong>.</td>
+</tr>
+<tr>
+<td><a id="style-profile"></a> <strong>Perfil de estilo (Style profile)</strong></td>
+<td>Conjunto completo de TODAS las configuraciones de formato de una partitura (fuentes, tamaños, distancias, alineaciones, visibilidad de elementos) guardado como un archivo .mss (MuseScore Style). Permite aplicar el MISMO estilo de formato a múltiples partituras. Ej: "Quiero que todas mis partituras de coro usen fuente Petaluma, A5 horizontal, márgenes de 10 mm, y números de compás cada 5 compases."</td>
+</tr>
+<tr>
+<td><a id="cabecera-pie"></a> <strong>Cabecera y pie de página (Header / Footer)</strong></td>
+<td>Texto que aparece en la parte superior (cabecera) o inferior (pie) de cada página de la partitura o de las particellas. Suele contener: nombre de la obra, compositor, número de página o nombre del instrumento (en particellas). Se configura en <strong>Formato → Estilo → Cabecera, pie de página</strong>.</td>
+</tr>
+<tr>
+<td><a id="copyright-metadata"></a> <strong>Copyright y metadatos</strong></td>
+<td>Información legal y de catalogación de la obra. El copyright protege los derechos del compositor. En el contexto académico, incluir copyright en tus partituras establece tu autoría públicamente. Aunque tu obra no esté registrada formalmente, el copyright "© [año] [nombre]" declara tu propiedad intelectual.</td>
+</tr>
+<tr>
+<td><a id="alineacion-texto"></a> <strong>Alineación de texto</strong></td>
+<td>Posición horizontal y vertical de un elemento textual respecto al pentagrama o al compás. Un título suele estar centrado. Un número de compás suele estar alineado a la izquierda del compás. Una indicación de tempo suele estar alineada a la izquierda sobre el pentagrama. Una mala alineación es un marcador instantáneo de partitura amateur.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="note" open="open">
+<summary>La tipografía de la partitura: fuentes musicales y de texto</summary>
+<p>La tipografía es el 50% de la personalidad visual de una partitura. Dos partituras con las MISMAS notas pero con DIFERENTES fuentes se ven como obras completamente distintas. Elegir las fuentes correctas es una decisión EDITORIAL, no técnica.</p>
+<h3 id="el-duo-leland-edwin">El dúo Leland + Edwin<a class="headerlink" href="#el-duo-leland-edwin" title="Permanent link">&para;</a></h3>
+<p>MuseScore 4 viene con una combinación tipográfica diseñada específicamente para notación musical:</p>
+<table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>Tipo</th>
+<th>¿Qué dibuja?</th>
+<th>Personalidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Leland</strong></td>
+<td>Musical</td>
+<td>Notas, claves, silencios, alteraciones, matices, articulaciones</td>
+<td>Clásica, elegante, atemporal. Inspirada en los grabados alemanes del siglo XIX (Breitkopf &amp; Härtel).</td>
+</tr>
+<tr>
+<td><strong>Edwin</strong></td>
+<td>Texto</td>
+<td>Títulos, indicaciones de tempo, letra, números de compás, texto de pentagrama</td>
+<td>Sobria, funcional, altamente legible. Diseñada para NO llamar la atención y dejar que la música hable.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="otras-fuentes-musicales-disponibles">Otras fuentes musicales disponibles<a class="headerlink" href="#otras-fuentes-musicales-disponibles" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>Estilo</th>
+<th>¿Para qué tipo de música?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bravura</strong></td>
+<td>Moderna, nítida, ligeramente angulosa</td>
+<td>Música contemporánea, partituras de estudio, ediciones académicas. Es la fuente de referencia del estándar SMuFL (Standard Music Font Layout).</td>
+</tr>
+<tr>
+<td><strong>Gonville</strong></td>
+<td>Redondeada, cálida, más "manuscrita"</td>
+<td>Música de cámara, coral, jazz. Recuerda a las partituras copiadas a mano de mediados del siglo XX.</td>
+</tr>
+<tr>
+<td><strong>Petaluma</strong></td>
+<td>Compacta, limpia, optimizada para pentagramas pequeños</td>
+<td>Partituras de orquesta y banda donde el espacio es crítico. Menor peso visual por nota.</td>
+</tr>
+<tr>
+<td><strong>MuseJazz</strong></td>
+<td>Estilo manuscrito de jazz (cabezas de nota inclinadas, plicas más gruesas)</td>
+<td>Partituras de jazz, big band, música popular. Fuente de texto complementaria: MuseJazzText.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="como-cambiar-las-fuentes">Cómo cambiar las fuentes<a class="headerlink" href="#como-cambiar-las-fuentes" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Fuente musical</strong>: <strong>Formato → Estilo → Partitura → Fuente musical</strong>. Seleccionar Leland, Bravura, Gonville, Petaluma o MuseJazz.</li>
+<li><strong>Fuente de texto</strong>: <strong>Formato → Estilo → Estilos de texto → [elemento]</strong>. Por ejemplo, para cambiar la fuente del título: <strong>Estilos de texto → Título → Fuente → Edwin (u otra)</strong>.</li>
+<li><strong>Tamaños de fuente</strong>: cada estilo de texto tiene su propio tamaño. Los títulos suelen ser más grandes (24–30 pt), las indicaciones de tempo intermedias (12–14 pt), los números de compás pequeños (8–10 pt).</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">No mezcles fuentes musicales sin criterio</p>
+<p>Cambiar la fuente musical a MITAD de la partitura es como escribir un párrafo con 3 tipografías distintas: un desastre visual. Elegí UNA fuente musical para toda la partitura. La coherencia tipográfica es un pilar del diseño editorial profesional. Si querés experimentar, hacelo en copias separadas.</p>
+</div>
+</details>
+<details class="note" open="open">
+<summary>Numeración de compases: el GPS del ensayo</summary>
+<p>Los números de compás son el sistema de navegación más importante de una partitura de ensamble. Sin ellos, el director no puede decir "vamos del 47". Sin ellos, los músicos no pueden marcar sus partes. Sin ellos, un ensayo se convierte en: "empecemos donde dice 'Allegro'... no, más adelante... donde el oboe hace esa nota larga...".</p>
+<h3 id="configuracion-basica">Configuración básica<a class="headerlink" href="#configuracion-basica" title="Permanent link">&para;</a></h3>
+<p><strong>Formato → Estilo → Números de compás:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Qué hace</th>
+<th>Valor típico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Intervalo</strong></td>
+<td>Cada cuántos compases aparece el número</td>
+<td>1 (cada compás), 5 o 10 (particellas de orquesta)</td>
+</tr>
+<tr>
+<td><strong>Primer compás numerado</strong></td>
+<td>A partir de qué compás empieza la numeración</td>
+<td>1 (por defecto)</td>
+</tr>
+<tr>
+<td><strong>Mostrar en el primer compás del sistema</strong></td>
+<td>Siempre visible al inicio de cada sistema</td>
+<td>Activado (SIEMPRE — es crucial para la orientación)</td>
+</tr>
+<tr>
+<td><strong>Posición horizontal</strong></td>
+<td>Alineación respecto al compás</td>
+<td>Izquierda (estándar)</td>
+</tr>
+<tr>
+<td><strong>Posición vertical</strong></td>
+<td>Distancia sobre/bajo el pentagrama</td>
+<td>Sobre el pentagrama, 2–3 sp de distancia</td>
+</tr>
+<tr>
+<td><strong>Fuente y tamaño</strong></td>
+<td>Tipografía específica para números de compás</td>
+<td>Edwin, 8–10 pt</td>
+</tr>
+</tbody>
+</table>
+<h3 id="numeracion-en-particellas-vs-partitura-completa">Numeración en particellas vs. partitura completa<a class="headerlink" href="#numeracion-en-particellas-vs-partitura-completa" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Contexto</th>
+<th>Intervalo recomendado</th>
+<th>Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Partitura completa (conductor)</strong></td>
+<td>Cada 1 compás, o cada 5 si la página es densa</td>
+<td>El director necesita precisión absoluta</td>
+</tr>
+<tr>
+<td><strong>Particella de orquesta</strong></td>
+<td>Cada 5 o 10 compases</td>
+<td>El músico solo necesita orientación general; cada compás sobrecargaría la página</td>
+</tr>
+<tr>
+<td><strong>Particella de cámara</strong></td>
+<td>Cada 1 compás</td>
+<td>Con pocos músicos, la precisión es importante y el espacio no es problema</td>
+</tr>
+<tr>
+<td><strong>Particella con muchos silencios</strong></td>
+<td>Cada compás durante los silencios multicompás, cada 5-10 durante pasajes activos</td>
+<td>El músico que está contando 47 compases de silencio AGRADECE los números</td>
+</tr>
+<tr>
+<td><strong>Estudio / ejercicio</strong></td>
+<td>Cada 1 compás</td>
+<td>Facilita la referencia del profesor ("compás 12, la tercera corchea")</td>
+</tr>
+</tbody>
+</table>
+<h3 id="numeracion-especial">Numeración especial<a class="headerlink" href="#numeracion-especial" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Reiniciar numeración</strong>: con un salto de sección. El primer compás después del salto vuelve a ser "1". Útil para movimientos separados.</li>
+<li><strong>Excluir compás de la numeración</strong>: útil para compases de anacrusa (el compás incompleto del inicio NO debería contarse como "1").</li>
+<li><strong>Números en recuadro o círculo</strong>: para ensayos. Algunos formatos (especialmente teatro musical y bandas sonoras) usan números en recuadro o círculo en lugar de números simples, para máxima visibilidad en condiciones de poca luz (foso de orquesta).</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">El número de compás NUNCA debe ser invisible</p>
+<p>Si los números de compás no se ven, el ensayo se detiene cada 2 minutos para que los músicos pregunten "¿en qué compás estamos?". El tiempo del director es CARO. No le hagas perder el tiempo por no configurar bien los números de compás.</p>
+</div>
+</details>
+<details class="note" open="open">
+<summary>Propiedades de la partitura: la identidad de la obra</summary>
+<p>Las propiedades de la partitura son el DNI de tu obra. Una partitura sin metadatos es una obra ANÓNIMA. Si alguien encuentra tu PDF dentro de 10 años, ¿va a saber quién la escribió?</p>
+<h3 id="metadatos-esenciales">Metadatos esenciales<a class="headerlink" href="#metadatos-esenciales" title="Permanent link">&para;</a></h3>
+<p><strong>Archivo → Propiedades de la partitura:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Ejemplo</th>
+<th>¿Dónde aparece?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Título</strong></td>
+<td>Sonata para violín y piano en Sol menor</td>
+<td>Primera página (cabecera), metadatos del PDF, exportación MusicXML</td>
+</tr>
+<tr>
+<td><strong>Subtítulo</strong></td>
+<td>I. Allegro con brio</td>
+<td>Debajo del título, primera página</td>
+</tr>
+<tr>
+<td><strong>Compositor</strong></td>
+<td>Juan Pérez (1998– )</td>
+<td>Primera página (lado derecho), metadatos</td>
+</tr>
+<tr>
+<td><strong>Letrista</strong></td>
+<td>(si aplica)</td>
+<td>Primera página (lado izquierdo)</td>
+</tr>
+<tr>
+<td><strong>Copyright</strong></td>
+<td>© 2026 Juan Pérez. Todos los derechos reservados.</td>
+<td>Primera página (pie), metadatos del PDF</td>
+</tr>
+<tr>
+<td><strong>Número de catálogo</strong></td>
+<td>Op. 14, No. 2</td>
+<td>Junto al título (ediciones académicas)</td>
+</tr>
+<tr>
+<td><strong>Dedicatoria</strong></td>
+<td>A mi madre</td>
+<td>Página de título (si existe)</td>
+</tr>
+<tr>
+<td><strong>Año de composición</strong></td>
+<td>2026</td>
+<td>Metadatos, página de título</td>
+</tr>
+</tbody>
+</table>
+<h3 id="el-triangulo-de-la-primera-pagina">El triángulo de la primera página<a class="headerlink" href="#el-triangulo-de-la-primera-pagina" title="Permanent link">&para;</a></h3>
+<p>Toda partitura profesional responde TRES preguntas en su primera página:</p>
+<div class="highlight"><pre><span></span><code>┌────────────────────────────────────────────┐
+│                                              │
+│            Título de la obra                  │
+│            Subtítulo (si hay)                 │
+│                                              │
+│  Compositor                    Letrista      │
+│  (derecha)                     (izquierda)    │
+│                                              │
+│  ═══════════ [música] ════════════════════   │
+│                                              │
+│  © año compositor. Todos los derechos...     │
+│  (pie de página, centrado o izquierda)       │
+└────────────────────────────────────────────┘
+</code></pre></div>
+<p><strong>Título</strong> (arriba, centrado): ¿QUÉ es esta obra?<br />
+<strong>Compositor</strong> (derecha): ¿QUIÉN la escribió?<br />
+<strong>Copyright</strong> (pie): ¿A QUIÉN pertenece legalmente?</p>
+<h3 id="cabecera-y-pie-de-pagina">Cabecera y pie de página<a class="headerlink" href="#cabecera-y-pie-de-pagina" title="Permanent link">&para;</a></h3>
+<p>En <strong>Formato → Estilo → Cabecera, pie de página</strong> podés configurar texto que aparece en CADA página:</p>
+<ul>
+<li><strong>Cabecera</strong>: típicamente el título de la obra (páginas pares) o el compositor (páginas impares).</li>
+<li><strong>Pie</strong>: número de página, copyright, o nombre del instrumento (en particellas).</li>
+</ul>
+<p><strong>Particellas</strong>:
+- Cabecera: nombre del instrumento (ej. "Violín I") + título de la obra.
+- Pie: número de página.
+- Esto asegura que si las hojas se mezclan (y SIEMPRE se mezclan en los ensayos), cada músico sepa exactamente qué hoja corresponde a qué parte.</p>
+<div class="admonition tip">
+<p class="admonition-title">Metadatos en la exportación</p>
+<p>Cuando exportás un PDF desde MuseScore, los campos de Título, Compositor y Copyright se incrustan en los metadatos del archivo PDF. Esto significa que si alguien busca "Sonata en Sol menor" en su computadora, tu PDF va a aparecer en los resultados. Si dejás los metadatos vacíos, tu PDF es un fantasma digital: existe pero es imposible de encontrar.</p>
+</div>
+</details>
+<details class="note" open="open">
+<summary>Perfiles de estilo: tu identidad editorial</summary>
+<p>Un perfil de estilo es como una "plantilla de formato". Configurás TODO una vez (fuentes, tamaños, distancias, numeración, cabeceras, etc.) y lo aplicás a todas tus partituras con un solo clic.</p>
+<h3 id="por-que-usar-perfiles-de-estilo">¿Por qué usar perfiles de estilo?<a class="headerlink" href="#por-que-usar-perfiles-de-estilo" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Consistencia</strong>: todas tus partituras se ven como parte de una misma "colección". Un pianista que lee 3 obras tuyas seguidas siente que pertenecen al mismo compositor.</li>
+<li><strong>Eficiencia</strong>: en lugar de configurar fuentes y formatos CADA VEZ que empezás una partitura nueva, cargás tu perfil y empezás a escribir inmediatamente.</li>
+<li><strong>Profesionalismo</strong>: los compositores y editores serios tienen su propio estilo editorial. Es su "marca visual".</li>
+</ul>
+<h3 id="como-crear-y-cargar-un-perfil-de-estilo">Cómo crear y cargar un perfil de estilo<a class="headerlink" href="#como-crear-y-cargar-un-perfil-de-estilo" title="Permanent link">&para;</a></h3>
+<p><strong>Guardar un perfil</strong>:
+1. Formatear una partitura exactamente como querés que se vean TODAS tus obras futuras.
+2. <strong>Formato → Guardar estilo...</strong>.
+3. Elegir ubicación y nombre (ej. <code>mi_estilo_coral.mss</code>, <code>estilo_orquesta.mss</code>).
+4. El archivo .mss contiene TODAS las configuraciones de formato.</p>
+<p><strong>Cargar un perfil</strong>:
+1. Abrir la partitura nueva (sin formato).
+2. <strong>Formato → Cargar estilo...</strong>.
+3. Seleccionar el archivo .mss guardado.
+4. La partitura nueva adopta inmediatamente TODO el formato del perfil.</p>
+<h3 id="que-incluye-un-perfil-de-estilo">Qué incluye un perfil de estilo<a class="headerlink" href="#que-incluye-un-perfil-de-estilo" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fuentes musical y de texto.</li>
+<li>Tamaños y estilos de todos los tipos de texto (título, compositor, tempo, matices, números de compás, etc.).</li>
+<li>Configuración de página (tamaño de papel, márgenes, escala).</li>
+<li>Distancias entre pentagramas, sistemas y otros elementos verticales.</li>
+<li>Numeración de compases (intervalo, posición, fuente).</li>
+<li>Cabecera y pie de página.</li>
+<li>Estilos de líneas, barras de compás, plicas y otros elementos gráficos.</li>
+<li>Prácticamente TODO lo que no son las notas mismas.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Creá perfiles para cada tipo de ensamble</p>
+<p>Un perfil para música de cámara (A4 vertical, fuente Leland, márgenes generosos). Otro para orquesta (A3/Tabloide horizontal, fuente Petaluma, pentagramas compactos). Otro para coro (A5, fuente Gonville, letra más grande). Otro para ejercicios de clase (A4 vertical, números de compás visibles, márgenes amplios para anotaciones del profesor). Cada tipo de partitura tiene necesidades de formato distintas. No uses el mismo perfil para todo.</p>
+</div>
+</details>
+<hr />
+<h2 id="actividad-en-classroom">Actividad en Classroom<a class="headerlink" href="#actividad-en-classroom" title="Permanent link">&para;</a></h2>
+<h3 id="tarea-s27-estilos-fuentes-y-numeracion-de-compases">Tarea: S27 — Estilos, fuentes y numeración de compases<a class="headerlink" href="#tarea-s27-estilos-fuentes-y-numeracion-de-compases" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Material necesario</strong>: el docente proporcionará dos archivos: (a) <code>ejercicio_S27_sin_identidad.mscz</code>, una partitura de ensamble (cuarteto de saxofones: soprano, alto, tenor, barítono) de 40 compases SIN metadatos, con fuentes por defecto, numeración de compases insuficiente y sin cabecera/pie de página; (b) <code>ejercicio_S27_perfil.mscz</code>, una partitura de coro (SATB: soprano, alto, tenor, bajo) de 28 compases con texto, lista para ser estilizada con un perfil editorial.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Restauración de identidad editorial.</strong> Abrí <code>ejercicio_S27_sin_identidad.mscz</code>:</p>
+<ul>
+<li>Esta partitura de cuarteto de saxofones está "desnuda": buena música, PERO sin título, sin compositor, sin copyright, sin números de compás adecuados, sin cabecera ni pie de página. Es una obra anónima esperando ser identificada.</li>
+<li><strong>Paso 1 — Metadatos</strong>: completá <strong>Archivo → Propiedades de la partitura</strong> con:<ul>
+<li>Título: inventá uno apropiado para un cuarteto de saxofones.</li>
+<li>Subtítulo (opcional): un indicador de tempo o carácter (ej. "Andante espressivo").</li>
+<li>Compositor: TU nombre.</li>
+<li>Copyright: "© [año actual] [tu nombre]. Todos los derechos reservados."</li>
+</ul>
+</li>
+<li><strong>Paso 2 — Primera página</strong>: verificá que el título, compositor y copyright aparezcan correctamente en la primera página. Ajustá el tamaño y alineación si es necesario.</li>
+<li><strong>Paso 3 — Numeración de compases</strong>: configurá los números de compás para que:<ul>
+<li>Aparezcan en CADA compás (intervalo = 1).</li>
+<li>Sean visibles en el primer compás de cada sistema.</li>
+<li>Tengan un tamaño legible (al menos 9 pt).</li>
+<li>Aparezcan SOBRE cada pentagrama individual (no solo en el primer pentagrama del sistema).</li>
+</ul>
+</li>
+<li><strong>Paso 4 — Cabecera y pie de página</strong>: configurá para que en cada página aparezca:<ul>
+<li>Cabecera: título de la obra (página par) / compositor (página impar).</li>
+<li>Pie: número de página centrado + "© [año] [tu nombre]" a la izquierda.</li>
+</ul>
+</li>
+<li><strong>Paso 5 — Fuentes</strong>: experimentá cambiando la fuente musical de Leland a Bravura y a Gonville. Probá cómo se ve la partitura con cada una. Elegí la que más te guste y justificá tu elección en Classroom.</li>
+<li>Guardá como <code>APELLIDO_Nombre_S27_identidad.mscz</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Diseño de perfil editorial para coro.</strong> Abrí <code>ejercicio_S27_perfil.mscz</code>:</p>
+<ul>
+<li>Esta partitura de coro SATB con texto debe ser estilizada para verse como una edición coral profesional.</li>
+<li><strong>Configurá</strong>:<ul>
+<li>Fuente musical: <strong>Gonville</strong> (es la más adecuada para música coral, por su calidez y legibilidad en pentagramas con letra).</li>
+<li>Fuente de texto: mantené Edwin para títulos, pero asegurate de que la letra de la obra use un tamaño suficiente (≥ 11 pt) para que un coreuta de 60 años pueda leerla sin lentes.</li>
+<li>Tamaño de papel: A5 horizontal (típico de ediciones corales de bolsillo).</li>
+<li>Márgenes: 10 mm en todos los lados (formato compacto).</li>
+<li>Numeración de compases: cada 5 compases (suficiente para coro, sin sobrecargar).</li>
+<li>Cabecera: nombre de la cuerda (Soprano, Alto, Tenor, Bajo) en CADA página.</li>
+<li>Pie: número de página centrado.</li>
+</ul>
+</li>
+<li><strong>Ajustes finales</strong>:<ul>
+<li>Asegurate de que la letra esté correctamente alineada con las notas.</li>
+<li>Verificá que los matices y respiraciones (comas) no se superpongan con la letra.</li>
+<li>Si hay sílabas largas (melismas), verificá que la línea de extensión sea visible.</li>
+</ul>
+</li>
+<li>Guardá como <code>APELLIDO_Nombre_S27_coral.mscz</code>.</li>
+<li>Guardá el perfil de estilo como <code>APELLIDO_Nombre_S27_perfil_coral.mss</code> (<strong>Formato → Guardar estilo</strong>).</li>
+<li>Exportá el PDF: <code>APELLIDO_Nombre_S27_coral.pdf</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Comparación tipográfica.</strong> Abrí nuevamente <code>ejercicio_S27_sin_identidad.mscz</code> (la versión original sin modificar) y cambiale SOLO la fuente musical. Creá 3 versiones rápidas:</p>
+<ul>
+<li><code>APELLIDO_Nombre_S27_leland.pdf</code> (Leland, la original)</li>
+<li><code>APELLIDO_Nombre_S27_bravura.pdf</code> (Bravura)</li>
+<li><code>APELLIDO_Nombre_S27_gonville.pdf</code> (Gonville)</li>
+<li>En Classroom, publicá una comparación visual de las 3 fuentes (captura de los primeros 2 sistemas de cada una, lado a lado) y respondé: ¿qué fuente preferís para este cuarteto de saxofones? ¿Por qué? ¿Cambiaría tu elección si fuera una partitura de orquesta sinfónica?</li>
+</ul>
+</li>
+<li>
+<p><strong>Reflexión.</strong> En Classroom, respondé:</p>
+<ul>
+<li>¿Qué diferencia hace tener metadatos completos en una partitura? ¿Por qué creés que tantas partituras en internet (MuseScore.com, IMSLP amateur) NO tienen copyright ni metadatos?</li>
+<li>Después de esta sesión, ¿vas a incluir copyright en TODAS tus partituras? ¿Por qué sí o por qué no?</li>
+<li>¿Qué aprendiste sobre el impacto de las fuentes en la percepción de una partitura? ¿Creés que el músico promedio nota la diferencia entre Leland y Bravura o es un detalle "para obsesivos"?</li>
+</ul>
+</li>
+</ol>
+<h3 id="entregables">Entregables<a class="headerlink" href="#entregables" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] <code>APELLIDO_Nombre_S27_identidad.mscz</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S27_coral.mscz</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S27_perfil_coral.mss</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S27_coral.pdf</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S27_leland.pdf</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S27_bravura.pdf</code></li>
+<li>[ ] <code>APELLIDO_Nombre_S27_gonville.pdf</code></li>
+<li>[ ] Comentario en Classroom con: (a) justificación de elección de fuente para el cuarteto, (b) comparación tipográfica lado a lado, (c) respuestas a las 3 preguntas de reflexión</li>
+</ul>
+<h3 id="autoevaluacion">Autoevaluación<a class="headerlink" href="#autoevaluacion" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>✅ Logrado</th>
+<th>⚠️ En proceso</th>
+<th>❌ No logrado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Metadatos</td>
+<td>Título, compositor, copyright completos y correctamente visibles en la primera página</td>
+<td>Faltan 1–2 campos</td>
+<td>≥3 campos ausentes</td>
+</tr>
+<tr>
+<td>Numeración de compases</td>
+<td>Intervalo 1, visibles en cada pentagrama, primer compás de sistema, tamaño legible</td>
+<td>Configuración correcta pero tamaño pequeño o visibilidad parcial</td>
+<td>Sin numeración o intervalo inadecuado</td>
+</tr>
+<tr>
+<td>Cabecera y pie</td>
+<td>Cabecera con título/compositor según paridad; pie con página + copyright</td>
+<td>Configuración incompleta (falta cabecera o pie)</td>
+<td>Sin cabecera ni pie</td>
+</tr>
+<tr>
+<td>Perfil coral</td>
+<td>Fuente Gonville, A5 horizontal, márgenes compactos, letra legible, cabecera con nombre de cuerda; perfil .mss guardado</td>
+<td>Mayoría de parámetros correctos pero falta algún ajuste clave</td>
+<td>Formato sin cambios significativos</td>
+</tr>
+<tr>
+<td>Comparación tipográfica</td>
+<td>3 PDFs exportados; comparación visual publicada; justificación argumentada</td>
+<td>2 fuentes comparadas</td>
+<td>Sin comparación</td>
+</tr>
+<tr>
+<td>Reflexión</td>
+<td>3 respuestas con análisis de metadatos, copyright y percepción tipográfica</td>
+<td>2 respuestas correctas</td>
+<td>≤1 respuesta</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Basado en: MuseScore Studio 4 Handbook — Formatting: Fonts, Measure numbers, Score properties | https://handbook.musescore.org</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.path", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

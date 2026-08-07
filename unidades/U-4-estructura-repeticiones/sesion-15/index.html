@@ -1,0 +1,2992 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de clase — Tecnología Musical I (MuseScore Studio)">
+      
+      
+        <meta name="author" content="José Urgilés">
+      
+      
+      
+        <link rel="prev" href="../sesion-14/">
+      
+      
+        <link rel="next" href="../sesion-16/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Sesión 15 - Tecnología Musical I</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sesion-15-integracion-del-primer-interciclo" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Tecnología Musical I" class="md-header__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../../img/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tecnología Musical I
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sesión 15
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Tecnología Musical I" class="md-nav__button md-logo" aria-label="Tecnología Musical I" data-md-component="logo">
+      
+  <img src="../../../img/logo.svg" alt="logo">
+
+    </a>
+    Tecnología Musical I
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/joseurgilesc/Tecnolog-a-Musical-I" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    joseurgilesc/Tecnolog-a-Musical-I
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../objetivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Objetivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../logros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logros de Aprendizaje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-1-introduccion-organizacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 1: Introducción y organización del trabajo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-1-introduccion-organizacion/sesion-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-2-ingreso-edicion-notas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 2: Ingreso y edición de notas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-2-ingreso-edicion-notas/sesion-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-3-articulacion-expresion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 3: Articulación, expresión y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 11
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-3-articulacion-expresion/sesion-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 12
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 4: Estructura, repeticiones y texto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 14
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 15
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 15
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#u1-instalacion-y-organizacion-del-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U1 — Instalación y organización del trabajo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u2-ingreso-y-edicion-de-notas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U2 — Ingreso y edición de notas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u3-articulacion-expresion-y-reproduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U3 — Articulación, expresión y reproducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u4-estructura-repeticiones-y-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U4 — Estructura, repeticiones y texto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividad en Classroom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarea-s15-simulacro-de-examen-interciclo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tarea: S15 — Simulacro de examen interciclo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-1-conceptual-15-minutos-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 1 — Conceptual (≈15 minutos, 25%)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-2-procedimental-15-minutos-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 2 — Procedimental (≈15 minutos, 25%)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-3-ejercicios-de-aplicacion-25-minutos-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 3 — Ejercicios de aplicación (≈25 minutos, 25%)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-4-caso-integrador-35-minutos-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 4 — Caso integrador (≈35 minutos, 25%)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parte 4 — Caso integrador (≈35 minutos, 25%)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#especificaciones-de-la-partitura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Especificaciones de la partitura:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-que-debe-contener-la-partitura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que DEBE contener la partitura:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entregables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sesion-16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 16
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-5-notaciones-especializadas/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 5: Notaciones especializadas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 5: Notaciones especializadas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 17
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 18
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 20
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-5-notaciones-especializadas/sesion-21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 21
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-6-midi-importacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 6: MIDI, importación y reproducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 22
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 23
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-6-midi-importacion/sesion-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../U-7-edicion-partes-publicacion/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unidad 7: Edición, partes y publicación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 27
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 28
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 29
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U-7-edicion-partes-publicacion/sesion-31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesión 31
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exámenes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exámenes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examen-interciclo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Interciclo (Sesión 16)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examen-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examen Final (Sesión 32)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#u1-instalacion-y-organizacion-del-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U1 — Instalación y organización del trabajo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u2-ingreso-y-edicion-de-notas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U2 — Ingreso y edición de notas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u3-articulacion-expresion-y-reproduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U3 — Articulación, expresión y reproducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u4-estructura-repeticiones-y-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        U4 — Estructura, repeticiones y texto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad-en-classroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad en Classroom
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividad en Classroom">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarea-s15-simulacro-de-examen-interciclo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tarea: S15 — Simulacro de examen interciclo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-1-conceptual-15-minutos-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 1 — Conceptual (≈15 minutos, 25%)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-2-procedimental-15-minutos-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 2 — Procedimental (≈15 minutos, 25%)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-3-ejercicios-de-aplicacion-25-minutos-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 3 — Ejercicios de aplicación (≈25 minutos, 25%)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-4-caso-integrador-35-minutos-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 4 — Caso integrador (≈35 minutos, 25%)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parte 4 — Caso integrador (≈35 minutos, 25%)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#especificaciones-de-la-partitura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Especificaciones de la partitura:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lo-que-debe-contener-la-partitura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que DEBE contener la partitura:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entregables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegación" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Unidad 4: Estructura, repeticiones y texto
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="sesion-15-integracion-del-primer-interciclo">Sesión 15: Integración del primer interciclo<a class="headerlink" href="#sesion-15-integracion-del-primer-interciclo" title="Permanent link">&para;</a></h1>
+<p>📚 Handbook → Revisión: Getting Started, Basics, Notation, Sound and Playback, Text | Herramientas: MuseScore Studio 4, Google Classroom</p>
+<hr />
+<details class="info">
+<summary>Glosario de términos (repaso U1–U4)</summary>
+<p>Consultá esta tabla cuando encuentres un término que no recuerdes.</p>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="partitura"></a> <strong>Partitura (score)</strong></td>
+<td>Archivo <code>.mscz</code> que contiene toda la música: pentagramas, notas, indicaciones, diseño. Es el documento principal de MuseScore. Se crea desde el asistente de nueva partitura seleccionando plantilla, instrumentos, armadura, compás y tempo.</td>
+</tr>
+<tr>
+<td><a id="nota"></a> <strong>Nota</strong></td>
+<td>Unidad mínima de sonido en una partitura. Tiene tres propiedades: altura (qué tecla/posición en el pentagrama), duración (negra, corchea, etc.) y articulación (cómo se ataca). Se ingresa con el modo de ingreso de notas (<code>N</code>), usando letras del teclado (A–G) o el mouse sobre el pentagrama.</td>
+</tr>
+<tr>
+<td><a id="compas"></a> <strong>Compás (measure)</strong></td>
+<td>División del tiempo musical en unidades regulares definidas por la indicación de compás (ej. 4/4, 3/4, 6/8). Las operaciones de compás incluyen insertar, eliminar, unir, dividir y ajustar la duración real (<em>Measure Properties</em>).</td>
+</tr>
+<tr>
+<td><a id="armadura"></a> <strong>Armadura de clave (key signature)</strong></td>
+<td>Conjunto de sostenidos o bemoles al inicio del pentagrama que define la tonalidad. Determina qué notas son alteradas por defecto en toda la pieza. Se cambia arrastrando una nueva armadura desde la paleta.</td>
+</tr>
+<tr>
+<td><a id="clave"></a> <strong>Clave (clef)</strong></td>
+<td>Símbolo al inicio del pentagrama que asigna nombres a las líneas y espacios (Sol, Fa, Do). Cambiar la clave altera la posición visual de las notas sin cambiar su sonido.</td>
+</tr>
+<tr>
+<td><a id="valor-irregular"></a> <strong>Valor irregular (tuplet)</strong></td>
+<td>Grupo de notas que ocupa un tiempo distinto al que le correspondería por su figura. El más común es el tresillo (3 corcheas en tiempo de 2). En MuseScore se crea con <strong>Añadir → Tresillos → Otro</strong>.</td>
+</tr>
+<tr>
+<td><a id="articulacion"></a> <strong>Articulación (articulation)</strong></td>
+<td>Indicación sobre una nota que modifica su ataque o duración: acento (&gt;), staccato (.), tenuto (–), fermata (𝄐), trino (<em>tr</em>), mordente. Se arrastran desde la paleta <strong>Articulaciones</strong>.</td>
+</tr>
+<tr>
+<td><a id="dinamica"></a> <strong>Dinámica (dynamics)</strong></td>
+<td>Indicación de intensidad: <em>pp, p, mp, mf, f, ff</em>, reguladores de crescendo y diminuendo (<code>&lt;</code> y <code>&gt;</code>). En MuseScore se arrastran desde la paleta <strong>Dinámicas</strong> y afectan la reproducción.</td>
+</tr>
+<tr>
+<td><a id="voz"></a> <strong>Voz (voice)</strong></td>
+<td>Capa rítmicamente independiente dentro de un mismo pentagrama. MuseScore permite hasta 4 voces por pentagrama, cada una con sus propias plicas, silencios y colores. Se activan con los botones 1–4 de la barra de herramientas.</td>
+</tr>
+<tr>
+<td><a id="repeticion"></a> <strong>Repetición (repeat)</strong></td>
+<td>Sistema de marcas que modifican el orden de ejecución: barras de repetición, voltas (casillas 1 y 2), D.C., D.S., Coda, Fine. Se arrastran desde la paleta <strong>Repeticiones y saltos</strong> y afectan la reproducción.</td>
+</tr>
+<tr>
+<td><a id="texto-expresion"></a> <strong>Texto de expresión (staff/system text)</strong></td>
+<td>Indicaciones textuales sobre la partitura. Staff Text (<code>Ctrl + T</code>) se aplica a un pentagrama; System Text (<code>Ctrl + Shift + T</code>) a todos los pentagramas. Se usan para tempo, carácter, técnicas instrumentales y marcas de ensayo.</td>
+</tr>
+<tr>
+<td><a id="guardar-exportar"></a> <strong>Guardar y exportar</strong></td>
+<td>MuseScore guarda en formato nativo <code>.mscz</code> (editable). Exporta a PDF, PNG, MusicXML, MIDI, MP3 y otros formatos desde <strong>Archivo → Exportar</strong>.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="note" open="open">
+<summary>Mapa conceptual: flujo de trabajo U1–U4</summary>
+<p><strong>De la instalación a la partitura completa en 4 unidades.</strong></p>
+<div class="highlight"><pre><span></span><code>U1 — FUNDAMENTOS              U2 — NOTAS Y EDICIÓN          U3 — EXPRESIÓN                 U4 — ESTRUCTURA
+┌──────────────────┐         ┌──────────────────┐         ┌──────────────────┐         ┌──────────────────┐
+│ ▪ Instalación     │         │ ▪ Ingreso de notas │        │ ▪ Articulaciones  │         │ ▪ Repeticiones    │
+│ ▪ Nueva partitura │  ────▶  │ ▪ Teclado y ratón  │ ────▶ │ ▪ Dinámicas       │ ────▶  │ ▪ Voltas y saltos │
+│ ▪ Navegación      │         │ ▪ Edición, copia   │        │ ▪ Líneas          │         │ ▪ Texto y letra   │
+│ ▪ Selección       │         │ ▪ Compases, claves │        │ ▪ Voces           │         │ ▪ Cifrado armónico│
+└──────────────────┘         └──────────────────┘         └──────────────────┘         └──────────────────┘
+     &quot;Sé abrir el                 &quot;Sé escribir                  &quot;Sé hacer que                 &quot;Sé organizar la
+      programa y                   las notas                    suene como                    pieza y ponerle
+      crear un archivo&quot;            correctamente&quot;               quiero&quot;                       nombre a todo&quot;
+</code></pre></div>
+<p>Cada unidad construye sobre la anterior. Si algo de U1 no funciona (no sabés crear una partitura), U2 se vuelve imposible. Si U2 falla (no sabés ingresar notas), no podés aplicar articulaciones en U3. Si U3 falla, en U4 estás poniendo repeticiones y letra sobre una partitura que no suena bien.</p>
+<p>La integración es la habilidad de USAR TODO JUNTO. No se trata de recordar cada atajo de teclado: se trata de saber qué herramienta usar en cada momento del flujo de trabajo.</p>
+</details>
+<details class="note" open="open">
+<summary>Checklist pre-examen: ¿estoy listo para el interciclo?</summary>
+<p>Repasá cada punto. Si algo no te sale en ≤2 minutos, repasalo antes del examen.</p>
+<h3 id="u1-instalacion-y-organizacion-del-trabajo">U1 — Instalación y organización del trabajo<a class="headerlink" href="#u1-instalacion-y-organizacion-del-trabajo" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>¿Puedo...?</th>
+<th>✅/❌</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Abrir MuseScore Studio 4 y crear una partitura nueva seleccionando plantilla, instrumentos, armadura y compás</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Navegar entre páginas con el scroll, usar los modos de visualización (Normal, Página, Continuo) y el zoom</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Seleccionar compases completos (clic en espacio vacío), notas individuales (clic en cabeza), rangos (<code>Shift + clic</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Guardar como <code>.mscz</code>, exportar como PDF y PNG</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Usar <code>Ctrl + Z</code> (deshacer) y <code>Ctrl + Shift + Z</code> (rehacer) para corregir errores</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="u2-ingreso-y-edicion-de-notas">U2 — Ingreso y edición de notas<a class="headerlink" href="#u2-ingreso-y-edicion-de-notas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>¿Puedo...?</th>
+<th>✅/❌</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>Ingresar notas con el teclado (letras A–G) y el mouse, cambiando duraciones (5=negra, 4=corchea, etc.)</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Ingresar alteraciones (sostenido, bemol, becuadro) y ligaduras de prolongación (<code>T</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Copiar uno o varios compases y pegarlos en otra sección (<code>Ctrl + C</code> / <code>Ctrl + V</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Editar la altura de una nota (arrastrar con el mouse o <code>↑</code> / <code>↓</code>) y su duración (seleccionar + número)</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Insertar, eliminar, unir y dividir compases desde <strong>Añadir → Compases</strong> o el menú contextual</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Crear un compás de anacrusa (compás incompleto al inicio) desde <strong>Propiedades del compás</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Cambiar la indicación de compás (arrastrar desde paleta) y la armadura de clave</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Cambiar la clave de un pentagrama sin alterar el sonido</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Crear un tresillo de corcheas u otro valor irregular desde <strong>Añadir → Tresillos</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Activar el modo de <strong>altura de concierto</strong> y verificar que los instrumentos transpositores muestren las notas correctas</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="u3-articulacion-expresion-y-reproduccion">U3 — Articulación, expresión y reproducción<a class="headerlink" href="#u3-articulacion-expresion-y-reproduccion" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>¿Puedo...?</th>
+<th>✅/❌</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16</td>
+<td>Insertar acentos (&gt;), staccatos (.), tenutos (–), fermatas y trinos desde la paleta <strong>Articulaciones</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Insertar dinámicas (<em>pp, p, mp, mf, f, ff</em>), reguladores de crescendo y diminuendo desde la paleta <strong>Dinámicas</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>Insertar indicaciones de tempo y cambios de tempo con texto de sistema (<code>Ctrl + Shift + T</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>Insertar líneas: ligaduras de expresión (<code>S</code>), 8va/8vb, pedal de piano, glissandos/arpegios, comas de respiración</td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>Activar, escribir y diferenciar voces 1 y 2 en un mismo pentagrama (colores, plicas, silencios)</td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td>Intercambiar el contenido de voces 1 ↔ 2 sin perder notas</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="u4-estructura-repeticiones-y-texto">U4 — Estructura, repeticiones y texto<a class="headerlink" href="#u4-estructura-repeticiones-y-texto" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>¿Puedo...?</th>
+<th>✅/❌</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>22</td>
+<td>Insertar barras de repetición (inicio, fin, fin-inicio) y verificar que la reproducción las ejecuta correctamente</td>
+<td></td>
+</tr>
+<tr>
+<td>23</td>
+<td>Insertar voltas (casillas 1 y 2) desde la paleta y configurar su lista de repetición en Propiedades</td>
+<td></td>
+</tr>
+<tr>
+<td>24</td>
+<td>Insertar D.C., D.S., Segno, Coda y Fine, formando un mapa de navegación que funcione en la reproducción</td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td>Ingresar letra debajo de una melodía vocal usando <code>Ctrl + L</code>, con guiones silábicos (<code>-</code>) y melismas (<code>_</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td>26</td>
+<td>Insertar cifrado armónico sobre un pentagrama usando <code>Ctrl + K</code> (mayores, menores, séptimas, bajo alterado)</td>
+<td></td>
+</tr>
+<tr>
+<td>27</td>
+<td>Insertar Staff Text (<code>Ctrl + T</code>) y System Text (<code>Ctrl + Shift + T</code>) y distinguir cuándo usar cada uno</td>
+<td></td>
+</tr>
+<tr>
+<td>28</td>
+<td>Insertar marcas de ensayo (<code>Ctrl + M</code>) en puntos estructurales de la partitura</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Resultado:</strong> ___ / 28</p>
+<p><em>Regla:</em> si tenés ≥22 ✅, estás listo para el examen. Si tenés entre 15 y 21, repasá las secciones marcadas ❌. Si tenés ≤14, necesitás una sesión de tutoría antes del examen.</p>
+</details>
+<hr />
+<h2 id="actividad-en-classroom">Actividad en Classroom<a class="headerlink" href="#actividad-en-classroom" title="Permanent link">&para;</a></h2>
+<h3 id="tarea-s15-simulacro-de-examen-interciclo">Tarea: S15 — Simulacro de examen interciclo<a class="headerlink" href="#tarea-s15-simulacro-de-examen-interciclo" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Material necesario</strong>: el docente proporcionará un archivo <code>simulacro_interciclo_S15.mscz</code> que contiene una partitura base con la melodía "Estrellita dónde estás" en Do mayor, 4/4, 8 compases, un solo pentagrama en clave de Sol, con la melodía escrita en redondas (una nota por compás) y SIN indicaciones de ningún tipo (sin dinámicas, sin articulaciones, sin repeticiones, sin texto, sin letra, sin cifrado). También recibirás el archivo <code>simulacro_voces_S15.mscz</code> con un coral a 2 voces en Fa mayor, 4/4, 8 compases, con ambas voces escritas pero SIN indicaciones. El docente entregará además las <strong>Instrucciones oficiales del simulacro</strong> como Tarea en Classroom que incluya: la consigna completa del caso integrador, los criterios de evaluación con puntajes, y las preguntas conceptuales y procedimentales.</p>
+</blockquote>
+<p>Esta actividad es un <strong>simulacro del examen interciclo</strong>. Vas a trabajar en condiciones similares a las del examen real: tiempo limitado (90 minutos), sin ayuda externa, aplicando todo lo aprendido de U1 a U4.</p>
+<p><strong>IMPORTANTE</strong>: Leé TODAS las instrucciones antes de empezar. El simulacro tiene 4 partes, igual que el examen real. Administrá tu tiempo: no te quedes atascado en una parte.</p>
+<hr />
+<h3 id="parte-1-conceptual-15-minutos-25">Parte 1 — Conceptual (≈15 minutos, 25%)<a class="headerlink" href="#parte-1-conceptual-15-minutos-25" title="Permanent link">&para;</a></h3>
+<p>Respondé en un comentario de Classroom las siguientes preguntas. Cada respuesta debe ser breve (2–4 oraciones) y concreta:</p>
+<ol>
+<li>
+<p><strong>Flujo de trabajo</strong>: Describí los 4 pasos que seguís para crear una partitura desde cero en MuseScore. ¿En qué orden los hacés y por qué?</p>
+</li>
+<li>
+<p><strong>Voces vs. pentagramas</strong>: ¿Cuándo usarías 2 voces en un mismo pentagrama en lugar de 2 pentagramas separados? Da un ejemplo concreto de cada caso.</p>
+</li>
+<li>
+<p><strong>Repeticiones con navegación</strong>: Explicá la diferencia entre una volta (casilla 1/2) y un D.S. al Coda. ¿En qué situación usarías cada uno?</p>
+</li>
+<li>
+<p><strong>Texto en la partitura</strong>: Diferenciá Staff Text de System Text. Da un ejemplo concreto de cada uno en una partitura de cuerdas.</p>
+</li>
+<li>
+<p><strong>Armadura y transporte</strong>: Si tenés una partitura para Clarinete en Si♭ (instrumento transpositor), ¿las notas que escribiste en el pentagrama suenan igual que las que ves? Explicá por qué y cómo verificarías que todo está correcto.</p>
+</li>
+</ol>
+<hr />
+<h3 id="parte-2-procedimental-15-minutos-25">Parte 2 — Procedimental (≈15 minutos, 25%)<a class="headerlink" href="#parte-2-procedimental-15-minutos-25" title="Permanent link">&para;</a></h3>
+<p>Abrí el archivo <code>simulacro_interciclo_S15.mscz</code> y realizá las siguientes operaciones. Para cada una, anotá en tu comentario de Classroom <strong>el atajo de teclado o la ruta de menú</strong> que usaste:</p>
+<ol>
+<li>Cambiar la indicación de compás de 4/4 a 3/4.</li>
+<li>Agregar un sostenido a la armadura (Do mayor → Sol mayor).</li>
+<li>Insertar un compás de anacrusa de 1 tiempo (negra) al inicio de la partitura.</li>
+<li>Seleccionar los compases 3 al 6 y copiarlos al final de la partitura (compases 9 al 12).</li>
+<li>Cambiar la clave del pentagrama de Sol a Fa en 4ª.</li>
+<li>Crear un tresillo de corcheas en el compás 2.</li>
+<li>Insertar una barra de repetición de inicio en el compás 1 y de fin en el compás 8.</li>
+<li>Agregar dinámica <em>mf</em> al compás 1 y <em>f</em> al compás 5.</li>
+</ol>
+<blockquote>
+<p><em>Nota</em>: No es necesario que guardes el archivo. Solo necesitás demostrar que SABÉS CÓMO hacerlo.</p>
+</blockquote>
+<hr />
+<h3 id="parte-3-ejercicios-de-aplicacion-25-minutos-25">Parte 3 — Ejercicios de aplicación (≈25 minutos, 25%)<a class="headerlink" href="#parte-3-ejercicios-de-aplicacion-25-minutos-25" title="Permanent link">&para;</a></h3>
+<p>Usando el archivo <code>simulacro_interciclo_S15.mscz</code> como base:</p>
+<ol>
+<li><strong>Articulaciones</strong>: Agregá sobre las notas de los compases 1–4:</li>
+<li>Un acento en la primera nota de cada compás.</li>
+<li>Un staccato en las notas de duración más corta.</li>
+<li>
+<p>Un trino sobre la última nota del compás 4.</p>
+</li>
+<li>
+<p><strong>Dinámicas</strong>: Insertá:</p>
+</li>
+<li><em>mp</em> al inicio del compás 1.</li>
+<li>Un regulador de crescendo desde el compás 3 hasta el compás 4.</li>
+<li><em>f</em> al inicio del compás 5.</li>
+<li>Un regulador de diminuendo desde el compás 7 hasta el compás 8.</li>
+<li>
+<p><em>pp</em> al final del compás 8.</p>
+</li>
+<li>
+<p><strong>Líneas</strong>: Insertá:</p>
+</li>
+<li>Una ligadura de expresión sobre los compases 1 y 2.</li>
+<li>
+<p>Un pedal de piano (línea Ped.) desde el compás 3 hasta el compás 6, con levantamiento en cada cambio de armonía implícito (cada 2 compases).</p>
+</li>
+<li>
+<p><strong>Texto</strong>:</p>
+</li>
+<li>Insertá como System Text el tempo <em>Andante ♩ = 80</em> al inicio.</li>
+<li>Insertá como Staff Text la indicación <em>dolce</em> en el compás 1.</li>
+<li>
+<p>Insertá marcas de ensayo A, B, C, D al inicio de los compases 1, 3, 5 y 7.</p>
+</li>
+<li>
+<p><strong>Repeticiones</strong>:</p>
+</li>
+<li>Insertá voltas (casilla 1 sobre compases 7–8, casilla 2 sobre compases 9–10).</li>
+<li>Agregá un D.C. al Fine después de la volta 2, y colocá <em>Fine</em> sobre el compás 8.</li>
+</ol>
+<hr />
+<h3 id="parte-4-caso-integrador-35-minutos-25">Parte 4 — Caso integrador (≈35 minutos, 25%)<a class="headerlink" href="#parte-4-caso-integrador-35-minutos-25" title="Permanent link">&para;</a></h3>
+<p><strong>Consigna</strong>: Creá una partitura desde cero que cumpla con las siguientes especificaciones. Llamala <code>APELLIDO_Nombre_S15_simulacro.mscz</code>.</p>
+<h4 id="especificaciones-de-la-partitura">Especificaciones de la partitura:<a class="headerlink" href="#especificaciones-de-la-partitura" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Especificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plantilla</strong></td>
+<td>Piano (gran pentagrama)</td>
+</tr>
+<tr>
+<td><strong>Título</strong></td>
+<td>"Mi primera pieza — Simulacro Interciclo"</td>
+</tr>
+<tr>
+<td><strong>Compositor</strong></td>
+<td>Tu nombre completo</td>
+</tr>
+<tr>
+<td><strong>Tonalidad</strong></td>
+<td>Fa mayor (1 bemol: Si♭)</td>
+</tr>
+<tr>
+<td><strong>Compás</strong></td>
+<td>4/4</td>
+</tr>
+<tr>
+<td><strong>Tempo</strong></td>
+<td><em>Moderato</em> ♩ = 100</td>
+</tr>
+<tr>
+<td><strong>Estructura</strong></td>
+<td>16 compases: A (c.1–8) + B (c.9–16)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="lo-que-debe-contener-la-partitura">Lo que DEBE contener la partitura:<a class="headerlink" href="#lo-que-debe-contener-la-partitura" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>En el pentagrama superior (mano derecha)</strong>:</li>
+<li>Una melodía original en la tonalidad de Fa mayor, usando redondas, blancas, negras y corcheas.</li>
+<li>Abarcá al menos 6 notas diferentes del ámbito Do₄–Fa₅.</li>
+<li>Incluí al menos <strong>3 alteraciones accidentales</strong> (sostenidos, bemoles o becuadros fuera de la armadura).</li>
+<li>La sección A (c.1–8) debe usar predominantemente negras y corcheas. La sección B (c.9–16) debe contrastar usando valores más largos (blancas y redondas con puntillo).</li>
+<li>
+<p>Incluí al menos <strong>un tresillo</strong> de corcheas en alguna parte de la melodía.</p>
+</li>
+<li>
+<p><strong>En el pentagrama inferior (mano izquierda)</strong>:</p>
+</li>
+<li>Un acompañamiento simple en negras y blancas.</li>
+<li>Las notas del acompañamiento deben pertenecer a los acordes de Fa mayor (I=Fa, IV=Si♭, V=Do) y su relativo menor (vi=Re m).</li>
+<li>
+<p>Usá al menos una vez un acorde con bajo alterado (ej. Fa/Do, Si♭/Fa).</p>
+</li>
+<li>
+<p><strong>Articulaciones y expresión</strong>:</p>
+</li>
+<li>Insertá al menos <strong>4 articulaciones diferentes</strong> distribuidas en la melodía: acentos, staccatos, fermatas y tenutos.</li>
+<li>Insertá dinámicas: empezar en <em>p</em>, crecer a <em>mf</em> con un regulador de crescendo en los compases 3–4, alcanzar <em>f</em> en el compás 9, diminuendo a <em>p</em> en los compases 15–16.</li>
+<li>
+<p>Agregá al menos <strong>2 ligaduras de expresión</strong> sobre frases melódicas.</p>
+</li>
+<li>
+<p><strong>Repeticiones y estructura</strong>:</p>
+</li>
+<li>La sección A (c.1–8) debe tener <strong>barra de repetición</strong> (inicio y fin).</li>
+<li>La sección A debe tener <strong>voltas</strong>: casilla 1 sobre los compases 7–8, casilla 2 también sobre 7–8 (finales alternativos).</li>
+<li>
+<p>Agregá un <strong>D.C. al Fine</strong> después del compás 16. Colocá la marca <em>Fine</em> al final del compás 8 (después de la casilla 2). La pieza debe ejecutarse: A (con volta 1) → repetir A (con volta 2) → B → volver al principio → tocar A (con volta 2) → Fine.</p>
+</li>
+<li>
+<p><strong>Texto y marcas</strong>:</p>
+</li>
+<li>Insertá <strong>marcas de ensayo</strong> (A, B, C, D) al inicio de los compases 1, 5, 9 y 13.</li>
+<li>Insertá el texto de expresión <em>cantabile</em> como Staff Text en el compás 1 de la mano derecha.</li>
+<li>Insertá el texto de expresión <em>legato</em> como Staff Text en el compás 1 de la mano izquierda.</li>
+<li>
+<p><strong>Opcional (punto extra)</strong>: Ingresá la letra de una canción inventada que encaje con tu melodía usando <code>Ctrl + L</code> sobre el pentagrama superior, con al menos 1 melisma de 3 notas.</p>
+</li>
+<li>
+<p><strong>Entrega</strong>:</p>
+</li>
+<li>Exportá y entregá <strong>solo el PDF</strong> (<code>APELLIDO_Nombre_S15_simulacro.pdf</code>). NO entregues el <code>.mscz</code> en esta ocasión (simulamos que el examen solo acepta PDF).</li>
+<li>El archivo debe llamarse exactamente como se indica arriba.</li>
+</ol>
+<h3 id="entregables">Entregables<a class="headerlink" href="#entregables" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Comentario en Classroom con las respuestas de las Partes 1 y 2.</li>
+<li>[ ] <code>APELLIDO_Nombre_S15_simulacro.pdf</code> (exportado desde tu <code>.mscz</code>).</li>
+</ul>
+<h3 id="autoevaluacion">Autoevaluación<a class="headerlink" href="#autoevaluacion" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>✅ Logrado</th>
+<th>⚠️ En proceso</th>
+<th>❌ No logrado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parte 1: Conceptual</td>
+<td>4–5 respuestas correctas, claras, con ejemplos</td>
+<td>2–3 correctas o sin ejemplos</td>
+<td>≤1 correcta</td>
+</tr>
+<tr>
+<td>Parte 2: Procedimental</td>
+<td>7–8 atajos/rutas correctas</td>
+<td>4–6 correctas</td>
+<td>≤3 correctas</td>
+</tr>
+<tr>
+<td>Parte 3: Aplicación</td>
+<td>≥5 de los 5 bloques completos y correctos</td>
+<td>3–4 bloques completos</td>
+<td>≤2 bloques completos</td>
+</tr>
+<tr>
+<td>Parte 4: Integrador</td>
+<td>Cumple TODAS las especificaciones; estructura A-B; repeticiones con D.C. al Fine funcionan; dinámicas y articulaciones presentes y variadas</td>
+<td>Cumple ≥70% de las especificaciones; la pieza es reproducible pero faltan elementos</td>
+<td>La partitura está incompleta o no se puede reproducir</td>
+</tr>
+<tr>
+<td>Gestión del tiempo</td>
+<td>Entregado dentro del límite de 90 minutos con todas las partes intentadas</td>
+<td>Entregado a tiempo pero faltó una parte completa</td>
+<td>No se entregó a tiempo</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Basado en: MuseScore Studio 4 Handbook — Getting Started, Basics, Notation, Sound and Playback, Text (revisión integrada U1–U4)</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.path", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

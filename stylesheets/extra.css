@@ -1,0 +1,66 @@
+/* Blue identity — #2563EB — Tecnología Musical I */
+
+:root {
+  --md-primary-fg-color: #2563EB;
+  --md-primary-fg-color--light: #60A5FA;
+  --md-primary-fg-color--dark: #1D4ED8;
+  --md-accent-fg-color: #2563EB;
+  --md-accent-fg-color--transparent: rgba(37, 99, 235, 0.1);
+}
+
+/* Code blocks */
+:root > * {
+  --md-code-hl-number-color: #2563EB;
+  --md-code-hl-string-color: #1D4ED8;
+}
+
+/* Admonitions */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: #2563EB;
+}
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: rgba(37, 99, 235, 0.1);
+  border-color: #2563EB;
+}
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before {
+  background-color: #2563EB;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: #2563EB;
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: rgba(37, 99, 235, 0.1);
+  border-color: #2563EB;
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
+  background-color: #2563EB;
+}
+
+/* Tables */
+.md-typeset table:not([class]) th {
+  background-color: #2563EB;
+  color: white;
+}
+
+/* Links */
+.md-typeset a {
+  color: #2563EB;
+}
+.md-typeset a:hover {
+  color: #1D4ED8;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #2563EB;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1D4ED8;
+}

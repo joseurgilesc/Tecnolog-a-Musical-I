@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafío de Shortcuts — MuseScore</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
+<style>
+  :root {
+    --bg: #1a1a2e; --surface: #16213e; --primary: #5c6bc0;
+    --primary-glow: rgba(92,107,192,0.3); --success: #66bb6a; --error: #ef5350;
+    --text: #e0e0f0; --text-dim: #8899aa; --border: #4a4a6a;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); display:flex; justify-content:center; align-items:center; min-height:100vh; font-family:-apple-system,sans-serif; overflow:hidden; }
+  #container { display:flex; flex-direction:column; align-items:center; gap:10px; }
+  #platform-select { display:flex; gap:8px; }
+  #platform-select button { padding:8px 24px; border:2px solid var(--border); border-radius:8px; background:var(--surface); color:var(--text-dim); font-size:14px; font-weight:600; cursor:pointer; transition:all 0.2s; }
+  #platform-select button.active { background:#283593; color:var(--primary); border-color:var(--primary); box-shadow:0 0 12px var(--primary-glow); }
+  #platform-select button:hover { border-color:var(--primary); }
+  #game-area { border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.5); }
+  #fullscreen-overlay { display:none; position:fixed; top:0;left:0;width:100%;height:100%; background:rgba(0,0,0,0.88); z-index:999; flex-direction:column; justify-content:center; align-items:center; color:white; text-align:center; }
+  #fullscreen-overlay.show { display:flex; }
+  #fullscreen-overlay h2 { font-size:26px; margin-bottom:12px; }
+  #fullscreen-overlay .key-hint { color:var(--primary); font-size:44px; margin:16px 0; font-weight:bold; }
+  #fullscreen-overlay .sub { color:var(--text-dim); font-size:14px; }
+  #fs-btn { margin-top:24px; padding:14px 40px; background:var(--primary); color:white; border:none; border-radius:10px; font-size:18px; cursor:pointer; }
+  #fs-btn:hover { background:#7986cb; transform:scale(1.03); }
+  #close-fs {
+    display: none; position: fixed; top: 16px; right: 20px; z-index: 1000;
+    width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.3);
+    background: rgba(0,0,0,0.5); color: white; font-size: 20px; cursor: pointer;
+    align-items: center; justify-content: center; transition: all 0.2s;
+  }
+  #close-fs.show { display: flex; }
+  #close-fs:hover { background: var(--error); border-color: var(--error); }
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="platform-select">
+    <button id="btn-pc" class="active">🖥️ Windows / Linux</button>
+    <button id="btn-mac">🍎 macOS</button>
+  </div>
+  <div id="game-area"><div id="canvas-wrapper"></div></div>
+</div>
+<div id="fullscreen-overlay">
+  <h2>🔒 Para jugar necesitas pantalla completa</h2>
+  <p class="sub">Así bloqueamos los atajos del navegador</p>
+  <div class="key-hint">F11</div>
+  <p class="sub">o haz clic aquí</p>
+  <button id="fs-btn">🎮  JUGAR</button>
+</div>
+<button id="close-fs" title="Salir de pantalla completa">✕</button>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const GAME_SESSION = parseInt(params.get('sesion')) || 7;
+
+// ── Shortcut helpers ──
+// mods: 'C'=Ctrl/Cmd, 'S'=Shift, 'A'=Alt
+// key is physical key code (e.code without 'Key'/'Digit' prefix, or special name)
+function sc(mods, key) { return { mods, key }; }
+
+// ── Shortcut DB (physical keys + modifier flags) ──
+const ALL_SHORTCUTS = [
+  // Sesión 3: Navegación, selección, reproducción
+  { fn:"Acercar zoom", pc:sc('CS','Equal'), mac:sc('CS','Equal'), cat:"Navegación", ses:3 },
+  { fn:"Alejar zoom", pc:sc('C','Minus'), mac:sc('C','Minus'), cat:"Navegación", ses:3 },
+  { fn:"Ir a compás", pc:sc('C','KeyF'), mac:sc('C','KeyF'), cat:"Navegación", ses:3 },
+  { fn:"Seleccionar todo", pc:sc('C','KeyA'), mac:sc('C','KeyA'), cat:"Selección", ses:3 },
+  { fn:"Reproducir / Pausar", pc:sc('','Space'), mac:sc('','Space'), cat:"Reproducción", ses:3 },
+  { fn:"Deshacer", pc:sc('C','KeyZ'), mac:sc('C','KeyZ'), cat:"Archivo", ses:3 },
+  { fn:"Rehacer", pc:sc('CS','KeyZ'), mac:sc('CS','KeyZ'), cat:"Archivo", ses:3 },
+  { fn:"Guardar", pc:sc('C','KeyS'), mac:sc('C','KeyS'), cat:"Archivo", ses:3 },
+  { fn:"Guardar como", pc:sc('CS','KeyS'), mac:sc('CS','KeyS'), cat:"Archivo", ses:3 },
+
+  // Sesión 4: Ingreso de notas
+  { fn:"Activar modo de ingreso", pc:sc('','KeyN'), mac:sc('','KeyN'), cat:"Ingreso", ses:4 },
+  { fn:"Salir del modo de ingreso", pc:sc('','Escape'), mac:sc('','Escape'), cat:"Ingreso", ses:4 },
+  { fn:"Duración: semifusa", pc:sc('','Digit1'), mac:sc('','Digit1'), cat:"Ingreso", ses:4 },
+  { fn:"Duración: fusa", pc:sc('','Digit2'), mac:sc('','Digit2'), cat:"Ingreso", ses:4 },
+  { fn:"Duración: semicorchea", pc:sc('','Digit3'), mac:sc('','Digit3'), cat:"Ingreso", ses:4 },
+  { fn:"Duración: corchea", pc:sc('','Digit4'), mac:sc('','Digit4'), cat:"Ingreso", ses:4 },
+  { fn:"Duración: negra", pc:sc('','Digit5'), mac:sc('','Digit5'), cat:"Ingreso", ses:4 },
+  { fn:"Duración: blanca", pc:sc('','Digit6'), mac:sc('','Digit6'), cat:"Ingreso", ses:4 },
+  { fn:"Duración: redonda", pc:sc('','Digit7'), mac:sc('','Digit7'), cat:"Ingreso", ses:4 },
+  { fn:"Ingresar nota (A–G)", pc:sc('','*'), mac:sc('','*'), cat:"Ingreso", ses:4 },
+  { fn:"Sostenido (♯)", pc:sc('S','Equal'), mac:sc('S','Equal'), cat:"Ingreso", ses:4 },
+  { fn:"Bemol (♭)", pc:sc('','Minus'), mac:sc('','Minus'), cat:"Ingreso", ses:4 },
+  { fn:"Becuadro (♮)", pc:sc('','Equal'), mac:sc('','Equal'), cat:"Ingreso", ses:4 },
+  { fn:"Puntillo", pc:sc('','Period'), mac:sc('','Period'), cat:"Ingreso", ses:4 },
+  { fn:"Silencio", pc:sc('','Digit0'), mac:sc('','Digit0'), cat:"Ingreso", ses:4 },
+  { fn:"Añadir nota al acorde", pc:sc('S','*'), mac:sc('S','*'), cat:"Ingreso", ses:4 },
+  { fn:"Ligadura de prolongación", pc:sc('','KeyT'), mac:sc('','KeyT'), cat:"Ingreso", ses:4 },
+  { fn:"Ligadura de fraseo", pc:sc('','KeyS'), mac:sc('','KeyS'), cat:"Ingreso", ses:4 },
+  { fn:"Subir una octava", pc:sc('C','ArrowUp'), mac:sc('C','ArrowUp'), cat:"Edición", ses:4 },
+  { fn:"Bajar una octava", pc:sc('C','ArrowDown'), mac:sc('C','ArrowDown'), cat:"Edición", ses:4 },
+
+  // Sesión 5: Edición, portapapeles, compases
+  { fn:"Subir un semitono", pc:sc('','ArrowUp'), mac:sc('','ArrowUp'), cat:"Edición", ses:5 },
+  { fn:"Bajar un semitono", pc:sc('','ArrowDown'), mac:sc('','ArrowDown'), cat:"Edición", ses:5 },
+  { fn:"Aumentar duración", pc:sc('S','KeyW'), mac:sc('S','KeyW'), cat:"Edición", ses:5 },
+  { fn:"Reducir duración", pc:sc('S','KeyQ'), mac:sc('S','KeyQ'), cat:"Edición", ses:5 },
+  { fn:"Duplicar duración", pc:sc('','KeyW'), mac:sc('','KeyW'), cat:"Edición", ses:5 },
+  { fn:"Reducir duración a la mitad", pc:sc('','KeyQ'), mac:sc('','KeyQ'), cat:"Edición", ses:5 },
+  { fn:"Cambiar enarmonía", pc:sc('','KeyJ'), mac:sc('','KeyJ'), cat:"Edición", ses:5 },
+  { fn:"Modo Re-pitch", pc:sc('CS','KeyI'), mac:sc('CS','KeyI'), cat:"Edición", ses:5 },
+  { fn:"Copiar", pc:sc('C','KeyC'), mac:sc('C','KeyC'), cat:"Portapapeles", ses:5 },
+  { fn:"Cortar", pc:sc('C','KeyX'), mac:sc('C','KeyX'), cat:"Portapapeles", ses:5 },
+  { fn:"Pegar", pc:sc('C','KeyV'), mac:sc('C','KeyV'), cat:"Portapapeles", ses:5 },
+  { fn:"Repetir selección", pc:sc('','KeyR'), mac:sc('','KeyR'), cat:"Portapapeles", ses:5 },
+  { fn:"Insertar un compás", pc:sc('','Insert'), mac:sc('','Insert'), cat:"Compases", ses:5 },
+  { fn:"Añadir compás al final", pc:sc('C','KeyB'), mac:sc('C','KeyB'), cat:"Compases", ses:5 },
+  { fn:"Eliminar compás", pc:sc('C','Delete'), mac:sc('C','Delete'), cat:"Compases", ses:5 },
+
+  // Sesión 6: Compases
+  { fn:"Insertar varios compases", pc:sc('C','Insert'), mac:sc('C','Insert'), cat:"Compases", ses:6 },
+  { fn:"Añadir varios compases al final", pc:sc('AS','KeyB'), mac:sc('AS','KeyB'), cat:"Compases", ses:6 },
+];
+
+const shortcuts = ALL_SHORTCUTS.filter(s => s.ses <= GAME_SESSION);
+
+// ── State ──
+let platform = 'pc';
+let currentShortcut = null;
+let score = 0, streak = 0, bestStreak = 0;
+let totalCorrect = 0, totalWrong = 0;
+let timeLeft = 60, gameActive = false, gameOver = false, showSummary = false;
+let feedback = '', feedbackTimer = 0;
+let questionIndex = 0, shuffled = [];
+let flashWrong = 0, flashCorrect = 0;
+let pressedMods = new Set(), pressedKey = null;
+let errors = [];
+let evaluated = false; // prevent double-evaluation per question
+let correctSet = new Set(); // unique shortcuts answered correctly
+let won = false, elapsedTime = 0;
+
+function setPlatform(p) {
+  platform = p;
+  document.getElementById('btn-pc').className = p==='pc'?'active':'';
+  document.getElementById('btn-mac').className = p==='mac'?'active':'';
+}
+
+function shuffle(arr) { const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+
+function nextQuestion() {
+  if (questionIndex >= shuffled.length) { shuffled=shuffle(shortcuts); questionIndex=0; }
+  currentShortcut = shuffled[questionIndex++];
+  pressedMods.clear(); pressedKey=null;
+  evaluated = false;
+}
+
+// code → display
+function codeToDisplay(code, mods) {
+  const m = [];
+  const showShift = !(code==='Equal' && mods==='S');
+  if (mods.includes('C')) m.push(platform==='mac'?'Cmd':'Ctrl');
+  if (mods.includes('S') && showShift) m.push('Shift');
+  if (mods.includes('A')) m.push('Alt');
+  let k = code==='*' ? 'letra' : friendlyKey(code);
+  if (code==='Equal') k = mods.includes('S') ? '+' : '=';
+  return [...m, k].join(' + ');
+}
+
+function friendlyKey(code) {
+  if (code.startsWith('Key')) return code.slice(3);
+  if (code.startsWith('Digit')) return code.slice(5);
+  if (code==='Equal') return '=';
+  if (code==='Minus') return '-';
+  if (code==='Period') return '.';
+  if (code==='Space') return 'Espacio';
+  if (code==='Escape') return 'Esc';
+  if (code==='Delete') return 'Supr';
+  if (code==='Insert') return 'Ins';
+  if (code==='ArrowUp') return '↑';
+  if (code==='ArrowDown') return '↓';
+  if (code==='ArrowLeft') return '←';
+  if (code==='ArrowRight') return '→';
+  return code;
+}
+
+function getCurrentCombo() {
+  const m = [];
+  for (const mod of pressedMods) {
+    if (mod==='Control') m.push(platform==='mac'?'Cmd':'Ctrl');
+    else if (mod==='Meta') m.push('Cmd');
+    else if (mod==='Shift') m.push('Shift');
+    else if (mod==='Alt') m.push('Alt');
+  }
+  let k = pressedKey ? friendlyKey(pressedKey) : '...';
+  return [...m, k].join(' + ');
+}
+
+function matchesShortcut(expected) {
+  // Build current state
+  const curMods = new Set();
+  for (const m of pressedMods) {
+    if (m==='Meta') curMods.add('C');
+    else if (m==='Control') curMods.add('C');
+    else if (m==='Shift') curMods.add('S');
+    else if (m==='Alt') curMods.add('A');
+  }
+
+  const expMods = new Set(expected.mods.split('').filter(Boolean));
+
+  // Mods must match exactly
+  if (curMods.size !== expMods.size) return false;
+  for (const m of curMods) if (!expMods.has(m)) return false;
+
+  // Key match
+  if (!pressedKey) return false;
+  const ek = expected.key;
+  if (ek === '*') {
+    // Wildcard: any letter key A-G
+    return pressedKey.startsWith('Key') && /^[A-G]$/.test(pressedKey.slice(3));
+  }
+  return pressedKey === ek;
+}
+
+function evaluateAnswer() {
+  if (!gameActive || gameOver || !currentShortcut || evaluated) return;
+  if (!pressedKey && pressedMods.size===0) return;
+
+  const expected = platform==='pc'?currentShortcut.pc:currentShortcut.mac;
+  const isCorrect = matchesShortcut(expected);
+
+  if (isCorrect) {
+    evaluated = true;
+    score++; totalCorrect++; streak++; if(streak>bestStreak)bestStreak=streak;
+    correctSet.add(`${platform}:${currentShortcut.fn}`);
+    feedback='✓ ¡Correcto!'; feedbackTimer=30; flashCorrect=8;
+    if (correctSet.size >= shortcuts.length) {
+      won = true; elapsedTime = 60 - timeLeft;
+      gameActive = false; gameOver = true; showSummary = true;
+      pressedMods.clear(); pressedKey = null;
+      return;
+    }
+    nextQuestion();
+  } else {
+    evaluated = true;
+    score--; totalWrong++; streak=0;
+    errors.push({fn:currentShortcut.fn, expected:codeToDisplay(expected.key,expected.mods), typed:getCurrentCombo()});
+    feedback=`✗ Era: ${codeToDisplay(expected.key,expected.mods)}`; feedbackTimer=80; flashWrong=12;
+    setTimeout(()=>{if(gameActive&&!gameOver)nextQuestion();},1200);
+  }
+  
+}
+// ── Keyboard ──
+const ALLOWED_KEYS = ['Control','Meta','Shift','Alt','ArrowUp','ArrowDown','ArrowLeft','ArrowRight',
+  'Delete','Insert','Escape','Space','Tab',
+  'KeyA','KeyB','KeyC','KeyD','KeyE','KeyF','KeyG','KeyH','KeyI','KeyJ','KeyK','KeyL','KeyM',
+  'KeyN','KeyO','KeyP','KeyQ','KeyR','KeyS','KeyT','KeyU','KeyV','KeyW','KeyX','KeyY','KeyZ',
+  'Digit0','Digit1','Digit2','Digit3','Digit4','Digit5','Digit6','Digit7','Digit8','Digit9',
+  'Period','Equal','Minus'];
+
+document.addEventListener('keydown', e => {
+  if (!gameActive || gameOver) return;
+
+  const code = e.code;
+
+  if (document.fullscreenElement) {
+    if (!ALLOWED_KEYS.includes(code) && code !== 'Escape') {
+      e.preventDefault(); e.stopPropagation(); return;
+    }
+    e.preventDefault(); e.stopPropagation();
+  }
+
+  // Handle Escape
+  if (code === 'Escape') {
+    if (currentShortcut) {
+      const exp = platform==='pc'?currentShortcut.pc:currentShortcut.mac;
+      if (exp.key==='Escape' && exp.mods==='') {
+        pressedMods.clear(); pressedKey='Escape'; evaluateAnswer(); return;
+      }
+    }
+    pressedMods.clear(); pressedKey=null;
+    if (document.fullscreenElement) document.exitFullscreen();
+    return;
+  }
+
+  if (code === 'Tab') { e.preventDefault(); return; }
+
+  // Track modifiers
+  if (e.ctrlKey) pressedMods.add('Control');
+  if (e.metaKey) pressedMods.add('Meta');
+  if (e.shiftKey) pressedMods.add('Shift');
+  if (e.altKey) pressedMods.add('Alt');
+
+  // Track key (use code for physical key matching)
+  if (!['Control','Meta','Shift','Alt'].includes(e.key)) {
+    pressedKey = code;
+  }
+
+  // Immediate eval for single-key shortcuts (no modifiers)
+  const exp = platform==='pc'?currentShortcut.pc:currentShortcut.mac;
+  if (exp.mods==='' && exp.key!=='*' && pressedKey && pressedMods.size===0) {
+    evaluateAnswer();
+  }
+});
+
+document.addEventListener('keyup', e => {
+  const isMod = ['Control','Meta','Shift','Alt'].includes(e.key);
+  if (e.key === 'Control') pressedMods.delete('Control');
+  if (e.key === 'Meta') pressedMods.delete('Meta');
+  if (e.key === 'Shift') pressedMods.delete('Shift');
+  if (e.key === 'Alt') pressedMods.delete('Alt');
+  // For combo shortcuts (with modifiers), evaluate on keyup of the non-modifier key
+  if (!isMod && pressedKey && pressedMods.size > 0) {
+    const exp = platform==='pc'?currentShortcut.pc:currentShortcut.mac;
+    if (exp.mods !== '') evaluateAnswer();
+  }
+  // Always clear on keyup of non-modifier
+  if (!isMod) {
+    pressedKey = null;
+  }
+});
+
+// ── Fullscreen ──
+const fsOverlay = document.getElementById('fullscreen-overlay');
+const closeFsBtn = document.getElementById('close-fs');
+document.getElementById('fs-btn').addEventListener('click', () => {
+  document.documentElement.requestFullscreen().catch(() => {
+    fsOverlay.classList.remove('show');
+    if (!gameActive && !gameOver) startGame();
+  });
+});
+closeFsBtn.addEventListener('click', () => {
+  if (document.fullscreenElement) document.exitFullscreen();
+});
+document.addEventListener('fullscreenchange', () => {
+  if (document.fullscreenElement) {
+    fsOverlay.classList.remove('show');
+    closeFsBtn.classList.add('show');
+    if(!gameActive&&!gameOver) startGame();
+  } else {
+    closeFsBtn.classList.remove('show');
+    if (gameActive && !gameOver) fsOverlay.classList.add('show');
+  }
+});
+
+document.getElementById('btn-pc').addEventListener('click',()=>setPlatform('pc'));
+document.getElementById('btn-mac').addEventListener('click',()=>setPlatform('mac'));
+
+// Timer
+setInterval(() => {
+  if (gameActive && !gameOver && timeLeft>0) {
+    timeLeft-=0.05;
+    if (timeLeft<=0) { timeLeft=0; gameActive=false; gameOver=true; showSummary=true; pressedMods.clear(); pressedKey=null; }
+  }
+},50);
+
+// ── p5 ──
+new p5(p => {
+  p.setup = () => { p.createCanvas(680,560).parent('canvas-wrapper'); p.textFont('monospace'); };
+
+  p.draw = () => {
+    const BG='#1a1a2e',SURFACE='#16213e',PRIMARY='#5c6bc0',SUCCESS='#66bb6a',ERROR='#ef5350';
+    const TEXT='#e0e0f0',TEXT_DIM='#8899aa';
+
+    if (flashWrong>0) { flashWrong--; p.background(50,18,18); }
+    else if (flashCorrect>0) { flashCorrect--; p.background(18,42,25); }
+    else p.background(BG);
+
+    p.fill(PRIMARY); p.noStroke(); p.rect(0,0,680,56);
+    p.fill(255); p.textSize(20); p.textAlign(p.CENTER,p.CENTER); p.textStyle(p.BOLD);
+    p.text(`🎹  Desafío — Sesión ${GAME_SESSION}`,340,28); p.textStyle(p.NORMAL);
+
+    p.textSize(14);
+    p.textAlign(p.LEFT); p.fill(TEXT_DIM); p.text(`Puntaje: ${score}`,24,78);
+    p.textAlign(p.RIGHT); p.text(`Racha: ${streak}`,656,78);
+
+    const barW=632;
+    p.fill(40,40,70); p.rect(24,88,barW,14,7);
+    if(timeLeft>0){p.fill(timeLeft>18?PRIMARY:p.color(255,180,50));p.rect(24,88,barW*(timeLeft/60),14,7);}
+    p.fill(255); p.textSize(11); p.textAlign(p.CENTER); p.text(`${Math.ceil(timeLeft)}s`,340,99);
+
+    if (!gameActive && !gameOver) {
+      p.fill(255); p.textSize(22); p.textAlign(p.CENTER);
+      p.text('¿Listo para el desafío?',340,200);
+      p.textSize(13); p.fill(TEXT_DIM);
+      p.text('Presiona las teclas reales del shortcut.',340,235);
+      p.text('Ctrl, Cmd, Shift, flechas, letras...',340,255);
+      p.fill(SURFACE); p.stroke(PRIMARY); p.strokeWeight(2);
+      p.rect(230,300,220,48,10); p.noStroke();
+      p.fill(255); p.textSize(17); p.text('▶  JUGAR',340,332);
+    }
+
+    else if (gameOver) {
+      if (won) {
+        // Victory screen
+        p.fill(SUCCESS); p.textSize(24); p.textAlign(p.CENTER); p.textStyle(p.BOLD);
+        p.text('🏆  ¡Todos completados!',340,130); p.textStyle(p.NORMAL);
+        p.textSize(14); p.fill(TEXT);
+        p.text(`Puntaje: ${score}  •  Tiempo: ${elapsedTime.toFixed(1)}s`,340,170);
+        p.textSize(12); p.fill(TEXT_DIM);
+        p.text(`Racha máxima: ${bestStreak}  •  ${totalCorrect} aciertos / ${totalWrong} fallos`,340,195);
+
+        if (errors.length > 0) {
+          p.fill(255); p.textSize(16); p.textStyle(p.BOLD);
+          p.text('Errores para repasar:',340,240); p.textStyle(p.NORMAL);
+          let y=260;
+          p.textSize(11); p.textAlign(p.LEFT);
+          const startIdx = Math.max(0, errors.length-4);
+          for(let i=startIdx;i<errors.length;i++){
+            p.fill(ERROR); p.text('✗',52,y);
+            p.fill(TEXT); p.text(errors[i].fn,72,y);
+            p.fill(TEXT_DIM); p.text(`→ ${errors[i].expected}`,420,y);
+            y+=22; if(y>340)break;
+          }
+        }
+
+        p.fill(SURFACE); p.stroke(PRIMARY); p.strokeWeight(1.5);
+        p.rect(100,370,480,44,8); p.noStroke();
+        p.fill(TEXT); p.textSize(13); p.textAlign(p.CENTER);
+        p.text('💡 Abre MuseScore y practica los que fallaste.',340,398);
+
+        p.fill(PRIMARY); p.rect(230,430,220,44,10);
+        p.fill(255); p.textSize(16); p.text('↻  OTRA VEZ',340,458);
+      } else if (showSummary && errors.length>0) {
+        p.fill(255); p.textSize(20); p.textAlign(p.CENTER); p.textStyle(p.BOLD);
+        p.text('📋  Resumen de errores',340,105); p.textStyle(p.NORMAL);
+        p.textSize(12); p.fill(TEXT_DIM);
+        p.text(`${errors.length} fallos — ¡Practícalos en MuseScore!`,340,128);
+
+        const startIdx = Math.max(0, errors.length-6);
+        let y=150;
+        p.textSize(11); p.textAlign(p.LEFT);
+        for(let i=startIdx;i<errors.length;i++){
+          const err=errors[i];
+          p.fill(ERROR); p.text('✗',32,y);
+          p.fill(TEXT); p.text(err.fn,52,y);
+          p.fill(TEXT_DIM); p.text(`→ ${err.expected}`,400,y);
+          y+=22; if(y>290)break;
+        }
+
+        p.fill(SURFACE); p.stroke(PRIMARY); p.strokeWeight(1.5);
+        p.rect(40,310,600,60,8); p.noStroke();
+        p.fill(TEXT); p.textSize(12); p.textAlign(p.CENTER);
+        p.text('💡 Abre MuseScore y practica estos shortcuts.',340,330);
+        p.text('La memoria muscular se construye repitiendo.',340,350);
+
+        p.fill(PRIMARY); p.rect(230,390,220,44,10);
+        p.fill(255); p.textSize(16); p.text('↻  OTRA VEZ',340,420);
+      } else {
+        p.fill(255); p.textSize(24); p.textAlign(p.CENTER); p.textStyle(p.BOLD);
+        p.text('⏰  ¡Tiempo!',340,190); p.textStyle(p.NORMAL);
+        p.textSize(14); p.fill(TEXT_DIM);
+        p.text(`Puntaje: ${score}  •  ¡Perfecto!`,340,230);
+        p.fill(PRIMARY); p.rect(230,290,220,44,10);
+        p.fill(255); p.textSize(16); p.text('↻  OTRA VEZ',340,320);
+      }
+    }
+
+    else if (currentShortcut) {
+      p.fill(255); p.textSize(18); p.textAlign(p.CENTER);
+      p.text(`« ${currentShortcut.fn} »`,340,155);
+      p.textSize(10); p.fill(TEXT_DIM); p.text(currentShortcut.cat,340,175);
+      p.fill(TEXT_DIM); p.textSize(12); p.text('Presiona el shortcut:',340,210);
+
+      const display = getCurrentCombo();
+      const bx=190,by=225,bw=300,bh=52;
+      p.fill(pressedKey?[28,38,70]:[22,33,62]);
+      p.stroke(pressedKey?PRIMARY:'#4a4a6a'); p.strokeWeight(2);
+      p.rect(bx,by,bw,bh,10); p.noStroke();
+      p.fill(pressedKey?255:100);
+      p.textSize(22); p.textStyle(p.BOLD); p.textAlign(p.CENTER,p.CENTER);
+      p.text(display,bx+bw/2,by+bh/2+2); p.textStyle(p.NORMAL);
+
+      if (feedbackTimer>0) {
+        feedbackTimer--;
+        const alpha = Math.min(1,feedbackTimer/20);
+        p.fill(feedback.startsWith('✓')?SUCCESS:ERROR);
+        p._renderer.drawingContext.globalAlpha=alpha;
+        p.textSize(14); p.textAlign(p.CENTER); p.text(feedback,340,310);
+        p._renderer.drawingContext.globalAlpha=1;
+      }
+      if(!document.fullscreenElement){p.fill('#ffb74d');p.textSize(11);p.text('⚠️ Presiona F11',340,340);}
+    }
+
+    p.fill('#555'); p.textSize(9); p.textAlign(p.CENTER);
+    p.text(`${shortcuts.length} shortcuts • F11 = pantalla completa • ✕ = salir`,340,548);
+  };
+
+  function resetGame() {
+    score=0;streak=0;bestStreak=0;totalCorrect=0;totalWrong=0;
+    timeLeft=60;gameActive=false;gameOver=false;showSummary=false;
+    feedback='';feedbackTimer=0;flashWrong=0;flashCorrect=0;errors=[];
+    shuffled=shuffle(shortcuts);questionIndex=0;currentShortcut=null;
+    pressedMods.clear();pressedKey=null;
+    correctSet.clear();won=false;elapsedTime=0;
+  }
+
+  function startGame() {
+    if(!document.fullscreenElement){document.documentElement.requestFullscreen().catch(()=>{});}
+    gameActive=true;gameOver=false;showSummary=false;
+    score=0;streak=0;bestStreak=0;timeLeft=60;errors=[];
+    feedback='';feedbackTimer=0;flashWrong=0;flashCorrect=0;
+    shuffled=shuffle(shortcuts);questionIndex=0;
+    pressedMods.clear();pressedKey=null;
+    correctSet.clear();won=false;elapsedTime=0;
+    nextQuestion();
+  }
+
+  p.mousePressed = () => {
+    if (!gameActive && !gameOver && p.mouseX>230 && p.mouseX<450 && p.mouseY>300 && p.mouseY<348) startGame();
+    if (gameOver && p.mouseX>230 && p.mouseX<450 && p.mouseY>390 && p.mouseY<434) resetGame();
+  };
+});
+</script>
+</body>
+</html>
