@@ -131,6 +131,7 @@ let questionIndex = 0, shuffled = [];
 let flashWrong = 0, flashCorrect = 0;
 let pressedMods = new Set(), pressedKey = null;
 let errors = [];
+let cooldown = false; // prevent phantom answers after advance
 let correctSet = new Set(); // unique shortcuts answered correctly
 let won = false, elapsedTime = 0;
 
@@ -146,6 +147,8 @@ function nextQuestion() {
   if (questionIndex >= shuffled.length) { shuffled=shuffle(shortcuts); questionIndex=0; }
   currentShortcut = shuffled[questionIndex++];
   pressedMods.clear(); pressedKey=null;
+  cooldown = true;
+  setTimeout(() => { cooldown = false; }, 300);
 }
 
 // code → display
@@ -225,15 +228,15 @@ function evaluateAnswer() {
   if (isCorrect) {
     score++; totalCorrect++; streak++; if(streak>bestStreak)bestStreak=streak;
     correctSet.add(`${platform}:${currentShortcut.fn}`);
-    feedback='✓ ¡Correcto!'; feedbackTimer=35; flashCorrect=8;
-    // Victory check: all shortcuts answered correctly
+    feedback='✓ ¡Correcto!'; feedbackTimer=30; flashCorrect=8;
+    // Victory check
     if (correctSet.size >= shortcuts.length) {
       won = true; elapsedTime = 60 - timeLeft;
       gameActive = false; gameOver = true; showSummary = true;
       pressedMods.clear(); pressedKey = null;
       return;
     }
-    setTimeout(()=>{if(gameActive&&!gameOver)nextQuestion();},500);
+    nextQuestion();
   } else {
     score--; totalWrong++; streak=0;
     errors.push({fn:currentShortcut.fn, expected:codeToDisplay(expected.key,expected.mods), typed:getCurrentCombo()});
@@ -251,7 +254,7 @@ const ALLOWED_KEYS = ['Control','Meta','Shift','Alt','ArrowUp','ArrowDown','Arro
   'Period','Equal','Minus'];
 
 document.addEventListener('keydown', e => {
-  if (!gameActive || gameOver) return;
+  if (!gameActive || gameOver || cooldown) return;
 
   const code = e.code;
 
