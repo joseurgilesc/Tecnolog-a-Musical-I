@@ -215,7 +215,7 @@
 
 Practica los atajos de ingreso de notas vistos hasta ahora. Al final verás tus errores para repasarlos en MuseScore.
 
-[🎮 Jugar Desafío S4](../../juegos/shortcuts-game.html?sesion=4){ .md-button .md-button--primary }
+[🎮 Jugar Desafío S4](../../../juegos/shortcuts-game.html?sesion=4){ .md-button .md-button--primary }
 
 ---
 

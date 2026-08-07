@@ -199,9 +199,9 @@
 
 ¿Cuántos atajos recuerdas de todas las sesiones? **Presiona las teclas reales** para responder. Al final verás un resumen de tus errores para practicarlos en MuseScore. **F11** para pantalla completa.
 
-[🎮 Jugar Desafío S7](../../juegos/shortcuts-game.html?sesion=7){ .md-button .md-button--primary }
+[🎮 Jugar Desafío S7](../../../juegos/shortcuts-game.html?sesion=7){ .md-button .md-button--primary }
 
-<iframe src="../../juegos/shortcuts-game.html?sesion=7" width="100%" height="600" style="border:none; border-radius:12px; margin-top:12px;" title="Desafío de Shortcuts S7"></iframe>
+<iframe src="../../../juegos/shortcuts-game.html?sesion=7" width="100%" height="600" style="border:none; border-radius:12px; margin-top:12px;" title="Desafío de Shortcuts S7"></iframe>
 
 ---
 

@@ -227,7 +227,7 @@
 
 Practica los atajos de métrica y operaciones de compás. Al final verás tus errores para repasarlos en MuseScore.
 
-[🎮 Jugar Desafío S6](../../juegos/shortcuts-game.html?sesion=6){ .md-button .md-button--primary }
+[🎮 Jugar Desafío S6](../../../juegos/shortcuts-game.html?sesion=6){ .md-button .md-button--primary }
 
 ---
 
