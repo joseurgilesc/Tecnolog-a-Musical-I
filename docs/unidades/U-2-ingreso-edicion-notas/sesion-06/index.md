@@ -5,7 +5,7 @@
 ---
 
 ??? info "Glosario de términos"
-    Consultá esta tabla cuando encuentres un término que no conozcas.
+    Consulta esta tabla cuando encuentres un término que no conozcas.
 
     | Término | Definición |
     |---|---|
@@ -35,7 +35,7 @@
 
     ### Insertar compases en el medio
 
-    Insertar desplaza todo el contenido desde ese punto hacia adelante, abriendo espacio donde lo necesitás.
+    Insertar desplaza todo el contenido desde ese punto hacia adelante, abriendo espacio donde lo necesitas.
 
     | Método | Acción |
     |---|---|
@@ -53,7 +53,7 @@
     | **Eliminar rango seleccionado** | **Herramientas → Eliminar rango seleccionado** | Elimina los compases del rango |
 
     !!! warning "La diferencia entre `Supr` y `Ctrl + Supr`"
-        Este es uno de los errores más frecuentes al empezar. `Supr` limpia el interior del compás pero el compás sigue ahí. `Ctrl + Supr` lo elimina por completo. Si tu partitura tiene un compás de más que interrumpe la estructura, usá `Ctrl + Supr`, no `Supr`.
+        Este es uno de los errores más frecuentes al empezar. `Supr` limpia el interior del compás pero el compás sigue ahí. `Ctrl + Supr` lo elimina por completo. Si tu partitura tiene un compás de más que interrumpe la estructura, usa `Ctrl + Supr`, no `Supr`.
 
     ### Duplicar compases
 
@@ -62,7 +62,7 @@
     | Copiar y pegar | Seleccionar compás → `Ctrl + C` → seleccionar destino → `Ctrl + V` |
     | Repetir (`R`) | Seleccionar compás(es) → `R` (pega justo después) |
 
-    La tecla `R` es particularmente útil para secciones con patrones repetitivos. Si seleccionás 2 compases y presionás `R`, los duplica inmediatamente a continuación.
+    La tecla `R` es particularmente útil para secciones con patrones repetitivos. Si seleccionas 2 compases y presionas `R`, los duplica inmediatamente a continuación.
 
     ### Insertar vs. Añadir: resumen visual
 
@@ -79,7 +79,7 @@
 
     ### Agregar o cambiar una indicación de compás
 
-    1. Seleccionar un compás, nota o silencio donde querés que comience el cambio.
+    1. Seleccionar un compás, nota o silencio donde quieres que comience el cambio.
     2. Hacer clic en la indicación deseada de la paleta **Indicaciones de compás**.
 
     Alternativamente, arrastrar la indicación desde la paleta hasta el compás.
@@ -105,16 +105,16 @@
     | 12/8 | Cuaternario compuesto | 4 negras con puntillo | 12 corcheas (3+3+3+3) |
 
     !!! tip "Cómo distinguir simple de compuesto"
-        En un compás simple, el numerador suele ser 2, 3 o 4. En un compás compuesto, el numerador es múltiplo de 3 (6, 9, 12) y el denominador suele ser 8. La diferencia práctica: en 6/8 sentís **dos** pulsos (no seis) y cada pulso se subdivide en tres.
+        En un compás simple, el numerador suele ser 2, 3 o 4. En un compás compuesto, el numerador es múltiplo de 3 (6, 9, 12) y el denominador suele ser 8. La diferencia práctica: en 6/8 sientes **dos** pulsos (no seis) y cada pulso se subdivide en tres.
 
     ### Crear una indicación de compás personalizada
 
-    Si necesitás un compás que no está en la paleta (ej. 5/4, 7/8):
+    Si necesitas un compás que no está en la paleta (ej. 5/4, 7/8):
 
     1. En la paleta **Indicaciones de compás**, hacer clic en **Más**.
     2. Clic en **Crear indicación de compás**.
     3. Ingresar numerador y denominador en **Valor**.
-    4. Si querés que se vea distinto (ej. "3+2/4"), escribilo en **Texto**.
+    4. Si quieres que se vea distinto (ej. "3+2/4"), escríbelo en **Texto**.
     5. Clic en **Añadir** para guardarlo en la paleta.
 
     ### Cambios de compás dentro de una obra
@@ -223,52 +223,7 @@
 
 ---
 
-## Actividad en Classroom
-
-### Tarea: S06 — Estructura métrica y operaciones de compás
-
-> **Material necesario**: el docente proporcionará el archivo `ejercicio_S06_metrica.mscz` con una partitura para flauta de 24 compases en 4/4 que contiene problemas de estructura métrica.
-
-1. **Auditoría de compases.** Reproducí el archivo `ejercicio_S06_metrica.mscz` y revisá compás por compás:
-    - ¿Cada compás suma exactamente 4 tiempos? Identificá los compases que están incompletos o con material sobrante.
-    - ¿La música se detiene abruptamente en algún punto? Eso puede indicar un compás eliminado por error.
-    - Marcá en una hoja el número de compás y el problema detectado.
-
-2. **Corrección estructural.** Aplicá las operaciones necesarias para que la partitura tenga exactamente 24 compases correctos:
-    - Si hay compases rítmicamente incompletos, ajustá su duración desde **Propiedades del compás**.
-    - Si falta contenido, insertá compases (`Ins`) y completalos con silencios o con las notas faltantes.
-    - Si sobra un compás vacío, eliminalo con `Ctrl + Supr` (no con `Supr`).
-
-3. **Anacrusa y cierre.** Convertí el primer compás en una anacrusa de una corchea (en 4/4). Verificá que el último compás se ajuste automáticamente para compensar la duración restante. La numeración de compases debe comenzar en el primer compás completo (no en la anacrusa).
-
-4. **Inserta una sección nueva.** Entre los compases 12 y 13 (después de corregir la estructura), insertá 4 compases nuevos (`Ctrl + Ins` → 4). En esos 4 compases, componé una melodía breve de 4 compases en el mismo estilo y tonalidad de la partitura.
-
-5. **Cambio de compás.** A partir del compás 17 (considerando los compases que insertaste), cambiá la indicación de compás a 6/8. Completá los compases restantes con un nuevo material rítmico en 6/8 que tenga sentido musical y cuadre perfectamente con la métrica.
-
-6. **Barras divisorias.** Agregá una **doble barra** justo antes del cambio a 6/8 (entre el último compás en 4/4 y el primero en 6/8). Colocá una **barra final** al terminar la partitura.
-
-7. **Numeración.** Configurá la numeración de compases para que:
-    - La anacrusa quede excluida del conteo.
-    - Los números sean visibles al inicio de cada sistema.
-    - La numeración sea continua (no se reinicie en el cambio de compás).
-
-### Entregables
-
-- [ ] `APELLIDO_Nombre_S06_corregido_v01.mscz` (partitura con estructura corregida)
-- [ ] `APELLIDO_Nombre_S06_corregido_v01.pdf`
-- [ ] Hoja de auditoría con la lista de problemas detectados (compás y descripción)
-- [ ] Captura de pantalla mostrando la doble barra y el cambio a 6/8 con los números de compás visibles
-
-### Autoevaluación
-
-| Criterio | ✅ Logrado | ⚠️ En proceso | ❌ No logrado |
-|---|---|---|---|
-| Corrección estructural | La partitura tiene 24 compases correctos; no hay compases incompletos ni vacíos no previstos | 1–2 compases aún con problemas | ≥3 compases con errores estructurales |
-| Anacrusa y cierre | La anacrusa dura una corchea; el último compás se compensó correctamente; la numeración excluye la anacrusa | La anacrusa se creó pero el cierre no se ajustó | No realizó la anacrusa o la duración no coincide |
-| Inserción y nueva sección | Insertó 4 compases en la posición correcta; la melodía nueva tiene sentido musical | Insertó los compases pero la melodía es incoherente | No insertó los compases |
-| Cambio a 6/8 | El cambio de compás está en la posición correcta; los compases en 6/8 cuadran rítmicamente con la nueva métrica | El cambio existe pero los compases no cuadran con 6/8 | No realizó el cambio de compás |
-| Barras divisorias | Doble barra antes del cambio métrico; barra final al terminar; ambas visibles en el PDF | Solo una de las dos barras está presente | No agregó barras divisorias |
-| Numeración | Anacrusa excluida; números en cada sistema; numeración continua | Falta uno de los tres criterios | No configuró la numeración |
+Ver el ejercicio en Classroom.
 
 ---
 
