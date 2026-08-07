@@ -5,7 +5,7 @@
 ---
 
 ??? info "Glosario de términos"
-    Consultá esta tabla cuando encuentres un término que no conozcas.
+    Consulta esta tabla cuando encuentres un término que no conozcas.
 
     | Término | Definición |
     |---|---|
@@ -22,7 +22,7 @@
 
 ???+ note "Selección: la base de toda edición"
 
-    En MuseScore, casi todo lo que querés modificar —cambiar altura, transponer, copiar, eliminar— empieza por una **selección precisa**. Una selección incorrecta produce resultados inesperados. Por eso, antes de editar, preguntate: *¿estoy seleccionando exactamente lo que quiero modificar?*
+    En MuseScore, casi todo lo que quieres modificar —cambiar altura, transponer, copiar, eliminar— empieza por una **selección precisa**. Una selección incorrecta produce resultados inesperados. Por eso, antes de editar, pregúntate: *¿estoy seleccionando exactamente lo que quiero modificar?*
 
     ### Tipos de selección
 
@@ -43,17 +43,17 @@
     - **Rango seleccionado**: el rectángulo azul abarca varios compases y posiblemente varios pentagramas.
 
     !!! warning "Clic en el lugar correcto"
-        Hacer clic sobre una nota selecciona ESA nota. Hacer clic en el espacio vacío del compás selecciona TODO el compás. Si hacés clic en el borde entre dos pentagramas, podrías seleccionar el pentagrama equivocado. La diferencia es sutil pero determina el resultado de la operación que hagas a continuación.
+        Hacer clic sobre una nota selecciona ESA nota. Hacer clic en el espacio vacío del compás selecciona TODO el compás. Si haces clic en el borde entre dos pentagramas, podrías seleccionar el pentagrama equivocado. La diferencia es sutil pero determina el resultado de la operación que hagas a continuación.
 
     ### Filtro de selección
 
-    El panel **Ver → Filtro de selección** permite excluir tipos de elementos al copiar o eliminar. Por ejemplo, podés copiar SOLO las notas de un pasaje sin arrastrar las dinámicas ni el texto. O eliminar todo lo que esté en voz 2 sin tocar la voz 1.
+    El panel **Ver → Filtro de selección** permite excluir tipos de elementos al copiar o eliminar. Por ejemplo, puedes copiar SOLO las notas de un pasaje sin arrastrar las dinámicas ni el texto. O eliminar todo lo que esté en voz 2 sin tocar la voz 1.
 
     Para usarlo:
-    1. Hacé la selección de rango normalmente.
-    2. Abrí el filtro de selección (`Ver → Filtro de selección`).
-    3. Desmarcá los tipos de elementos que NO querés incluir.
-    4. Ejecutá la operación (copiar, cortar, eliminar).
+    1. Haz la selección de rango normalmente.
+    2. Abre el filtro de selección (`Ver → Filtro de selección`).
+    3. Desmarca los tipos de elementos que NO quieres incluir.
+    4. Ejecuta la operación (copiar, cortar, eliminar).
 
 ???+ note "Copiar, cortar y pegar: el poder de la repetición"
 
@@ -71,30 +71,30 @@
 
     ### Procedimiento para copiar un pasaje
 
-    1. Seleccioná el rango que querés copiar (clic en primera nota → `Shift + clic` en última).
-    2. Presioná `Ctrl + C` para copiar.
-    3. Seleccioná la primera nota o silencio del **destino** (donde querés que se pegue).
-    4. Presioná `Ctrl + V` para pegar.
+    1. Selecciona el rango que quieres copiar (clic en primera nota → `Shift + clic` en última).
+    2. Presiona `Ctrl + C` para copiar.
+    3. Selecciona la primera nota o silencio del **destino** (donde quieres que se pegue).
+    4. Presiona `Ctrl + V` para pegar.
 
-    El contenido pegado **reemplaza** lo que hubiera en el destino. Si pegás 4 compases sobre 2 compases existentes, los últimos 2 se sobrescriben y los primeros 2 se insertan desplazando el resto.
+    El contenido pegado **reemplaza** lo que hubiera en el destino. Si pegas 4 compases sobre 2 compases existentes, los últimos 2 se sobrescriben y los primeros 2 se insertan desplazando el resto.
 
 
     ### Repetir con `R`
 
     La tecla `R` es un atajo específico de MuseScore: **repite la selección inmediatamente después de sí misma**. Es ideal para duplicar patrones rítmicos, ostinatos o frases que se repiten.
 
-    1. Seleccioná el elemento o rango que querés repetir.
-    2. Presioná `R`.
+    1. Selecciona el elemento o rango que quieres repetir.
+    2. Presiona `R`.
     3. El contenido se duplica justo a continuación.
 
     ### Cortar para mover
 
     Para mover un pasaje de un lugar a otro:
 
-    1. Seleccioná el rango que querés mover.
-    2. Presioná `Ctrl + X` (cortar). El contenido desaparece.
-    3. Seleccioná la primera nota del destino.
-    4. Presioná `Ctrl + V` (pegar). El contenido aparece en la nueva ubicación.
+    1. Selecciona el rango que quieres mover.
+    2. Presiona `Ctrl + X` (cortar). El contenido desaparece.
+    3. Selecciona la primera nota del destino.
+    4. Presiona `Ctrl + V` (pegar). El contenido aparece en la nueva ubicación.
 
     ### Pegar mitad / doble duración
 
@@ -137,20 +137,20 @@
 
     | Paso | Acción |
     |---|---|
-    | 1 | Seleccioná el pasaje cuyas alturas querés cambiar |
-    | 2 | Activá el modo Re-pitch: `Ctrl + Shift + I` (`Cmd + Shift + I` en macOS) |
-    | 3 | Ingresá las nuevas alturas con el teclado (`A`–`G`). Las duraciones permanecen intactas. |
-    | 4 | Salí del modo Re-pitch volviendo al modo Step time |
+    | 1 | Selecciona el pasaje cuyas alturas quieres cambiar |
+    | 2 | Activa el modo Re-pitch: `Ctrl + Shift + I` (`Cmd + Shift + I` en macOS) |
+    | 3 | Ingresa las nuevas alturas con el teclado (`A`–`G`). Las duraciones permanecen intactas. |
+    | 4 | Sal del modo Re-pitch volviendo al modo Step time |
 
     ### Escritura enarmónica
 
     Dos notas que suenan igual pero se escriben diferente (Fa♯ y Sol♭) son **enarmónicas**. MuseScore a veces elige una escritura que no es la más adecuada para el contexto musical (por ejemplo, escribe Mi♯ cuando musicalmente corresponde Fa).
 
     Para cambiar la escritura enarmónica de una nota:
-    1. Seleccioná la nota.
-    2. Presioná `J`.
+    1. Selecciona la nota.
+    2. Presiona `J`.
 
-    MuseScore alternará entre las escrituras enarmónicas posibles. Si necesitás más control, usá **Herramientas → Reescribir alturas** o el panel de propiedades.
+    MuseScore alternará entre las escrituras enarmónicas posibles. Si necesitas más control, usa **Herramientas → Reescribir alturas** o el panel de propiedades.
 
 
 ???+ note "Transposición e inserción/eliminación de compases"
@@ -160,16 +160,16 @@
     La transposición cambia la altura de todas las notas seleccionadas por un mismo intervalo.
 
     **Con teclado** (método rápido):
-    - Seleccioná el rango → `↑` / `↓` para subir/bajar por semitonos.
-    - Seleccioná el rango → `Ctrl + ↑` / `Ctrl + ↓` para subir/bajar por octavas.
+    - Selecciona el rango → `↑` / `↓` para subir/bajar por semitonos.
+    - Selecciona el rango → `Ctrl + ↑` / `Ctrl + ↓` para subir/bajar por octavas.
 
     **Con el diálogo de transposición** (método preciso):
-    1. Seleccioná el rango que querés transponer (o nada para transponer toda la partitura).
-    2. Andá a **Herramientas → Transponer...**.
-    3. Elegí entre:
-       - **Cromáticamente**: por semitonos. Podés indicar "a tonalidad" (ej. de Do mayor a Re mayor) o "por intervalo" (ej. segunda mayor ascendente).
+    1. Selecciona el rango que quieres transponer (o nada para transponer toda la partitura).
+    2. Ve a **Herramientas → Transponer...**.
+    3. Elige entre:
+       - **Cromáticamente**: por semitonos. Puedes indicar "a tonalidad" (ej. de Do mayor a Re mayor) o "por intervalo" (ej. segunda mayor ascendente).
        - **Diatónicamente**: por grados dentro de la escala. Las relaciones interválicas pueden cambiar.
-    4. Marcá "Transponer armaduras" si querés que la armadura también cambie.
+    4. Marca "Transponer armaduras" si quieres que la armadura también cambie.
     5. Clic en **OK**.
 
 
@@ -197,57 +197,11 @@
     !!! warning "No confundas borrar notas con eliminar compases"
         - `Supr` dentro de un compás: borra las notas y las reemplaza por silencios. El compás sigue existiendo.
         - `Ctrl + Supr` sobre un compás seleccionado: ELIMINA el compás completo. Los compases posteriores se desplazan hacia atrás.
-        Si querés quitar un compás que sobra, usá `Ctrl + Supr`. Si solo querés vaciarlo, usá `Supr`.
+        Si quieres quitar un compás que sobra, usa `Ctrl + Supr`. Si solo quieres vaciarlo, usa `Supr`.
 
 ---
 
-## Actividad en Classroom
-
-### Tarea: S05 — Edición, corrección y transposición
-
-> **Material necesario**: el docente proporcionará un archivo `ejercicio_S05_correccion.mscz` con una partitura de aproximadamente 24 compases para flauta que contiene al menos **diez errores** intencionales de distinto tipo.
-
-1. **Detección de errores.** Abrí el archivo `ejercicio_S05_correccion.mscz` y reproducilo completo. Identificá todos los errores que encuentres. Los tipos de errores incluyen:
-    - Notas con altura incorrecta (desplazadas un grado o un semitono).
-    - Duración incorrecta (negra donde debería ser corchea, blanca donde debería ser negra, etc.).
-    - Alteraciones faltantes o sobrantes.
-    - Compases rítmicamente incompletos o con más tiempos de los que indica la métrica.
-    - Silencios mal ubicados o faltantes.
-
-2. **Corrección de errores.** Corregí cada error usando el método más adecuado:
-    - Para errores de altura: seleccioná la nota y usá `↑`/`↓` o ingresá la altura correcta.
-    - Para errores de duración: seleccioná la nota y usá `Shift + W`/`Shift + Q`.
-    - Para errores de compás: insertá o eliminá compases según corresponda (`Ins`, `Ctrl + Ins`, `Ctrl + Supr`).
-
-3. **Reescritura enarmónica.** Localizá dos notas en la partitura donde la escritura enarmónica actual sea incómoda o inusual (ej. Mi♯ en lugar de Fa, o Do♭ en lugar de Si). Seleccionalas y presioná `J` para cambiarlas a su equivalente enarmónico más natural. Documentá el cambio: anotá qué nota era y en qué se convirtió.
-
-4. **Cambio de melodía conservando el ritmo.** Seleccioná los compases 9 a 16. Activá el modo Re-pitch (`Ctrl + Shift + I`) y cambiá todas las alturas de esa sección por una nueva melodía inventada por vos, **sin modificar ninguna duración ni ningún ritmo**. La nueva melodía debe tener sentido musical (no es necesario que sea aleatoria).
-
-5. **Copia entre instrumentos.** Copiá los compases 1 a 8 de la flauta y pegalos en los compases 17 a 24. Luego, con el filtro de selección activado, seleccioná los compases 17 a 24 pero excluí las dinámicas y articulaciones para que solo se copien las notas. Pegá el resultado en una nueva partitura para clarinete en Si♭.
-
-6. **Transposición.** Seleccioná toda la partitura corregida (`Ctrl + A`). Usá **Herramientas → Transponer** para subirla una segunda mayor (2 semitonos). Guardá esta versión como un nuevo archivo.
-
-7. **Registro de modificaciones.** Elaborá una tabla con todas las modificaciones que realizaste sobre el archivo original, indicando para cada una: número de compás, tipo de error encontrado, y la corrección aplicada.
-
-### Entregables
-
-- [ ] `APELLIDO_Nombre_S05_corregido_v01.mscz` (archivo con los 10 errores corregidos)
-- [ ] `APELLIDO_Nombre_S05_transpuesto_v01.mscz` (archivo transpuesto una segunda mayor arriba)
-- [ ] `APELLIDO_Nombre_S05_corregido_v01.pdf`
-- [ ] `APELLIDO_Nombre_S05_transpuesto_v01.pdf`
-- [ ] Tabla de modificaciones (PDF o Google Docs) con las correcciones documentadas
-- [ ] Nota sobre los cambios enarmónicos realizados (qué nota era, en qué se convirtió)
-
-### Autoevaluación
-
-| Criterio | ✅ Logrado | ⚠️ En proceso | ❌ No logrado |
-|---|---|---|---|
-| Detección de errores | Detectó y corrigió ≥8 de los 10 errores; las correcciones son precisas | Detectó 5–7 errores | ≤4 errores detectados |
-| Reescritura enarmónica | Cambió correctamente 2 notas con `J` y documentó el cambio | Cambió 1 nota o no documentó | No realizó cambios enarmónicos |
-| Re-pitch | La nueva melodía (c. 9–16) tiene alturas diferentes pero las duraciones son exactamente las originales | Alguna duración se modificó accidentalmente | No usó el modo Re-pitch o las duraciones cambiaron |
-| Copia entre instrumentos | La copia se realizó correctamente; usó el filtro de selección adecuadamente | La copia se hizo pero sin usar el filtro de selección | No realizó la copia |
-| Transposición | La partitura transpuesta está una segunda mayor arriba; las armaduras y alteraciones se ajustaron correctamente | Transposición aplicada pero con errores en las alteraciones resultantes | No realizó la transposición |
-| Tabla de modificaciones | Tabla completa con compás, tipo de error y corrección para cada modificación | Tabla incompleta o sin detalle | No entregó la tabla |
+Ver el ejercicio en Classroom.
 
 ---
 
