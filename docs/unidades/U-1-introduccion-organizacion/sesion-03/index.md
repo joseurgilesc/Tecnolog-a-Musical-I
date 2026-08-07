@@ -31,10 +31,13 @@
 
     El cambio entre modos se hace desde la barra de herramientas o desde el menú **Ver → Vista de página / Vista continua**.
 
+    ![Cambio entre vista de página y vista continua](https://handbook.musescore.org/~gitbook/image?url=https%3A%2F%2F3455969201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FP81HaeapLzzJGtG6DSwH%252Fuploads%252Fgit-blob-f2c5d625e92553771fb9a78b35eaca705dcb685b%252Fpage-view.gif%3Falt%3Dmedia&width=768&dpr=2&quality=100&sign=5dae9e36&sv=2)
 
     ### Zoom y desplazamiento
 
     El [zoom](#zoom) se controla de varias maneras:
+
+    ![Zoom en MuseScore](https://handbook.musescore.org/~gitbook/image?url=https%3A%2F%2F3455969201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FP81HaeapLzzJGtG6DSwH%252Fuploads%252Fgit-blob-59766a7a35b79df5a1ad898c4b3d23f3d7bbc6d4%252Fzooming.gif%3Falt%3Dmedia&width=768&dpr=2&quality=100&sign=adff329b&sv=2)
 
     | Acción | Atajo / Método |
     |---|---|
@@ -66,6 +69,9 @@
     | **Seleccionar todo** | `Ctrl + A` / `Cmd + A` | Toda la partitura |
     | **Voz específica** | Usar los botones de voz (1, 2, 3, 4) en la barra de herramientas | Solo las notas de la voz seleccionada, ignorando las otras |
 
+    ![Selección individual de un elemento](https://handbook.musescore.org/~gitbook/image?url=https%3A%2F%2F3455969201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FP81HaeapLzzJGtG6DSwH%252Fuploads%252Fgit-blob-e2100cad9b2761d38a3a6b5ffecc9dff27ddf012%252Fselected-element.png%3Falt%3Dmedia&width=768&dpr=2&quality=100&sign=d4b4e008&sv=2)
+
+    ![Selección por rangos](https://handbook.musescore.org/~gitbook/image?url=https%3A%2F%2F3455969201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FP81HaeapLzzJGtG6DSwH%252Fuploads%252Fgit-blob-3a2ac77d5aaa16fc39204d4e3097607b432843e2%252Fselected-range.png%3Falt%3Dmedia&width=768&dpr=2&quality=100&sign=7c0d895f&sv=2)
 
     !!! warning "Clic en el lugar correcto"
         Si haces clic sobre una nota, seleccionas **esa nota**. Si haces clic en el espacio vacío de un compás, seleccionas **todo el compás**. Si haces clic sobre un pentagrama pero fuera de los compases, no seleccionas nada. La diferencia es sutil pero fundamental.
@@ -108,6 +114,8 @@
 ???+ note "Reproducción y controles de transporte"
 
     La reproducción en MuseScore no es solo para "escuchar cómo suena": es una **herramienta de revisión**. Te permite detectar errores de altura, ritmo, armonía y estructura que el ojo puede pasar por alto.
+
+    ![Barra de reproducción y controles de transporte](https://handbook.musescore.org/~gitbook/image?url=https%3A%2F%2F3455969201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FP81HaeapLzzJGtG6DSwH%252Fuploads%252FspV6tsw6kkMwscLIR6Bi%252FScreenshot%25202025-03-11%2520at%25202.03.30%25E2%2580%25AFpm.png%3Falt%3Dmedia%26token%3D623d7168-a3d4-49e7-8035-d53a37588e5c&width=768&dpr=2&quality=100&sign=5eee277f&sv=2)
 
     ### Controles básicos
 
