@@ -197,9 +197,9 @@
 
 ## 🎹 Desafío de Shortcuts
 
-¿Cuántos atajos de teclado recuerdas de lo visto hasta ahora? Escribe el shortcut correcto para cada función. La validación es **en tiempo real**: si lo escribes mal, se marca al instante. Presiona **F11** para pantalla completa y bloquear los atajos del navegador.
+¿Cuántos atajos de teclado recuerdas de lo visto hasta ahora? **Presiona las teclas reales** (Ctrl, Cmd, Shift, flechas, letras) para responder. La validación es en tiempo real. Presiona **F11** para pantalla completa y bloquear los atajos del navegador.
 
-[:fontawesome-solid-gamepad: Abrir juego a pantalla completa](shortcuts-game.html){ .md-button .md-button--primary }
+[🎮 Abrir juego a pantalla completa](shortcuts-game.html){ .md-button .md-button--primary }
 
 <iframe src="shortcuts-game.html" width="100%" height="540" style="border:none; border-radius:12px; margin-top:12px;" title="Desafío de Shortcuts"></iframe>
 
