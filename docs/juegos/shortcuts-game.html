@@ -131,7 +131,7 @@ let questionIndex = 0, shuffled = [];
 let flashWrong = 0, flashCorrect = 0;
 let pressedMods = new Set(), pressedKey = null;
 let errors = [];
-let cooldown = false; // prevent phantom answers after advance
+let evaluated = false; // prevent double-evaluation per question
 let correctSet = new Set(); // unique shortcuts answered correctly
 let won = false, elapsedTime = 0;
 
@@ -147,8 +147,7 @@ function nextQuestion() {
   if (questionIndex >= shuffled.length) { shuffled=shuffle(shortcuts); questionIndex=0; }
   currentShortcut = shuffled[questionIndex++];
   pressedMods.clear(); pressedKey=null;
-  cooldown = true;
-  setTimeout(() => { cooldown = false; }, 300);
+  evaluated = false;
 }
 
 // code → display
@@ -219,17 +218,17 @@ function matchesShortcut(expected) {
 }
 
 function evaluateAnswer() {
-  if (!gameActive || gameOver || !currentShortcut) return;
+  if (!gameActive || gameOver || !currentShortcut || evaluated) return;
   if (!pressedKey && pressedMods.size===0) return;
 
   const expected = platform==='pc'?currentShortcut.pc:currentShortcut.mac;
   const isCorrect = matchesShortcut(expected);
 
   if (isCorrect) {
+    evaluated = true;
     score++; totalCorrect++; streak++; if(streak>bestStreak)bestStreak=streak;
     correctSet.add(`${platform}:${currentShortcut.fn}`);
     feedback='✓ ¡Correcto!'; feedbackTimer=30; flashCorrect=8;
-    // Victory check
     if (correctSet.size >= shortcuts.length) {
       won = true; elapsedTime = 60 - timeLeft;
       gameActive = false; gameOver = true; showSummary = true;
@@ -238,6 +237,7 @@ function evaluateAnswer() {
     }
     nextQuestion();
   } else {
+    evaluated = true;
     score--; totalWrong++; streak=0;
     errors.push({fn:currentShortcut.fn, expected:codeToDisplay(expected.key,expected.mods), typed:getCurrentCombo()});
     feedback=`✗ Era: ${codeToDisplay(expected.key,expected.mods)}`; feedbackTimer=80; flashWrong=12;
@@ -254,7 +254,7 @@ const ALLOWED_KEYS = ['Control','Meta','Shift','Alt','ArrowUp','ArrowDown','Arro
   'Period','Equal','Minus'];
 
 document.addEventListener('keydown', e => {
-  if (!gameActive || gameOver || cooldown) return;
+  if (!gameActive || gameOver) return;
 
   const code = e.code;
 
