@@ -223,6 +223,14 @@
 
 ---
 
+## 🎹 Desafío de Shortcuts — Sesión 6
+
+Practica los atajos de métrica y operaciones de compás. Al final verás tus errores para repasarlos en MuseScore.
+
+[🎮 Jugar Desafío S6](../../juegos/shortcuts-game.html?sesion=6){ .md-button .md-button--primary }
+
+---
+
 Ver el ejercicio en Classroom.
 
 ---

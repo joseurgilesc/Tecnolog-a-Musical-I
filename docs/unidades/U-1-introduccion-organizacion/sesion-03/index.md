@@ -142,6 +142,14 @@
 
 ---
 
+## 🎹 Desafío de Shortcuts — Sesión 3
+
+Practica los atajos de navegación, selección y reproducción. Al final verás tus errores para repasarlos en MuseScore.
+
+[🎮 Jugar Desafío S3](../../juegos/shortcuts-game.html?sesion=3){ .md-button .md-button--primary }
+
+---
+
 Ver el ejercicio en Classroom.
 
 ---

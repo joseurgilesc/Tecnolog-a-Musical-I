@@ -195,13 +195,13 @@
 
 ---
 
-## 🎹 Desafío de Shortcuts
+## 🎹 Desafío de Shortcuts — Sesión 7
 
-¿Cuántos atajos de teclado recuerdas de lo visto hasta ahora? **Presiona las teclas reales** (Ctrl, Cmd, Shift, flechas, letras) para responder. La validación es en tiempo real. Presiona **F11** para pantalla completa y bloquear los atajos del navegador.
+¿Cuántos atajos recuerdas de todas las sesiones? **Presiona las teclas reales** para responder. Al final verás un resumen de tus errores para practicarlos en MuseScore. **F11** para pantalla completa.
 
-[🎮 Abrir juego a pantalla completa](shortcuts-game.html){ .md-button .md-button--primary }
+[🎮 Jugar Desafío S7](../../juegos/shortcuts-game.html?sesion=7){ .md-button .md-button--primary }
 
-<iframe src="shortcuts-game.html" width="100%" height="540" style="border:none; border-radius:12px; margin-top:12px;" title="Desafío de Shortcuts"></iframe>
+<iframe src="../../juegos/shortcuts-game.html?sesion=7" width="100%" height="600" style="border:none; border-radius:12px; margin-top:12px;" title="Desafío de Shortcuts S7"></iframe>
 
 ---
 

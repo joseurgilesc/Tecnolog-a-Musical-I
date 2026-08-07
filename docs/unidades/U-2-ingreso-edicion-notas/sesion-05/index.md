@@ -201,6 +201,14 @@
 
 ---
 
+## 🎹 Desafío de Shortcuts — Sesión 5
+
+Practica los atajos de edición, selección y compases. Al final verás tus errores para repasarlos en MuseScore.
+
+[🎮 Jugar Desafío S5](../../juegos/shortcuts-game.html?sesion=5){ .md-button .md-button--primary }
+
+---
+
 Ver el ejercicio en Classroom.
 
 ---
