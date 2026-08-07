@@ -56,7 +56,7 @@ function sc(mods, key) { return { mods, key }; }
 // ── Shortcut DB (physical keys + modifier flags) ──
 const ALL_SHORTCUTS = [
   // Sesión 3: Navegación, selección, reproducción
-  { fn:"Acercar zoom", pc:sc('C','Equal'), mac:sc('C','Equal'), cat:"Navegación", ses:3 },
+  { fn:"Acercar zoom", pc:sc('CS','Equal'), mac:sc('CS','Equal'), cat:"Navegación", ses:3 },
   { fn:"Alejar zoom", pc:sc('C','Minus'), mac:sc('C','Minus'), cat:"Navegación", ses:3 },
   { fn:"Ir a compás", pc:sc('C','KeyF'), mac:sc('C','KeyF'), cat:"Navegación", ses:3 },
   { fn:"Seleccionar todo", pc:sc('C','KeyA'), mac:sc('C','KeyA'), cat:"Selección", ses:3 },
@@ -141,13 +141,15 @@ function nextQuestion() {
 // code → display
 function codeToDisplay(code, mods) {
   const m = [];
+  // Hide Shift for Equal key when it's the only mod (it's implied by +)
+  const showShift = !(code==='Equal' && mods==='S');
   if (mods.includes('C')) m.push(platform==='mac'?'Cmd':'Ctrl');
-  if (mods.includes('S')) m.push('Shift');
+  if (mods.includes('S') && showShift) m.push('Shift');
   if (mods.includes('A')) m.push('Alt');
   let k = code;
   if (code.startsWith('Key')) k = code.slice(3);
   else if (code.startsWith('Digit')) k = code.slice(5);
-  else if (code==='Equal') k = '=';
+  else if (code==='Equal') k = mods.includes('S') ? '+' : '=';
   else if (code==='Minus') k = '-';
   else if (code==='Period') k = '.';
   else if (code==='Space') k = 'Espacio';
