@@ -125,6 +125,7 @@ const shortcuts = ALL_SHORTCUTS.filter(s => s.ses <= GAME_SESSION);
 let platform = 'pc';
 let currentShortcut = null;
 let score = 0, streak = 0, bestStreak = 0;
+let totalCorrect = 0, totalWrong = 0;
 let timeLeft = 60, gameActive = false, gameOver = false, showSummary = false;
 let feedback = '', feedbackTimer = 0;
 let questionIndex = 0, shuffled = [];
